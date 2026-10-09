@@ -1,0 +1,11 @@
+[Event "JEV Four Non-LLM Opponents"]
+[Site "Local"]
+[Date "2026.09.26"]
+[Round "?"]
+[White "JEV team"]
+[Black "Maia 1900"]
+[Result "0-1"]
+[Termination "checkmate"]
+
+1. e4 c5 2. Nf3 d6 3. Bb5+ Bd7 4. O-O Bxb5 5. Nd4 Bxf1 6. Kxf1 cxd4 7. e5 dxe5
+8. Nc3 dxc3 9. dxc3 Qxd1# 0-1

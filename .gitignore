@@ -1,0 +1,18 @@
+# Local environments and secrets
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Installed JavaScript dependencies and local preview state
+node_modules/
+.hyperframes/
+
+# Runtime logs
+*.log

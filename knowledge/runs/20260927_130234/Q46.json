@@ -1,0 +1,60 @@
+{
+  "id": "Q46",
+  "status": "answered",
+  "choice": "C",
+  "answer_text": "199",
+  "confidence": 0.33,
+  "probabilities": {
+    "D": 0.4,
+    "A": 0.06,
+    "unsure": 0.03,
+    "C": 0.46,
+    "B": 0.05
+  },
+  "cost_usd": 2.5494e-05,
+  "latency_seconds": 0.4853795999661088,
+  "input_tokens": 607,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:40.622699+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "100 prisoners use a room with an on/off lamp initially in an unknown state. A designated counter turns it off whenever finding it on and increments a count. Each of the other 99 turns it on if finding it off, but may do so at most twice in total. No one else turns it off. Each visit is by one prisoner. What is the smallest count threshold guaranteeing that all 100 have visited when the counter announces, for any visit order and initial lamp state?",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "99",
+              "B": "100",
+              "C": "199",
+              "D": "198",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "C",
+        "confidence": 0.33,
+        "probabilities": {
+          "D": 0.4,
+          "A": 0.06,
+          "unsure": 0.03,
+          "C": 0.46,
+          "B": 0.05
+        },
+        "latency_seconds": 0.4853795999661088,
+        "input_tokens": 607,
+        "cost_usd": 2.5494e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}

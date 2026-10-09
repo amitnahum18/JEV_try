@@ -1,0 +1,133 @@
+{
+  "episodes": [
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v2",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 6,
+      "config": {
+        "seed": 44,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 85.0,
+        "layout": "hard_turns",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "8d89e67ac1c0a14ab1156aab64cc4867d7012200b6a57a042aa56d50626e2224",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\open_hard_turns_20260926\\v6_retry_seed44\\single_focused_seed44\\episode.json",
+      "status": "completed",
+      "score": 800,
+      "gates_passed": 8,
+      "gates_total": 8,
+      "simulated_seconds": 66.39166666666667,
+      "minimum_crossing_clearance_margin_m": 0.21084641559846773,
+      "final_position_m": [
+        1225.143827791332,
+        25.85908914444247,
+        27.305502483537314
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.766666666666667,
+          "crossing_xyz_m": [
+            95.0,
+            16.822555429292418,
+            21.978255159775692
+          ],
+          "clearance_margin_m": 3.5913302863903347
+        },
+        {
+          "gate": 2,
+          "time_seconds": 13.216666666666667,
+          "crossing_xyz_m": [
+            250.0,
+            -36.860766480084585,
+            25.949134388844108
+          ],
+          "clearance_margin_m": 1.1385392028843384
+        },
+        {
+          "gate": 3,
+          "time_seconds": 22.058333333333334,
+          "crossing_xyz_m": [
+            405.0,
+            31.04484183819426,
+            23.936456238450468
+          ],
+          "clearance_margin_m": 1.1591980868348095
+        },
+        {
+          "gate": 4,
+          "time_seconds": 31.933333333333334,
+          "crossing_xyz_m": [
+            575.0,
+            -30.01287472788261,
+            30.282190661694486
+          ],
+          "clearance_margin_m": 2.5036138462280775
+        },
+        {
+          "gate": 5,
+          "time_seconds": 41.25,
+          "crossing_xyz_m": [
+            745.0,
+            31.297906336483823,
+            24.83507698128373
+          ],
+          "clearance_margin_m": 0.21084641559846773
+        },
+        {
+          "gate": 6,
+          "time_seconds": 48.56666666666667,
+          "crossing_xyz_m": [
+            885.0,
+            11.035238647995676,
+            28.96975074140762
+          ],
+          "clearance_margin_m": 3.5730026013921217
+        },
+        {
+          "gate": 7,
+          "time_seconds": 57.375,
+          "crossing_xyz_m": [
+            1050.0,
+            -32.259935390472414,
+            34.82223822142124
+          ],
+          "clearance_margin_m": 5.0635521310898
+        },
+        {
+          "gate": 8,
+          "time_seconds": 66.39166666666667,
+          "crossing_xyz_m": [
+            1225.0,
+            25.7994986273522,
+            27.304832233282816
+          ],
+          "clearance_margin_m": 0.5520469267836994
+        }
+      ],
+      "decision_count": 136,
+      "api_calls": 136,
+      "api_attempts": 136,
+      "known_cost_usd": 0.023067534,
+      "cost_complete": true,
+      "wall_seconds": 120.13698950014077,
+      "mean_decision_latency_seconds": 0.5890077433774851,
+      "mean_request_bytes_per_decision": 13016.382352941177,
+      "finished_at": "2026-09-26T23:02:59.424402+03:00"
+    }
+  ],
+  "completed": 1,
+  "attempts_finished": 1,
+  "planned_attempts": 1,
+  "note": "Exploratory attempts, not a reliability estimate. Selection for video is identified explicitly."
+}

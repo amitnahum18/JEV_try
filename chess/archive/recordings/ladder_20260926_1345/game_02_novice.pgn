@@ -1,0 +1,39 @@
+[Event "JEV Chess Ladder"]
+[Site "Local simulation"]
+[Date "2026.09.26"]
+[Round "2"]
+[White "JEV"]
+[Black "Novice - Material hunter"]
+[Result "1/2-1/2"]
+[Annotator "JEV Chess Lab"]
+
+1. Nf3 { JEV confidence: 0.48 } 1... Nc6 2. Nc3 { JEV confidence: 0.36 } 2...
+Nb4 3. d4 { JEV confidence: 0.16 } 3... Nxc2+ 4. Qxc2 { JEV confidence: 0.69 }
+4... g5 5. Qxh7 { JEV confidence: 0.46 } 5... Rxh7 6. Nxg5
+{ JEV confidence: 0.60 } 6... Rxh2 7. Nxf7 { JEV confidence: 0.54 } 7... Rxh1
+8. Nxd8 { JEV confidence: 0.65 } 8... Rxf1+ 9. Kxf1 { JEV confidence: 0.31 }
+9... Kxd8 10. Nd5 { JEV confidence: 0.61 } 10... Rb8 11. Nxe7
+{ JEV confidence: 0.54 } 11... Nxe7 12. d5 { JEV confidence: 0.20 } 12... Nxd5
+13. Bg5+ { JEV confidence: 0.46 } 13... Ke8 14. Bd8 { JEV confidence: 0.47 }
+14... Kxd8 15. Kg1 { JEV confidence: 0.16 } 15... d6 16. Rd1
+{ JEV confidence: 0.16 } 16... b5 17. Rxd5 { JEV confidence: 0.78 } 17... Bb7
+18. Rxd6+ { JEV confidence: 0.86 } 18... Bxd6 19. Kf1 { JEV confidence: 0.10 }
+19... Bxg2+ 20. Kxg2 { JEV confidence: 0.78 } 20... Bf4 21. Kf3
+{ JEV confidence: 0.25 } 21... Bh6 22. Ke4 { JEV confidence: 0.25 } 22... b4
+23. Kf5 { JEV confidence: 0.20 } 23... Rb5+ 24. Kg6 { JEV confidence: 0.17 }
+24... Rg5+ 25. Kxh6 { JEV confidence: 0.52 } 25... Rg6+ 26. Kxg6
+{ JEV confidence: 0.77 } 26... Kd7 27. Kf7 { JEV confidence: 0.18 } 27... Kd8
+28. Ke6 { JEV confidence: 0.15 } 28... a5 29. Kd5 { JEV confidence: 0.22 }
+29... c6+ 30. Kxc6 { JEV confidence: 0.62 } 30... a4 31. Kb5
+{ JEV confidence: 0.11 } 31... Ke7 32. Kxb4 { JEV confidence: 0.38 } 32... Ke8
+33. Kxa4 { JEV confidence: 0.78 } 33... Kd8 34. Kb5 { JEV confidence: 0.39 }
+34... Kc7 35. Kc5 { JEV confidence: 0.19 } 35... Kb8 36. Kd6
+{ JEV confidence: 0.31 } 36... Ka8 37. Ke7 { JEV confidence: 0.23 } 37... Ka7
+38. Kf8 { JEV confidence: 0.14 } 38... Kb6 39. Ke7 { JEV confidence: 0.15 }
+39... Kb5 40. a4+ { JEV confidence: 0.24 } 40... Kxa4 41. b3+
+{ JEV confidence: 0.38 } 41... Kxb3 42. Kd6 { JEV confidence: 0.13 } 42... Ka3
+43. Kc5 { JEV confidence: 0.05 } 43... Kb3 44. Kd6 { JEV confidence: 0.14 }
+44... Kc3 45. Kc5 { JEV confidence: 0.09 } 45... Kc2 46. Kd6
+{ JEV confidence: 0.17 } 46... Kc1 47. Kc5 { JEV confidence: 0.11 } 47... Kb1
+48. Kd6 { JEV confidence: 0.11 } 48... Kc1 49. Kc5 { JEV confidence: 0.07 }
+49... Kb1 50. Kd6 { JEV confidence: 0.12 } 1/2-1/2

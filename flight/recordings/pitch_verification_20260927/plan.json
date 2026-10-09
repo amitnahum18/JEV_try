@@ -1,0 +1,81 @@
+{
+  "experiments": [
+    [
+      "angles_only",
+      [
+        {
+          "seed": 44,
+          "level": 1,
+          "gates": 8,
+          "decision_seconds": 0.5,
+          "max_seconds": 120.0,
+          "layout": "vertical_challenge",
+          "control_profile": "banked_v2",
+          "refresh_on_gate_pass": true,
+          "pitch_up_deg": 6.0,
+          "pitch_down_deg": 6.0,
+          "extended_pitch_actions": true,
+          "strong_pitch_up_deg": 20.0,
+          "strong_pitch_down_deg": 16.0,
+          "dense_pitch_actions": true
+        },
+        "single",
+        "focused",
+        "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_verification_20260927\\angles_only",
+        6
+      ]
+    ],
+    [
+      "guidance_only",
+      [
+        {
+          "seed": 44,
+          "level": 1,
+          "gates": 8,
+          "decision_seconds": 0.5,
+          "max_seconds": 120.0,
+          "layout": "vertical_challenge",
+          "control_profile": "banked_v2",
+          "refresh_on_gate_pass": true,
+          "pitch_up_deg": 6.0,
+          "pitch_down_deg": 6.0,
+          "extended_pitch_actions": true,
+          "strong_pitch_up_deg": 20.0,
+          "strong_pitch_down_deg": 16.0,
+          "dense_pitch_actions": false
+        },
+        "single",
+        "focused",
+        "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_verification_20260927\\guidance_only",
+        7
+      ]
+    ],
+    [
+      "combined",
+      [
+        {
+          "seed": 44,
+          "level": 1,
+          "gates": 8,
+          "decision_seconds": 0.5,
+          "max_seconds": 120.0,
+          "layout": "vertical_challenge",
+          "control_profile": "banked_v2",
+          "refresh_on_gate_pass": true,
+          "pitch_up_deg": 6.0,
+          "pitch_down_deg": 6.0,
+          "extended_pitch_actions": true,
+          "strong_pitch_up_deg": 20.0,
+          "strong_pitch_down_deg": 16.0,
+          "dense_pitch_actions": true
+        },
+        "single",
+        "focused",
+        "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_verification_20260927\\combined",
+        7
+      ]
+    ]
+  ],
+  "baseline": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\vertical_25_choices_preview_20260926\\single_level1_seed44_232048_671155.json",
+  "purpose": "Ablation, same geometry/scoring/physics/decision interval. Three independent single-JEV flights, not multiple JEVs controlling one aircraft. Preserve failures. Small exploratory sample."
+}

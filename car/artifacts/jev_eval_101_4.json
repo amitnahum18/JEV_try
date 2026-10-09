@@ -1,0 +1,45 @@
+{
+  "episodes": 4,
+  "seed_start": 101,
+  "mean_speed_m_s": 23.69,
+  "collision_rate": 0.0,
+  "completion_rate": 1.0,
+  "episode_results": [
+    {
+      "seed": 101,
+      "mean_speed_m_s": 22.37,
+      "lane_changes": 0,
+      "collision": false,
+      "completed": true,
+      "steps": 180,
+      "jev_decisions": 3
+    },
+    {
+      "seed": 102,
+      "mean_speed_m_s": 22.27,
+      "lane_changes": 2,
+      "collision": false,
+      "completed": true,
+      "steps": 180,
+      "jev_decisions": 15
+    },
+    {
+      "seed": 103,
+      "mean_speed_m_s": 24.44,
+      "lane_changes": 1,
+      "collision": false,
+      "completed": true,
+      "steps": 180,
+      "jev_decisions": 23
+    },
+    {
+      "seed": 104,
+      "mean_speed_m_s": 25.67,
+      "lane_changes": 3,
+      "collision": false,
+      "completed": true,
+      "steps": 180,
+      "jev_decisions": 6
+    }
+  ]
+}

@@ -1,0 +1,3419 @@
+{
+  "model": "typesafe/jev-1.13",
+  "overall": {
+    "questions": 50,
+    "answered": 50,
+    "correct": 35,
+    "incorrect": 15,
+    "unsure": 1,
+    "api_errors": 0,
+    "accuracy": 0.7
+  },
+  "difficulty": {
+    "simple_medium": {
+      "questions": 10,
+      "answered": 10,
+      "correct": 8,
+      "incorrect": 2,
+      "unsure": 0,
+      "api_errors": 0,
+      "accuracy": 0.8
+    },
+    "very_hard": {
+      "questions": 40,
+      "answered": 40,
+      "correct": 27,
+      "incorrect": 13,
+      "unsure": 1,
+      "api_errors": 0,
+      "accuracy": 0.675
+    }
+  },
+  "category": {
+    "geography": {
+      "questions": 2,
+      "answered": 2,
+      "correct": 2,
+      "incorrect": 0,
+      "unsure": 0,
+      "api_errors": 0,
+      "accuracy": 1.0
+    },
+    "logic": {
+      "questions": 10,
+      "answered": 10,
+      "correct": 8,
+      "incorrect": 2,
+      "unsure": 1,
+      "api_errors": 0,
+      "accuracy": 0.8
+    },
+    "mathematics": {
+      "questions": 15,
+      "answered": 15,
+      "correct": 13,
+      "incorrect": 2,
+      "unsure": 0,
+      "api_errors": 0,
+      "accuracy": 0.8666666666666667
+    },
+    "physics": {
+      "questions": 14,
+      "answered": 14,
+      "correct": 8,
+      "incorrect": 6,
+      "unsure": 0,
+      "api_errors": 0,
+      "accuracy": 0.5714285714285714
+    },
+    "probability": {
+      "questions": 9,
+      "answered": 9,
+      "correct": 4,
+      "incorrect": 5,
+      "unsure": 0,
+      "api_errors": 0,
+      "accuracy": 0.4444444444444444
+    }
+  },
+  "confidence": {
+    "correct_mean": 0.5345714285714286,
+    "incorrect_mean": 0.4013333333333333
+  },
+  "wrong_with_reported_confidence_at_least_0_8": 0,
+  "known_cost_usd": 0.001172472,
+  "cost_complete": true,
+  "api_attempts": 50,
+  "wall_seconds": 7.577817399986088,
+  "mean_response_seconds": 0.5484598859911785,
+  "first_run_per_question": true,
+  "plan": {
+    "model": "typesafe/jev-1.13",
+    "endpoint": "https://openrouter.ai/api/alpha/decisions",
+    "questions_sha256": "73b34edb6d21c1014bf977a464303443bdc05749de6fc6eb30e944fbc97b0310",
+    "answer_key_sha256": "332bdad129fc32c8ddc7bd652576b58b371370694678233805bb070fdb0b5d77",
+    "workers": 4,
+    "format": "Four candidate answers plus unsure. Opaque labels A-D, balanced correct positions.",
+    "stages": [
+      "First ten simple/medium questions; wait for completion.",
+      "Then forty very hard questions."
+    ],
+    "model_input_fields": [
+      "question",
+      "notation"
+    ],
+    "ground_truth_sent_to_model": false,
+    "feedback_sent_to_model": false,
+    "retry_policy": "At most one retry only after an API error, never after a wrong answer."
+  },
+  "results": [
+    {
+      "id": "Q01",
+      "status": "answered",
+      "choice": "D",
+      "answer_text": "15",
+      "confidence": 0.76,
+      "probabilities": {
+        "D": 0.81,
+        "unsure": 0.0,
+        "A": 0.04,
+        "C": 0.1,
+        "B": 0.05
+      },
+      "cost_usd": 2.1588e-05,
+      "latency_seconds": 0.7798532999586314,
+      "input_tokens": 514,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:34.038733+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Compute (18*7 - 36)/6.",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "12",
+                  "B": "21",
+                  "C": "18",
+                  "D": "15",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "D",
+            "confidence": 0.76,
+            "probabilities": {
+              "D": 0.81,
+              "unsure": 0.0,
+              "A": 0.04,
+              "C": 0.1,
+              "B": 0.05
+            },
+            "latency_seconds": 0.7798532999586314,
+            "input_tokens": 514,
+            "cost_usd": 2.1588e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "simple_medium",
+      "category": "mathematics",
+      "title_he": "חשבון בשני שלבים",
+      "correct_choice": "D",
+      "correct_text": "15",
+      "correct": true
+    },
+    {
+      "id": "Q02",
+      "status": "answered",
+      "choice": "D",
+      "answer_text": "52",
+      "confidence": 0.73,
+      "probabilities": {
+        "D": 0.78,
+        "A": 0.15,
+        "unsure": 0.0,
+        "C": 0.01,
+        "B": 0.06
+      },
+      "cost_usd": 2.184e-05,
+      "latency_seconds": 0.7857041000388563,
+      "input_tokens": 520,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:34.038733+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Take three quarters of 80, then subtract 12. What is the result?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "48",
+                  "B": "60",
+                  "C": "68",
+                  "D": "52",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "D",
+            "confidence": 0.73,
+            "probabilities": {
+              "D": 0.78,
+              "A": 0.15,
+              "unsure": 0.0,
+              "C": 0.01,
+              "B": 0.06
+            },
+            "latency_seconds": 0.7857041000388563,
+            "input_tokens": 520,
+            "cost_usd": 2.184e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "simple_medium",
+      "category": "mathematics",
+      "title_he": "שברים",
+      "correct_choice": "A",
+      "correct_text": "48",
+      "correct": false
+    },
+    {
+      "id": "Q03",
+      "status": "answered",
+      "choice": "C",
+      "answer_text": "6",
+      "confidence": 0.99,
+      "probabilities": {
+        "B": 0.0,
+        "D": 0.0,
+        "A": 0.0,
+        "unsure": 0.0,
+        "C": 1.0
+      },
+      "cost_usd": 2.1462e-05,
+      "latency_seconds": 0.77927659987472,
+      "input_tokens": 511,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:34.046310+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "For real x, solve 3*x+7=25.",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "8",
+                  "B": "4",
+                  "C": "6",
+                  "D": "9",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "C",
+            "confidence": 0.99,
+            "probabilities": {
+              "B": 0.0,
+              "D": 0.0,
+              "A": 0.0,
+              "unsure": 0.0,
+              "C": 1.0
+            },
+            "latency_seconds": 0.77927659987472,
+            "input_tokens": 511,
+            "cost_usd": 2.1462e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "simple_medium",
+      "category": "mathematics",
+      "title_he": "משוואה",
+      "correct_choice": "C",
+      "correct_text": "6",
+      "correct": true
+    },
+    {
+      "id": "Q04",
+      "status": "answered",
+      "choice": "C",
+      "answer_text": "44 m",
+      "confidence": 0.37,
+      "probabilities": {
+        "A": 0.02,
+        "unsure": 0.0,
+        "D": 0.48,
+        "B": 0.0,
+        "C": 0.5
+      },
+      "cost_usd": 2.2638e-05,
+      "latency_seconds": 0.7856661998666823,
+      "input_tokens": 539,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:34.046310+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A particle has initial velocity +3 m/s and constant acceleration +2 m/s^2 along a line. How far does it travel during the next 4 seconds?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "20 m",
+                  "B": "16 m",
+                  "C": "44 m",
+                  "D": "28 m",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "C",
+            "confidence": 0.37,
+            "probabilities": {
+              "A": 0.02,
+              "unsure": 0.0,
+              "D": 0.48,
+              "B": 0.0,
+              "C": 0.5
+            },
+            "latency_seconds": 0.7856661998666823,
+            "input_tokens": 539,
+            "cost_usd": 2.2638e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "simple_medium",
+      "category": "physics",
+      "title_he": "תאוצה קבועה",
+      "correct_choice": "D",
+      "correct_text": "28 m",
+      "correct": false
+    },
+    {
+      "id": "Q05",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "6 A",
+      "confidence": 0.98,
+      "probabilities": {
+        "D": 0.0,
+        "unsure": 0.0,
+        "A": 0.01,
+        "C": 0.0,
+        "B": 0.99
+      },
+      "cost_usd": 2.2512e-05,
+      "latency_seconds": 0.5310027000959963,
+      "input_tokens": 536,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:34.828411+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Ideal resistors of 6 ohms and 3 ohms are connected in parallel across an ideal 12 V source. What is the total source current?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "4 A",
+                  "B": "6 A",
+                  "C": "2 A",
+                  "D": "4/3 A",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 0.98,
+            "probabilities": {
+              "D": 0.0,
+              "unsure": 0.0,
+              "A": 0.01,
+              "C": 0.0,
+              "B": 0.99
+            },
+            "latency_seconds": 0.5310027000959963,
+            "input_tokens": 536,
+            "cost_usd": 2.2512e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "simple_medium",
+      "category": "physics",
+      "title_he": "נגדים במקביל",
+      "correct_choice": "B",
+      "correct_text": "6 A",
+      "correct": true
+    },
+    {
+      "id": "Q06",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "France",
+      "confidence": 1.0,
+      "probabilities": {
+        "unsure": 0.0,
+        "D": 0.0,
+        "B": 1.0,
+        "A": 0.0,
+        "C": 0.0
+      },
+      "cost_usd": 2.1294e-05,
+      "latency_seconds": 0.47650180011987686,
+      "input_tokens": 507,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:34.831941+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Paris is the national capital of which country?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "Italy",
+                  "B": "France",
+                  "C": "Spain",
+                  "D": "Belgium",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 1.0,
+            "probabilities": {
+              "unsure": 0.0,
+              "D": 0.0,
+              "B": 1.0,
+              "A": 0.0,
+              "C": 0.0
+            },
+            "latency_seconds": 0.47650180011987686,
+            "input_tokens": 507,
+            "cost_usd": 2.1294e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "simple_medium",
+      "category": "geography",
+      "title_he": "פריז",
+      "correct_choice": "B",
+      "correct_text": "France",
+      "correct": true
+    },
+    {
+      "id": "Q07",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "Tokyo",
+      "confidence": 1.0,
+      "probabilities": {
+        "unsure": 0.0,
+        "B": 0.0,
+        "D": 0.0,
+        "C": 0.0,
+        "A": 1.0
+      },
+      "cost_usd": 2.1336e-05,
+      "latency_seconds": 0.5125164999626577,
+      "input_tokens": 508,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:34.838055+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "What is the capital of Japan?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "Tokyo",
+                  "B": "Kyoto",
+                  "C": "Seoul",
+                  "D": "Osaka",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 1.0,
+            "probabilities": {
+              "unsure": 0.0,
+              "B": 0.0,
+              "D": 0.0,
+              "C": 0.0,
+              "A": 1.0
+            },
+            "latency_seconds": 0.5125164999626577,
+            "input_tokens": 508,
+            "cost_usd": 2.1336e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "simple_medium",
+      "category": "geography",
+      "title_he": "בירת יפן",
+      "correct_choice": "A",
+      "correct_text": "Tokyo",
+      "correct": true
+    },
+    {
+      "id": "Q08",
+      "status": "answered",
+      "choice": "C",
+      "answer_text": "Box K is heavy",
+      "confidence": 1.0,
+      "probabilities": {
+        "unsure": 0.0,
+        "D": 0.0,
+        "B": 0.0,
+        "A": 0.0,
+        "C": 1.0
+      },
+      "cost_usd": 2.2218e-05,
+      "latency_seconds": 0.46760750003159046,
+      "input_tokens": 529,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:34.838055+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Every red box is heavy. Box K is red. Which statement must be true?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "Box K is not heavy",
+                  "B": "No conclusion about K follows",
+                  "C": "Box K is heavy",
+                  "D": "Every heavy box is red",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "C",
+            "confidence": 1.0,
+            "probabilities": {
+              "unsure": 0.0,
+              "D": 0.0,
+              "B": 0.0,
+              "A": 0.0,
+              "C": 1.0
+            },
+            "latency_seconds": 0.46760750003159046,
+            "input_tokens": 529,
+            "cost_usd": 2.2218e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "simple_medium",
+      "category": "logic",
+      "title_he": "הסקה",
+      "correct_choice": "C",
+      "correct_text": "Box K is heavy",
+      "correct": true
+    },
+    {
+      "id": "Q09",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "1/3",
+      "confidence": 1.0,
+      "probabilities": {
+        "B": 1.0,
+        "D": 0.0,
+        "unsure": 0.0,
+        "C": 0.0,
+        "A": 0.0
+      },
+      "cost_usd": 2.2386e-05,
+      "latency_seconds": 0.6074663999024779,
+      "input_tokens": 533,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:35.305630+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A fair six-sided die numbered 1 to 6 is rolled once. What is the probability of a result strictly greater than 4?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "1/6",
+                  "B": "1/3",
+                  "C": "1/2",
+                  "D": "2/3",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 1.0,
+            "probabilities": {
+              "B": 1.0,
+              "D": 0.0,
+              "unsure": 0.0,
+              "C": 0.0,
+              "A": 0.0
+            },
+            "latency_seconds": 0.6074663999024779,
+            "input_tokens": 533,
+            "cost_usd": 2.2386e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "simple_medium",
+      "category": "probability",
+      "title_he": "קובייה",
+      "correct_choice": "B",
+      "correct_text": "1/3",
+      "correct": true
+    },
+    {
+      "id": "Q10",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "2 hours",
+      "confidence": 0.99,
+      "probabilities": {
+        "D": 0.0,
+        "A": 1.0,
+        "unsure": 0.0,
+        "C": 0.0,
+        "B": 0.0
+      },
+      "cost_usd": 2.2638e-05,
+      "latency_seconds": 0.5209369000513107,
+      "input_tokens": 539,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:35.312285+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Pipe A fills an empty tank in 6 hours and pipe B in 3 hours at constant rates. With both open and no leakage, how long to fill the empty tank?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "2 hours",
+                  "B": "4.5 hours",
+                  "C": "3 hours",
+                  "D": "9 hours",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.99,
+            "probabilities": {
+              "D": 0.0,
+              "A": 1.0,
+              "unsure": 0.0,
+              "C": 0.0,
+              "B": 0.0
+            },
+            "latency_seconds": 0.5209369000513107,
+            "input_tokens": 539,
+            "cost_usd": 2.2638e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "simple_medium",
+      "category": "logic",
+      "title_he": "מילוי מכל",
+      "correct_choice": "A",
+      "correct_text": "2 hours",
+      "correct": true
+    },
+    {
+      "id": "Q11",
+      "status": "answered",
+      "choice": "D",
+      "answer_text": "-1/2",
+      "confidence": 0.57,
+      "probabilities": {
+        "A": 0.17,
+        "B": 0.08,
+        "unsure": 0.05,
+        "C": 0.04,
+        "D": 0.66
+      },
+      "cost_usd": 2.2092e-05,
+      "latency_seconds": 0.4544239998795092,
+      "input_tokens": 526,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:35.958414+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Evaluate the convergent improper integral from x=0 to infinity of ln(x)/(1+x)^3 dx.",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "-1",
+                  "B": "0",
+                  "C": "1/2",
+                  "D": "-1/2",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "D",
+            "confidence": 0.57,
+            "probabilities": {
+              "A": 0.17,
+              "B": 0.08,
+              "unsure": 0.05,
+              "C": 0.04,
+              "D": 0.66
+            },
+            "latency_seconds": 0.4544239998795092,
+            "input_tokens": 526,
+            "cost_usd": 2.2092e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "אינטגרל לא אמיתי",
+      "correct_choice": "D",
+      "correct_text": "-1/2",
+      "correct": true
+    },
+    {
+      "id": "Q12",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "121393",
+      "confidence": 0.38,
+      "probabilities": {
+        "D": 0.08,
+        "A": 0.25,
+        "unsure": 0.06,
+        "C": 0.11,
+        "B": 0.5
+      },
+      "cost_usd": 2.3184e-05,
+      "latency_seconds": 0.49142859992571175,
+      "input_tokens": 552,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:35.960470+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A 12 by 12 matrix has 3 on its main diagonal, -1 immediately above and below that diagonal, and 0 elsewhere. What is its determinant?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "317811",
+                  "B": "121393",
+                  "C": "196418",
+                  "D": "75025",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 0.38,
+            "probabilities": {
+              "D": 0.08,
+              "A": 0.25,
+              "unsure": 0.06,
+              "C": 0.11,
+              "B": 0.5
+            },
+            "latency_seconds": 0.49142859992571175,
+            "input_tokens": 552,
+            "cost_usd": 2.3184e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "דטרמיננטה מסדר 12",
+      "correct_choice": "B",
+      "correct_text": "121393",
+      "correct": true
+    },
+    {
+      "id": "Q13",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "155",
+      "confidence": 0.24,
+      "probabilities": {
+        "C": 0.2,
+        "unsure": 0.1,
+        "D": 0.16,
+        "A": 0.15,
+        "B": 0.39
+      },
+      "cost_usd": 2.2386e-05,
+      "latency_seconds": 0.4562194000463933,
+      "input_tokens": 533,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:35.960470+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "What is the smallest integer x strictly greater than 1 such that x^2 is congruent to 1 modulo 1001?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "77",
+                  "B": "155",
+                  "C": "143",
+                  "D": "274",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 0.24,
+            "probabilities": {
+              "C": 0.2,
+              "unsure": 0.1,
+              "D": 0.16,
+              "A": 0.15,
+              "B": 0.39
+            },
+            "latency_seconds": 0.4562194000463933,
+            "input_tokens": 533,
+            "cost_usd": 2.2386e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "קונגרואנציה",
+      "correct_choice": "B",
+      "correct_text": "155",
+      "correct": true
+    },
+    {
+      "id": "Q14",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "1806",
+      "confidence": 0.97,
+      "probabilities": {
+        "unsure": 0.01,
+        "A": 0.97,
+        "D": 0.0,
+        "B": 0.01,
+        "C": 0.01
+      },
+      "cost_usd": 2.2428e-05,
+      "latency_seconds": 0.5769211000297219,
+      "input_tokens": 534,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:35.960470+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Seven distinct objects are assigned to three labeled boxes. Every box must receive at least one object. How many assignments are possible?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "1806",
+                  "B": "1728",
+                  "C": "2100",
+                  "D": "2187",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.97,
+            "probabilities": {
+              "unsure": 0.01,
+              "A": 0.97,
+              "D": 0.0,
+              "B": 0.01,
+              "C": 0.01
+            },
+            "latency_seconds": 0.5769211000297219,
+            "input_tokens": 534,
+            "cost_usd": 2.2428e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "חלוקות על",
+      "correct_choice": "A",
+      "correct_text": "1806",
+      "correct": true
+    },
+    {
+      "id": "Q15",
+      "status": "answered",
+      "choice": "D",
+      "answer_text": "245760",
+      "confidence": 0.33,
+      "probabilities": {
+        "A": 0.3,
+        "unsure": 0.04,
+        "B": 0.15,
+        "C": 0.05,
+        "D": 0.46
+      },
+      "cost_usd": 2.3226e-05,
+      "latency_seconds": 0.5916975999716669,
+      "input_tokens": 553,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:36.423806+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Let a0=0, a1=1 and an=4*a(n-1)-4*a(n-2) for n>=2. What is a15?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "491520",
+                  "B": "229376",
+                  "C": "262144",
+                  "D": "245760",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "D",
+            "confidence": 0.33,
+            "probabilities": {
+              "A": 0.3,
+              "unsure": 0.04,
+              "B": 0.15,
+              "C": 0.05,
+              "D": 0.46
+            },
+            "latency_seconds": 0.5916975999716669,
+            "input_tokens": 553,
+            "cost_usd": 2.3226e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "רקורסיה עם שורש כפול",
+      "correct_choice": "D",
+      "correct_text": "245760",
+      "correct": true
+    },
+    {
+      "id": "Q16",
+      "status": "answered",
+      "choice": "C",
+      "answer_text": "8",
+      "confidence": 0.86,
+      "probabilities": {
+        "A": 0.1,
+        "C": 0.9,
+        "D": 0.0,
+        "unsure": 0.0,
+        "B": 0.0
+      },
+      "cost_usd": 2.289e-05,
+      "latency_seconds": 0.5837140001822263,
+      "input_tokens": 545,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:36.430041+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Let zeta=exp(2*pi*i/17), a primitive 17th root of unity. Evaluate the sum over k=1,...,16 of 1/(1-zeta^k).",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "17/2",
+                  "B": "16",
+                  "C": "8",
+                  "D": "0",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "C",
+            "confidence": 0.86,
+            "probabilities": {
+              "A": 0.1,
+              "C": 0.9,
+              "D": 0.0,
+              "unsure": 0.0,
+              "B": 0.0
+            },
+            "latency_seconds": 0.5837140001822263,
+            "input_tokens": 545,
+            "cost_usd": 2.289e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "שורשי יחידה",
+      "correct_choice": "C",
+      "correct_text": "8",
+      "correct": true
+    },
+    {
+      "id": "Q17",
+      "status": "answered",
+      "choice": "C",
+      "answer_text": "216",
+      "confidence": 0.31,
+      "probabilities": {
+        "D": 0.04,
+        "C": 0.45,
+        "A": 0.2,
+        "unsure": 0.02,
+        "B": 0.29
+      },
+      "cost_usd": 2.31e-05,
+      "latency_seconds": 0.54766929987818,
+      "input_tokens": 550,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:36.454244+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Real numbers x,y,z satisfy x+y+z=0 and x^2+y^2+z^2=6. What is the maximum of (x-y)^2*(y-z)^2*(z-x)^2?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "54",
+                  "B": "108",
+                  "C": "216",
+                  "D": "27",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "C",
+            "confidence": 0.31,
+            "probabilities": {
+              "D": 0.04,
+              "C": 0.45,
+              "A": 0.2,
+              "unsure": 0.02,
+              "B": 0.29
+            },
+            "latency_seconds": 0.54766929987818,
+            "input_tokens": 550,
+            "cost_usd": 2.31e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "אופטימיזציה של דיסקרימיננטה",
+      "correct_choice": "B",
+      "correct_text": "108",
+      "correct": false
+    },
+    {
+      "id": "Q18",
+      "status": "answered",
+      "choice": "D",
+      "answer_text": "pi^2/3 - 3",
+      "confidence": 0.3,
+      "probabilities": {
+        "D": 0.43,
+        "C": 0.04,
+        "B": 0.13,
+        "unsure": 0.01,
+        "A": 0.39
+      },
+      "cost_usd": 2.3058e-05,
+      "latency_seconds": 0.518445499939844,
+      "input_tokens": 549,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:36.537115+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Evaluate the infinite sum over n=1,2,... of 1/(n^2*(n+1)^2).",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "pi^2/3 - 2",
+                  "B": "2 - pi^2/6",
+                  "C": "pi^2/6 - 1",
+                  "D": "pi^2/3 - 3",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "D",
+            "confidence": 0.3,
+            "probabilities": {
+              "D": 0.43,
+              "C": 0.04,
+              "B": 0.13,
+              "unsure": 0.01,
+              "A": 0.39
+            },
+            "latency_seconds": 0.518445499939844,
+            "input_tokens": 549,
+            "cost_usd": 2.3058e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "טור אינסופי",
+      "correct_choice": "D",
+      "correct_text": "pi^2/3 - 3",
+      "correct": true
+    },
+    {
+      "id": "Q19",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "32000",
+      "confidence": 0.4,
+      "probabilities": {
+        "unsure": 0.01,
+        "D": 0.27,
+        "A": 0.52,
+        "C": 0.16,
+        "B": 0.04
+      },
+      "cost_usd": 2.3226e-05,
+      "latency_seconds": 0.4973311999347061,
+      "input_tokens": 553,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:37.007195+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "How many spanning trees does the complete bipartite graph K(4,5) have? Vertices are labeled; every vertex in one part is adjacent to every vertex in the other part.",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "32000",
+                  "B": "62500",
+                  "C": "20000",
+                  "D": "102400",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.4,
+            "probabilities": {
+              "unsure": 0.01,
+              "D": 0.27,
+              "A": 0.52,
+              "C": 0.16,
+              "B": 0.04
+            },
+            "latency_seconds": 0.4973311999347061,
+            "input_tokens": 553,
+            "cost_usd": 2.3226e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "עצים פורשים",
+      "correct_choice": "A",
+      "correct_text": "32000",
+      "correct": true
+    },
+    {
+      "id": "Q20",
+      "status": "answered",
+      "choice": "C",
+      "answer_text": "24",
+      "confidence": 0.14,
+      "probabilities": {
+        "C": 0.31,
+        "unsure": 0.15,
+        "D": 0.16,
+        "B": 0.19,
+        "A": 0.19
+      },
+      "cost_usd": 2.3268e-05,
+      "latency_seconds": 0.5121243000030518,
+      "input_tokens": 554,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:37.015172+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Let r1,...,r5 be all complex roots, counted with multiplicity, of p(t)=t^5-3*t+1. Evaluate the sum of 1/(rj-1)^2 over j=1,...,5.",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "20",
+                  "B": "-24",
+                  "C": "24",
+                  "D": "16",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "C",
+            "confidence": 0.14,
+            "probabilities": {
+              "C": 0.31,
+              "unsure": 0.15,
+              "D": 0.16,
+              "B": 0.19,
+              "A": 0.19
+            },
+            "latency_seconds": 0.5121243000030518,
+            "input_tokens": 554,
+            "cost_usd": 2.3268e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "סכום על שורשי פולינום",
+      "correct_choice": "C",
+      "correct_text": "24",
+      "correct": true
+    },
+    {
+      "id": "Q21",
+      "status": "answered",
+      "choice": "D",
+      "answer_text": "pi^4/90",
+      "confidence": 0.37,
+      "probabilities": {
+        "unsure": 0.07,
+        "A": 0.39,
+        "D": 0.5,
+        "B": 0.01,
+        "C": 0.03
+      },
+      "cost_usd": 2.2806e-05,
+      "latency_seconds": 0.500731100095436,
+      "input_tokens": 543,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:37.021896+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Evaluate the improper double integral over 0<x<1 and 0<y<1 of ln(x)*ln(y)/(1-x*y) dx dy.",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "pi^4/45",
+                  "B": "pi^2/6",
+                  "C": "1",
+                  "D": "pi^4/90",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "D",
+            "confidence": 0.37,
+            "probabilities": {
+              "unsure": 0.07,
+              "A": 0.39,
+              "D": 0.5,
+              "B": 0.01,
+              "C": 0.03
+            },
+            "latency_seconds": 0.500731100095436,
+            "input_tokens": 543,
+            "cost_usd": 2.2806e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "אינטגרל כפול",
+      "correct_choice": "D",
+      "correct_text": "pi^4/90",
+      "correct": true
+    },
+    {
+      "id": "Q22",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "429",
+      "confidence": 0.25,
+      "probabilities": {
+        "A": 0.4,
+        "D": 0.27,
+        "unsure": 0.03,
+        "B": 0.1,
+        "C": 0.2
+      },
+      "cost_usd": 2.3184e-05,
+      "latency_seconds": 0.5106015000492334,
+      "input_tokens": 552,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:37.058317+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Count lattice paths from (0,0) to (8,8) using only unit east and north steps, staying strictly below y=x at every intermediate vertex. Start and end are the only permitted contacts with y=x.",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "429",
+                  "B": "715",
+                  "C": "1430",
+                  "D": "3432",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.25,
+            "probabilities": {
+              "A": 0.4,
+              "D": 0.27,
+              "unsure": 0.03,
+              "B": 0.1,
+              "C": 0.2
+            },
+            "latency_seconds": 0.5106015000492334,
+            "input_tokens": 552,
+            "cost_usd": 2.3184e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "mathematics",
+      "title_he": "מסלולי סריג ללא מגע פנימי",
+      "correct_choice": "A",
+      "correct_text": "429",
+      "correct": true
+    },
+    {
+      "id": "Q23",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "40",
+      "confidence": 0.35,
+      "probabilities": {
+        "unsure": 0.03,
+        "D": 0.05,
+        "A": 0.47,
+        "C": 0.23,
+        "B": 0.22
+      },
+      "cost_usd": 2.2848e-05,
+      "latency_seconds": 0.7150656001176685,
+      "input_tokens": 544,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:37.511621+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Independently flip a fair coin until the consecutive pattern HTHTH appears for the first time. H means heads and T tails. What is the expected total number of flips, counting the final five flips?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "40",
+                  "B": "42",
+                  "C": "32",
+                  "D": "62",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.35,
+            "probabilities": {
+              "unsure": 0.03,
+              "D": 0.05,
+              "A": 0.47,
+              "C": 0.23,
+              "B": 0.22
+            },
+            "latency_seconds": 0.7150656001176685,
+            "input_tokens": 544,
+            "cost_usd": 2.2848e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "probability",
+      "title_he": "המתנה לתבנית חופפת",
+      "correct_choice": "B",
+      "correct_text": "42",
+      "correct": false
+    },
+    {
+      "id": "Q24",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "2 - pi/2",
+      "confidence": 0.42,
+      "probabilities": {
+        "C": 0.0,
+        "D": 0.01,
+        "B": 0.45,
+        "A": 0.53,
+        "unsure": 0.01
+      },
+      "cost_usd": 2.2764e-05,
+      "latency_seconds": 0.5139043999370188,
+      "input_tokens": 542,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:37.523970+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "X and Y are independent Uniform(0,1) variables. What is P(X^2+Y^2<1 | X+Y>1)?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "2 - pi/2",
+                  "B": "pi/2 - 1",
+                  "C": "1/2",
+                  "D": "pi/4",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.42,
+            "probabilities": {
+              "C": 0.0,
+              "D": 0.01,
+              "B": 0.45,
+              "A": 0.53,
+              "unsure": 0.01
+            },
+            "latency_seconds": 0.5139043999370188,
+            "input_tokens": 542,
+            "cost_usd": 2.2764e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "probability",
+      "title_he": "הסתברות גאומטרית מותנית",
+      "correct_choice": "B",
+      "correct_text": "pi/2 - 1",
+      "correct": false
+    },
+    {
+      "id": "Q25",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "60/143",
+      "confidence": 0.39,
+      "probabilities": {
+        "A": 0.51,
+        "C": 0.36,
+        "unsure": 0.06,
+        "D": 0.03,
+        "B": 0.04
+      },
+      "cost_usd": 2.4024e-05,
+      "latency_seconds": 0.4534128000959754,
+      "input_tokens": 572,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:37.530214+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A coin has a fixed but unknown heads probability p sampled from Uniform(0,1). Conditional on p, flips are independent. You observe 7 heads and 2 tails in 9 flips. What is the posterior predictive probability that the next 3 flips are all heads?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "60/143",
+                  "B": "343/729",
+                  "C": "12/55",
+                  "D": "49/81",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.39,
+            "probabilities": {
+              "A": 0.51,
+              "C": 0.36,
+              "unsure": 0.06,
+              "D": 0.03,
+              "B": 0.04
+            },
+            "latency_seconds": 0.4534128000959754,
+            "input_tokens": 572,
+            "cost_usd": 2.4024e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "probability",
+      "title_he": "חיזוי בייסיאני",
+      "correct_choice": "A",
+      "correct_text": "60/143",
+      "correct": true
+    },
+    {
+      "id": "Q26",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "53/288",
+      "confidence": 0.55,
+      "probabilities": {
+        "unsure": 0.02,
+        "A": 0.64,
+        "C": 0.05,
+        "D": 0.01,
+        "B": 0.28
+      },
+      "cost_usd": 2.2848e-05,
+      "latency_seconds": 0.5713454000651836,
+      "input_tokens": 544,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:37.574322+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Choose a permutation of 8 labeled elements uniformly from all 8! permutations. What is the probability of exactly 2 fixed points?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "53/288",
+                  "B": "53/144",
+                  "C": "265/20160",
+                  "D": "1/2",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.55,
+            "probabilities": {
+              "unsure": 0.02,
+              "A": 0.64,
+              "C": 0.05,
+              "D": 0.01,
+              "B": 0.28
+            },
+            "latency_seconds": 0.5713454000651836,
+            "input_tokens": 544,
+            "cost_usd": 2.2848e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "probability",
+      "title_he": "נקודות קבועות בפרמוטציה",
+      "correct_choice": "A",
+      "correct_text": "53/288",
+      "correct": true
+    },
+    {
+      "id": "Q27",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "11/2",
+      "confidence": 0.23,
+      "probabilities": {
+        "C": 0.13,
+        "unsure": 0.02,
+        "D": 0.28,
+        "B": 0.39,
+        "A": 0.18
+      },
+      "cost_usd": 2.4696e-05,
+      "latency_seconds": 0.5276025999337435,
+      "input_tokens": 588,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:38.023042+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A Markov chain has states 0,1,2,3; 3 is absorbing. From 0 it moves to 1 surely; from 1 to 0 or 2 with probability 1/2 each; from 2 to 1 with probability 1/3 or to 3 with probability 2/3. Starting at 0, what is the expected number of transitions to first visit 3?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "6",
+                  "B": "11/2",
+                  "C": "9",
+                  "D": "7",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 0.23,
+            "probabilities": {
+              "C": 0.13,
+              "unsure": 0.02,
+              "D": 0.28,
+              "B": 0.39,
+              "A": 0.18
+            },
+            "latency_seconds": 0.5276025999337435,
+            "input_tokens": 588,
+            "cost_usd": 2.4696e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "probability",
+      "title_he": "זמן פגיעה בשרשרת מרקוב",
+      "correct_choice": "D",
+      "correct_text": "7",
+      "correct": false
+    },
+    {
+      "id": "Q28",
+      "status": "answered",
+      "choice": "D",
+      "answer_text": "1467/2059",
+      "confidence": 0.38,
+      "probabilities": {
+        "unsure": 0.02,
+        "D": 0.51,
+        "B": 0.01,
+        "A": 0.04,
+        "C": 0.42
+      },
+      "cost_usd": 2.4108e-05,
+      "latency_seconds": 0.49029440013691783,
+      "input_tokens": 574,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:38.040356+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A random walk starts at integer 3. Independently each step goes up 1 with probability 3/5 or down 1 with probability 2/5. It stops at 0 or 7. What is the probability it stops at 7?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "27/35",
+                  "B": "3/7",
+                  "C": "1539/2059",
+                  "D": "1467/2059",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "D",
+            "confidence": 0.38,
+            "probabilities": {
+              "unsure": 0.02,
+              "D": 0.51,
+              "B": 0.01,
+              "A": 0.04,
+              "C": 0.42
+            },
+            "latency_seconds": 0.49029440013691783,
+            "input_tokens": 574,
+            "cost_usd": 2.4108e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "probability",
+      "title_he": "חורבן המהמר",
+      "correct_choice": "C",
+      "correct_text": "1539/2059",
+      "correct": false
+    },
+    {
+      "id": "Q29",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "5/3",
+      "confidence": 0.32,
+      "probabilities": {
+        "B": 0.09,
+        "A": 0.45,
+        "C": 0.11,
+        "unsure": 0.09,
+        "D": 0.26
+      },
+      "cost_usd": 2.2386e-05,
+      "latency_seconds": 0.5287921999115497,
+      "input_tokens": 533,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:38.153354+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Choose X and Y independently and uniformly by area inside the unit disk in the plane. D is their Euclidean distance. What is E[D^4]?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "5/3",
+                  "B": "2",
+                  "C": "1",
+                  "D": "4/3",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.32,
+            "probabilities": {
+              "B": 0.09,
+              "A": 0.45,
+              "C": 0.11,
+              "unsure": 0.09,
+              "D": 0.26
+            },
+            "latency_seconds": 0.5287921999115497,
+            "input_tokens": 533,
+            "cost_usd": 2.2386e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "probability",
+      "title_he": "מומנט של מרחק בדיסקה",
+      "correct_choice": "A",
+      "correct_text": "5/3",
+      "correct": true
+    },
+    {
+      "id": "Q30",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "5/21",
+      "confidence": 0.34,
+      "probabilities": {
+        "D": 0.07,
+        "A": 0.1,
+        "unsure": 0.06,
+        "C": 0.3,
+        "B": 0.47
+      },
+      "cost_usd": 2.31e-05,
+      "latency_seconds": 0.4661307998467237,
+      "input_tokens": 550,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:38.231923+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Ten fair independent coin flips are conditioned on exactly four heads. Arrange the ten positions in a circle, so positions 10 and 1 are adjacent. What is the conditional probability that no two heads are adjacent?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "1/7",
+                  "B": "5/21",
+                  "C": "5/42",
+                  "D": "1/6",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 0.34,
+            "probabilities": {
+              "D": 0.07,
+              "A": 0.1,
+              "unsure": 0.06,
+              "C": 0.3,
+              "B": 0.47
+            },
+            "latency_seconds": 0.4661307998467237,
+            "input_tokens": 550,
+            "cost_usd": 2.31e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "probability",
+      "title_he": "ראשים במעגל",
+      "correct_choice": "C",
+      "correct_text": "5/42",
+      "correct": false
+    },
+    {
+      "id": "Q31",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "3+2*sqrt(2)",
+      "confidence": 0.49,
+      "probabilities": {
+        "unsure": 0.01,
+        "B": 0.04,
+        "C": 0.14,
+        "A": 0.59,
+        "D": 0.22
+      },
+      "cost_usd": 2.4612e-05,
+      "latency_seconds": 1.0345074001234025,
+      "input_tokens": 586,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:38.573578+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Three masses m,2m,m lie on a frictionless line between fixed walls. Four identical springs of stiffness k connect left wall--m--2m--m--right wall. For small longitudinal oscillations about equilibrium, what is omega_max^2/omega_min^2 for the three normal modes?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "3+2*sqrt(2)",
+                  "B": "4",
+                  "C": "(7+3*sqrt(5))/2",
+                  "D": "(3+sqrt(5))/2",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.49,
+            "probabilities": {
+              "unsure": 0.01,
+              "B": 0.04,
+              "C": 0.14,
+              "A": 0.59,
+              "D": 0.22
+            },
+            "latency_seconds": 1.0345074001234025,
+            "input_tokens": 586,
+            "cost_usd": 2.4612e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "שלושה מצבי תנודה",
+      "correct_choice": "C",
+      "correct_text": "(7+3*sqrt(5))/2",
+      "correct": false
+    },
+    {
+      "id": "Q32",
+      "status": "answered",
+      "choice": "D",
+      "answer_text": "(25/12)*m*c^2",
+      "confidence": 0.71,
+      "probabilities": {
+        "B": 0.07,
+        "C": 0.11,
+        "A": 0.04,
+        "unsure": 0.01,
+        "D": 0.77
+      },
+      "cost_usd": 2.4696e-05,
+      "latency_seconds": 0.4885431998409331,
+      "input_tokens": 588,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:38.576035+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "In one laboratory frame A moves at +3c/5 and particle B of rest mass m moves at -4c/5 along the same axis. What is the total relativistic energy of B measured in the inertial rest frame of A?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "(37/25)*m*c^2",
+                  "B": "(35/12)*m*c^2",
+                  "C": "(37/12)*m*c^2",
+                  "D": "(25/12)*m*c^2",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "D",
+            "confidence": 0.71,
+            "probabilities": {
+              "B": 0.07,
+              "C": 0.11,
+              "A": 0.04,
+              "unsure": 0.01,
+              "D": 0.77
+            },
+            "latency_seconds": 0.4885431998409331,
+            "input_tokens": 588,
+            "cost_usd": 2.4696e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "אנרגיה במסגרת נעה",
+      "correct_choice": "C",
+      "correct_text": "(37/12)*m*c^2",
+      "correct": false
+    },
+    {
+      "id": "Q33",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "1000 J",
+      "confidence": 0.13,
+      "probabilities": {
+        "D": 0.16,
+        "B": 0.3,
+        "C": 0.26,
+        "A": 0.23,
+        "unsure": 0.05
+      },
+      "cost_usd": 2.4276e-05,
+      "latency_seconds": 0.506184000056237,
+      "input_tokens": 578,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:38.722489+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Two bodies initially at 400 K and 100 K each have constant heat capacity 10 J/K. An ideal reversible heat engine operates between them until no more work can be extracted. They exchange no heat with the outside; the engine completes cycles and stores no net energy. What is the maximum work output?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "500 J",
+                  "B": "1000 J",
+                  "C": "750 J",
+                  "D": "1500 J",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 0.13,
+            "probabilities": {
+              "D": 0.16,
+              "B": 0.3,
+              "C": 0.26,
+              "A": 0.23,
+              "unsure": 0.05
+            },
+            "latency_seconds": 0.506184000056237,
+            "input_tokens": 578,
+            "cost_usd": 2.4276e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "עבודה מרבית ממאגרים סופיים",
+      "correct_choice": "B",
+      "correct_text": "1000 J",
+      "correct": true
+    },
+    {
+      "id": "Q34",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "1/9",
+      "confidence": 0.16,
+      "probabilities": {
+        "A": 0.32,
+        "B": 0.17,
+        "unsure": 0.06,
+        "D": 0.3,
+        "C": 0.15
+      },
+      "cost_usd": 2.52e-05,
+      "latency_seconds": 0.46951070008799434,
+      "input_tokens": 600,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:38.724558+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Two capacitors C and 2C are separately charged to voltage magnitude V, then disconnected from all batteries. They are connected in parallel with opposite polarity and allowed to settle through arbitrarily small positive wire resistance. Still connected and isolated, a dielectric of relative permittivity 3 is slowly inserted to fill only the original C capacitor, without changing plate geometry. What fraction of the total initial stored electrical energy remains stored in both at the end?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "1/9",
+                  "B": "3/5",
+                  "C": "1/15",
+                  "D": "5/9",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.16,
+            "probabilities": {
+              "A": 0.32,
+              "B": 0.17,
+              "unsure": 0.06,
+              "D": 0.3,
+              "C": 0.15
+            },
+            "latency_seconds": 0.46951070008799434,
+            "input_tokens": 600,
+            "cost_usd": 2.52e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "קבלים עם קוטביות הפוכה ודיאלקטרי",
+      "correct_choice": "C",
+      "correct_text": "1/15",
+      "correct": false
+    },
+    {
+      "id": "Q35",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "2*sqrt(2)/3",
+      "confidence": 0.44,
+      "probabilities": {
+        "B": 0.04,
+        "D": 0.06,
+        "unsure": 0.33,
+        "C": 0.01,
+        "A": 0.56
+      },
+      "cost_usd": 2.394e-05,
+      "latency_seconds": 0.46918359980918467,
+      "input_tokens": 570,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:39.102662+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A one-dimensional quantum harmonic oscillator of mass m and angular frequency omega starts in its ground state. Its frequency is suddenly doubled to 2*omega without changing m. Immediately afterwards its energy is measured. What is the probability of obtaining the NEW ground-state energy hbar*omega?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "2*sqrt(2)/3",
+                  "B": "4/5",
+                  "C": "2/3",
+                  "D": "1/sqrt(2)",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.44,
+            "probabilities": {
+              "B": 0.04,
+              "D": 0.06,
+              "unsure": 0.33,
+              "C": 0.01,
+              "A": 0.56
+            },
+            "latency_seconds": 0.46918359980918467,
+            "input_tokens": 570,
+            "cost_usd": 2.394e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "שינוי פתאומי באוסצילטור קוונטי",
+      "correct_choice": "A",
+      "correct_text": "2*sqrt(2)/3",
+      "correct": true
+    },
+    {
+      "id": "Q36",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "(4+sqrt(2))/8",
+      "confidence": 0.49,
+      "probabilities": {
+        "unsure": 0.02,
+        "A": 0.59,
+        "B": 0.04,
+        "D": 0.05,
+        "C": 0.3
+      },
+      "cost_usd": 2.5116e-05,
+      "latency_seconds": 0.5214804999995977,
+      "input_tokens": 598,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:39.186380+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A spin-1/2 particle starts in |+z>. First it evolves under Hx=(hbar*Omega/2)*sigma_x for time pi/(3*Omega), then under Hy=(hbar*Omega/2)*sigma_y for time pi/(4*Omega), without intermediate measurement. What is the probability that a final z-spin measurement gives +hbar/2?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "(4+sqrt(2))/8",
+                  "B": "3/4",
+                  "C": "(4-sqrt(2))/8",
+                  "D": "1/2",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.49,
+            "probabilities": {
+              "unsure": 0.02,
+              "A": 0.59,
+              "B": 0.04,
+              "D": 0.05,
+              "C": 0.3
+            },
+            "latency_seconds": 0.5214804999995977,
+            "input_tokens": 598,
+            "cost_usd": 2.5116e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "סיבובי ספין עוקבים",
+      "correct_choice": "A",
+      "correct_text": "(4+sqrt(2))/8",
+      "correct": true
+    },
+    {
+      "id": "Q37",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "sqrt(6)",
+      "confidence": 0.24,
+      "probabilities": {
+        "B": 0.2,
+        "D": 0.36,
+        "unsure": 0.0,
+        "A": 0.4,
+        "C": 0.04
+      },
+      "cost_usd": 2.3646e-05,
+      "latency_seconds": 0.46555359987542033,
+      "input_tokens": 563,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:39.264951+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Mass m moves in a central potential U(r)=a*r^4 with a>0. Around a circular orbit, make a small radial perturbation at fixed angular momentum. What is the ratio of the radial small-oscillation angular frequency to the original orbital angular frequency?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "sqrt(6)",
+                  "B": "2",
+                  "C": "sqrt(3)",
+                  "D": "sqrt(5)",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.24,
+            "probabilities": {
+              "B": 0.2,
+              "D": 0.36,
+              "unsure": 0.0,
+              "A": 0.4,
+              "C": 0.04
+            },
+            "latency_seconds": 0.46555359987542033,
+            "input_tokens": 563,
+            "cost_usd": 2.3646e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "יציבות בפוטנציאל מרכזי",
+      "correct_choice": "A",
+      "correct_text": "sqrt(6)",
+      "correct": true
+    },
+    {
+      "id": "Q38",
+      "status": "answered",
+      "choice": "C",
+      "answer_text": "4*r/7",
+      "confidence": 0.79,
+      "probabilities": {
+        "D": 0.05,
+        "A": 0.05,
+        "B": 0.04,
+        "unsure": 0.02,
+        "C": 0.84
+      },
+      "cost_usd": 2.3814e-05,
+      "latency_seconds": 0.5254184999503195,
+      "input_tokens": 567,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:39.580105+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A negligible-mass satellite follows a Newtonian circular orbit of radius r around mass M. An instantaneous purely tangential impulse reduces its speed to half the circular speed without changing position. Ignore all later perturbations and collisions. What is the periapsis radius of the new Kepler orbit?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "r/3",
+                  "B": "r/7",
+                  "C": "4*r/7",
+                  "D": "r/4",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "C",
+            "confidence": 0.79,
+            "probabilities": {
+              "D": 0.05,
+              "A": 0.05,
+              "B": 0.04,
+              "unsure": 0.02,
+              "C": 0.84
+            },
+            "latency_seconds": 0.5254184999503195,
+            "input_tokens": 567,
+            "cost_usd": 2.3814e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "שינוי מסלול כבידתי",
+      "correct_choice": "B",
+      "correct_text": "r/7",
+      "correct": false
+    },
+    {
+      "id": "Q39",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "(6+2*sqrt(5))/25",
+      "confidence": 0.4,
+      "probabilities": {
+        "unsure": 0.03,
+        "D": 0.04,
+        "B": 0.53,
+        "A": 0.25,
+        "C": 0.15
+      },
+      "cost_usd": 2.4486e-05,
+      "latency_seconds": 0.5296837000641972,
+      "input_tokens": 583,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:39.610817+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Five coherent monochromatic waves have the same polarization and equal individual intensity I. At a point their phases are 0,pi/5,2*pi/5,3*pi/5,4*pi/5. What is the observed intensity divided by the intensity when all five phases are equal?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "1/5",
+                  "B": "(6+2*sqrt(5))/25",
+                  "C": "(6-2*sqrt(5))/25",
+                  "D": "1/25",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 0.4,
+            "probabilities": {
+              "unsure": 0.03,
+              "D": 0.04,
+              "B": 0.53,
+              "A": 0.25,
+              "C": 0.15
+            },
+            "latency_seconds": 0.5296837000641972,
+            "input_tokens": 583,
+            "cost_usd": 2.4486e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "התאבכות חמש קרניים",
+      "correct_choice": "B",
+      "correct_text": "(6+2*sqrt(5))/25",
+      "correct": true
+    },
+    {
+      "id": "Q40",
+      "status": "answered",
+      "choice": "C",
+      "answer_text": "8/53",
+      "confidence": 0.4,
+      "probabilities": {
+        "C": 0.52,
+        "D": 0.29,
+        "B": 0.06,
+        "unsure": 0.02,
+        "A": 0.11
+      },
+      "cost_usd": 2.4234e-05,
+      "latency_seconds": 0.522482099942863,
+      "input_tokens": 577,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:39.718712+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A series circuit has ideal L and C and resistor R. At angular frequency omega, R=omega*L/2 and omega^2*L*C=2. The sinusoidal source has fixed RMS voltage. If frequency doubles while all components and RMS voltage stay unchanged, what is P_new/P_old for average power in R?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "2/7",
+                  "B": "1/4",
+                  "C": "8/53",
+                  "D": "4/13",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "C",
+            "confidence": 0.4,
+            "probabilities": {
+              "C": 0.52,
+              "D": 0.29,
+              "B": 0.06,
+              "unsure": 0.02,
+              "A": 0.11
+            },
+            "latency_seconds": 0.522482099942863,
+            "input_tokens": 577,
+            "cost_usd": 2.4234e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "מעגל RLC בשתי תדירויות",
+      "correct_choice": "C",
+      "correct_text": "8/53",
+      "correct": true
+    },
+    {
+      "id": "Q41",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "(v_t^2/(2*g))*ln(4/3)",
+      "confidence": 0.93,
+      "probabilities": {
+        "C": 0.03,
+        "unsure": 0.01,
+        "A": 0.01,
+        "B": 0.94,
+        "D": 0.01
+      },
+      "cost_usd": 2.4444e-05,
+      "latency_seconds": 0.5711369998753071,
+      "input_tokens": 582,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:39.730084+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Mass m is released from rest and falls vertically with constant g and upward drag k*v^2. Let terminal speed v_t=sqrt(m*g/k). How far has it fallen when speed first reaches v_t/2?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "v_t^2/(8*g)",
+                  "B": "(v_t^2/(2*g))*ln(4/3)",
+                  "C": "(v_t^2/(2*g))*ln(3)",
+                  "D": "(v_t^2/g)*ln(2)",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 0.93,
+            "probabilities": {
+              "C": 0.03,
+              "unsure": 0.01,
+              "A": 0.01,
+              "B": 0.94,
+              "D": 0.01
+            },
+            "latency_seconds": 0.5711369998753071,
+            "input_tokens": 582,
+            "cost_usd": 2.4444e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "נפילה עם גרר ריבועי",
+      "correct_choice": "B",
+      "correct_text": "(v_t^2/(2*g))*ln(4/3)",
+      "correct": true
+    },
+    {
+      "id": "Q42",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "sqrt(2*g/R)",
+      "confidence": 0.27,
+      "probabilities": {
+        "unsure": 0.05,
+        "B": 0.42,
+        "D": 0.14,
+        "C": 0.03,
+        "A": 0.36
+      },
+      "cost_usd": 2.4864e-05,
+      "latency_seconds": 0.4769820000510663,
+      "input_tokens": 592,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:40.102053+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A bead slides frictionlessly on a circular hoop of radius R in a vertical plane. The hoop is driven at constant angular speed omega about its vertical diameter. Gravity is g and omega^2*R=2*g. Around either stable equilibrium away from the bottom, what is the small-oscillation angular frequency relative to the hoop?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "sqrt(3*g/R)",
+                  "B": "sqrt(2*g/R)",
+                  "C": "sqrt(g/(2*R))",
+                  "D": "sqrt(3*g/(2*R))",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 0.27,
+            "probabilities": {
+              "unsure": 0.05,
+              "B": 0.42,
+              "D": 0.14,
+              "C": 0.03,
+              "A": 0.36
+            },
+            "latency_seconds": 0.4769820000510663,
+            "input_tokens": 592,
+            "cost_usd": 2.4864e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "physics",
+      "title_he": "חרוז על חישוק מסתובב",
+      "correct_choice": "D",
+      "correct_text": "sqrt(3*g/(2*R))",
+      "correct": false
+    },
+    {
+      "id": "Q43",
+      "status": "answered",
+      "choice": "D",
+      "answer_text": "Knights A,B,D,F; knaves C,E",
+      "confidence": 0.09,
+      "probabilities": {
+        "C": 0.11,
+        "B": 0.23,
+        "A": 0.27,
+        "unsure": 0.12,
+        "D": 0.27
+      },
+      "cost_usd": 2.7048e-05,
+      "latency_seconds": 0.4845581001136452,
+      "input_tokens": 644,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:40.174664+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Each of A,B,C,D,E,F is a knight who always tells the truth or a knave who always lies. A says: B and C are of different kinds. B says: Exactly two of A,D,E are knights. C says: D is a knight if and only if F is a knave. D says: Exactly one of A,E is a knight. E says: B and F are both knaves. F says: At least three of A,B,C,D,E are knights. Which assignment is consistent?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "Knights A,C,E; knaves B,D,F",
+                  "B": "Knights B,C,D; knaves A,E,F",
+                  "C": "Knights A,D,E,F; knaves B,C",
+                  "D": "Knights A,B,D,F; knaves C,E",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "D",
+            "confidence": 0.09,
+            "probabilities": {
+              "C": 0.11,
+              "B": 0.23,
+              "A": 0.27,
+              "unsure": 0.12,
+              "D": 0.27
+            },
+            "latency_seconds": 0.4845581001136452,
+            "input_tokens": 644,
+            "cost_usd": 2.7048e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "logic",
+      "title_he": "שישה דוברי אמת ושקר",
+      "correct_choice": "D",
+      "correct_text": "Knights A,B,D,F; knaves C,E",
+      "correct": true
+    },
+    {
+      "id": "Q44",
+      "status": "answered",
+      "choice": "D",
+      "answer_text": "53 minutes",
+      "confidence": 0.16,
+      "probabilities": {
+        "unsure": 0.04,
+        "D": 0.32,
+        "B": 0.24,
+        "C": 0.18,
+        "A": 0.22
+      },
+      "cost_usd": 2.4318e-05,
+      "latency_seconds": 0.5145027998369187,
+      "input_tokens": 579,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:40.249274+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Six people cross a bridge with one torch at night. Times are 1,3,8,12,17,24 minutes. At most two cross together; every crossing requires the torch. A pair takes the slower time. Someone carries the torch back when needed, at the same individual times. What is the minimum total time to get everyone across?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "51 minutes",
+                  "B": "59 minutes",
+                  "C": "55 minutes",
+                  "D": "53 minutes",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "D",
+            "confidence": 0.16,
+            "probabilities": {
+              "unsure": 0.04,
+              "D": 0.32,
+              "B": 0.24,
+              "C": 0.18,
+              "A": 0.22
+            },
+            "latency_seconds": 0.5145027998369187,
+            "input_tokens": 579,
+            "cost_usd": 2.4318e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "logic",
+      "title_he": "גשר לשישה אנשים",
+      "correct_choice": "D",
+      "correct_text": "53 minutes",
+      "correct": true
+    },
+    {
+      "id": "Q45",
+      "status": "answered",
+      "choice": "C",
+      "answer_text": "No; four weighings cannot guarantee both identifications",
+      "confidence": 0.4,
+      "probabilities": {
+        "C": 0.51,
+        "B": 0.03,
+        "D": 0.44,
+        "unsure": 0.01,
+        "A": 0.01
+      },
+      "cost_usd": 2.52e-05,
+      "latency_seconds": 0.5179377000313252,
+      "input_tokens": 600,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:40.297952+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Among 40 coins exactly one has a different weight, either heavier or lighter; all other coins have equal weight. No known genuine reference coin is supplied. With an ideal two-pan balance and adaptive weighings, can a strategy ALWAYS identify both the coin and whether it is heavier or lighter in at most four weighings?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "No finite number of weighings can do it",
+                  "B": "Yes; three weighings suffice",
+                  "C": "No; four weighings cannot guarantee both identifications",
+                  "D": "Yes; four adaptive weighings always suffice",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "C",
+            "confidence": 0.4,
+            "probabilities": {
+              "C": 0.51,
+              "B": 0.03,
+              "D": 0.44,
+              "unsure": 0.01,
+              "A": 0.01
+            },
+            "latency_seconds": 0.5179377000313252,
+            "input_tokens": 600,
+            "cost_usd": 2.52e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "logic",
+      "title_he": "מטבע חריג לא ידוע",
+      "correct_choice": "C",
+      "correct_text": "No; four weighings cannot guarantee both identifications",
+      "correct": true
+    },
+    {
+      "id": "Q46",
+      "status": "answered",
+      "choice": "C",
+      "answer_text": "199",
+      "confidence": 0.33,
+      "probabilities": {
+        "D": 0.4,
+        "A": 0.06,
+        "unsure": 0.03,
+        "C": 0.46,
+        "B": 0.05
+      },
+      "cost_usd": 2.5494e-05,
+      "latency_seconds": 0.4853795999661088,
+      "input_tokens": 607,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:40.622699+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "100 prisoners use a room with an on/off lamp initially in an unknown state. A designated counter turns it off whenever finding it on and increments a count. Each of the other 99 turns it on if finding it off, but may do so at most twice in total. No one else turns it off. Each visit is by one prisoner. What is the smallest count threshold guaranteeing that all 100 have visited when the counter announces, for any visit order and initial lamp state?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "99",
+                  "B": "100",
+                  "C": "199",
+                  "D": "198",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "C",
+            "confidence": 0.33,
+            "probabilities": {
+              "D": 0.4,
+              "A": 0.06,
+              "unsure": 0.03,
+              "C": 0.46,
+              "B": 0.05
+            },
+            "latency_seconds": 0.4853795999661088,
+            "input_tokens": 607,
+            "cost_usd": 2.5494e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "logic",
+      "title_he": "אסירים ומצב התחלתי לא ידוע",
+      "correct_choice": "D",
+      "correct_text": "198",
+      "correct": false
+    },
+    {
+      "id": "Q47",
+      "status": "answered",
+      "choice": "B",
+      "answer_text": "7/8",
+      "confidence": 0.49,
+      "probabilities": {
+        "unsure": 0.01,
+        "A": 0.01,
+        "D": 0.36,
+        "B": 0.59,
+        "C": 0.03
+      },
+      "cost_usd": 2.4108e-05,
+      "latency_seconds": 0.5045000999234617,
+      "input_tokens": 574,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:40.666135+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "Seven players independently receive fair red/blue hats. Each sees the six other hats, not their own. They agree on a deterministic strategy beforehand, then simultaneously say red, blue, or pass with no later communication. The team wins iff at least one guesses a color and every color guess is correct. What is the maximum win probability?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "1/2",
+                  "B": "7/8",
+                  "C": "3/4",
+                  "D": "15/16",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "B",
+            "confidence": 0.49,
+            "probabilities": {
+              "unsure": 0.01,
+              "A": 0.01,
+              "D": 0.36,
+              "B": 0.59,
+              "C": 0.03
+            },
+            "latency_seconds": 0.5045000999234617,
+            "input_tokens": 574,
+            "cost_usd": 2.4108e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "logic",
+      "title_he": "כובעים עם אפשרות להימנע",
+      "correct_choice": "B",
+      "correct_text": "7/8",
+      "correct": true
+    },
+    {
+      "id": "Q48",
+      "status": "answered",
+      "choice": "D",
+      "answer_text": "9",
+      "confidence": 0.56,
+      "probabilities": {
+        "unsure": 0.01,
+        "A": 0.05,
+        "D": 0.65,
+        "B": 0.1,
+        "C": 0.19
+      },
+      "cost_usd": 2.394e-05,
+      "latency_seconds": 0.6107167000882328,
+      "input_tokens": 570,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:40.769652+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "A building has 100 floors and threshold F in {0,...,100}. An egg dropped from floor <=F survives, and from floor >F breaks. You have three identical eggs; surviving eggs can be reused, broken ones cannot. Drops may be adaptive. What is the minimum worst-case number of drops to determine F exactly?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "14",
+                  "B": "10",
+                  "C": "8",
+                  "D": "9",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "D",
+            "confidence": 0.56,
+            "probabilities": {
+              "unsure": 0.01,
+              "A": 0.05,
+              "D": 0.65,
+              "B": 0.1,
+              "C": 0.19
+            },
+            "latency_seconds": 0.6107167000882328,
+            "input_tokens": 570,
+            "cost_usd": 2.394e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "logic",
+      "title_he": "בדיקת ביצים אדפטיבית",
+      "correct_choice": "D",
+      "correct_text": "9",
+      "correct": true
+    },
+    {
+      "id": "Q49",
+      "status": "answered",
+      "choice": "unsure",
+      "answer_text": "I do not know / cannot determine the answer.",
+      "confidence": 0.14,
+      "probabilities": {
+        "unsure": 0.31,
+        "B": 0.03,
+        "C": 0.19,
+        "A": 0.21,
+        "D": 0.26
+      },
+      "cost_usd": 2.3352e-05,
+      "latency_seconds": 0.5015865000896156,
+      "input_tokens": 556,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:40.852917+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "How many binary strings of length 20 contain no substring 000 and have a total number of 1 bits divisible by 3? Leading zeros are allowed; substrings do not wrap around.",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "74490",
+                  "B": "81234",
+                  "C": "74493",
+                  "D": "74496",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "unsure",
+            "confidence": 0.14,
+            "probabilities": {
+              "unsure": 0.31,
+              "B": 0.03,
+              "C": 0.19,
+              "A": 0.21,
+              "D": 0.26
+            },
+            "latency_seconds": 0.5015865000896156,
+            "input_tokens": 556,
+            "cost_usd": 2.3352e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "logic",
+      "title_he": "ספירת מחרוזות באוטומט",
+      "correct_choice": "C",
+      "correct_text": "74493",
+      "correct": false
+    },
+    {
+      "id": "Q50",
+      "status": "answered",
+      "choice": "A",
+      "answer_text": "723970",
+      "confidence": 0.19,
+      "probabilities": {
+        "C": 0.17,
+        "unsure": 0.04,
+        "D": 0.14,
+        "B": 0.3,
+        "A": 0.35
+      },
+      "cost_usd": 2.415e-05,
+      "latency_seconds": 0.46875869994983077,
+      "input_tokens": 575,
+      "attempts": [
+        {
+          "attempt": 1,
+          "started_at": "2026-09-27T13:02:41.135069+03:00",
+          "request": {
+            "model": "typesafe/jev-1.13",
+            "state": {
+              "question": "In the base-10 alphametic DONALD + GERALD = ROBERT, different letters are different digits, all ten letters use all digits 0 through 9, and D,G,R cannot be zero. What is the six-digit number ROBERT in the solution?",
+              "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+            },
+            "questions": {
+              "action": {
+                "type": "choice",
+                "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+                "criteria": {
+                  "A": "723970",
+                  "B": "724970",
+                  "C": "713970",
+                  "D": "723960",
+                  "unsure": "I do not know / cannot determine the answer."
+                }
+              }
+            }
+          },
+          "response": {
+            "choice": "A",
+            "confidence": 0.19,
+            "probabilities": {
+              "C": 0.17,
+              "unsure": 0.04,
+              "D": 0.14,
+              "B": 0.3,
+              "A": 0.35
+            },
+            "latency_seconds": 0.46875869994983077,
+            "input_tokens": 575,
+            "cost_usd": 2.415e-05,
+            "role_moves": {},
+            "role_agreement": null,
+            "tactical_review": null
+          }
+        }
+      ],
+      "difficulty": "very_hard",
+      "category": "logic",
+      "title_he": "חיבור מוצפן",
+      "correct_choice": "A",
+      "correct_text": "723970",
+      "correct": true
+    }
+  ],
+  "limitations": [
+    "Author-assigned difficulty, no human participant study.",
+    "Multiple-choice selection, not proof generation.",
+    "Small mixed-topic sample, not IQ or a standardized benchmark.",
+    "Some classical puzzles may be familiar from training.",
+    "No tools or answer-key access for JEV.",
+    "Question language English; Hebrew translation for the user."
+  ]
+}

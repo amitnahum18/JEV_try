@@ -1,0 +1,108 @@
+﻿{
+    "downloaded_at":  "2026-09-26",
+    "engine_source":  "https://github.com/LeelaChessZero/lc0/releases/download/v0.32.1/lc0-v0.32.1-windows-cpu-openblas.zip",
+    "opponents":  [
+                      {
+                          "name":  "Maia 1100",
+                          "model":  {
+                                        "id":  "maia_1100",
+                                        "name":  "Maia 1100",
+                                        "kind":  "maia",
+                                        "training_rating":  1100
+                                    },
+                          "runtime":  {
+                                          "weights":  "models\\maia\\maia-1100.pb.gz",
+                                          "weights_sha256":  "e1cf1cd0c96b8a4fa6a275f4b9fd54ed1ffebf9fe44641b9fceded310e9619c4",
+                                          "nodes_per_move":  1,
+                                          "backend":  "blas",
+                                          "engine":  {
+                                                         "name":  "Lc0 v0.32.1",
+                                                         "author":  "The LCZero Authors."
+                                                     },
+                                          "settings":  {
+                                                           "Threads":  1,
+                                                           "MinibatchSize":  1,
+                                                           "NNCacheSize":  200000
+                                                       },
+                                          "executable_sha256":  "0d843a96a03493bb8cdcca6462712ebb2371e1547fd334f593c7c10af5507909"
+                                      },
+                          "model_source":  "https://github.com/CSSLab/maia-chess/releases/download/v1.0/maia-1100.pb.gz"
+                      },
+                      {
+                          "name":  "Maia 1500",
+                          "model":  {
+                                        "id":  "maia_1500",
+                                        "name":  "Maia 1500",
+                                        "kind":  "maia",
+                                        "training_rating":  1500
+                                    },
+                          "runtime":  {
+                                          "weights":  "models\\maia\\maia-1500.pb.gz",
+                                          "weights_sha256":  "35ab6f20421d59e1df3b17c5a5016947af4c6761368ef84044a9a9c7619a9a00",
+                                          "nodes_per_move":  1,
+                                          "backend":  "blas",
+                                          "engine":  {
+                                                         "name":  "Lc0 v0.32.1",
+                                                         "author":  "The LCZero Authors."
+                                                     },
+                                          "settings":  {
+                                                           "Threads":  1,
+                                                           "MinibatchSize":  1,
+                                                           "NNCacheSize":  200000
+                                                       },
+                                          "executable_sha256":  "0d843a96a03493bb8cdcca6462712ebb2371e1547fd334f593c7c10af5507909"
+                                      },
+                          "model_source":  "https://github.com/CSSLab/maia-chess/releases/download/v1.0/maia-1500.pb.gz"
+                      },
+                      {
+                          "name":  "Maia 1900",
+                          "model":  {
+                                        "id":  "maia_1900",
+                                        "name":  "Maia 1900",
+                                        "kind":  "maia",
+                                        "training_rating":  1900
+                                    },
+                          "runtime":  {
+                                          "weights":  "models\\maia\\maia-1900.pb.gz",
+                                          "weights_sha256":  "e2f565f42d7cd9f122557e6dc4eb84e5bbaedceda1d404dc485d3611c7c97a12",
+                                          "nodes_per_move":  1,
+                                          "backend":  "blas",
+                                          "engine":  {
+                                                         "name":  "Lc0 v0.32.1",
+                                                         "author":  "The LCZero Authors."
+                                                     },
+                                          "settings":  {
+                                                           "Threads":  1,
+                                                           "MinibatchSize":  1,
+                                                           "NNCacheSize":  200000
+                                                       },
+                                          "executable_sha256":  "0d843a96a03493bb8cdcca6462712ebb2371e1547fd334f593c7c10af5507909"
+                                      },
+                          "model_source":  "https://github.com/CSSLab/maia-chess/releases/download/v1.0/maia-1900.pb.gz"
+                      },
+                      {
+                          "name":  "Stockfish (maximum skill)",
+                          "model":  {
+                                        "id":  "stockfish",
+                                        "name":  "Stockfish (maximum skill)",
+                                        "kind":  "stockfish"
+                                    },
+                          "runtime":  {
+                                          "nodes_per_move":  200000,
+                                          "skill_level":  20,
+                                          "engine":  {
+                                                         "name":  "Stockfish 19",
+                                                         "author":  "the Stockfish developers (see AUTHORS file)"
+                                                     },
+                                          "settings":  {
+                                                           "Threads":  1,
+                                                           "Hash":  64,
+                                                           "Skill Level":  20,
+                                                           "UCI_LimitStrength":  false
+                                                       },
+                                          "executable_sha256":  "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0"
+                                      },
+                          "model_source":  "https://github.com/official-stockfish/Stockfish"
+                      }
+                  ]
+}

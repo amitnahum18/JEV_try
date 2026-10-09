@@ -1,0 +1,4011 @@
+{
+  "policy": "jev",
+  "model": "typesafe/jev-1.13",
+  "physics_library": "PyFlyt 0.29.0",
+  "started_at": "2026-09-26T16:12:41.555790+03:00",
+  "timing": "Physics pauses for JEV decisions; each action lasts a fixed simulated interval.",
+  "navigation": "Six discrete choices; basic attitude/rate and speed stabilization only.",
+  "decisions": [
+    {
+      "number": 1,
+      "time_seconds": 0,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 0,
+        "gates_passed": 0,
+        "gates_total": 5,
+        "previous_action": null,
+        "aircraft": {
+          "position_world_xyz_m": [
+            0.0,
+            0.0,
+            22.0
+          ],
+          "velocity_world_xyz_m_s": [
+            20.0,
+            0.0,
+            0.0
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.0,
+            0.0,
+            0.0
+          ],
+          "speed_m_s": 20.0,
+          "roll_pitch_yaw_deg": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 1,
+            "center_m": [
+              70.0,
+              0.9137955762054641,
+              20.63132597091699
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              70.0,
+              0.914,
+              -1.369
+            ],
+            "relative_body_forward_left_up_m": [
+              70.0,
+              0.914,
+              -1.369
+            ],
+            "distance_m": 70.019,
+            "bearing_left_deg": 0.75,
+            "elevation_up_deg": -1.12,
+            "estimated_seconds_to_gate_plane": 3.5
+          },
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              145.0,
+              -1.966,
+              -0.351
+            ],
+            "relative_body_forward_left_up_m": [
+              145.0,
+              -1.966,
+              -0.351
+            ],
+            "distance_m": 145.014,
+            "bearing_left_deg": -0.78,
+            "elevation_up_deg": -0.14,
+            "estimated_seconds_to_gate_plane": 7.25
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              220.0,
+              -1.443,
+              -1.177
+            ],
+            "relative_body_forward_left_up_m": [
+              220.0,
+              -1.443,
+              -1.177
+            ],
+            "distance_m": 220.008,
+            "bearing_left_deg": -0.38,
+            "elevation_up_deg": -0.31,
+            "estimated_seconds_to_gate_plane": 11.0
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_left",
+      "confidence": 0.13,
+      "probabilities": {
+        "roll_left": 0.28,
+        "roll_right": 0.2,
+        "down": 0.09,
+        "left": 0.2,
+        "right": 0.14,
+        "up": 0.09
+      },
+      "latency_seconds": 0.6833391999825835,
+      "cost_usd": 6.0606e-05
+    },
+    {
+      "number": 2,
+      "time_seconds": 0.5,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 0.5,
+        "gates_passed": 0,
+        "gates_total": 5,
+        "previous_action": "roll_left",
+        "aircraft": {
+          "position_world_xyz_m": [
+            10.015,
+            0.111,
+            21.936
+          ],
+          "velocity_world_xyz_m_s": [
+            20.068,
+            0.69,
+            -0.171
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.08,
+            -0.135,
+            -0.141
+          ],
+          "speed_m_s": 20.081,
+          "roll_pitch_yaw_deg": [
+            -14.947,
+            0.201,
+            2.447
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            -11.887,
+            -1.142,
+            5.62
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 1,
+            "center_m": [
+              70.0,
+              0.9137955762054641,
+              20.63132597091699
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              59.985,
+              0.803,
+              -1.304
+            ],
+            "relative_body_forward_left_up_m": [
+              59.968,
+              -1.417,
+              -1.511
+            ],
+            "distance_m": 60.004,
+            "bearing_left_deg": -1.35,
+            "elevation_up_deg": -1.44,
+            "estimated_seconds_to_gate_plane": 2.989
+          },
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              134.985,
+              -2.077,
+              -0.287
+            ],
+            "relative_body_forward_left_up_m": [
+              134.773,
+              -7.621,
+              -1.842
+            ],
+            "distance_m": 135.001,
+            "bearing_left_deg": -3.24,
+            "elevation_up_deg": -0.78,
+            "estimated_seconds_to_gate_plane": 6.726
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              209.985,
+              -1.554,
+              -1.113
+            ],
+            "relative_body_forward_left_up_m": [
+              209.729,
+              -10.065,
+              -3.077
+            ],
+            "distance_m": 209.993,
+            "bearing_left_deg": -2.75,
+            "elevation_up_deg": -0.84,
+            "estimated_seconds_to_gate_plane": 10.464
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_right",
+      "confidence": 0.17,
+      "probabilities": {
+        "roll_right": 0.31,
+        "down": 0.07,
+        "left": 0.09,
+        "right": 0.13,
+        "roll_left": 0.24,
+        "up": 0.16
+      },
+      "latency_seconds": 0.6369425999000669,
+      "cost_usd": 6.5184e-05
+    },
+    {
+      "number": 3,
+      "time_seconds": 1.0,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 1.0,
+        "gates_passed": 0,
+        "gates_total": 5,
+        "previous_action": "roll_right",
+        "aircraft": {
+          "position_world_xyz_m": [
+            20.059,
+            0.624,
+            21.856
+          ],
+          "velocity_world_xyz_m_s": [
+            20.138,
+            0.891,
+            -0.09
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.153,
+            0.416,
+            -0.158
+          ],
+          "speed_m_s": 20.158,
+          "roll_pitch_yaw_deg": [
+            11.656,
+            0.053,
+            1.283
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            26.216,
+            -0.738,
+            -2.822
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 1,
+            "center_m": [
+              70.0,
+              0.9137955762054641,
+              20.63132597091699
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              49.941,
+              0.29,
+              -1.225
+            ],
+            "relative_body_forward_left_up_m": [
+              49.937,
+              -1.049,
+              -0.987
+            ],
+            "distance_m": 49.957,
+            "bearing_left_deg": -1.2,
+            "elevation_up_deg": -1.13,
+            "estimated_seconds_to_gate_plane": 2.48
+          },
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              124.941,
+              -2.59,
+              -0.207
+            ],
+            "relative_body_forward_left_up_m": [
+              124.852,
+              -5.294,
+              0.999
+            ],
+            "distance_m": 124.968,
+            "bearing_left_deg": -2.43,
+            "elevation_up_deg": 0.46,
+            "estimated_seconds_to_gate_plane": 6.204
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              199.941,
+              -2.067,
+              -1.033
+            ],
+            "relative_body_forward_left_up_m": [
+              199.846,
+              -6.58,
+              0.491
+            ],
+            "distance_m": 199.955,
+            "bearing_left_deg": -1.89,
+            "elevation_up_deg": 0.14,
+            "estimated_seconds_to_gate_plane": 9.929
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_left",
+      "confidence": 0.21,
+      "probabilities": {
+        "up": 0.09,
+        "roll_left": 0.35000000000000003,
+        "left": 0.13,
+        "roll_right": 0.27,
+        "down": 0.07,
+        "right": 0.09
+      },
+      "latency_seconds": 0.6636268000584096,
+      "cost_usd": 6.4638e-05
+    },
+    {
+      "number": 4,
+      "time_seconds": 1.5,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 1.5,
+        "gates_passed": 0,
+        "gates_total": 5,
+        "previous_action": "roll_left",
+        "aircraft": {
+          "position_world_xyz_m": [
+            30.142,
+            0.941,
+            21.824
+          ],
+          "velocity_world_xyz_m_s": [
+            20.192,
+            0.805,
+            -0.021
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.204,
+            -0.343,
+            -0.147
+          ],
+          "speed_m_s": 20.208,
+          "roll_pitch_yaw_deg": [
+            -11.892,
+            -0.147,
+            3.319
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            -23.978,
+            -0.706,
+            3.574
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 1,
+            "center_m": [
+              70.0,
+              0.9137955762054641,
+              20.63132597091699
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              39.858,
+              -0.027,
+              -1.193
+            ],
+            "relative_body_forward_left_up_m": [
+              39.786,
+              -2.017,
+              -1.748
+            ],
+            "distance_m": 39.876,
+            "bearing_left_deg": -2.9,
+            "elevation_up_deg": -2.51,
+            "estimated_seconds_to_gate_plane": 1.974
+          },
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              114.858,
+              -2.907,
+              -0.175
+            ],
+            "relative_body_forward_left_up_m": [
+              114.496,
+              -9.249,
+              -2.427
+            ],
+            "distance_m": 114.895,
+            "bearing_left_deg": -4.62,
+            "elevation_up_deg": -1.21,
+            "estimated_seconds_to_gate_plane": 5.688
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              189.858,
+              -2.384,
+              -1.001
+            ],
+            "relative_body_forward_left_up_m": [
+              189.398,
+              -12.777,
+              -4.21
+            ],
+            "distance_m": 189.875,
+            "bearing_left_deg": -3.86,
+            "elevation_up_deg": -1.27,
+            "estimated_seconds_to_gate_plane": 9.403
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_right",
+      "confidence": 0.2,
+      "probabilities": {
+        "roll_left": 0.26,
+        "up": 0.13,
+        "right": 0.13,
+        "left": 0.08,
+        "down": 0.07,
+        "roll_right": 0.33
+      },
+      "latency_seconds": 0.566451600054279,
+      "cost_usd": 6.5268e-05
+    },
+    {
+      "number": 5,
+      "time_seconds": 2.0,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 2.0,
+        "gates_passed": 0,
+        "gates_total": 5,
+        "previous_action": "roll_right",
+        "aircraft": {
+          "position_world_xyz_m": [
+            40.235,
+            1.469,
+            21.822
+          ],
+          "velocity_world_xyz_m_s": [
+            20.211,
+            0.876,
+            0.032
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.227,
+            0.348,
+            -0.144
+          ],
+          "speed_m_s": 20.23,
+          "roll_pitch_yaw_deg": [
+            12.177,
+            -0.281,
+            1.434
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            24.139,
+            -0.671,
+            -3.55
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 1,
+            "center_m": [
+              70.0,
+              0.9137955762054641,
+              20.63132597091699
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              29.765,
+              -0.555,
+              -1.19
+            ],
+            "relative_body_forward_left_up_m": [
+              29.736,
+              -1.552,
+              -1.032
+            ],
+            "distance_m": 29.794,
+            "bearing_left_deg": -2.99,
+            "elevation_up_deg": -1.98,
+            "estimated_seconds_to_gate_plane": 1.473
+          },
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              104.765,
+              -3.435,
+              -0.173
+            ],
+            "relative_body_forward_left_up_m": [
+              104.644,
+              -6.063,
+              0.608
+            ],
+            "distance_m": 104.822,
+            "bearing_left_deg": -3.32,
+            "elevation_up_deg": 0.33,
+            "estimated_seconds_to_gate_plane": 5.183
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              179.765,
+              -2.912,
+              -0.999
+            ],
+            "relative_body_forward_left_up_m": [
+              179.629,
+              -7.638,
+              -0.273
+            ],
+            "distance_m": 179.792,
+            "bearing_left_deg": -2.43,
+            "elevation_up_deg": -0.09,
+            "estimated_seconds_to_gate_plane": 8.894
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_left",
+      "confidence": 0.27,
+      "probabilities": {
+        "right": 0.1,
+        "up": 0.1,
+        "down": 0.08,
+        "roll_right": 0.21,
+        "roll_left": 0.39,
+        "left": 0.12
+      },
+      "latency_seconds": 0.6360002001747489,
+      "cost_usd": 6.489e-05
+    },
+    {
+      "number": 6,
+      "time_seconds": 2.5,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 2.5,
+        "gates_passed": 0,
+        "gates_total": 5,
+        "previous_action": "roll_left",
+        "aircraft": {
+          "position_world_xyz_m": [
+            50.344,
+            1.773,
+            21.843
+          ],
+          "velocity_world_xyz_m_s": [
+            20.22,
+            0.771,
+            0.076
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.231,
+            -0.36,
+            -0.143
+          ],
+          "speed_m_s": 20.235,
+          "roll_pitch_yaw_deg": [
+            -11.83,
+            -0.404,
+            3.264
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            -24.22,
+            -0.594,
+            3.376
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 1,
+            "center_m": [
+              70.0,
+              0.9137955762054641,
+              20.63132597091699
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              19.656,
+              -0.859,
+              -1.211
+            ],
+            "relative_body_forward_left_up_m": [
+              19.566,
+              -1.658,
+              -1.726
+            ],
+            "distance_m": 19.712,
+            "bearing_left_deg": -4.84,
+            "elevation_up_deg": -5.02,
+            "estimated_seconds_to_gate_plane": 0.972
+          },
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              94.656,
+              -3.739,
+              -0.194
+            ],
+            "relative_body_forward_left_up_m": [
+              94.286,
+              -8.752,
+              -2.711
+            ],
+            "distance_m": 94.73,
+            "bearing_left_deg": -5.3,
+            "elevation_up_deg": -1.64,
+            "estimated_seconds_to_gate_plane": 4.681
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              169.656,
+              -3.216,
+              -1.019
+            ],
+            "relative_body_forward_left_up_m": [
+              169.186,
+              -12.143,
+              -4.805
+            ],
+            "distance_m": 169.689,
+            "bearing_left_deg": -4.11,
+            "elevation_up_deg": -1.62,
+            "estimated_seconds_to_gate_plane": 8.39
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_right",
+      "confidence": 0.21,
+      "probabilities": {
+        "roll_right": 0.34,
+        "down": 0.09,
+        "left": 0.1,
+        "right": 0.15,
+        "roll_left": 0.2,
+        "up": 0.12
+      },
+      "latency_seconds": 0.6166648999787867,
+      "cost_usd": 6.489e-05
+    },
+    {
+      "number": 7,
+      "time_seconds": 3.0,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 3.0,
+        "gates_passed": 0,
+        "gates_total": 5,
+        "previous_action": "roll_right",
+        "aircraft": {
+          "position_world_xyz_m": [
+            60.446,
+            2.283,
+            21.884
+          ],
+          "velocity_world_xyz_m_s": [
+            20.221,
+            0.839,
+            0.111
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.235,
+            0.345,
+            -0.141
+          ],
+          "speed_m_s": 20.239,
+          "roll_pitch_yaw_deg": [
+            12.198,
+            -0.5,
+            1.335
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            24.031,
+            -0.601,
+            -3.573
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 1,
+            "center_m": [
+              70.0,
+              0.9137955762054641,
+              20.63132597091699
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              9.554,
+              -1.369,
+              -1.253
+            ],
+            "relative_body_forward_left_up_m": [
+              9.508,
+              -1.837,
+              -0.969
+            ],
+            "distance_m": 9.733,
+            "bearing_left_deg": -10.94,
+            "elevation_up_deg": -5.72,
+            "estimated_seconds_to_gate_plane": 0.472
+          },
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              84.554,
+              -4.249,
+              -0.235
+            ],
+            "relative_body_forward_left_up_m": [
+              84.427,
+              -6.282,
+              0.364
+            ],
+            "distance_m": 84.661,
+            "bearing_left_deg": -4.26,
+            "elevation_up_deg": 0.25,
+            "estimated_seconds_to_gate_plane": 4.182
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              159.554,
+              -3.726,
+              -1.061
+            ],
+            "relative_body_forward_left_up_m": [
+              159.409,
+              -7.792,
+              -0.823
+            ],
+            "distance_m": 159.601,
+            "bearing_left_deg": -2.8,
+            "elevation_up_deg": -0.3,
+            "estimated_seconds_to_gate_plane": 7.891
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_left",
+      "confidence": 0.34,
+      "probabilities": {
+        "roll_right": 0.2,
+        "left": 0.13,
+        "right": 0.1,
+        "down": 0.07,
+        "up": 0.06,
+        "roll_left": 0.44
+      },
+      "latency_seconds": 0.6231798999942839,
+      "cost_usd": 6.4638e-05
+    },
+    {
+      "number": 8,
+      "time_seconds": 3.5,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 3.5,
+        "gates_passed": 1,
+        "gates_total": 5,
+        "previous_action": "roll_left",
+        "aircraft": {
+          "position_world_xyz_m": [
+            70.556,
+            2.568,
+            21.941
+          ],
+          "velocity_world_xyz_m_s": [
+            20.218,
+            0.733,
+            0.144
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.228,
+            -0.36,
+            -0.142
+          ],
+          "speed_m_s": 20.232,
+          "roll_pitch_yaw_deg": [
+            -11.83,
+            -0.593,
+            3.158
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            -24.238,
+            -0.541,
+            3.367
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              74.444,
+              -4.534,
+              -0.292
+            ],
+            "relative_body_forward_left_up_m": [
+              74.074,
+              -8.228,
+              -2.805
+            ],
+            "distance_m": 74.582,
+            "bearing_left_deg": -6.34,
+            "elevation_up_deg": -2.16,
+            "estimated_seconds_to_gate_plane": 3.682
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              149.444,
+              -4.011,
+              -1.118
+            ],
+            "relative_body_forward_left_up_m": [
+              148.976,
+              -11.434,
+              -5.112
+            ],
+            "distance_m": 149.502,
+            "bearing_left_deg": -4.39,
+            "elevation_up_deg": -1.96,
+            "estimated_seconds_to_gate_plane": 7.392
+          },
+          {
+            "number": 4,
+            "center_m": [
+              295.0,
+              0.06758501389080873,
+              20.114156001496077
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              224.444,
+              -2.5,
+              -1.827
+            ],
+            "relative_body_forward_left_up_m": [
+              223.934,
+              -13.698,
+              -7.102
+            ],
+            "distance_m": 224.465,
+            "bearing_left_deg": -3.5,
+            "elevation_up_deg": -1.81,
+            "estimated_seconds_to_gate_plane": 11.101
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_right",
+      "confidence": 0.21,
+      "probabilities": {
+        "down": 0.03,
+        "up": 0.05,
+        "left": 0.12,
+        "roll_right": 0.34,
+        "right": 0.16,
+        "roll_left": 0.3
+      },
+      "latency_seconds": 0.5870298999361694,
+      "cost_usd": 6.531e-05
+    },
+    {
+      "number": 9,
+      "time_seconds": 4.0,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 4.0,
+        "gates_passed": 1,
+        "gates_total": 5,
+        "previous_action": "roll_right",
+        "aircraft": {
+          "position_world_xyz_m": [
+            80.652,
+            3.059,
+            22.014
+          ],
+          "velocity_world_xyz_m_s": [
+            20.196,
+            0.8,
+            0.168
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.209,
+            0.345,
+            -0.142
+          ],
+          "speed_m_s": 20.212,
+          "roll_pitch_yaw_deg": [
+            12.198,
+            -0.664,
+            1.227
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            24.034,
+            -0.553,
+            -3.578
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              64.348,
+              -5.025,
+              -0.365
+            ],
+            "relative_body_forward_left_up_m": [
+              64.217,
+              -6.491,
+              0.269
+            ],
+            "distance_m": 64.545,
+            "bearing_left_deg": -5.77,
+            "elevation_up_deg": 0.24,
+            "estimated_seconds_to_gate_plane": 3.186
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              139.348,
+              -4.502,
+              -1.191
+            ],
+            "relative_body_forward_left_up_m": [
+              139.197,
+              -7.908,
+              -1.158
+            ],
+            "distance_m": 139.426,
+            "bearing_left_deg": -3.25,
+            "elevation_up_deg": -0.48,
+            "estimated_seconds_to_gate_plane": 6.9
+          },
+          {
+            "number": 4,
+            "center_m": [
+              295.0,
+              0.06758501389080873,
+              20.114156001496077
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              214.348,
+              -2.991,
+              -1.9
+            ],
+            "relative_body_forward_left_up_m": [
+              214.199,
+              -8.335,
+              -2.68
+            ],
+            "distance_m": 214.377,
+            "bearing_left_deg": -2.23,
+            "elevation_up_deg": -0.72,
+            "estimated_seconds_to_gate_plane": 10.613
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_left",
+      "confidence": 0.36,
+      "probabilities": {
+        "down": 0.03,
+        "up": 0.02,
+        "left": 0.12,
+        "roll_right": 0.24,
+        "roll_left": 0.45999999999999996,
+        "right": 0.13
+      },
+      "latency_seconds": 2.04331440012902,
+      "cost_usd": 6.489e-05
+    },
+    {
+      "number": 10,
+      "time_seconds": 4.5,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 4.5,
+        "gates_passed": 1,
+        "gates_total": 5,
+        "previous_action": "roll_left",
+        "aircraft": {
+          "position_world_xyz_m": [
+            90.747,
+            3.324,
+            22.097
+          ],
+          "velocity_world_xyz_m_s": [
+            20.185,
+            0.693,
+            0.192
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.194,
+            -0.36,
+            -0.144
+          ],
+          "speed_m_s": 20.198,
+          "roll_pitch_yaw_deg": [
+            -11.825,
+            -0.735,
+            3.051
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            -24.243,
+            -0.504,
+            3.374
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              54.253,
+              -5.29,
+              -0.449
+            ],
+            "relative_body_forward_left_up_m": [
+              53.884,
+              -7.764,
+              -2.79
+            ],
+            "distance_m": 54.512,
+            "bearing_left_deg": -8.2,
+            "elevation_up_deg": -2.93,
+            "estimated_seconds_to_gate_plane": 2.688
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              129.253,
+              -4.768,
+              -1.274
+            ],
+            "relative_body_forward_left_up_m": [
+              128.789,
+              -10.794,
+              -5.251
+            ],
+            "distance_m": 129.347,
+            "bearing_left_deg": -4.79,
+            "elevation_up_deg": -2.33,
+            "estimated_seconds_to_gate_plane": 6.403
+          },
+          {
+            "number": 4,
+            "center_m": [
+              295.0,
+              0.06758501389080873,
+              20.114156001496077
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              204.253,
+              -3.257,
+              -1.983
+            ],
+            "relative_body_forward_left_up_m": [
+              203.748,
+              -12.883,
+              -7.395
+            ],
+            "distance_m": 204.289,
+            "bearing_left_deg": -3.62,
+            "elevation_up_deg": -2.07,
+            "estimated_seconds_to_gate_plane": 10.119
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_right",
+      "confidence": 0.25,
+      "probabilities": {
+        "roll_right": 0.38,
+        "down": 0.04,
+        "left": 0.1,
+        "right": 0.14,
+        "roll_left": 0.29,
+        "up": 0.05
+      },
+      "latency_seconds": 0.5805947999469936,
+      "cost_usd": 6.5352e-05
+    },
+    {
+      "number": 11,
+      "time_seconds": 5.0,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 5.0,
+        "gates_passed": 1,
+        "gates_total": 5,
+        "previous_action": "roll_right",
+        "aircraft": {
+          "position_world_xyz_m": [
+            100.826,
+            3.795,
+            22.193
+          ],
+          "velocity_world_xyz_m_s": [
+            20.167,
+            0.761,
+            0.211
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.179,
+            0.345,
+            -0.144
+          ],
+          "speed_m_s": 20.183,
+          "roll_pitch_yaw_deg": [
+            12.198,
+            -0.792,
+            1.118
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            24.076,
+            -0.536,
+            -3.591
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              44.174,
+              -5.761,
+              -0.544
+            ],
+            "relative_body_forward_left_up_m": [
+              44.041,
+              -6.716,
+              0.272
+            ],
+            "distance_m": 44.551,
+            "bearing_left_deg": -8.67,
+            "elevation_up_deg": 0.35,
+            "estimated_seconds_to_gate_plane": 2.19
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              119.174,
+              -5.238,
+              -1.37
+            ],
+            "relative_body_forward_left_up_m": [
+              119.019,
+              -8.028,
+              -1.349
+            ],
+            "distance_m": 119.297,
+            "bearing_left_deg": -3.86,
+            "elevation_up_deg": -0.65,
+            "estimated_seconds_to_gate_plane": 5.909
+          },
+          {
+            "number": 4,
+            "center_m": [
+              295.0,
+              0.06758501389080873,
+              20.114156001496077
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              194.174,
+              -3.727,
+              -2.079
+            ],
+            "relative_body_forward_left_up_m": [
+              194.017,
+              -8.351,
+              -3.066
+            ],
+            "distance_m": 194.221,
+            "bearing_left_deg": -2.46,
+            "elevation_up_deg": -0.9,
+            "estimated_seconds_to_gate_plane": 9.628
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_left",
+      "confidence": 0.39,
+      "probabilities": {
+        "roll_left": 0.49,
+        "roll_right": 0.26,
+        "left": 0.11,
+        "right": 0.1,
+        "down": 0.02,
+        "up": 0.02
+      },
+      "latency_seconds": 0.6931394999846816,
+      "cost_usd": 6.5058e-05
+    },
+    {
+      "number": 12,
+      "time_seconds": 5.5,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 5.5,
+        "gates_passed": 1,
+        "gates_total": 5,
+        "previous_action": "roll_left",
+        "aircraft": {
+          "position_world_xyz_m": [
+            110.906,
+            4.041,
+            22.297
+          ],
+          "velocity_world_xyz_m_s": [
+            20.153,
+            0.653,
+            0.232
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.161,
+            -0.36,
+            -0.146
+          ],
+          "speed_m_s": 20.165,
+          "roll_pitch_yaw_deg": [
+            -11.818,
+            -0.855,
+            2.942
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            -24.285,
+            -0.483,
+            3.382
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              34.094,
+              -6.007,
+              -0.648
+            ],
+            "relative_body_forward_left_up_m": [
+              33.727,
+              -7.349,
+              -2.714
+            ],
+            "distance_m": 34.625,
+            "bearing_left_deg": -12.29,
+            "elevation_up_deg": -4.5,
+            "estimated_seconds_to_gate_plane": 1.692
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              109.094,
+              -5.484,
+              -1.474
+            ],
+            "relative_body_forward_left_up_m": [
+              108.634,
+              -10.207,
+              -5.299
+            ],
+            "distance_m": 109.241,
+            "bearing_left_deg": -5.37,
+            "elevation_up_deg": -2.78,
+            "estimated_seconds_to_gate_plane": 5.413
+          },
+          {
+            "number": 4,
+            "center_m": [
+              295.0,
+              0.06758501389080873,
+              20.114156001496077
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              184.094,
+              -3.974,
+              -2.183
+            ],
+            "relative_body_forward_left_up_m": [
+              183.594,
+              -12.124,
+              -7.568
+            ],
+            "distance_m": 184.149,
+            "bearing_left_deg": -3.78,
+            "elevation_up_deg": -2.36,
+            "estimated_seconds_to_gate_plane": 9.135
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_left",
+      "confidence": 0.23,
+      "probabilities": {
+        "right": 0.11,
+        "roll_left": 0.35,
+        "roll_right": 0.35,
+        "left": 0.1,
+        "up": 0.05,
+        "down": 0.04
+      },
+      "latency_seconds": 0.622107099974528,
+      "cost_usd": 6.5478e-05
+    },
+    {
+      "number": 13,
+      "time_seconds": 6.0,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 6.0,
+        "gates_passed": 1,
+        "gates_total": 5,
+        "previous_action": "roll_left",
+        "aircraft": {
+          "position_world_xyz_m": [
+            120.966,
+            4.678,
+            22.389
+          ],
+          "velocity_world_xyz_m_s": [
+            20.072,
+            1.953,
+            0.112
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.166,
+            0.004,
+            -0.129
+          ],
+          "speed_m_s": 20.167,
+          "roll_pitch_yaw_deg": [
+            -17.09,
+            -0.671,
+            5.654
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            -3.247,
+            -1.604,
+            6.982
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              24.034,
+              -6.644,
+              -0.74
+            ],
+            "relative_body_forward_left_up_m": [
+              23.252,
+              -8.286,
+              -3.606
+            ],
+            "distance_m": 24.946,
+            "bearing_left_deg": -19.61,
+            "elevation_up_deg": -8.31,
+            "estimated_seconds_to_gate_plane": 1.197
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              99.034,
+              -6.121,
+              -1.566
+            ],
+            "relative_body_forward_left_up_m": [
+              97.924,
+              -14.352,
+              -7.251
+            ],
+            "distance_m": 99.235,
+            "bearing_left_deg": -8.34,
+            "elevation_up_deg": -4.19,
+            "estimated_seconds_to_gate_plane": 4.934
+          },
+          {
+            "number": 4,
+            "center_m": [
+              295.0,
+              0.06758501389080873,
+              20.114156001496077
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              174.034,
+              -4.61,
+              -2.275
+            ],
+            "relative_body_forward_left_up_m": [
+              172.695,
+              -19.512,
+              -10.496
+            ],
+            "distance_m": 174.11,
+            "bearing_left_deg": -6.45,
+            "elevation_up_deg": -3.46,
+            "estimated_seconds_to_gate_plane": 8.671
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_right",
+      "confidence": 0.24,
+      "probabilities": {
+        "left": 0.1,
+        "right": 0.13,
+        "roll_right": 0.36,
+        "roll_left": 0.3,
+        "down": 0.06,
+        "up": 0.05
+      },
+      "latency_seconds": 0.6108107001055032,
+      "cost_usd": 6.5142e-05
+    },
+    {
+      "number": 14,
+      "time_seconds": 6.5,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 6.5,
+        "gates_passed": 1,
+        "gates_total": 5,
+        "previous_action": "roll_right",
+        "aircraft": {
+          "position_world_xyz_m": [
+            130.982,
+            5.848,
+            22.455
+          ],
+          "velocity_world_xyz_m_s": [
+            20.045,
+            2.235,
+            0.224
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.165,
+            0.463,
+            -0.161
+          ],
+          "speed_m_s": 20.171,
+          "roll_pitch_yaw_deg": [
+            11.341,
+            -0.829,
+            4.983
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            27.438,
+            -0.704,
+            -2.3
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              14.018,
+              -7.814,
+              -0.806
+            ],
+            "relative_body_forward_left_up_m": [
+              13.274,
+              -9.023,
+              0.792
+            ],
+            "distance_m": 16.069,
+            "bearing_left_deg": -34.21,
+            "elevation_up_deg": 2.83,
+            "estimated_seconds_to_gate_plane": 0.699
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              89.018,
+              -7.291,
+              -1.631
+            ],
+            "relative_body_forward_left_up_m": [
+              88.016,
+              -15.274,
+              0.101
+            ],
+            "distance_m": 89.331,
+            "bearing_left_deg": -9.84,
+            "elevation_up_deg": 0.06,
+            "estimated_seconds_to_gate_plane": 4.441
+          },
+          {
+            "number": 4,
+            "center_m": [
+              295.0,
+              0.06758501389080873,
+              20.114156001496077
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              164.018,
+              -5.781,
+              -2.34
+            ],
+            "relative_body_forward_left_up_m": [
+              162.846,
+              -20.537,
+              -0.67
+            ],
+            "distance_m": 164.137,
+            "bearing_left_deg": -7.19,
+            "elevation_up_deg": -0.23,
+            "estimated_seconds_to_gate_plane": 8.182
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_left",
+      "confidence": 0.43,
+      "probabilities": {
+        "up": 0.01,
+        "roll_left": 0.53,
+        "left": 0.13,
+        "roll_right": 0.22,
+        "down": 0.02,
+        "right": 0.09
+      },
+      "latency_seconds": 0.5711247997824103,
+      "cost_usd": 6.5016e-05
+    },
+    {
+      "number": 15,
+      "time_seconds": 7.0,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 7.0,
+        "gates_passed": 1,
+        "gates_total": 5,
+        "previous_action": "roll_left",
+        "aircraft": {
+          "position_world_xyz_m": [
+            141.004,
+            6.84,
+            22.578
+          ],
+          "velocity_world_xyz_m_s": [
+            20.014,
+            2.155,
+            0.275
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.129,
+            -0.331,
+            -0.149
+          ],
+          "speed_m_s": 20.132,
+          "roll_pitch_yaw_deg": [
+            -11.967,
+            -1.002,
+            7.155
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            -23.698,
+            -0.581,
+            3.711
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              -1.9660269025492347,
+              21.64896371845008
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              3.996,
+              -8.806,
+              -0.929
+            ],
+            "relative_body_forward_left_up_m": [
+              2.851,
+              -8.832,
+              -2.873
+            ],
+            "distance_m": 9.715,
+            "bearing_left_deg": -72.11,
+            "elevation_up_deg": -17.2,
+            "estimated_seconds_to_gate_plane": 0.2
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              -1.4431686170208842,
+              20.823079409060952
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              78.996,
+              -8.283,
+              -1.755
+            ],
+            "relative_body_forward_left_up_m": [
+              77.306,
+              -17.021,
+              -6.785
+            ],
+            "distance_m": 79.448,
+            "bearing_left_deg": -12.42,
+            "elevation_up_deg": -4.9,
+            "estimated_seconds_to_gate_plane": 3.947
+          },
+          {
+            "number": 4,
+            "center_m": [
+              295.0,
+              0.06758501389080873,
+              20.114156001496077
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              153.996,
+              -6.773,
+              -2.464
+            ],
+            "relative_body_forward_left_up_m": [
+              151.887,
+              -24.276,
+              -10.381
+            ],
+            "distance_m": 154.164,
+            "bearing_left_deg": -9.08,
+            "elevation_up_deg": -3.86,
+            "estimated_seconds_to_gate_plane": 7.694
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_right",
+      "confidence": 0.21,
+      "probabilities": {
+        "up": 0.09,
+        "roll_left": 0.26,
+        "left": 0.1,
+        "roll_right": 0.34,
+        "down": 0.07,
+        "right": 0.14
+      },
+      "latency_seconds": 0.713496700162068,
+      "cost_usd": 6.5142e-05
+    }
+  ],
+  "trajectory": [
+    {
+      "time_seconds": 0.05,
+      "position_m": [
+        0.9996978943555117,
+        -2.3704572477759075e-05,
+        21.997463605965425
+      ],
+      "rpy_rad": [
+        -0.008247332980987138,
+        0.0011040153710446072,
+        0.000448894969954709
+      ]
+    },
+    {
+      "time_seconds": 0.1,
+      "position_m": [
+        1.9997006972495879,
+        6.325688505046688e-05,
+        21.992842396586454
+      ],
+      "rpy_rad": [
+        -0.03986567638413464,
+        0.0003359077973848371,
+        0.0025541981646826045
+      ]
+    },
+    {
+      "time_seconds": 0.15,
+      "position_m": [
+        3.0000513313043955,
+        0.0009802955964127375,
+        21.987019529606876
+      ],
+      "rpy_rad": [
+        -0.0854891834719137,
+        -0.00010152324446484463,
+        0.006470220970736699
+      ]
+    },
+    {
+      "time_seconds": 0.2,
+      "position_m": [
+        4.000815795082618,
+        0.0038087063143748064,
+        21.98049685338877
+      ],
+      "rpy_rad": [
+        -0.13085813620255754,
+        0.0004240369103297624,
+        0.01155324834088313
+      ]
+    },
+    {
+      "time_seconds": 0.25,
+      "position_m": [
+        5.0021105749568795,
+        0.009678988686864511,
+        21.973694386044798
+      ],
+      "rpy_rad": [
+        -0.16839896346809932,
+        0.0011028234289734542,
+        0.01711977271605141
+      ]
+    },
+    {
+      "time_seconds": 0.3,
+      "position_m": [
+        6.003912593380244,
+        0.019532156134473035,
+        21.96668379866269
+      ],
+      "rpy_rad": [
+        -0.19707545632613457,
+        0.00176563798561711,
+        0.022646875293860794
+      ]
+    },
+    {
+      "time_seconds": 0.35,
+      "position_m": [
+        7.006251373846098,
+        0.03409440808976186,
+        21.9594362969793
+      ],
+      "rpy_rad": [
+        -0.21879903610066487,
+        0.0023630905324067706,
+        0.027896888072623485
+      ]
+    },
+    {
+      "time_seconds": 0.4,
+      "position_m": [
+        8.008981776955126,
+        0.053927110953411746,
+        21.951898851666286
+      ],
+      "rpy_rad": [
+        -0.23579227375669454,
+        0.002834106088283147,
+        0.03289190021051725
+      ]
+    },
+    {
+      "time_seconds": 0.45,
+      "position_m": [
+        9.011975573183856,
+        0.07947684602989805,
+        21.943993635963256
+      ],
+      "rpy_rad": [
+        -0.2495545257790546,
+        0.003200007123180996,
+        0.037775015135807576
+      ]
+    },
+    {
+      "time_seconds": 0.5,
+      "position_m": [
+        10.015300277462499,
+        0.11111537480292565,
+        21.935645950555706
+      ],
+      "rpy_rad": [
+        -0.2608737955125052,
+        0.0035091264444594107,
+        0.04270802325306026
+      ]
+    },
+    {
+      "time_seconds": 0.55,
+      "position_m": [
+        11.018705046755493,
+        0.14908866883676652,
+        21.92679868462454
+      ],
+      "rpy_rad": [
+        -0.2614324040691511,
+        0.0035059664554316127,
+        0.04681421917341957
+      ]
+    },
+    {
+      "time_seconds": 0.6,
+      "position_m": [
+        12.022079107158213,
+        0.19337713680453208,
+        21.917477968169862
+      ],
+      "rpy_rad": [
+        -0.23180812636365836,
+        0.0025399100160671158,
+        0.04779714357998651
+      ]
+    },
+    {
+      "time_seconds": 0.65,
+      "position_m": [
+        13.025248913760842,
+        0.24345942331692558,
+        21.90775166978134
+      ],
+      "rpy_rad": [
+        -0.17126332361112212,
+        0.0011270870224815964,
+        0.04572954187846355
+      ]
+    },
+    {
+      "time_seconds": 0.7,
+      "position_m": [
+        14.028446932487874,
+        0.2981291222252169,
+        21.897880419641012
+      ],
+      "rpy_rad": [
+        -0.09156792198100072,
+        0.00019680036830994438,
+        0.04188154944735319
+      ]
+    },
+    {
+      "time_seconds": 0.75,
+      "position_m": [
+        15.031949494718335,
+        0.35556116280359035,
+        21.888386193761452
+      ],
+      "rpy_rad": [
+        -0.012020643463370222,
+        6.605465995458636e-05,
+        0.037519058299476
+      ]
+    },
+    {
+      "time_seconds": 0.8,
+      "position_m": [
+        16.03602990168086,
+        0.41376094456502177,
+        21.879790976330167
+      ],
+      "rpy_rad": [
+        0.0551234479188342,
+        0.00039661341325727864,
+        0.03349010422125077
+      ]
+    },
+    {
+      "time_seconds": 0.85,
+      "position_m": [
+        17.040762247111793,
+        0.4709351841249303,
+        21.87234632560806
+      ],
+      "rpy_rad": [
+        0.10731071566319064,
+        0.0007782883709566735,
+        0.030115938545897284
+      ]
+    },
+    {
+      "time_seconds": 0.9,
+      "position_m": [
+        18.046063886457684,
+        0.5256498842371468,
+        21.866021415871803
+      ],
+      "rpy_rad": [
+        0.14717396325687862,
+        0.0009971697172454683,
+        0.02732809800208812
+      ]
+    },
+    {
+      "time_seconds": 0.95,
+      "position_m": [
+        19.05195680957713,
+        0.5768133000754997,
+        21.86062476348791
+      ],
+      "rpy_rad": [
+        0.1783220817218385,
+        0.0010243762022244239,
+        0.024858814283585044
+      ]
+    },
+    {
+      "time_seconds": 1.0,
+      "position_m": [
+        20.058536051261754,
+        0.6235864902074818,
+        21.855907059807887
+      ],
+      "rpy_rad": [
+        0.2034367242675905,
+        0.000923464304772722,
+        0.022396354414898047
+      ]
+    },
+    {
+      "time_seconds": 1.05,
+      "position_m": [
+        21.06568472624308,
+        0.6653474322460847,
+        21.851622189336645
+      ],
+      "rpy_rad": [
+        0.2149915477097019,
+        0.0005251260912123533,
+        0.02069532108424207
+      ]
+    },
+    {
+      "time_seconds": 1.1,
+      "position_m": [
+        22.073200703391056,
+        0.7018334841426936,
+        21.847577093813115
+      ],
+      "rpy_rad": [
+        0.1936982928918509,
+        -0.0007708693246018642,
+        0.021960374789214816
+      ]
+    },
+    {
+      "time_seconds": 1.15,
+      "position_m": [
+        23.08079756026211,
+        0.7333900037348372,
+        21.84353273584099
+      ],
+      "rpy_rad": [
+        0.1394228587217972,
+        -0.0024943966112828393,
+        0.02604768204597978
+      ]
+    },
+    {
+      "time_seconds": 1.2,
+      "position_m": [
+        24.088506964254123,
+        0.7611499959772875,
+        21.83939668567495
+      ],
+      "rpy_rad": [
+        0.06517762475805218,
+        -0.0036712404337445994,
+        0.03169691544382467
+      ]
+    },
+    {
+      "time_seconds": 1.25,
+      "position_m": [
+        25.096652057392067,
+        0.7868611397020907,
+        21.835405893151236
+      ],
+      "rpy_rad": [
+        -0.009138611350821325,
+        -0.003943433610872271,
+        0.0376619578109188
+      ]
+    },
+    {
+      "time_seconds": 1.3,
+      "position_m": [
+        26.105232257900916,
+        0.8123843522139522,
+        21.831913701365934
+      ],
+      "rpy_rad": [
+        -0.07147371078870389,
+        -0.0036270172535611774,
+        0.04309241233658226
+      ]
+    },
+    {
+      "time_seconds": 1.35,
+      "position_m": [
+        27.114133746046186,
+        0.8393566742375728,
+        21.829119817644724
+      ],
+      "rpy_rad": [
+        -0.11955262898706294,
+        -0.0031673399252992243,
+        0.04766320387849655
+      ]
+    },
+    {
+      "time_seconds": 1.4,
+      "position_m": [
+        28.12329722362452,
+        0.8690771650133272,
+        21.827018973424252
+      ],
+      "rpy_rad": [
+        -0.15608545779778224,
+        -0.0028187764838794632,
+        0.05145610915971017
+      ]
+    },
+    {
+      "time_seconds": 1.45,
+      "position_m": [
+        29.132686832354384,
+        0.9025401405913523,
+        21.82547547407957
+      ],
+      "rpy_rad": [
+        -0.1845760447681783,
+        -0.0026325166882332977,
+        0.054762717233422825
+      ]
+    },
+    {
+      "time_seconds": 1.5,
+      "position_m": [
+        30.142220303758158,
+        0.9405127105552911,
+        21.82429738503497
+      ],
+      "rpy_rad": [
+        -0.20755109462101892,
+        -0.002562301637215142,
+        0.05792080985914139
+      ]
+    },
+    {
+      "time_seconds": 1.55,
+      "position_m": [
+        31.151787190042164,
+        0.983558226537161,
+        21.82329390461088
+      ],
+      "rpy_rad": [
+        -0.2172211900558065,
+        -0.0027962876055166973,
+        0.06019994357737612
+      ]
+    },
+    {
+      "time_seconds": 1.6,
+      "position_m": [
+        32.16110185397202,
+        1.0318829281141901,
+        21.82232382324076
+      ],
+      "rpy_rad": [
+        -0.19384781851236182,
+        -0.003917501509320864,
+        0.05940960900637036
+      ]
+    },
+    {
+      "time_seconds": 1.65,
+      "position_m": [
+        33.16988138201405,
+        1.085084488483784,
+        21.821212065160047
+      ],
+      "rpy_rad": [
+        -0.13735943673285678,
+        -0.005451982772855171,
+        0.0557092870944136
+      ]
+    },
+    {
+      "time_seconds": 1.7,
+      "position_m": [
+        34.17837585401081,
+        1.1420028150057397,
+        21.819942344631954
+      ],
+      "rpy_rad": [
+        -0.06152376154773074,
+        -0.006445571562206017,
+        0.0503708247580662
+      ]
+    },
+    {
+      "time_seconds": 1.75,
+      "position_m": [
+        35.18700232336367,
+        1.2008861495830476,
+        21.81880344743291
+      ],
+      "rpy_rad": [
+        0.013543248427431468,
+        -0.006570650638278065,
+        0.044658859622783105
+      ]
+    },
+    {
+      "time_seconds": 1.8,
+      "position_m": [
+        36.19589138567829,
+        1.259860818995584,
+        21.818161629813712
+      ],
+      "rpy_rad": [
+        0.07609506136233099,
+        -0.006153461116854076,
+        0.039435934287642284
+      ]
+    },
+    {
+      "time_seconds": 1.85,
+      "position_m": [
+        37.205047991260855,
+        1.317280499084697,
+        21.818201641984516
+      ],
+      "rpy_rad": [
+        0.12420958628241387,
+        -0.005629236987312107,
+        0.03503068498856205
+      ]
+    },
+    {
+      "time_seconds": 1.9,
+      "position_m": [
+        38.214525589599845,
+        1.371848677799831,
+        21.818899044476964
+      ],
+      "rpy_rad": [
+        0.160796302473598,
+        -0.005231971077406658,
+        0.03136218809679841
+      ]
+    },
+    {
+      "time_seconds": 1.95,
+      "position_m": [
+        39.22442532190886,
+        1.4225756380269896,
+        21.820101317643683
+      ],
+      "rpy_rad": [
+        0.18940978417295362,
+        -0.005006871259953482,
+        0.02813814890856917
+      ]
+    },
+    {
+      "time_seconds": 2.0,
+      "position_m": [
+        40.23479953668841,
+        1.468692721326943,
+        21.82160733403588
+      ],
+      "rpy_rad": [
+        0.2125361266501939,
+        -0.004896894502583917,
+        0.025023811187598683
+      ]
+    },
+    {
+      "time_seconds": 2.05,
+      "position_m": [
+        41.24556086742975,
+        1.5096304711824697,
+        21.82321833130026
+      ],
+      "rpy_rad": [
+        0.22247994745705552,
+        -0.005094696112774243,
+        0.022758024887116368
+      ]
+    },
+    {
+      "time_seconds": 2.1,
+      "position_m": [
+        42.25643356422564,
+        1.5451619966143393,
+        21.8247879631724
+      ],
+      "rpy_rad": [
+        0.19981593648385287,
+        -0.006197348478964423,
+        0.023542718146250988
+      ]
+    },
+    {
+      "time_seconds": 2.15,
+      "position_m": [
+        43.267206980112405,
+        1.5756503364674637,
+        21.826142496752833
+      ],
+      "rpy_rad": [
+        0.14437106564758553,
+        -0.007729101019046297,
+        0.027213977189051573
+      ]
+    },
+    {
+      "time_seconds": 2.2,
+      "position_m": [
+        44.27787940659512,
+        1.602231567058443,
+        21.827263164392033
+      ],
+      "rpy_rad": [
+        0.06911014680655982,
+        -0.008722885836729137,
+        0.03248322041216769
+      ]
+    },
+    {
+      "time_seconds": 2.25,
+      "position_m": [
+        45.288745861499976,
+        1.6266598885461765,
+        21.828449160299762
+      ],
+      "rpy_rad": [
+        -0.006026793379307845,
+        -0.008840528012845445,
+        0.03808744446987305
+      ]
+    },
+    {
+      "time_seconds": 2.3,
+      "position_m": [
+        46.29986654138676,
+        1.6508120828484343,
+        21.830090010378576
+      ],
+      "rpy_rad": [
+        -0.06896742551071136,
+        -0.008409545922760971,
+        0.04317715142733015
+      ]
+    },
+    {
+      "time_seconds": 2.35,
+      "position_m": [
+        47.31108741321494,
+        1.6763368117708262,
+        21.83239281741716
+      ],
+      "rpy_rad": [
+        -0.11750207628189578,
+        -0.00786308354783488,
+        0.04743529995830809
+      ]
+    },
+    {
+      "time_seconds": 2.4,
+      "position_m": [
+        48.322246131525944,
+        1.7045374093639705,
+        21.83534188349712
+      ],
+      "rpy_rad": [
+        -0.15441471883120397,
+        -0.007441973573562142,
+        0.05095011378654033
+      ]
+    },
+    {
+      "time_seconds": 2.45,
+      "position_m": [
+        49.33325584620637,
+        1.7364109374041474,
+        21.8387855120092
+      ],
+      "rpy_rad": [
+        -0.18323885233683865,
+        -0.007189110202393996,
+        0.05401579346762676
+      ]
+    },
+    {
+      "time_seconds": 2.5,
+      "position_m": [
+        50.344217420632916,
+        1.7727387236437588,
+        21.84252482737659
+      ],
+      "rpy_rad": [
+        -0.20647813068442802,
+        -0.00705836614306733,
+        0.056969063748225045
+      ]
+    },
+    {
+      "time_seconds": 2.55,
+      "position_m": [
+        51.35508284005298,
+        1.8140911622407134,
+        21.846365126056547
+      ],
+      "rpy_rad": [
+        -0.21632307817085927,
+        -0.007228594006771483,
+        0.05907257431901106
+      ]
+    },
+    {
+      "time_seconds": 2.6,
+      "position_m": [
+        52.365489957109716,
+        1.8606729334331213,
+        21.8501543834942
+      ],
+      "rpy_rad": [
+        -0.19300699803733481,
+        -0.008286119127100328,
+        0.05813217102962791
+      ]
+    },
+    {
+      "time_seconds": 2.65,
+      "position_m": [
+        53.3752105351455,
+        1.9120880267785179,
+        21.853706292067347
+      ],
+      "rpy_rad": [
+        -0.13649078542783527,
+        -0.00975688942893795,
+        0.05430742148410302
+      ]
+    },
+    {
+      "time_seconds": 2.7,
+      "position_m": [
+        54.384608775252,
+        1.9671858583436264,
+        21.85699843649024
+      ],
+      "rpy_rad": [
+        -0.06064050429156333,
+        -0.010683768304157881,
+        0.04886894684386349
+      ]
+    },
+    {
+      "time_seconds": 2.75,
+      "position_m": [
+        55.394051887981504,
+        2.0242182432380793,
+        21.86031569212951
+      ],
+      "rpy_rad": [
+        0.014362723137006683,
+        -0.01073379731471498,
+        0.043080010238193564
+      ]
+    },
+    {
+      "time_seconds": 2.8,
+      "position_m": [
+        56.40381106068104,
+        2.0813263370070567,
+        21.864031921049616
+      ],
+      "rpy_rad": [
+        0.07681928346804888,
+        -0.01024572573877095,
+        0.0378013476504801
+      ]
+    },
+    {
+      "time_seconds": 2.85,
+      "position_m": [
+        57.41394104841166,
+        2.1368732677017617,
+        21.868343027222178
+      ],
+      "rpy_rad": [
+        0.12483935684055024,
+        -0.00965157371199717,
+        0.033357697541208986
+      ]
+    },
+    {
+      "time_seconds": 2.9,
+      "position_m": [
+        58.42436787641261,
+        2.1895630938262114,
+        21.873228888209617
+      ],
+      "rpy_rad": [
+        0.16133286059880458,
+        -0.009186941286885025,
+        0.029663791372447713
+      ]
+    },
+    {
+      "time_seconds": 2.95,
+      "position_m": [
+        59.43505595408072,
+        2.2384070536737677,
+        21.878537573137663
+      ],
+      "rpy_rad": [
+        0.18984961988166774,
+        -0.008894438096668381,
+        0.02642398052689623
+      ]
+    },
+    {
+      "time_seconds": 3.0,
+      "position_m": [
+        60.44599859691054,
+        2.2826401240655967,
+        21.88406569845437
+      ],
+      "rpy_rad": [
+        0.2128870759915413,
+        -0.008719402774723885,
+        0.023300293002239274
+      ]
+    },
+    {
+      "time_seconds": 3.05,
+      "position_m": [
+        61.45709509157306,
+        2.3216977246014694,
+        21.88961337854527
+      ],
+      "rpy_rad": [
+        0.22274661123919076,
+        -0.008851528998093099,
+        0.021030253740617948
+      ]
+    },
+    {
+      "time_seconds": 3.1,
+      "position_m": [
+        62.46812408203934,
+        2.355357051893578,
+        21.895035694998683
+      ],
+      "rpy_rad": [
+        0.19999703176118985,
+        -0.009889552268308677,
+        0.021812883914063805
+      ]
+    },
+    {
+      "time_seconds": 3.15,
+      "position_m": [
+        63.478873183288826,
+        2.3839806853934746,
+        21.900159966836533
+      ],
+      "rpy_rad": [
+        0.14447381562166664,
+        -0.01135587784706155,
+        0.025480811718011215
+      ]
+    },
+    {
+      "time_seconds": 3.2,
+      "position_m": [
+        64.48955350216387,
+        2.408704334603021,
+        21.904981152380756
+      ],
+      "rpy_rad": [
+        0.06917435085867442,
+        -0.01228872817944773,
+        0.030741780778645457
+      ]
+    },
+    {
+      "time_seconds": 3.25,
+      "position_m": [
+        65.50041119667576,
+        2.43127566418599,
+        21.909805199808115
+      ],
+      "rpy_rad": [
+        -0.005982351072041128,
+        -0.012347939399758055,
+        0.036332973721638545
+      ]
+    },
+    {
+      "time_seconds": 3.3,
+      "position_m": [
+        66.51157784818876,
+        2.453569587675886,
+        21.915031652320348
+      ],
+      "rpy_rad": [
+        -0.0689263224367717,
+        -0.011865861082621297,
+        0.04140585970771411
+      ]
+    },
+    {
+      "time_seconds": 3.35,
+      "position_m": [
+        67.52284238715319,
+        2.477230145557917,
+        21.920869812774896
+      ],
+      "rpy_rad": [
+        -0.11746564402702349,
+        -0.011271742016794145,
+        0.04564534591329354
+      ]
+    },
+    {
+      "time_seconds": 3.4,
+      "position_m": [
+        68.5340541258345,
+        2.5035596205806794,
+        21.927307548551152
+      ],
+      "rpy_rad": [
+        -0.15438317382398714,
+        -0.010807173458338521,
+        0.04914123836647352
+      ]
+    },
+    {
+      "time_seconds": 3.45,
+      "position_m": [
+        69.54512056670598,
+        2.533553863866884,
+        21.934195025456823
+      ],
+      "rpy_rad": [
+        -0.18321161638988864,
+        -0.010514113188738655,
+        0.05218873142129121
+      ]
+    },
+    {
+      "time_seconds": 3.5,
+      "position_m": [
+        70.55604821412753,
+        2.5679876510875403,
+        21.941331727753994
+      ],
+      "rpy_rad": [
+        -0.20646725548489744,
+        -0.010341575828296175,
+        0.05512431145343536
+      ]
+    },
+    {
+      "time_seconds": 3.55,
+      "position_m": [
+        71.56681324424238,
+        2.6074318876360465,
+        21.94852280475082
+      ],
+      "rpy_rad": [
+        -0.2163276961002542,
+        -0.010472909586295877,
+        0.05721180253987672
+      ]
+    },
+    {
+      "time_seconds": 3.6,
+      "position_m": [
+        72.57707909607927,
+        2.652093524884117,
+        21.955615761809707
+      ],
+      "rpy_rad": [
+        -0.19302207499959312,
+        -0.01149237227234693,
+        0.05625780890378452
+      ]
+    },
+    {
+      "time_seconds": 3.65,
+      "position_m": [
+        73.5867274884303,
+        2.701585984094622,
+        21.96242972650627
+      ],
+      "rpy_rad": [
+        -0.13649607432350716,
+        -0.012927894245007602,
+        0.052422734409194725
+      ]
+    },
+    {
+      "time_seconds": 3.7,
+      "position_m": [
+        74.595907557624,
+        2.754748889476727,
+        21.968936404058546
+      ],
+      "rpy_rad": [
+        -0.06064954302184577,
+        -0.013813534487188674,
+        0.04697684853007439
+      ]
+    },
+    {
+      "time_seconds": 3.75,
+      "position_m": [
+        75.60493296670109,
+        2.809835056004032,
+        21.97541592015124
+      ],
+      "rpy_rad": [
+        0.014342101869341812,
+        -0.013822461853588744,
+        0.04118479142303937
+      ]
+    },
+    {
+      "time_seconds": 3.8,
+      "position_m": [
+        76.61397277590997,
+        2.864986251641408,
+        21.982232502540572
+      ],
+      "rpy_rad": [
+        0.07678242128353345,
+        -0.01328887517569259,
+        0.03590646531865903
+      ]
+    },
+    {
+      "time_seconds": 3.85,
+      "position_m": [
+        77.62316502145329,
+        2.918574407813852,
+        21.989580880135527
+      ],
+      "rpy_rad": [
+        0.12480223355044935,
+        -0.012648216259985164,
+        0.03146520209253843
+      ]
+    },
+    {
+      "time_seconds": 3.9,
+      "position_m": [
+        78.63260445212279,
+        2.96931217389901,
+        21.99744683869383
+      ],
+      "rpy_rad": [
+        0.1613235380777158,
+        -0.01214030591327349,
+        0.027773849471875414
+      ]
+    },
+    {
+      "time_seconds": 3.95,
+      "position_m": [
+        79.64217162624625,
+        3.01621019508925,
+        22.005678470803385
+      ],
+      "rpy_rad": [
+        0.18985804940633064,
+        -0.011800113964583235,
+        0.024537860952378063
+      ]
+    },
+    {
+      "time_seconds": 4.0,
+      "position_m": [
+        80.6518787965134,
+        3.0585050425349443,
+        22.014074451474272
+      ],
+      "rpy_rad": [
+        0.21290373887995612,
+        -0.01158032603664845,
+        0.021418624873080334
+      ]
+    },
+    {
+      "time_seconds": 4.05,
+      "position_m": [
+        81.66174320399573,
+        3.0956351222951257,
+        22.022440982927467
+      ],
+      "rpy_rad": [
+        0.2228011725221195,
+        -0.011671769760754508,
+        0.019152034815376993
+      ]
+    },
+    {
+      "time_seconds": 4.1,
+      "position_m": [
+        82.6714994108067,
+        3.1273761207341773,
+        22.03063423215146
+      ],
+      "rpy_rad": [
+        0.20014968882227507,
+        -0.012668188187247999,
+        0.019935042952136016
+      ]
+    },
+    {
+      "time_seconds": 4.15,
+      "position_m": [
+        83.68099249114539,
+        3.1540875025743276,
+        22.03848670363016
+      ],
+      "rpy_rad": [
+        0.14477902249796282,
+        -0.014098043060409592,
+        0.02360006079989163
+      ]
+    },
+    {
+      "time_seconds": 4.2,
+      "position_m": [
+        84.69034238796208,
+        3.1768959745555625,
+        22.045991718416257
+      ],
+      "rpy_rad": [
+        0.06958175232744318,
+        -0.014996784533399376,
+        0.028857689621042966
+      ]
+    },
+    {
+      "time_seconds": 4.25,
+      "position_m": [
+        85.69976438072568,
+        3.1975408889700287,
+        22.05345343197413
+      ],
+      "rpy_rad": [
+        -0.005585458948660322,
+        -0.015021838754633704,
+        0.03444726417702768
+      ]
+    },
+    {
+      "time_seconds": 4.3,
+      "position_m": [
+        86.70927160547676,
+        3.2178887759441817,
+        22.061264302234438
+      ],
+      "rpy_rad": [
+        -0.06863277069204986,
+        -0.014499473130666529,
+        0.03952186744601233
+      ]
+    },
+    {
+      "time_seconds": 4.35,
+      "position_m": [
+        87.7188229011313,
+        3.2395893456615457,
+        22.06963856239079
+      ],
+      "rpy_rad": [
+        -0.11727442988116689,
+        -0.013868293122083057,
+        0.04376625118272661
+      ]
+    },
+    {
+      "time_seconds": 4.4,
+      "position_m": [
+        88.72834972762577,
+        3.2639491396089078,
+        22.078570807668978
+      ],
+      "rpy_rad": [
+        -0.15425531230285927,
+        -0.013365736033047403,
+        0.047267683210531444
+      ]
+    },
+    {
+      "time_seconds": 4.45,
+      "position_m": [
+        89.73775196291126,
+        3.2919645757204616,
+        22.087915033460753
+      ],
+      "rpy_rad": [
+        -0.1831137346957735,
+        -0.013037318208331643,
+        0.05031930921815705
+      ]
+    },
+    {
+      "time_seconds": 4.5,
+      "position_m": [
+        90.74705998138073,
+        3.3244119276871373,
+        22.097476107577677
+      ],
+      "rpy_rad": [
+        -0.20638019375222993,
+        -0.012832654770402362,
+        0.05325618103293621
+      ]
+    },
+    {
+      "time_seconds": 4.55,
+      "position_m": [
+        91.75613822428346,
+        3.3618556209428667,
+        22.10705651307944
+      ],
+      "rpy_rad": [
+        -0.2162866107970211,
+        -0.012931025097602645,
+        0.0553432275935414
+      ]
+    },
+    {
+      "time_seconds": 4.6,
+      "position_m": [
+        92.7645951746575,
+        3.404500574200241,
+        22.116499887723638
+      ],
+      "rpy_rad": [
+        -0.1931237521100842,
+        -0.013916100319870705,
+        0.054391813229398456
+      ]
+    },
+    {
+      "time_seconds": 4.65,
+      "position_m": [
+        93.77239552935096,
+        3.4519693986212836,
+        22.125626413697535
+      ],
+      "rpy_rad": [
+        -0.13680440603002192,
+        -0.015322826416054447,
+        0.050562496498475995
+      ]
+    },
+    {
+      "time_seconds": 4.7,
+      "position_m": [
+        94.77975126026848,
+        3.5031129365725677,
+        22.134410628861833
+      ],
+      "rpy_rad": [
+        -0.06109155835570992,
+        -0.01618490951398226,
+        0.045121370714584295
+      ]
+    },
+    {
+      "time_seconds": 4.75,
+      "position_m": [
+        95.78702144171703,
+        3.556192515977166,
+        22.143136913484394
+      ],
+      "rpy_rad": [
+        0.013914081415610827,
+        -0.01617265172701771,
+        0.039328886993616335
+      ]
+    },
+    {
+      "time_seconds": 4.8,
+      "position_m": [
+        96.79449847717743,
+        3.609356539545434,
+        22.152180726916352
+      ],
+      "rpy_rad": [
+        0.07647995054422907,
+        -0.015620020485752058,
+        0.03404304969668538
+      ]
+    },
+    {
+      "time_seconds": 4.85,
+      "position_m": [
+        97.8021252108487,
+        3.6609674742490173,
+        22.161734469532583
+      ],
+      "rpy_rad": [
+        0.12462250696980166,
+        -0.014954432207926692,
+        0.02958961398543597
+      ]
+    },
+    {
+      "time_seconds": 4.9,
+      "position_m": [
+        98.80992078657196,
+        3.7097337184361114,
+        22.171782209111463
+      ],
+      "rpy_rad": [
+        0.16121960566363294,
+        -0.014421092294551015,
+        0.025885086238448055
+      ]
+    },
+    {
+      "time_seconds": 4.95,
+      "position_m": [
+        99.81788308015496,
+        3.754667873901639,
+        22.182175620058164
+      ],
+      "rpy_rad": [
+        0.18980718104026487,
+        -0.014060835715388449,
+        0.022637114427325997
+      ]
+    },
+    {
+      "time_seconds": 5.0,
+      "position_m": [
+        100.82609959218101,
+        3.7950064847638254,
+        22.192719470111534
+      ],
+      "rpy_rad": [
+        0.21289874174409668,
+        -0.013823300065456508,
+        0.01950882597912102
+      ]
+    },
+    {
+      "time_seconds": 5.05,
+      "position_m": [
+        101.83453110732124,
+        3.8301850859140982,
+        22.2032223776062
+      ],
+      "rpy_rad": [
+        0.22285380360997192,
+        -0.01389698487084085,
+        0.017235309485420486
+      ]
+    },
+    {
+      "time_seconds": 5.1,
+      "position_m": [
+        102.84284062452018,
+        3.8599771427320215,
+        22.21353878350565
+      ],
+      "rpy_rad": [
+        0.20031978611611995,
+        -0.014876327113966088,
+        0.01801016299991612
+      ]
+    },
+    {
+      "time_seconds": 5.15,
+      "position_m": [
+        103.85077913059064,
+        3.8847384898472113,
+        22.2234951550226
+      ],
+      "rpy_rad": [
+        0.1451110026188997,
+        -0.01628985357353169,
+        0.021667213991615995
+      ]
+    },
+    {
+      "time_seconds": 5.2,
+      "position_m": [
+        104.8585277155013,
+        3.9055916296036437,
+        22.233083663205775
+      ],
+      "rpy_rad": [
+        0.07003814297777956,
+        -0.01717793890503906,
+        0.026918677496020976
+      ]
+    },
+    {
+      "time_seconds": 5.25,
+      "position_m": [
+        105.86644838503057,
+        3.924273332609434,
+        22.242614613293092
+      ],
+      "rpy_rad": [
+        -0.00510541106356232,
+        -0.01719507434774449,
+        0.03250632792176673
+      ]
+    },
+    {
+      "time_seconds": 5.3,
+      "position_m": [
+        106.87460636785327,
+        3.9426497729800007,
+        22.252487194274842
+      ],
+      "rpy_rad": [
+        -0.06820864524253793,
+        -0.016663895141946532,
+        0.03758410326414327
+      ]
+    },
+    {
+      "time_seconds": 5.35,
+      "position_m": [
+        107.88268421982478,
+        3.9623613671558413,
+        22.262906140205235
+      ],
+      "rpy_rad": [
+        -0.1169666372484024,
+        -0.016014791050945432,
+        0.0418353960467397
+      ]
+    },
+    {
+      "time_seconds": 5.4,
+      "position_m": [
+        108.89069866603182,
+        3.98472012143783,
+        22.273866901703272
+      ],
+      "rpy_rad": [
+        -0.1540457007794376,
+        -0.015497942155397586,
+        0.04534609634425574
+      ]
+    },
+    {
+      "time_seconds": 5.45,
+      "position_m": [
+        109.89864151185697,
+        4.0107285651534195,
+        22.285228072885847
+      ],
+      "rpy_rad": [
+        -0.18295848300488438,
+        -0.015153354505963269,
+        0.048405697907165035
+      ]
+    },
+    {
+      "time_seconds": 5.5,
+      "position_m": [
+        110.90640421166245,
+        4.041156742626409,
+        22.296788750180916
+      ],
+      "rpy_rad": [
+        -0.20626661316631797,
+        -0.014929926758749016,
+        0.051347399634605204
+      ]
+    },
+    {
+      "time_seconds": 5.55,
+      "position_m": [
+        111.91390039104165,
+        4.076612688876493,
+        22.30833856621407
+      ],
+      "rpy_rad": [
+        -0.22542863224993645,
+        -0.014757849421723795,
+        0.05444576164408127
+      ]
+    },
+    {
+      "time_seconds": 5.6,
+      "position_m": [
+        112.92121732724097,
+        4.117591203265371,
+        22.319687498822113
+      ],
+      "rpy_rad": [
+        -0.24122575939688223,
+        -0.014584670379407605,
+        0.05787571037744746
+      ]
+    },
+    {
+      "time_seconds": 5.65,
+      "position_m": [
+        113.92823526849651,
+        4.164476250099735,
+        22.330662686628877
+      ],
+      "rpy_rad": [
+        -0.2542157390952648,
+        -0.01437020639095587,
+        0.06171505361911889
+      ]
+    },
+    {
+      "time_seconds": 5.7,
+      "position_m": [
+        114.93492832219451,
+        4.217578783366054,
+        22.341122553114523
+      ],
+      "rpy_rad": [
+        -0.26484675941323493,
+        -0.014107124844157149,
+        0.06597783028618578
+      ]
+    },
+    {
+      "time_seconds": 5.75,
+      "position_m": [
+        115.94126835651447,
+        4.277148171881546,
+        22.350957181296046
+      ],
+      "rpy_rad": [
+        -0.27352942390147794,
+        -0.013791715581578132,
+        0.07063962480605691
+      ]
+    },
+    {
+      "time_seconds": 5.8,
+      "position_m": [
+        116.94718004988103,
+        4.343383504797522,
+        22.360084193364557
+      ],
+      "rpy_rad": [
+        -0.2806277096634964,
+        -0.01343028054121256,
+        0.07566352259710518
+      ]
+    },
+    {
+      "time_seconds": 5.85,
+      "position_m": [
+        117.95262237050383,
+        4.416450639245225,
+        22.368448248041712
+      ],
+      "rpy_rad": [
+        -0.28643545307876744,
+        -0.01303366093441573,
+        0.08101229005517044
+      ]
+    },
+    {
+      "time_seconds": 5.9,
+      "position_m": [
+        118.95763320619879,
+        4.496494883587746,
+        22.376021052248028
+      ],
+      "rpy_rad": [
+        -0.2911811842019098,
+        -0.012612125326503123,
+        0.08665203039653356
+      ]
+    },
+    {
+      "time_seconds": 5.95,
+      "position_m": [
+        119.96207082939135,
+        4.583623540385263,
+        22.382787573493626
+      ],
+      "rpy_rad": [
+        -0.2950789406299062,
+        -0.012168569758312138,
+        0.09255151117538538
+      ]
+    },
+    {
+      "time_seconds": 6.0,
+      "position_m": [
+        120.96590734754346,
+        4.677936353075624,
+        22.38875011344477
+      ],
+      "rpy_rad": [
+        -0.29827434734041625,
+        -0.011717807517317677,
+        0.0986866439996395
+      ]
+    },
+    {
+      "time_seconds": 6.05,
+      "position_m": [
+        121.96918011059964,
+        4.779476961685585,
+        22.393941737366063
+      ],
+      "rpy_rad": [
+        -0.2922063584751174,
+        -0.01160152679647796,
+        0.10403489410499112
+      ]
+    },
+    {
+      "time_seconds": 6.1,
+      "position_m": [
+        122.97178528128073,
+        4.888047726046846,
+        22.39848640473732
+      ],
+      "rpy_rad": [
+        -0.25747544587025245,
+        -0.01250769590446863,
+        0.10619172025806502
+      ]
+    },
+    {
+      "time_seconds": 6.15,
+      "position_m": [
+        123.97353023421174,
+        5.003002971296032,
+        22.40258573741048
+      ],
+      "rpy_rad": [
+        -0.193058975985664,
+        -0.01388116799885287,
+        0.10518207523935026
+      ]
+    },
+    {
+      "time_seconds": 6.2,
+      "position_m": [
+        124.97450784136923,
+        5.123065016153292,
+        22.406655428216542
+      ],
+      "rpy_rad": [
+        -0.11000620008730619,
+        -0.014778983108548395,
+        0.10229644759548989
+      ]
+    },
+    {
+      "time_seconds": 6.25,
+      "position_m": [
+        125.97515080320616,
+        5.246363952791422,
+        22.411357825969944
+      ],
+      "rpy_rad": [
+        -0.02729956876480911,
+        -0.014911220650005018,
+        0.09882775266149713
+      ]
+    },
+    {
+      "time_seconds": 6.3,
+      "position_m": [
+        126.97576596667663,
+        5.370823000656822,
+        22.417289638299835
+      ],
+      "rpy_rad": [
+        0.04263657702667812,
+        -0.014623649358868875,
+        0.09562248587289232
+      ]
+    },
+    {
+      "time_seconds": 6.35,
+      "position_m": [
+        127.97661397736341,
+        5.494568820940534,
+        22.424712603682202
+      ],
+      "rpy_rad": [
+        0.09715488288800665,
+        -0.014324256849141336,
+        0.09298866700202021
+      ]
+    },
+    {
+      "time_seconds": 6.4,
+      "position_m": [
+        128.9778161260683,
+        5.61609783886663,
+        22.433564468662663
+      ],
+      "rpy_rad": [
+        0.13891385924231373,
+        -0.014204294326171325,
+        0.09085039193271065
+      ]
+    },
+    {
+      "time_seconds": 6.45,
+      "position_m": [
+        129.97944600205759,
+        5.734263589957675,
+        22.44360161491507
+      ],
+      "rpy_rad": [
+        0.17158935750890317,
+        -0.014275198933035766,
+        0.08894297266097137
+      ]
+    },
+    {
+      "time_seconds": 6.5,
+      "position_m": [
+        130.98155606017585,
+        5.848188111418541,
+        22.45451605229723
+      ],
+      "rpy_rad": [
+        0.19793053214400716,
+        -0.014460941936102381,
+        0.08696491468118389
+      ]
+    },
+    {
+      "time_seconds": 6.55,
+      "position_m": [
+        131.98403222463793,
+        5.9572145227019675,
+        22.466000721224066
+      ],
+      "rpy_rad": [
+        0.21042458568402736,
+        -0.014923056517688217,
+        0.08568297635914926
+      ]
+    },
+    {
+      "time_seconds": 6.6,
+      "position_m": [
+        132.986798238617,
+        6.061060172651902,
+        22.47780854215563
+      ],
+      "rpy_rad": [
+        0.1897472865368882,
+        -0.016261487677616142,
+        0.08730939836706059
+      ]
+    },
+    {
+      "time_seconds": 6.65,
+      "position_m": [
+        133.98947652567804,
+        6.160040449562702,
+        22.489629866159504
+      ],
+      "rpy_rad": [
+        0.13585567435918453,
+        -0.018006719416592022,
+        0.09170785191502755
+      ]
+    },
+    {
+      "time_seconds": 6.7,
+      "position_m": [
+        134.99207000895896,
+        6.255291563156219,
+        22.50130921511544
+      ],
+      "rpy_rad": [
+        0.061991585206605596,
+        -0.019179913460612787,
+        0.09762981517951669
+      ]
+    },
+    {
+      "time_seconds": 6.75,
+      "position_m": [
+        135.99462368028108,
+        6.3485533106274,
+        22.513025594680386
+      ],
+      "rpy_rad": [
+        -0.011919940426200228,
+        -0.019410555959028415,
+        0.10383706516236874
+      ]
+    },
+    {
+      "time_seconds": 6.8,
+      "position_m": [
+        136.99720583679107,
+        6.441680977570089,
+        22.52510439872844
+      ],
+      "rpy_rad": [
+        -0.0738549166497735,
+        -0.019025009720153852,
+        0.10947982762704606
+      ]
+    },
+    {
+      "time_seconds": 6.85,
+      "position_m": [
+        137.99960379815778,
+        6.536279093878407,
+        22.537727455617237
+      ],
+      "rpy_rad": [
+        -0.12158734852746467,
+        -0.018469838948379735,
+        0.11423344888388957
+      ]
+    },
+    {
+      "time_seconds": 6.9,
+      "position_m": [
+        139.0016097645611,
+        6.633613013585079,
+        22.550880583403284
+      ],
+      "rpy_rad": [
+        -0.15784308023318824,
+        -0.018005647098664618,
+        0.11818071478273731
+      ]
+    },
+    {
+      "time_seconds": 6.95,
+      "position_m": [
+        140.00311136561106,
+        6.734655575887651,
+        22.564422423338534
+      ],
+      "rpy_rad": [
+        -0.18610425733553404,
+        -0.017694831064008345,
+        0.12161610235999068
+      ]
+    },
+    {
+      "time_seconds": 7.0,
+      "position_m": [
+        141.00413540241902,
+        6.8401741282129835,
+        22.578166240373008
+      ],
+      "rpy_rad": [
+        -0.20886417336306237,
+        -0.01749595516998661,
+        0.12487963020538344
+      ]
+    },
+    {
+      "time_seconds": 7.05,
+      "position_m": [
+        142.00440733707342,
+        6.950696375377357,
+        22.591915139360683
+      ],
+      "rpy_rad": [
+        -0.21842723165396466,
+        -0.017592018696368842,
+        0.1272459352181318
+      ]
+    },
+    {
+      "time_seconds": 7.1,
+      "position_m": [
+        143.0037821782677,
+        7.066424133086963,
+        22.605531253436727
+      ],
+      "rpy_rad": [
+        -0.19516746025549286,
+        -0.018577172256162948,
+        0.12653903040938685
+      ]
+    },
+    {
+      "time_seconds": 7.15,
+      "position_m": [
+        144.00211263420826,
+        7.186959737690686,
+        22.61884792999749
+      ],
+      "rpy_rad": [
+        -0.13895739971241314,
+        -0.019977361186774654,
+        0.12291805899290378
+      ]
+    },
+    {
+      "time_seconds": 7.2,
+      "position_m": [
+        144.9741188695867,
+        7.249811589002388,
+        22.634929623577886
+      ],
+      "rpy_rad": [
+        -0.07067879761009138,
+        -0.025687234415800748,
+        -0.03046354224322749
+      ]
+    }
+  ],
+  "course_gates": [
+    {
+      "number": 1,
+      "center_m": [
+        70.0,
+        0.9137955762054641,
+        20.63132597091699
+      ],
+      "half_width_m": 8.0,
+      "half_height_m": 6.0
+    },
+    {
+      "number": 2,
+      "center_m": [
+        145.0,
+        -1.9660269025492347,
+        21.64896371845008
+      ],
+      "half_width_m": 8.0,
+      "half_height_m": 6.0
+    },
+    {
+      "number": 3,
+      "center_m": [
+        220.0,
+        -1.4431686170208842,
+        20.823079409060952
+      ],
+      "half_width_m": 8.0,
+      "half_height_m": 6.0
+    },
+    {
+      "number": 4,
+      "center_m": [
+        295.0,
+        0.06758501389080873,
+        20.114156001496077
+      ],
+      "half_width_m": 8.0,
+      "half_height_m": 6.0
+    },
+    {
+      "number": 5,
+      "center_m": [
+        370.0,
+        -0.4125475278115829,
+        19.967250162499404
+      ],
+      "half_width_m": 8.0,
+      "half_height_m": 6.0
+    }
+  ],
+  "replay_source": null,
+  "config": {
+    "seed": 43,
+    "level": 1,
+    "gates": 5,
+    "decision_seconds": 0.5,
+    "max_seconds": 35.0
+  },
+  "status": "collision",
+  "score": 0,
+  "gates_passed": 1,
+  "gates_total": 5,
+  "simulated_seconds": 7.2,
+  "minimum_crossing_clearance_margin_m": 4.193937848289547,
+  "final_position_m": [
+    144.9741188695867,
+    7.249811589002388,
+    22.634929623577886
+  ],
+  "gate_events": [
+    {
+      "gate": 1,
+      "time_seconds": 3.475,
+      "crossing_xyz_m": [
+        70.0,
+        2.548471610536668,
+        21.937388122627443
+      ],
+      "clearance_margin_m": 4.193937848289547
+    }
+  ],
+  "jev_cost_usd": 0.000971502,
+  "finished_at": "2026-09-26T16:12:52.877574+03:00",
+  "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\first_comparison\\jev_level1_seed43_161241_523981.json",
+  "decision_count": 15
+}

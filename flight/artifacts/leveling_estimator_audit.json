@@ -1,0 +1,36 @@
+{
+  "source_recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_full_seed42\\episode.json",
+  "note": "Offline physical controller diagnostic: recorded trajectory up to release, then zero-bank command preserving the selected pitch axis. No JEV flight score is attributed to this modified trajectory. The 2s comparison is a diagnostic, not full estimator validation.",
+  "cases": [
+    {
+      "release_time_s": 4.5,
+      "release_action": "up__straight",
+      "initial_bank_left_deg": -24.975,
+      "predicted_leveling_time_s": 0.515,
+      "observed_first_leveling_time_s": 0.6166666666666663,
+      "predicted_additional_track_turn_left_deg": -3.796,
+      "observed_track_change_after_2_seconds_deg": -5.071,
+      "prediction_error_deg": -1.275
+    },
+    {
+      "release_time_s": 7.5,
+      "release_action": "up__straight",
+      "initial_bank_left_deg": 40.044,
+      "predicted_leveling_time_s": 0.63,
+      "observed_first_leveling_time_s": 0.75,
+      "predicted_additional_track_turn_left_deg": 5.718,
+      "observed_track_change_after_2_seconds_deg": 8.601000000000003,
+      "prediction_error_deg": 2.8830000000000027
+    },
+    {
+      "release_time_s": 8.5,
+      "release_action": "down__straight",
+      "initial_bank_left_deg": 40.076,
+      "predicted_leveling_time_s": 0.63,
+      "observed_first_leveling_time_s": 0.7416666666666671,
+      "predicted_additional_track_turn_left_deg": 5.825,
+      "observed_track_change_after_2_seconds_deg": 5.231999999999999,
+      "prediction_error_deg": -0.5930000000000009
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "algorithm": "Stable-Baselines3 DQN",
+  "environment": "highway-v0",
+  "seed": 21,
+  "training_steps": 20000,
+  "n_envs": 4,
+  "lanes_count": 5,
+  "vehicles_count": 24,
+  "vehicles_density": 1.0,
+  "observation": "Kinematics, 15 vehicles, 7 normalized relative features",
+  "action": "DiscreteMetaAction with seven target speeds",
+  "reward_speed_range_m_s": [
+    20,
+    44
+  ],
+  "collision_reward": -10.0
+}

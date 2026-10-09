@@ -1,0 +1,75 @@
+{
+  "episodes": [
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_navigation_v3",
+      "prompt_version": 3,
+      "policy": "replay",
+      "model": null,
+      "telemetry": "full",
+      "physics_library": "PyFlyt 0.29.0",
+      "started_at": "2026-09-26T17:32:46.944026+03:00",
+      "timing": "Physics pauses for JEV decisions; each action lasts a fixed simulated interval.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "replay_source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\navigation_evaluation_20260926\\expanded_refresh\\single_full_seed44\\episode.json",
+      "config": {
+        "seed": 44,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "status": "out_of_bounds",
+      "score": 300,
+      "gates_passed": 3,
+      "gates_total": 5,
+      "simulated_seconds": 21.333333333333332,
+      "minimum_crossing_clearance_margin_m": 0.3835246717845173,
+      "final_position_m": [
+        382.5425280292115,
+        60.049314028544956,
+        25.88487298501002
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.766666666666667,
+          "crossing_xyz_m": [
+            95.0,
+            16.822555429292418,
+            21.978255159775692
+          ],
+          "clearance_margin_m": 3.201783795025902
+        },
+        {
+          "gate": 2,
+          "time_seconds": 10.783333333333333,
+          "crossing_xyz_m": [
+            205.0,
+            -15.216343919455557,
+            25.822640424663717
+          ],
+          "clearance_margin_m": 4.126104236111177
+        },
+        {
+          "gate": 3,
+          "time_seconds": 17.3,
+          "crossing_xyz_m": [
+            315.0,
+            14.789627274942728,
+            27.950012546059188
+          ],
+          "clearance_margin_m": 0.3835246717845173
+        }
+      ],
+      "jev_cost_usd": 0.0,
+      "finished_at": "2026-09-26T17:34:50.174295+03:00",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\display_navigation_v3\\replay_level1_seed44_173246_905438.json",
+      "decision_count": 46
+    }
+  ],
+  "note": "Controls are recorded per episode. Compare only matched seeds, action spaces and course settings. Preliminary sample, not a general intelligence score."
+}

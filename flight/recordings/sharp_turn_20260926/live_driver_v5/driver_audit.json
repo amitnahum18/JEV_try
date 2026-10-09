@@ -1,0 +1,7 @@
+{
+  "recording": "flight\\recordings\\sharp_turn_20260926\\live_driver_v5\\single_level1_seed44_175412_054150.json",
+  "physics_steps_checked": 3591,
+  "gate_transitions_checked": 5,
+  "exact_request_payloads_checked": 62,
+  "status": "passed"
+}

@@ -1,0 +1,193 @@
+{
+  "seeds": [
+    42,
+    43,
+    44,
+    45
+  ],
+  "arms": {
+    "previous": {
+      "telemetry": "previous_full",
+      "prompt": 2,
+      "refresh": false
+    },
+    "fields_only": {
+      "telemetry": "full",
+      "prompt": 2,
+      "refresh": false
+    },
+    "expanded": {
+      "telemetry": "full",
+      "prompt": 3,
+      "refresh": false
+    },
+    "expanded_refresh": {
+      "telemetry": "full",
+      "prompt": 3,
+      "refresh": true
+    }
+  },
+  "workers": 3,
+  "job_order": [
+    {
+      "arm": "fields_only",
+      "architecture": "parallel",
+      "seed": 42
+    },
+    {
+      "arm": "fields_only",
+      "architecture": "single",
+      "seed": 42
+    },
+    {
+      "arm": "expanded",
+      "architecture": "parallel",
+      "seed": 42
+    },
+    {
+      "arm": "previous",
+      "architecture": "parallel",
+      "seed": 42
+    },
+    {
+      "arm": "previous",
+      "architecture": "single",
+      "seed": 42
+    },
+    {
+      "arm": "expanded",
+      "architecture": "single",
+      "seed": 42
+    },
+    {
+      "arm": "expanded_refresh",
+      "architecture": "parallel",
+      "seed": 42
+    },
+    {
+      "arm": "expanded_refresh",
+      "architecture": "single",
+      "seed": 42
+    },
+    {
+      "arm": "fields_only",
+      "architecture": "single",
+      "seed": 43
+    },
+    {
+      "arm": "expanded_refresh",
+      "architecture": "single",
+      "seed": 43
+    },
+    {
+      "arm": "previous",
+      "architecture": "parallel",
+      "seed": 43
+    },
+    {
+      "arm": "expanded_refresh",
+      "architecture": "parallel",
+      "seed": 43
+    },
+    {
+      "arm": "previous",
+      "architecture": "single",
+      "seed": 43
+    },
+    {
+      "arm": "fields_only",
+      "architecture": "parallel",
+      "seed": 43
+    },
+    {
+      "arm": "expanded",
+      "architecture": "single",
+      "seed": 43
+    },
+    {
+      "arm": "expanded",
+      "architecture": "parallel",
+      "seed": 43
+    },
+    {
+      "arm": "fields_only",
+      "architecture": "parallel",
+      "seed": 44
+    },
+    {
+      "arm": "previous",
+      "architecture": "parallel",
+      "seed": 44
+    },
+    {
+      "arm": "expanded_refresh",
+      "architecture": "single",
+      "seed": 44
+    },
+    {
+      "arm": "fields_only",
+      "architecture": "single",
+      "seed": 44
+    },
+    {
+      "arm": "previous",
+      "architecture": "single",
+      "seed": 44
+    },
+    {
+      "arm": "expanded",
+      "architecture": "parallel",
+      "seed": 44
+    },
+    {
+      "arm": "expanded",
+      "architecture": "single",
+      "seed": 44
+    },
+    {
+      "arm": "expanded_refresh",
+      "architecture": "parallel",
+      "seed": 44
+    },
+    {
+      "arm": "expanded",
+      "architecture": "single",
+      "seed": 45
+    },
+    {
+      "arm": "expanded_refresh",
+      "architecture": "single",
+      "seed": 45
+    },
+    {
+      "arm": "fields_only",
+      "architecture": "parallel",
+      "seed": 45
+    },
+    {
+      "arm": "expanded_refresh",
+      "architecture": "parallel",
+      "seed": 45
+    },
+    {
+      "arm": "expanded",
+      "architecture": "parallel",
+      "seed": 45
+    },
+    {
+      "arm": "fields_only",
+      "architecture": "single",
+      "seed": 45
+    },
+    {
+      "arm": "previous",
+      "architecture": "parallel",
+      "seed": 45
+    },
+    {
+      "arm": "previous",
+      "architecture": "single",
+      "seed": 45
+    }
+  ]
+}

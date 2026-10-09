@@ -1,0 +1,31 @@
+{
+  "seed": 101,
+  "traffic_vehicles": 50,
+  "dqn_training_traffic_vehicles": 50,
+  "observation": "5x15 occupancy grid: 0 empty, 1 other car, 2 ego",
+  "fixed_target_speed_m_s": 44.0,
+  "action_set": [
+    "move_up",
+    "stay",
+    "move_down"
+  ],
+  "distribution_shift_stress_test": false,
+  "paired_results": [
+    {
+      "model": "DQN",
+      "mean_speed_m_s": 38.86,
+      "lane_changes": 2,
+      "collision": true,
+      "completed": false,
+      "steps": 10
+    },
+    {
+      "model": "JEV",
+      "mean_speed_m_s": 39.3,
+      "lane_changes": 2,
+      "collision": true,
+      "completed": false,
+      "steps": 22
+    }
+  ]
+}

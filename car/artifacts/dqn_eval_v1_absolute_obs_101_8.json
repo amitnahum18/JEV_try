@@ -1,0 +1,82 @@
+{
+  "summary": {
+    "episodes": 8,
+    "mean_speed_m_s": 36.71,
+    "collision_rate": 1.0,
+    "total_lane_changes": 0
+  },
+  "episodes": [
+    {
+      "seed": 101,
+      "mean_speed_m_s": 38.24,
+      "mean_speed_km_h": 137.6,
+      "reward": 16.98,
+      "lane_changes": 0,
+      "collision": true,
+      "steps": 19
+    },
+    {
+      "seed": 102,
+      "mean_speed_m_s": 38.56,
+      "mean_speed_km_h": 138.8,
+      "reward": 22.67,
+      "lane_changes": 0,
+      "collision": true,
+      "steps": 25
+    },
+    {
+      "seed": 103,
+      "mean_speed_m_s": 38.94,
+      "mean_speed_km_h": 140.2,
+      "reward": 33.12,
+      "lane_changes": 0,
+      "collision": true,
+      "steps": 36
+    },
+    {
+      "seed": 104,
+      "mean_speed_m_s": 37.75,
+      "mean_speed_km_h": 135.9,
+      "reward": 14.09,
+      "lane_changes": 0,
+      "collision": true,
+      "steps": 16
+    },
+    {
+      "seed": 105,
+      "mean_speed_m_s": 36.63,
+      "mean_speed_km_h": 131.9,
+      "reward": 8.41,
+      "lane_changes": 0,
+      "collision": true,
+      "steps": 10
+    },
+    {
+      "seed": 106,
+      "mean_speed_m_s": 31.27,
+      "mean_speed_km_h": 112.6,
+      "reward": 3.53,
+      "lane_changes": 0,
+      "collision": true,
+      "steps": 5
+    },
+    {
+      "seed": 107,
+      "mean_speed_m_s": 34.88,
+      "mean_speed_km_h": 125.6,
+      "reward": 6.42,
+      "lane_changes": 0,
+      "collision": true,
+      "steps": 8
+    },
+    {
+      "seed": 108,
+      "mean_speed_m_s": 37.42,
+      "mean_speed_km_h": 134.7,
+      "reward": 11.27,
+      "lane_changes": 0,
+      "collision": true,
+      "steps": 13
+    }
+  ]
+}

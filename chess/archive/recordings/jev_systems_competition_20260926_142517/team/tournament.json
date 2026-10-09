@@ -1,0 +1,64 @@
+{
+  "started_at": "2026-09-26T14:35:08+03:00",
+  "system": "team",
+  "jev_color": "white",
+  "promotion_rule": "Advance only after a JEV win; stop on draw, loss, API error, or move cap.",
+  "ranking_source": "ChessBench LLM leaderboard; relative benchmark ratings only.",
+  "reasoning_effort": "low (speed setting; not ChessBench-equivalent)",
+  "max_plies_per_game": 160,
+  "games": [
+    {
+      "round": 1,
+      "opponent": "Qwen3.7 Plus",
+      "jev_system": "team",
+      "model_id": "qwen/qwen3.7-plus",
+      "chessbench_rating": 1168,
+      "reasoning_effort": "low",
+      "pgn": "game_01_qwen3_7-plus.pgn",
+      "decisions": "game_01_qwen3_7-plus.json",
+      "status": "error",
+      "moves": [
+        {
+          "ply": 1,
+          "player": "JEV",
+          "fen_before": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "uci": "e2e4",
+          "san": "e4",
+          "decision_mode": "team",
+          "confidence": 0.49666666666666665,
+          "council_role_moves": {
+            "risk": "e2e4",
+            "strategy": "e2e4",
+            "tactics": "e2e4"
+          },
+          "council_agreement": 1.0,
+          "tactical_review": null,
+          "latency_seconds": 1.355,
+          "input_tokens": 4641,
+          "cost_usd": 0.000194922
+        },
+        {
+          "ply": 2,
+          "player": "Qwen3.7 Plus",
+          "fen_before": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "uci": "c7c5",
+          "san": "c5",
+          "latency_seconds": 7.328,
+          "input_tokens": 362,
+          "output_tokens": 398,
+          "cost_usd": 0.00062528,
+          "provider": "Alibaba"
+        }
+      ],
+      "result": "*",
+      "termination": "api_or_engine_error",
+      "error": "'Move' object has no attribute 'is_capture'"
+    }
+  ],
+  "completed": false,
+  "last_completed_at": "2026-09-26T14:35:18+03:00",
+  "stopped_after": "Qwen3.7 Plus",
+  "stop_reason": "error",
+  "finished_at": "2026-09-26T14:35:18+03:00",
+  "folder": "C:\\Agents_projects\\JEV_Try\\chess\\recordings\\jev_systems_competition_20260926_142517\\team"
+}

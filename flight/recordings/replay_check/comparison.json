@@ -1,0 +1,78 @@
+{
+  "episodes": [
+    {
+      "policy": "replay",
+      "model": null,
+      "physics_library": "PyFlyt 0.29.0",
+      "started_at": "2026-09-26T16:15:09.400134+03:00",
+      "timing": "Physics pauses for JEV decisions; each action lasts a fixed simulated interval.",
+      "navigation": "Six discrete choices; basic attitude/rate and speed stabilization only.",
+      "replay_source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\first_comparison\\jev_level1_seed42_161216_303912.json",
+      "config": {
+        "seed": 42,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0
+      },
+      "status": "gate_missed",
+      "score": 250,
+      "gates_passed": 3,
+      "gates_total": 5,
+      "simulated_seconds": 14.741666666666667,
+      "minimum_crossing_clearance_margin_m": -5.182619549737591,
+      "final_position_m": [
+        295.0258360090251,
+        14.861854019285694,
+        25.20218282068305
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 3.475,
+          "crossing_xyz_m": [
+            70.0,
+            2.5483927419135486,
+            21.936290742250986
+          ],
+          "clearance_margin_m": 5.380344577005172
+        },
+        {
+          "gate": 2,
+          "time_seconds": 7.2,
+          "crossing_xyz_m": [
+            145.0,
+            5.240229194796827,
+            22.708347058243543
+          ],
+          "clearance_margin_m": 5.200392348190707
+        },
+        {
+          "gate": 3,
+          "time_seconds": 10.958333333333334,
+          "crossing_xyz_m": [
+            220.0,
+            7.460749258673682,
+            23.830995583125535
+          ],
+          "clearance_margin_m": 0.6496386394562901
+        },
+        {
+          "gate": 4,
+          "time_seconds": 14.741666666666667,
+          "crossing_xyz_m": [
+            295.0,
+            14.859845659809682,
+            25.20167821152808
+          ],
+          "clearance_margin_m": -5.182619549737591
+        }
+      ],
+      "jev_cost_usd": 0.0,
+      "finished_at": "2026-09-26T16:15:12.708622+03:00",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\replay_check\\replay_level1_seed42_161509_364430.json",
+      "decision_count": 30
+    }
+  ],
+  "note": "Same seeds and course settings for JEV and random; same six controls and stabilizer. Preliminary sample, not a general intelligence score."
+}

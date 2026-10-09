@@ -1,0 +1,5 @@
+PyFlyt==0.29.0
+numpy<2
+python-dotenv
+pygame-ce>=2.5,<3
+imageio-ffmpeg>=0.6,<0.7

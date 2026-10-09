@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "payloads_checked": 50,
+  "probability_distributions_checked": 50,
+  "correct_answer_in_input": false,
+  "worked_solution_in_input": false,
+  "tools_supplied_to_jev": false,
+  "phase_order_verified": true,
+  "hard_correct_label_balance": {
+    "D": 10,
+    "B": 10,
+    "A": 10,
+    "C": 10
+  },
+  "valid_responses": 50,
+  "api_attempts": 50,
+  "grading_checked": true,
+  "exam_and_key_hashes_verified": true
+}

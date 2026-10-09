@@ -1,0 +1,60 @@
+{
+  "id": "Q34",
+  "status": "answered",
+  "choice": "A",
+  "answer_text": "1/9",
+  "confidence": 0.16,
+  "probabilities": {
+    "A": 0.32,
+    "B": 0.17,
+    "unsure": 0.06,
+    "D": 0.3,
+    "C": 0.15
+  },
+  "cost_usd": 2.52e-05,
+  "latency_seconds": 0.46951070008799434,
+  "input_tokens": 600,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:38.724558+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "Two capacitors C and 2C are separately charged to voltage magnitude V, then disconnected from all batteries. They are connected in parallel with opposite polarity and allowed to settle through arbitrarily small positive wire resistance. Still connected and isolated, a dielectric of relative permittivity 3 is slowly inserted to fill only the original C capacitor, without changing plate geometry. What fraction of the total initial stored electrical energy remains stored in both at the end?",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "1/9",
+              "B": "3/5",
+              "C": "1/15",
+              "D": "5/9",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "A",
+        "confidence": 0.16,
+        "probabilities": {
+          "A": 0.32,
+          "B": 0.17,
+          "unsure": 0.06,
+          "D": 0.3,
+          "C": 0.15
+        },
+        "latency_seconds": 0.46951070008799434,
+        "input_tokens": 600,
+        "cost_usd": 2.52e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}

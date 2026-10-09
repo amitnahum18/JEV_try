@@ -1,0 +1,93 @@
+{
+  "seeds": [
+    42,
+    43,
+    44,
+    45
+  ],
+  "level": 1,
+  "decision_seconds": 0.5,
+  "workers": 2,
+  "job_order": [
+    {
+      "seed": 42,
+      "architecture": "single",
+      "telemetry": "full"
+    },
+    {
+      "seed": 42,
+      "architecture": "parallel",
+      "telemetry": "basic"
+    },
+    {
+      "seed": 42,
+      "architecture": "parallel",
+      "telemetry": "full"
+    },
+    {
+      "seed": 42,
+      "architecture": "single",
+      "telemetry": "basic"
+    },
+    {
+      "seed": 43,
+      "architecture": "parallel",
+      "telemetry": "full"
+    },
+    {
+      "seed": 43,
+      "architecture": "single",
+      "telemetry": "basic"
+    },
+    {
+      "seed": 43,
+      "architecture": "parallel",
+      "telemetry": "basic"
+    },
+    {
+      "seed": 43,
+      "architecture": "single",
+      "telemetry": "full"
+    },
+    {
+      "seed": 44,
+      "architecture": "parallel",
+      "telemetry": "basic"
+    },
+    {
+      "seed": 44,
+      "architecture": "single",
+      "telemetry": "full"
+    },
+    {
+      "seed": 44,
+      "architecture": "parallel",
+      "telemetry": "full"
+    },
+    {
+      "seed": 44,
+      "architecture": "single",
+      "telemetry": "basic"
+    },
+    {
+      "seed": 45,
+      "architecture": "single",
+      "telemetry": "full"
+    },
+    {
+      "seed": 45,
+      "architecture": "parallel",
+      "telemetry": "basic"
+    },
+    {
+      "seed": 45,
+      "architecture": "single",
+      "telemetry": "basic"
+    },
+    {
+      "seed": 45,
+      "architecture": "parallel",
+      "telemetry": "full"
+    }
+  ]
+}

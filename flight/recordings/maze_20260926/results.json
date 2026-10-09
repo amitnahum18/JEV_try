@@ -1,0 +1,203 @@
+{
+  "episodes": [
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v2",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 5,
+      "config": {
+        "seed": 45,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 85.0,
+        "layout": "maze",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "4081269bc815be8bd46e04ef365710ea68f7a1d547615f2d950c22b7fa81e060",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926\\single_focused_seed45\\episode.json",
+      "status": "gate_missed",
+      "score": 50,
+      "gates_passed": 1,
+      "gates_total": 8,
+      "simulated_seconds": 12.666666666666666,
+      "minimum_crossing_clearance_margin_m": -0.23050714514556603,
+      "final_position_m": [
+        250.00594123940482,
+        -22.099251309351892,
+        25.28189350134204
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.716666666666667,
+          "crossing_xyz_m": [
+            95.0,
+            8.636639805276143,
+            22.13996649914192
+          ],
+          "clearance_margin_m": 2.3410539730038185
+        },
+        {
+          "gate": 2,
+          "time_seconds": 12.666666666666666,
+          "crossing_xyz_m": [
+            250.0,
+            -22.097750886057327,
+            25.2817674810953
+          ],
+          "clearance_margin_m": -0.23050714514556603
+        }
+      ],
+      "decision_count": 26,
+      "api_calls": 26,
+      "api_attempts": 26,
+      "known_cost_usd": 0.003453534,
+      "cost_complete": true,
+      "wall_seconds": 20.49871760001406,
+      "mean_decision_latency_seconds": 0.501066476930506,
+      "mean_request_bytes_per_decision": 9077.615384615385,
+      "finished_at": "2026-09-26T22:34:59.915814+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v2",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 5,
+      "config": {
+        "seed": 46,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 85.0,
+        "layout": "maze",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "46d9f8d2144233053bc71bc1ad153396bf3ef824d761ff837437485dd66ab412",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926\\single_focused_seed46\\episode.json",
+      "status": "gate_missed",
+      "score": 50,
+      "gates_passed": 1,
+      "gates_total": 8,
+      "simulated_seconds": 12.883333333333333,
+      "minimum_crossing_clearance_margin_m": -0.09572523545653766,
+      "final_position_m": [
+        250.14059903510827,
+        -20.56715938256012,
+        25.928948572708652
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.775,
+          "crossing_xyz_m": [
+            95.0,
+            16.827112771436543,
+            21.967266456981058
+          ],
+          "clearance_margin_m": 2.2464500977022457
+        },
+        {
+          "gate": 2,
+          "time_seconds": 12.883333333333333,
+          "crossing_xyz_m": [
+            250.0,
+            -20.52711597484036,
+            25.9251088544907
+          ],
+          "clearance_margin_m": -0.09572523545653766
+        }
+      ],
+      "decision_count": 27,
+      "api_calls": 27,
+      "api_attempts": 27,
+      "known_cost_usd": 0.003590496,
+      "cost_complete": true,
+      "wall_seconds": 21.870786999817938,
+      "mean_decision_latency_seconds": 0.5329486741080742,
+      "mean_request_bytes_per_decision": 9081.592592592593,
+      "finished_at": "2026-09-26T22:35:01.319277+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v2",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 5,
+      "config": {
+        "seed": 44,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 85.0,
+        "layout": "maze",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "81f210989132994fcd9b91f2aa4ece26f7955ab0639c42ac2fb02592dfab6b32",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926\\single_focused_seed44\\episode.json",
+      "status": "gate_missed",
+      "score": 50,
+      "gates_passed": 1,
+      "gates_total": 8,
+      "simulated_seconds": 12.891666666666667,
+      "minimum_crossing_clearance_margin_m": -0.06420428733397543,
+      "final_position_m": [
+        250.12410456982346,
+        -21.491100293240528,
+        25.033748241415704
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.766666666666667,
+          "crossing_xyz_m": [
+            95.0,
+            16.822555429292418,
+            21.978255159775692
+          ],
+          "clearance_margin_m": 2.5404254903440187
+        },
+        {
+          "gate": 2,
+          "time_seconds": 12.891666666666667,
+          "crossing_xyz_m": [
+            250.0,
+            -21.47027260761737,
+            25.030576262408704
+          ],
+          "clearance_margin_m": -0.06420428733397543
+        }
+      ],
+      "decision_count": 27,
+      "api_calls": 27,
+      "api_attempts": 27,
+      "known_cost_usd": 0.003598644,
+      "cost_complete": true,
+      "wall_seconds": 22.15335060004145,
+      "mean_decision_latency_seconds": 0.5326548741043856,
+      "mean_request_bytes_per_decision": 9086.888888888889,
+      "finished_at": "2026-09-26T22:35:01.575893+03:00"
+    }
+  ],
+  "completed": 0,
+  "attempts_finished": 3,
+  "planned_attempts": 3,
+  "note": "Exploratory attempts, not a reliability estimate. Selection for video is identified explicitly."
+}

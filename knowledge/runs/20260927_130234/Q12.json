@@ -1,0 +1,60 @@
+{
+  "id": "Q12",
+  "status": "answered",
+  "choice": "B",
+  "answer_text": "121393",
+  "confidence": 0.38,
+  "probabilities": {
+    "D": 0.08,
+    "A": 0.25,
+    "unsure": 0.06,
+    "C": 0.11,
+    "B": 0.5
+  },
+  "cost_usd": 2.3184e-05,
+  "latency_seconds": 0.49142859992571175,
+  "input_tokens": 552,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:35.960470+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "A 12 by 12 matrix has 3 on its main diagonal, -1 immediately above and below that diagonal, and 0 elsewhere. What is its determinant?",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "317811",
+              "B": "121393",
+              "C": "196418",
+              "D": "75025",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "B",
+        "confidence": 0.38,
+        "probabilities": {
+          "D": 0.08,
+          "A": 0.25,
+          "unsure": 0.06,
+          "C": 0.11,
+          "B": 0.5
+        },
+        "latency_seconds": 0.49142859992571175,
+        "input_tokens": 552,
+        "cost_usd": 2.3184e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}

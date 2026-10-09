@@ -1,0 +1,305 @@
+{
+  "created_at": "2026-09-26T22:34:38.184526+03:00",
+  "jobs": [
+    [
+      {
+        "seed": 44,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 85.0,
+        "layout": "maze",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926",
+      5
+    ],
+    [
+      {
+        "seed": 45,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 85.0,
+        "layout": "maze",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926",
+      5
+    ],
+    [
+      {
+        "seed": 46,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 85.0,
+        "layout": "maze",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926",
+      5
+    ]
+  ],
+  "actions": 15,
+  "architecture": "single",
+  "prompt_version": 5,
+  "course_examples": {
+    "44": [
+      {
+        "number": 1,
+        "center_m": [
+          95.0,
+          12.612980919636437,
+          23.886924873385357
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 2,
+        "center_m": [
+          250.0,
+          -17.249305682968924,
+          30.59478054974268
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 3,
+        "center_m": [
+          380.0,
+          25.571669877690834,
+          19.595654325285278
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 4,
+        "center_m": [
+          540.0,
+          -24.259260881654534,
+          34.21326738085664
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 5,
+        "center_m": [
+          685.0,
+          7.186454674502254,
+          17.5459233968822
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 6,
+        "center_m": [
+          845.0,
+          26.8582412493878,
+          28.527570174374073
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 7,
+        "center_m": [
+          1000.0,
+          -19.317202091594304,
+          36.25868609033144
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 8,
+        "center_m": [
+          1160.0,
+          12.23113937728535,
+          22.356879160066516
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      }
+    ],
+    "45": [
+      {
+        "number": 1,
+        "center_m": [
+          95.0,
+          13.045585832272325,
+          24.31638028776231
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 2,
+        "center_m": [
+          250.0,
+          -17.50129157278463,
+          31.012274626240867
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 3,
+        "center_m": [
+          380.0,
+          25.44694347583646,
+          20.355335965352054
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 4,
+        "center_m": [
+          540.0,
+          -23.848391993054612,
+          33.890293656275134
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 5,
+        "center_m": [
+          685.0,
+          7.2740423036876765,
+          17.152961395824306
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 6,
+        "center_m": [
+          845.0,
+          27.54413176917308,
+          28.268996186215322
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 7,
+        "center_m": [
+          1000.0,
+          -19.953570546977527,
+          36.55687910623076
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 8,
+        "center_m": [
+          1160.0,
+          12.950006731408623,
+          22.3733271597184
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      }
+    ],
+    "46": [
+      {
+        "number": 1,
+        "center_m": [
+          95.0,
+          12.323562869138788,
+          23.727083707102366
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 2,
+        "center_m": [
+          250.0,
+          -17.805039228406187,
+          31.520834089947236
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 3,
+        "center_m": [
+          380.0,
+          24.335914859102044,
+          20.155075720073555
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 4,
+        "center_m": [
+          540.0,
+          -23.559085205641182,
+          34.01373221452385
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 5,
+        "center_m": [
+          685.0,
+          7.3976123498600055,
+          17.45658977312745
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 6,
+        "center_m": [
+          845.0,
+          26.998634626929512,
+          28.35388613944362
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 7,
+        "center_m": [
+          1000.0,
+          -20.711724337274067,
+          36.276431018567735
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 8,
+        "center_m": [
+          1160.0,
+          13.436644372032076,
+          21.479763922221697
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      }
+    ]
+  },
+  "note": "Same single JEV, choice output, controls and prompt as previous successful version. New seeded walls, heights and winding gate geometry. Preserve every attempt."
+}

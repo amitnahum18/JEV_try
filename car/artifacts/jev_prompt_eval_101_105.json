@@ -1,0 +1,59 @@
+{
+  "agent": "JEV",
+  "grid_shape": [
+    5,
+    31
+  ],
+  "lookahead_m": 300,
+  "traffic_vehicles": 50,
+  "seed_start": 101,
+  "episodes": [
+    {
+      "seed": 101,
+      "steps": 22,
+      "mean_speed_m_s": 39.3,
+      "lane_changes": 2,
+      "collision": true,
+      "completed": false,
+      "jev_decisions": 4
+    },
+    {
+      "seed": 102,
+      "steps": 28,
+      "mean_speed_m_s": 39.75,
+      "lane_changes": 1,
+      "collision": true,
+      "completed": false,
+      "jev_decisions": 6
+    },
+    {
+      "seed": 103,
+      "steps": 21,
+      "mean_speed_m_s": 39.46,
+      "lane_changes": 0,
+      "collision": true,
+      "completed": false,
+      "jev_decisions": 3
+    },
+    {
+      "seed": 104,
+      "steps": 48,
+      "mean_speed_m_s": 39.68,
+      "lane_changes": 5,
+      "collision": true,
+      "completed": false,
+      "jev_decisions": 7
+    },
+    {
+      "seed": 105,
+      "steps": 21,
+      "mean_speed_m_s": 39.27,
+      "lane_changes": 2,
+      "collision": true,
+      "completed": false,
+      "jev_decisions": 4
+    }
+  ],
+  "collision_rate": 1.0,
+  "mean_speed_m_s": 39.49
+}

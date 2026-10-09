@@ -1,0 +1,9 @@
+﻿system,opponent,status,result,plies,jev_cost_usd,average_jev_wall_seconds,pgn
+single,Maia 1100,loss,0-1,28,0.000992838,0.7367582714318165,single/maia_1100.pgn
+single,Maia 1500,loss,0-1,30,0.001084188,0.6663579733421405,single/maia_1500.pgn
+single,Maia 1900,loss,0-1,34,0.00120351,0.6559976118014139,single/maia_1900.pgn
+single,Stockfish (maximum skill),loss,0-1,32,0.001139166,0.6677868812257657,single/stockfish.pgn
+team,Maia 1100,loss,0-1,24,0.003167304,0.9905244500259869,team/maia_1100.pgn
+team,Maia 1500,loss,0-1,36,0.0044358719999999996,0.9537913666443072,team/maia_1500.pgn
+team,Maia 1900,loss,0-1,18,0.002370648,0.9385235444383903,team/maia_1900.pgn
+team,Stockfish (maximum skill),loss,0-1,24,0.003368274,1.0750014499838774,team/stockfish.pgn

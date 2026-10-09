@@ -1,0 +1,213 @@
+{
+  "requests": {
+    "joint": {
+      "model": "typesafe/jev-1.13",
+      "state": {
+        "schema": "flight_opening_context_v2",
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 29.992,
+        "gates_passed": 4,
+        "gates_total": 5,
+        "conventions": "Positive angles and rates mean LEFT or UP; negative mean RIGHT or DOWN. All directions are world motion directions, not rolled body axes. The display camera does not limit gate data.",
+        "motion": {
+          "position_world_xyz_m": [
+            530.675,
+            -12.409,
+            22.089
+          ],
+          "velocity_world_xyz_m_s": [
+            12.064,
+            -15.717,
+            1.158
+          ],
+          "speed_m_s": 19.847,
+          "bank_left_deg": -0.194,
+          "nose_up_pitch_deg": 3.781,
+          "velocity_track_left_deg": -52.491,
+          "flight_path_climb_angle_deg": 3.344,
+          "climb_rate_m_s": 1.158
+        },
+        "measured_rates": {
+          "bank_left_rate_deg_s": 0.065,
+          "track_turn_rate_left_deg_s": -0.101,
+          "flight_path_angle_rate_up_deg_s": -0.337
+        },
+        "target": {
+          "number": 5,
+          "distance_to_plane_m": 4.325,
+          "seconds_to_plane_if_velocity_unchanged": 0.359,
+          "position_error_left_up_m": [
+            -1.74,
+            -3.188
+          ],
+          "center_direction_left_up_deg": [
+            -21.908,
+            -34.367
+          ],
+          "center_error_from_motion_left_up_deg": [
+            30.583,
+            -37.711
+          ],
+          "track_window_left_deg": [
+            -63.005,
+            49.197
+          ],
+          "climb_window_up_deg": [
+            -50.731,
+            18.03
+          ],
+          "horizontal_gap_left_deg": 0.0,
+          "vertical_gap_up_deg": 0.0,
+          "horizontal_gap_if_leveled_now_left_deg": 0.0,
+          "crossing_error_left_up_m": [
+            3.896,
+            -3.603
+          ],
+          "crossing_clearance_left_up_m": [
+            2.854,
+            1.897
+          ],
+          "opening_half_width_height_with_aircraft_margin_m": [
+            6.75,
+            5.5
+          ],
+          "geometry_note": "Window gaps measure correction to ANY safe direction through the opening, not its center. Zero means current constant motion passes inside that axis. Windows move as the plane moves. No camera visibility filter.",
+          "preferred_interior_margin_m": 1.0,
+          "preferred_track_window_left_deg": [
+            -59.996,
+            42.836
+          ],
+          "preferred_climb_window_up_deg": [
+            -47.264,
+            10.465
+          ],
+          "horizontal_gap_to_interior_left_deg": 0.0,
+          "vertical_gap_to_interior_up_deg": 0.0,
+          "horizontal_gap_to_interior_if_leveled_left_deg": 0.0,
+          "interior_note": "A preferred 1m extra clearance buffer, not a changed gate size or scoring rule. The original opening windows and crossing clearances remain the actual pass condition."
+        },
+        "target_update": {
+          "active_gate_number": 5,
+          "last_passed_gate": 4,
+          "last_pass_time_seconds": 23.491667,
+          "active_gate_since_seconds": 23.491667,
+          "seconds_since_target_became_active": 6.5,
+          "decision_refresh_on_gate_pass": true,
+          "previous_decision_gate_number": 5,
+          "changed_since_previous_decision": false
+        },
+        "upcoming_gates": [
+          {
+            "number": 5,
+            "center_m": [
+              535.0,
+              -14.1488421863133,
+              18.900896178039716
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0
+          }
+        ],
+        "following_transition": null,
+        "measured_recent_responses": [
+          {
+            "action": "level__straight",
+            "target_number": 5,
+            "duration_seconds": 0.5,
+            "bank_left_start_end_deg": [
+              -27.591,
+              -4.853
+            ],
+            "track_change_left_deg": -4.38,
+            "mean_track_turn_left_deg_s": -8.76,
+            "climb_angle_change_up_deg": 2.275
+          },
+          {
+            "action": "level__straight",
+            "target_number": 5,
+            "duration_seconds": 0.5,
+            "bank_left_start_end_deg": [
+              -4.853,
+              -0.834
+            ],
+            "track_change_left_deg": -0.599,
+            "mean_track_turn_left_deg_s": -1.198,
+            "climb_angle_change_up_deg": 1.266
+          },
+          {
+            "action": "level__straight",
+            "target_number": 5,
+            "duration_seconds": 0.5,
+            "bank_left_start_end_deg": [
+              -0.834,
+              -0.274
+            ],
+            "track_change_left_deg": -0.118,
+            "mean_track_turn_left_deg_s": -0.236,
+            "climb_angle_change_up_deg": 0.271
+          },
+          {
+            "action": "level__straight",
+            "target_number": 5,
+            "duration_seconds": 0.5,
+            "bank_left_start_end_deg": [
+              -0.274,
+              -0.194
+            ],
+            "track_change_left_deg": -0.056,
+            "mean_track_turn_left_deg_s": -0.112,
+            "climb_angle_change_up_deg": -0.091
+          }
+        ],
+        "boundary": {
+          "lateral_limits_world_m": [
+            -60,
+            60
+          ],
+          "remaining_left_right_m": [
+            72.409,
+            47.591
+          ],
+          "seconds_to_side_boundary_if_velocity_unchanged": 3.028
+        },
+        "control": {
+          "action_duration_seconds": 0.5,
+          "bank_moderate_strong_deg": [
+            25,
+            40
+          ],
+          "pitch_up_level_down_nose_up_deg": [
+            6,
+            2,
+            -6
+          ],
+          "estimated_extra_turn_if_leveled_left_deg": -0.024,
+          "coasting_estimate_note": "Approximate empirical zero-bank turn decay; no guarantee, no new action simulation. Turning and pitch affect one another."
+        }
+      },
+      "questions": {
+        "action": {
+          "type": "choice",
+          "instructions": "Fly through every numbered gate in order. Choose pitch and bank for the next interval. Read `target.horizontal_gap_left_deg` and `target.vertical_gap_up_deg`. These signed gaps are corrections to the nearest safe edge of the gate opening. Negative horizontal gap requires RIGHT correction; positive requires LEFT. Negative vertical gap requires descent; positive requires climb. Zero gap means this motion direction already passes inside the opening. Prioritize the opening windows over the center bearing, especially immediately before crossing: center angles can grow dramatically even while the crossing is safe. When absolute horizontal gap exceeds 15 degrees, a strong bank toward the needed correction is usually appropriate. Sustain it while the gap remains large; do not reverse simply because `motion.bank_left_deg` or `measured_rates.track_turn_rate_left_deg_s` already has the desired sign. Those are evidence your turn is working, not evidence the needed correction is complete. Use `target.horizontal_gap_if_leveled_now_left_deg`, `control.estimated_extra_turn_if_leveled_left_deg` and `measured_recent_responses` to reduce bank near alignment and avoid overshoot. Keep vertical motion within `target.climb_window_up_deg`; nominal level is trim, not altitude hold. Account for measured response lag rather than reversing pitch every interval. Use `following_transition` to prepare an exit toward the following gate while still clearing the current opening. Reassess immediately when `target_update.changed_since_previous_decision` is true. Upcoming gates remain valid outside the display camera. No image is supplied. Stay within `boundary.lateral_limits_world_m`. Estimates assume unchanged motion and are approximate. Prefer the 1m interior buffer: use `target.horizontal_gap_to_interior_left_deg`, `target.vertical_gap_to_interior_up_deg` and `target.horizontal_gap_to_interior_if_leveled_left_deg` instead of correcting only after the actual opening is missed. A small gap outside the interior still needs a timely moderate correction; do not coast for several intervals until it becomes large. Aim well inside the frame, release a strong bank early enough for its remaining turn. Keep the actual opening safe when it is too late to improve the buffer. Choose one joint pitch-and-bank maneuver from the 15 choices.",
+          "criteria": {
+            "up__straight": "Target nose-up pitch 6 degrees to climb. Simultaneously: Target wings level, zero coordinated yaw rate; not a heading hold.",
+            "up__left": "Target nose-up pitch 6 degrees to climb. Simultaneously: Target left bank 25 degrees, coordinated turn.",
+            "up__right": "Target nose-up pitch 6 degrees to climb. Simultaneously: Target right bank 25 degrees, coordinated turn.",
+            "up__roll_left": "Target nose-up pitch 6 degrees to climb. Simultaneously: Target left bank 40 degrees, stronger coordinated turn.",
+            "up__roll_right": "Target nose-up pitch 6 degrees to climb. Simultaneously: Target right bank 40 degrees, stronger coordinated turn.",
+            "down__straight": "Target nose-down pitch 6 degrees to descend. Simultaneously: Target wings level, zero coordinated yaw rate; not a heading hold.",
+            "down__left": "Target nose-down pitch 6 degrees to descend. Simultaneously: Target left bank 25 degrees, coordinated turn.",
+            "down__right": "Target nose-down pitch 6 degrees to descend. Simultaneously: Target right bank 25 degrees, coordinated turn.",
+            "down__roll_left": "Target nose-down pitch 6 degrees to descend. Simultaneously: Target left bank 40 degrees, stronger coordinated turn.",
+            "down__roll_right": "Target nose-down pitch 6 degrees to descend. Simultaneously: Target right bank 40 degrees, stronger coordinated turn.",
+            "level__straight": "Target nominal nose-up trim of 2 degrees; not an altitude hold. Simultaneously: Target wings level, zero coordinated yaw rate; not a heading hold.",
+            "level__left": "Target nominal nose-up trim of 2 degrees; not an altitude hold. Simultaneously: Target left bank 25 degrees, coordinated turn.",
+            "level__right": "Target nominal nose-up trim of 2 degrees; not an altitude hold. Simultaneously: Target right bank 25 degrees, coordinated turn.",
+            "level__roll_left": "Target nominal nose-up trim of 2 degrees; not an altitude hold. Simultaneously: Target left bank 40 degrees, stronger coordinated turn.",
+            "level__roll_right": "Target nominal nose-up trim of 2 degrees; not an altitude hold. Simultaneously: Target right bank 40 degrees, stronger coordinated turn."
+          }
+        }
+      }
+    }
+  }
+}

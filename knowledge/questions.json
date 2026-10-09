@@ -1,0 +1,752 @@
+[
+  {
+    "id": "Q01",
+    "difficulty": "simple_medium",
+    "category": "mathematics",
+    "title_he": "חשבון בשני שלבים",
+    "question_en": "Compute (18*7 - 36)/6.",
+    "question_he": "חשב את (18*7−36)/6.",
+    "options": {
+      "A": "12",
+      "B": "21",
+      "C": "18",
+      "D": "15",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q02",
+    "difficulty": "simple_medium",
+    "category": "mathematics",
+    "title_he": "שברים",
+    "question_en": "Take three quarters of 80, then subtract 12. What is the result?",
+    "question_he": "קח שלושה רבעים מ־80 וחסר 12. מה התוצאה?",
+    "options": {
+      "A": "48",
+      "B": "60",
+      "C": "68",
+      "D": "52",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q03",
+    "difficulty": "simple_medium",
+    "category": "mathematics",
+    "title_he": "משוואה",
+    "question_en": "For real x, solve 3*x+7=25.",
+    "question_he": "פתור עבור x ממשי: 3*x+7=25.",
+    "options": {
+      "A": "8",
+      "B": "4",
+      "C": "6",
+      "D": "9",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q04",
+    "difficulty": "simple_medium",
+    "category": "physics",
+    "title_he": "תאוצה קבועה",
+    "question_en": "A particle has initial velocity +3 m/s and constant acceleration +2 m/s^2 along a line. How far does it travel during the next 4 seconds?",
+    "question_he": "חלקיק נע במהירות התחלתית ‎+3 מטר לשנייה ובתאוצה קבועה ‎+2 מטר לשנייה בריבוע. איזה מרחק יעבור ב־4 שניות?",
+    "options": {
+      "A": "20 m",
+      "B": "16 m",
+      "C": "44 m",
+      "D": "28 m",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q05",
+    "difficulty": "simple_medium",
+    "category": "physics",
+    "title_he": "נגדים במקביל",
+    "question_en": "Ideal resistors of 6 ohms and 3 ohms are connected in parallel across an ideal 12 V source. What is the total source current?",
+    "question_he": "נגדים אידאליים של 6 ו־3 אוהם מחוברים במקביל למקור 12 וולט. מה הזרם הכולל?",
+    "options": {
+      "A": "4 A",
+      "B": "6 A",
+      "C": "2 A",
+      "D": "4/3 A",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q06",
+    "difficulty": "simple_medium",
+    "category": "geography",
+    "title_he": "פריז",
+    "question_en": "Paris is the national capital of which country?",
+    "question_he": "של איזו מדינה פריז היא הבירה?",
+    "options": {
+      "A": "Italy",
+      "B": "France",
+      "C": "Spain",
+      "D": "Belgium",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q07",
+    "difficulty": "simple_medium",
+    "category": "geography",
+    "title_he": "בירת יפן",
+    "question_en": "What is the capital of Japan?",
+    "question_he": "מהי בירת יפן?",
+    "options": {
+      "A": "Tokyo",
+      "B": "Kyoto",
+      "C": "Seoul",
+      "D": "Osaka",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q08",
+    "difficulty": "simple_medium",
+    "category": "logic",
+    "title_he": "הסקה",
+    "question_en": "Every red box is heavy. Box K is red. Which statement must be true?",
+    "question_he": "כל קופסה אדומה כבדה. קופסה K אדומה. מה חייב להיות נכון?",
+    "options": {
+      "A": "Box K is not heavy",
+      "B": "No conclusion about K follows",
+      "C": "Box K is heavy",
+      "D": "Every heavy box is red",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q09",
+    "difficulty": "simple_medium",
+    "category": "probability",
+    "title_he": "קובייה",
+    "question_en": "A fair six-sided die numbered 1 to 6 is rolled once. What is the probability of a result strictly greater than 4?",
+    "question_he": "מטילים קובייה הוגנת עם המספרים 1 עד 6. מה ההסתברות לתוצאה גדולה ממש מ־4?",
+    "options": {
+      "A": "1/6",
+      "B": "1/3",
+      "C": "1/2",
+      "D": "2/3",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q10",
+    "difficulty": "simple_medium",
+    "category": "logic",
+    "title_he": "מילוי מכל",
+    "question_en": "Pipe A fills an empty tank in 6 hours and pipe B in 3 hours at constant rates. With both open and no leakage, how long to fill the empty tank?",
+    "question_he": "צינור A ממלא מכל ב־6 שעות וצינור B ב־3 שעות בקצבים קבועים. כמה זמן כששניהם פתוחים ואין דליפה?",
+    "options": {
+      "A": "2 hours",
+      "B": "4.5 hours",
+      "C": "3 hours",
+      "D": "9 hours",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q11",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "אינטגרל לא אמיתי",
+    "question_en": "Evaluate the convergent improper integral from x=0 to infinity of ln(x)/(1+x)^3 dx.",
+    "question_he": "חשב את האינטגרל מ־0 עד אינסוף של ln(x)/(1+x)^3.",
+    "options": {
+      "A": "-1",
+      "B": "0",
+      "C": "1/2",
+      "D": "-1/2",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q12",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "דטרמיננטה מסדר 12",
+    "question_en": "A 12 by 12 matrix has 3 on its main diagonal, -1 immediately above and below that diagonal, and 0 elsewhere. What is its determinant?",
+    "question_he": "מטריצה מסדר 12 כוללת 3 באלכסון הראשי, ‎−1 בשני האלכסונים הצמודים ו־0 בשאר המקומות. מה הדטרמיננטה?",
+    "options": {
+      "A": "317811",
+      "B": "121393",
+      "C": "196418",
+      "D": "75025",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q13",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "קונגרואנציה",
+    "question_en": "What is the smallest integer x strictly greater than 1 such that x^2 is congruent to 1 modulo 1001?",
+    "question_he": "מהו השלם הקטן ביותר x הגדול ממש מ־1 כך ש־x² שקול ל־1 מודולו 1001?",
+    "options": {
+      "A": "77",
+      "B": "155",
+      "C": "143",
+      "D": "274",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q14",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "חלוקות על",
+    "question_en": "Seven distinct objects are assigned to three labeled boxes. Every box must receive at least one object. How many assignments are possible?",
+    "question_he": "מחלקים 7 עצמים שונים ל־3 קופסאות מסומנות, בלי להשאיר קופסה ריקה. כמה חלוקות אפשריות?",
+    "options": {
+      "A": "1806",
+      "B": "1728",
+      "C": "2100",
+      "D": "2187",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q15",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "רקורסיה עם שורש כפול",
+    "question_en": "Let a0=0, a1=1 and an=4*a(n-1)-4*a(n-2) for n>=2. What is a15?",
+    "question_he": "נתון a0=0,a1=1 והכלל an=4*a(n−1)−4*a(n−2). מהו a15?",
+    "options": {
+      "A": "491520",
+      "B": "229376",
+      "C": "262144",
+      "D": "245760",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q16",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "שורשי יחידה",
+    "question_en": "Let zeta=exp(2*pi*i/17), a primitive 17th root of unity. Evaluate the sum over k=1,...,16 of 1/(1-zeta^k).",
+    "question_he": "נתון zeta=exp(2*pi*i/17). חשב את סכום 1/(1−zeta^k) עבור k=1 עד 16.",
+    "options": {
+      "A": "17/2",
+      "B": "16",
+      "C": "8",
+      "D": "0",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q17",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "אופטימיזציה של דיסקרימיננטה",
+    "question_en": "Real numbers x,y,z satisfy x+y+z=0 and x^2+y^2+z^2=6. What is the maximum of (x-y)^2*(y-z)^2*(z-x)^2?",
+    "question_he": "ממשיים x,y,z מקיימים x+y+z=0 ו־x²+y²+z²=6. מה המקסימום של (x−y)²(y−z)²(z−x)²?",
+    "options": {
+      "A": "54",
+      "B": "108",
+      "C": "216",
+      "D": "27",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q18",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "טור אינסופי",
+    "question_en": "Evaluate the infinite sum over n=1,2,... of 1/(n^2*(n+1)^2).",
+    "question_he": "חשב את הטור האינסופי סכום 1/[n²(n+1)²] עבור n החל מ־1.",
+    "options": {
+      "A": "pi^2/3 - 2",
+      "B": "2 - pi^2/6",
+      "C": "pi^2/6 - 1",
+      "D": "pi^2/3 - 3",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q19",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "עצים פורשים",
+    "question_en": "How many spanning trees does the complete bipartite graph K(4,5) have? Vertices are labeled; every vertex in one part is adjacent to every vertex in the other part.",
+    "question_he": "כמה עצים פורשים יש בגרף הדו־צדדי המלא K(4,5), שכל קודקודיו מסומנים?",
+    "options": {
+      "A": "32000",
+      "B": "62500",
+      "C": "20000",
+      "D": "102400",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q20",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "סכום על שורשי פולינום",
+    "question_en": "Let r1,...,r5 be all complex roots, counted with multiplicity, of p(t)=t^5-3*t+1. Evaluate the sum of 1/(rj-1)^2 over j=1,...,5.",
+    "question_he": "r1 עד r5 הם שורשי t^5−3t+1 במרוכבים, כולל ריבוי. חשב את סכום 1/(rj−1)².",
+    "options": {
+      "A": "20",
+      "B": "-24",
+      "C": "24",
+      "D": "16",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q21",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "אינטגרל כפול",
+    "question_en": "Evaluate the improper double integral over 0<x<1 and 0<y<1 of ln(x)*ln(y)/(1-x*y) dx dy.",
+    "question_he": "חשב את האינטגרל הכפול בריבוע היחידה של ln(x)*ln(y)/(1−xy).",
+    "options": {
+      "A": "pi^4/45",
+      "B": "pi^2/6",
+      "C": "1",
+      "D": "pi^4/90",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q22",
+    "difficulty": "very_hard",
+    "category": "mathematics",
+    "title_he": "מסלולי סריג ללא מגע פנימי",
+    "question_en": "Count lattice paths from (0,0) to (8,8) using only unit east and north steps, staying strictly below y=x at every intermediate vertex. Start and end are the only permitted contacts with y=x.",
+    "question_he": "כמה מסלולי סריג מ־(0,0) ל־(8,8), בצעדי מזרח וצפון בלבד, נשארים ממש מתחת ל־y=x בכל קודקוד ביניים?",
+    "options": {
+      "A": "429",
+      "B": "715",
+      "C": "1430",
+      "D": "3432",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q23",
+    "difficulty": "very_hard",
+    "category": "probability",
+    "title_he": "המתנה לתבנית חופפת",
+    "question_en": "Independently flip a fair coin until the consecutive pattern HTHTH appears for the first time. H means heads and T tails. What is the expected total number of flips, counting the final five flips?",
+    "question_he": "מטילים מטבע הוגן עד ההופעה הראשונה של HTHTH. מה תוחלת מספר ההטלות הכולל, כולל הרצף האחרון?",
+    "options": {
+      "A": "40",
+      "B": "42",
+      "C": "32",
+      "D": "62",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q24",
+    "difficulty": "very_hard",
+    "category": "probability",
+    "title_he": "הסתברות גאומטרית מותנית",
+    "question_en": "X and Y are independent Uniform(0,1) variables. What is P(X^2+Y^2<1 | X+Y>1)?",
+    "question_he": "X,Y בלתי תלויים ואחידים ב־(0,1). מה P(X²+Y²<1 בהינתן X+Y>1)?",
+    "options": {
+      "A": "2 - pi/2",
+      "B": "pi/2 - 1",
+      "C": "1/2",
+      "D": "pi/4",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q25",
+    "difficulty": "very_hard",
+    "category": "probability",
+    "title_he": "חיזוי בייסיאני",
+    "question_en": "A coin has a fixed but unknown heads probability p sampled from Uniform(0,1). Conditional on p, flips are independent. You observe 7 heads and 2 tails in 9 flips. What is the posterior predictive probability that the next 3 flips are all heads?",
+    "question_he": "סיכוי קבוע p ל־H נבחר מראש אחיד ב־(0,1). אחרי 7 H ו־2 T, מה ההסתברות המנבאת ששלוש ההטלות הבאות יהיו כולן H?",
+    "options": {
+      "A": "60/143",
+      "B": "343/729",
+      "C": "12/55",
+      "D": "49/81",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q26",
+    "difficulty": "very_hard",
+    "category": "probability",
+    "title_he": "נקודות קבועות בפרמוטציה",
+    "question_en": "Choose a permutation of 8 labeled elements uniformly from all 8! permutations. What is the probability of exactly 2 fixed points?",
+    "question_he": "בוחרים פרמוטציה אחידה של 8 עצמים. מה ההסתברות לשתי נקודות קבועות בדיוק?",
+    "options": {
+      "A": "53/288",
+      "B": "53/144",
+      "C": "265/20160",
+      "D": "1/2",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q27",
+    "difficulty": "very_hard",
+    "category": "probability",
+    "title_he": "זמן פגיעה בשרשרת מרקוב",
+    "question_en": "A Markov chain has states 0,1,2,3; 3 is absorbing. From 0 it moves to 1 surely; from 1 to 0 or 2 with probability 1/2 each; from 2 to 1 with probability 1/3 or to 3 with probability 2/3. Starting at 0, what is the expected number of transitions to first visit 3?",
+    "question_he": "בשרשרת: 0→1 תמיד; 1→0 או 2 בחצי; 2→1 בשליש ו־2→3 בשני שלישים. 3 בולע. מה תוחלת מספר המעברים מ־0 עד 3?",
+    "options": {
+      "A": "6",
+      "B": "11/2",
+      "C": "9",
+      "D": "7",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q28",
+    "difficulty": "very_hard",
+    "category": "probability",
+    "title_he": "חורבן המהמר",
+    "question_en": "A random walk starts at integer 3. Independently each step goes up 1 with probability 3/5 or down 1 with probability 2/5. It stops at 0 or 7. What is the probability it stops at 7?",
+    "question_he": "הילוך מתחיל ב־3, עולה יחידה בהסתברות 3/5 ויורד יחידה בהסתברות 2/5, עד 0 או 7. מה ההסתברות להגיע ל־7 קודם?",
+    "options": {
+      "A": "27/35",
+      "B": "3/7",
+      "C": "1539/2059",
+      "D": "1467/2059",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q29",
+    "difficulty": "very_hard",
+    "category": "probability",
+    "title_he": "מומנט של מרחק בדיסקה",
+    "question_en": "Choose X and Y independently and uniformly by area inside the unit disk in the plane. D is their Euclidean distance. What is E[D^4]?",
+    "question_he": "בוחרים שתי נקודות בלתי תלויות ואחידות לפי שטח בדיסקת היחידה. אם D המרחק האוקלידי, מה E[D^4]?",
+    "options": {
+      "A": "5/3",
+      "B": "2",
+      "C": "1",
+      "D": "4/3",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q30",
+    "difficulty": "very_hard",
+    "category": "probability",
+    "title_he": "ראשים במעגל",
+    "question_en": "Ten fair independent coin flips are conditioned on exactly four heads. Arrange the ten positions in a circle, so positions 10 and 1 are adjacent. What is the conditional probability that no two heads are adjacent?",
+    "question_he": "עשר הטלות מותנות בארבעה H בדיוק. המיקומים במעגל, כולל סמיכות 10 ו־1. מה ההסתברות שלא יהיו שני H סמוכים?",
+    "options": {
+      "A": "1/7",
+      "B": "5/21",
+      "C": "5/42",
+      "D": "1/6",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q31",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "שלושה מצבי תנודה",
+    "question_en": "Three masses m,2m,m lie on a frictionless line between fixed walls. Four identical springs of stiffness k connect left wall--m--2m--m--right wall. For small longitudinal oscillations about equilibrium, what is omega_max^2/omega_min^2 for the three normal modes?",
+    "question_he": "שלוש מסות m,2m,m בין שני קירות, מחוברות בארבעה קפיצים זהים k ללא חיכוך. מה יחס ריבוע התדירות הגבוהה ביותר לנמוכה ביותר בתנודות אורכיות קטנות?",
+    "options": {
+      "A": "3+2*sqrt(2)",
+      "B": "4",
+      "C": "(7+3*sqrt(5))/2",
+      "D": "(3+sqrt(5))/2",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q32",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "אנרגיה במסגרת נעה",
+    "question_en": "In one laboratory frame A moves at +3c/5 and particle B of rest mass m moves at -4c/5 along the same axis. What is the total relativistic energy of B measured in the inertial rest frame of A?",
+    "question_he": "במעבדה A נע ב־‎+3c/5 ו־B שמסת המנוחה שלו m נע ב־‎−4c/5. מה האנרגיה הכוללת של B במסגרת המנוחה של A?",
+    "options": {
+      "A": "(37/25)*m*c^2",
+      "B": "(35/12)*m*c^2",
+      "C": "(37/12)*m*c^2",
+      "D": "(25/12)*m*c^2",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q33",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "עבודה מרבית ממאגרים סופיים",
+    "question_en": "Two bodies initially at 400 K and 100 K each have constant heat capacity 10 J/K. An ideal reversible heat engine operates between them until no more work can be extracted. They exchange no heat with the outside; the engine completes cycles and stores no net energy. What is the maximum work output?",
+    "question_he": "גופים ב־400 וב־100 קלווין, כל אחד בקיבול חום קבוע 10 ג׳אול לקלווין. מנוע הפיך מוציא עבודה עד שיווי משקל, ללא חום החוצה וללא אגירת אנרגיה במנוע. מה העבודה המרבית?",
+    "options": {
+      "A": "500 J",
+      "B": "1000 J",
+      "C": "750 J",
+      "D": "1500 J",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q34",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "קבלים עם קוטביות הפוכה ודיאלקטרי",
+    "question_en": "Two capacitors C and 2C are separately charged to voltage magnitude V, then disconnected from all batteries. They are connected in parallel with opposite polarity and allowed to settle through arbitrarily small positive wire resistance. Still connected and isolated, a dielectric of relative permittivity 3 is slowly inserted to fill only the original C capacitor, without changing plate geometry. What fraction of the total initial stored electrical energy remains stored in both at the end?",
+    "question_he": "קבלים C ו־2C נטענים בנפרד לגודל מתח V, מנותקים מהסוללות ומחוברים במקביל בקוטביות הפוכה עד התייצבות דרך התנגדות חיובית קטנה. עדיין מחוברים ומבודדים, מכניסים לקבל C דיאלקטרי יחסי 3 שממלאו בלי שינוי גאומטריה. איזה חלק מהאנרגיה ההתחלתית הכוללת נשאר בסוף?",
+    "options": {
+      "A": "1/9",
+      "B": "3/5",
+      "C": "1/15",
+      "D": "5/9",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q35",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "שינוי פתאומי באוסצילטור קוונטי",
+    "question_en": "A one-dimensional quantum harmonic oscillator of mass m and angular frequency omega starts in its ground state. Its frequency is suddenly doubled to 2*omega without changing m. Immediately afterwards its energy is measured. What is the probability of obtaining the NEW ground-state energy hbar*omega?",
+    "question_he": "אוסצילטור קוונטי במצב היסוד בתדירות זוויתית omega. מכפילים אותה פתאום בלי לשנות מסה. מה ההסתברות למדוד מיד את אנרגיית היסוד החדשה hbar*omega?",
+    "options": {
+      "A": "2*sqrt(2)/3",
+      "B": "4/5",
+      "C": "2/3",
+      "D": "1/sqrt(2)",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q36",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "סיבובי ספין עוקבים",
+    "question_en": "A spin-1/2 particle starts in |+z>. First it evolves under Hx=(hbar*Omega/2)*sigma_x for time pi/(3*Omega), then under Hy=(hbar*Omega/2)*sigma_y for time pi/(4*Omega), without intermediate measurement. What is the probability that a final z-spin measurement gives +hbar/2?",
+    "question_he": "ספין חצי מתחיל ב־|+z>. פועל Hx=(hbar*Omega/2)*sigma_x במשך pi/(3*Omega), ואז Hy=(hbar*Omega/2)*sigma_y במשך pi/(4*Omega), ללא מדידה באמצע. מה הסיכוי למדוד ב־z את ‎+hbar/2?",
+    "options": {
+      "A": "(4+sqrt(2))/8",
+      "B": "3/4",
+      "C": "(4-sqrt(2))/8",
+      "D": "1/2",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q37",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "יציבות בפוטנציאל מרכזי",
+    "question_en": "Mass m moves in a central potential U(r)=a*r^4 with a>0. Around a circular orbit, make a small radial perturbation at fixed angular momentum. What is the ratio of the radial small-oscillation angular frequency to the original orbital angular frequency?",
+    "question_he": "מסה m בפוטנציאל U(r)=a*r^4 עם a>0. מפריעים מעט רדיאלית למסלול מעגלי בתנע זוויתי קבוע. מה יחס תדירות התנודה הרדיאלית למסלולית?",
+    "options": {
+      "A": "sqrt(6)",
+      "B": "2",
+      "C": "sqrt(3)",
+      "D": "sqrt(5)",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q38",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "שינוי מסלול כבידתי",
+    "question_en": "A negligible-mass satellite follows a Newtonian circular orbit of radius r around mass M. An instantaneous purely tangential impulse reduces its speed to half the circular speed without changing position. Ignore all later perturbations and collisions. What is the periapsis radius of the new Kepler orbit?",
+    "question_he": "לוויין במסלול מעגלי ניוטוני ברדיוס r מקבל מתקף משיקי שמקטין מהירות לחצי בלי שינוי מיקום. מתעלמים מהפרעות ומהתנגשויות. מה רדיוס הפריאפסיס החדש?",
+    "options": {
+      "A": "r/3",
+      "B": "r/7",
+      "C": "4*r/7",
+      "D": "r/4",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q39",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "התאבכות חמש קרניים",
+    "question_en": "Five coherent monochromatic waves have the same polarization and equal individual intensity I. At a point their phases are 0,pi/5,2*pi/5,3*pi/5,4*pi/5. What is the observed intensity divided by the intensity when all five phases are equal?",
+    "question_he": "חמישה גלים קוהרנטיים באותו קיטוב, בעוצמה I לכל אחד, מגיעים בפאזות 0,pi/5,2pi/5,3pi/5,4pi/5. מה יחס העוצמה לעוצמה כשכל הפאזות שוות?",
+    "options": {
+      "A": "1/5",
+      "B": "(6+2*sqrt(5))/25",
+      "C": "(6-2*sqrt(5))/25",
+      "D": "1/25",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q40",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "מעגל RLC בשתי תדירויות",
+    "question_en": "A series circuit has ideal L and C and resistor R. At angular frequency omega, R=omega*L/2 and omega^2*L*C=2. The sinusoidal source has fixed RMS voltage. If frequency doubles while all components and RMS voltage stay unchanged, what is P_new/P_old for average power in R?",
+    "question_he": "במעגל RLC טורי בתדירות omega מתקיים R=omega*L/2 ו־omega²LC=2. מכפילים תדירות בלי לשנות רכיבים ומתח RMS. מה יחס ההספק החדש לישן בנגד?",
+    "options": {
+      "A": "2/7",
+      "B": "1/4",
+      "C": "8/53",
+      "D": "4/13",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q41",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "נפילה עם גרר ריבועי",
+    "question_en": "Mass m is released from rest and falls vertically with constant g and upward drag k*v^2. Let terminal speed v_t=sqrt(m*g/k). How far has it fallen when speed first reaches v_t/2?",
+    "question_he": "מסה משתחררת ממנוחה בכבידה קבועה g וגרר מעלה k*v². v_t=√(mg/k). כמה נפלה עד שמהירותה מגיעה לראשונה ל־v_t/2?",
+    "options": {
+      "A": "v_t^2/(8*g)",
+      "B": "(v_t^2/(2*g))*ln(4/3)",
+      "C": "(v_t^2/(2*g))*ln(3)",
+      "D": "(v_t^2/g)*ln(2)",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q42",
+    "difficulty": "very_hard",
+    "category": "physics",
+    "title_he": "חרוז על חישוק מסתובב",
+    "question_en": "A bead slides frictionlessly on a circular hoop of radius R in a vertical plane. The hoop is driven at constant angular speed omega about its vertical diameter. Gravity is g and omega^2*R=2*g. Around either stable equilibrium away from the bottom, what is the small-oscillation angular frequency relative to the hoop?",
+    "question_he": "חרוז מחליק ללא חיכוך בחישוק אנכי R, המסתובב במהירות קבועה omega סביב הקוטר האנכי. omega²R=2g. מה תדירות התנודות הקטנות יחסית לחישוק סביב שיווי משקל יציב שאינו התחתית?",
+    "options": {
+      "A": "sqrt(3*g/R)",
+      "B": "sqrt(2*g/R)",
+      "C": "sqrt(g/(2*R))",
+      "D": "sqrt(3*g/(2*R))",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q43",
+    "difficulty": "very_hard",
+    "category": "logic",
+    "title_he": "שישה דוברי אמת ושקר",
+    "question_en": "Each of A,B,C,D,E,F is a knight who always tells the truth or a knave who always lies. A says: B and C are of different kinds. B says: Exactly two of A,D,E are knights. C says: D is a knight if and only if F is a knave. D says: Exactly one of A,E is a knight. E says: B and F are both knaves. F says: At least three of A,B,C,D,E are knights. Which assignment is consistent?",
+    "question_he": "כל אחד מ־A עד F דובר אמת תמיד או שקרן תמיד. A: B ו־C שונים בסוגם. B: בדיוק שניים מ־A,D,E דוברי אמת. C: D דובר אמת אם ורק אם F שקרן. D: בדיוק אחד מ־A,E דובר אמת. E: B ו־F שקרנים. F: לפחות שלושה מ־A,B,C,D,E דוברי אמת. איזו השמה עקבית?",
+    "options": {
+      "A": "Knights A,C,E; knaves B,D,F",
+      "B": "Knights B,C,D; knaves A,E,F",
+      "C": "Knights A,D,E,F; knaves B,C",
+      "D": "Knights A,B,D,F; knaves C,E",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q44",
+    "difficulty": "very_hard",
+    "category": "logic",
+    "title_he": "גשר לשישה אנשים",
+    "question_en": "Six people cross a bridge with one torch at night. Times are 1,3,8,12,17,24 minutes. At most two cross together; every crossing requires the torch. A pair takes the slower time. Someone carries the torch back when needed, at the same individual times. What is the minimum total time to get everyone across?",
+    "question_he": "שישה אנשים עוברים גשר בלפיד יחיד, בזמנים 1,3,8,12,17,24 דקות. עד שניים יחד, לכל מעבר הלפיד, זמן זוג הוא האיטי. גם בהחזרה אותם זמנים. מה המינימום הכולל?",
+    "options": {
+      "A": "51 minutes",
+      "B": "59 minutes",
+      "C": "55 minutes",
+      "D": "53 minutes",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q45",
+    "difficulty": "very_hard",
+    "category": "logic",
+    "title_he": "מטבע חריג לא ידוע",
+    "question_en": "Among 40 coins exactly one has a different weight, either heavier or lighter; all other coins have equal weight. No known genuine reference coin is supplied. With an ideal two-pan balance and adaptive weighings, can a strategy ALWAYS identify both the coin and whether it is heavier or lighter in at most four weighings?",
+    "question_he": "בין 40 מטבעות אחד חריג, כבד או קל, וכל היתר שווים. אין מטבע תקין ידוע נוסף. האם ארבע שקילות אדפטיביות במאזני כפות יכולות תמיד לזהות גם מטבע וגם כבד/קל?",
+    "options": {
+      "A": "No finite number of weighings can do it",
+      "B": "Yes; three weighings suffice",
+      "C": "No; four weighings cannot guarantee both identifications",
+      "D": "Yes; four adaptive weighings always suffice",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q46",
+    "difficulty": "very_hard",
+    "category": "logic",
+    "title_he": "אסירים ומצב התחלתי לא ידוע",
+    "question_en": "100 prisoners use a room with an on/off lamp initially in an unknown state. A designated counter turns it off whenever finding it on and increments a count. Each of the other 99 turns it on if finding it off, but may do so at most twice in total. No one else turns it off. Each visit is by one prisoner. What is the smallest count threshold guaranteeing that all 100 have visited when the counter announces, for any visit order and initial lamp state?",
+    "question_he": "100 אסירים, נורה שמצבה ההתחלתי לא ידוע. מונה מכבה דלוקה ומגדיל ספירה. כל אחד מ־99 האחרים מדליק כבויה לכל היותר פעמיים. אף אחר לא מכבה. ביקור הוא של אחד. מה הסף הקטן ביותר שמבטיח שכולם ביקרו בכל סדר ובכל מצב התחלתי?",
+    "options": {
+      "A": "99",
+      "B": "100",
+      "C": "199",
+      "D": "198",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q47",
+    "difficulty": "very_hard",
+    "category": "logic",
+    "title_he": "כובעים עם אפשרות להימנע",
+    "question_en": "Seven players independently receive fair red/blue hats. Each sees the six other hats, not their own. They agree on a deterministic strategy beforehand, then simultaneously say red, blue, or pass with no later communication. The team wins iff at least one guesses a color and every color guess is correct. What is the maximum win probability?",
+    "question_he": "שבעה שחקנים בכובעי אדום/כחול הוגנים ובלתי תלויים. כל אחד רואה את האחרים. אחרי תכנון מראש עונים בו־זמנית אדום/כחול/נמנעים. ניצחון אם לפחות אחד מנחש וכולם נכונים. מה ההסתברות המרבית?",
+    "options": {
+      "A": "1/2",
+      "B": "7/8",
+      "C": "3/4",
+      "D": "15/16",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q48",
+    "difficulty": "very_hard",
+    "category": "logic",
+    "title_he": "בדיקת ביצים אדפטיבית",
+    "question_en": "A building has 100 floors and threshold F in {0,...,100}. An egg dropped from floor <=F survives, and from floor >F breaks. You have three identical eggs; surviving eggs can be reused, broken ones cannot. Drops may be adaptive. What is the minimum worst-case number of drops to determine F exactly?",
+    "question_he": "בניין 100 קומות וסף F בין 0 ל־100. מקומה ≤F ביצה שורדת ומקומה >F נשברת. שלוש ביצים, שורדות לשימוש חוזר. מה מינימום ההטלות במקרה הגרוע ביותר לזיהוי הסף?",
+    "options": {
+      "A": "14",
+      "B": "10",
+      "C": "8",
+      "D": "9",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q49",
+    "difficulty": "very_hard",
+    "category": "logic",
+    "title_he": "ספירת מחרוזות באוטומט",
+    "question_en": "How many binary strings of length 20 contain no substring 000 and have a total number of 1 bits divisible by 3? Leading zeros are allowed; substrings do not wrap around.",
+    "question_he": "כמה מחרוזות בינאריות באורך 20 לא מכילות 000 ומספר ספרות ה־1 מתחלק ב־3? אפס מוביל מותר; אין חיבור מעגלי.",
+    "options": {
+      "A": "74490",
+      "B": "81234",
+      "C": "74493",
+      "D": "74496",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  },
+  {
+    "id": "Q50",
+    "difficulty": "very_hard",
+    "category": "logic",
+    "title_he": "חיבור מוצפן",
+    "question_en": "In the base-10 alphametic DONALD + GERALD = ROBERT, different letters are different digits, all ten letters use all digits 0 through 9, and D,G,R cannot be zero. What is the six-digit number ROBERT in the solution?",
+    "question_he": "בחידה DONALD+GERALD=ROBERT בבסיס 10, אותיות שונות הן ספרות שונות, עשר האותיות משתמשות ב־0 עד 9 ו־D,G,R אינם 0. מה ROBERT בפתרון?",
+    "options": {
+      "A": "723970",
+      "B": "724970",
+      "C": "713970",
+      "D": "723960",
+      "unsure": "I do not know / cannot determine the answer."
+    }
+  }
+]

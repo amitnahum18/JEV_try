@@ -1,0 +1,19 @@
+[
+  {
+    "ply": 1,
+    "player": "JEV",
+    "fen_before": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "uci": "e2e4",
+    "san": "e4",
+    "confidence": 0.5033333333333333,
+    "council_role_moves": {
+      "tactics": "e2e4",
+      "strategy": "e2e4",
+      "risk": "e2e4"
+    },
+    "council_agreement": 1.0,
+    "latency_seconds": 0.743,
+    "input_tokens": 4641,
+    "cost_usd": 0.000194922
+  }
+]

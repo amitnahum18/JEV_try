@@ -1,0 +1,22 @@
+{
+  "source_recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_full_seed42\\episode.json",
+  "physics_steps_checked": 1449,
+  "transitions": [
+    {
+      "crossing_time_s": 4.791666666666667,
+      "next_gate_in_observation": 2,
+      "next_gate_in_navigation": 2,
+      "new_gate_center_m": [
+        205.0,
+        14.592104087178091,
+        25.62287848072337
+      ],
+      "old_action_continued_until_s": 5.0,
+      "next_model_request_gate": 2,
+      "decision_update_delay_s": 0.20833333333333304
+    }
+  ],
+  "status": "out_of_bounds",
+  "passed": 1,
+  "finding": "Target geometry updates in the same physics step; old command remains active until the next 0.5-second decision boundary."
+}

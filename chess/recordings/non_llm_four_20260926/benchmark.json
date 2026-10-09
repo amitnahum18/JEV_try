@@ -1,0 +1,329 @@
+{
+  "updated_at": "2026-09-26T15:39:05+03:00",
+  "jev_color": "white",
+  "max_plies": 200,
+  "protocol": "All four opponents tested regardless of earlier losses; only wins advance the ladder.",
+  "rating_note": "Maia names are training rating targets, not measured playing Elo or guaranteed ordering.",
+  "sample_note": "One game per system/opponent; preliminary comparison, not an Elo estimate.",
+  "completed": true,
+  "scores": {
+    "single": {
+      "win": 0,
+      "draw": 0,
+      "loss": 4,
+      "error": 0,
+      "move_cap": 0,
+      "consecutive_levels_passed": 0
+    },
+    "team": {
+      "win": 0,
+      "draw": 0,
+      "loss": 4,
+      "error": 0,
+      "move_cap": 0,
+      "consecutive_levels_passed": 0
+    }
+  },
+  "games": [
+    {
+      "system": "single",
+      "opponent": "Maia 1100",
+      "level": {
+        "id": "maia_1100",
+        "name": "Maia 1100",
+        "kind": "maia",
+        "training_rating": 1100
+      },
+      "started_at": "2026-09-26T15:38:06+03:00",
+      "status": "loss",
+      "result": "0-1",
+      "pgn": "single/maia_1100.pgn",
+      "api_retries": [],
+      "opponent_runtime": {
+        "weights": "models\\maia\\maia-1100.pb.gz",
+        "weights_sha256": "e1cf1cd0c96b8a4fa6a275f4b9fd54ed1ffebf9fe44641b9fceded310e9619c4",
+        "nodes_per_move": 1,
+        "backend": "blas",
+        "engine": {
+          "name": "Lc0 v0.32.1",
+          "author": "The LCZero Authors."
+        },
+        "settings": {
+          "Threads": 1,
+          "MinibatchSize": 1,
+          "NNCacheSize": 200000
+        },
+        "executable_sha256": "0d843a96a03493bb8cdcca6462712ebb2371e1547fd334f593c7c10af5507909"
+      },
+      "updated_at": "2026-09-26T15:38:18+03:00",
+      "termination": "checkmate",
+      "finished_at": "2026-09-26T15:38:18+03:00",
+      "plies": 28,
+      "jev_turns": 14,
+      "jev_cost_usd": 0.000992838,
+      "average_jev_wall_seconds": 0.7367582714318165
+    },
+    {
+      "system": "single",
+      "opponent": "Maia 1500",
+      "level": {
+        "id": "maia_1500",
+        "name": "Maia 1500",
+        "kind": "maia",
+        "training_rating": 1500
+      },
+      "started_at": "2026-09-26T15:38:20+03:00",
+      "status": "loss",
+      "result": "0-1",
+      "pgn": "single/maia_1500.pgn",
+      "api_retries": [],
+      "opponent_runtime": {
+        "weights": "models\\maia\\maia-1500.pb.gz",
+        "weights_sha256": "35ab6f20421d59e1df3b17c5a5016947af4c6761368ef84044a9a9c7619a9a00",
+        "nodes_per_move": 1,
+        "backend": "blas",
+        "engine": {
+          "name": "Lc0 v0.32.1",
+          "author": "The LCZero Authors."
+        },
+        "settings": {
+          "Threads": 1,
+          "MinibatchSize": 1,
+          "NNCacheSize": 200000
+        },
+        "executable_sha256": "0d843a96a03493bb8cdcca6462712ebb2371e1547fd334f593c7c10af5507909"
+      },
+      "updated_at": "2026-09-26T15:38:30+03:00",
+      "termination": "checkmate",
+      "finished_at": "2026-09-26T15:38:30+03:00",
+      "plies": 30,
+      "jev_turns": 15,
+      "jev_cost_usd": 0.001084188,
+      "average_jev_wall_seconds": 0.6663579733421405
+    },
+    {
+      "system": "single",
+      "opponent": "Maia 1900",
+      "level": {
+        "id": "maia_1900",
+        "name": "Maia 1900",
+        "kind": "maia",
+        "training_rating": 1900
+      },
+      "started_at": "2026-09-26T15:38:37+03:00",
+      "status": "loss",
+      "result": "0-1",
+      "pgn": "single/maia_1900.pgn",
+      "api_retries": [],
+      "opponent_runtime": {
+        "weights": "models\\maia\\maia-1900.pb.gz",
+        "weights_sha256": "e2f565f42d7cd9f122557e6dc4eb84e5bbaedceda1d404dc485d3611c7c97a12",
+        "nodes_per_move": 1,
+        "backend": "blas",
+        "engine": {
+          "name": "Lc0 v0.32.1",
+          "author": "The LCZero Authors."
+        },
+        "settings": {
+          "Threads": 1,
+          "MinibatchSize": 1,
+          "NNCacheSize": 200000
+        },
+        "executable_sha256": "0d843a96a03493bb8cdcca6462712ebb2371e1547fd334f593c7c10af5507909"
+      },
+      "updated_at": "2026-09-26T15:38:49+03:00",
+      "termination": "checkmate",
+      "finished_at": "2026-09-26T15:38:49+03:00",
+      "plies": 34,
+      "jev_turns": 17,
+      "jev_cost_usd": 0.00120351,
+      "average_jev_wall_seconds": 0.6559976118014139
+    },
+    {
+      "system": "single",
+      "opponent": "Stockfish (maximum skill)",
+      "level": {
+        "id": "stockfish",
+        "name": "Stockfish (maximum skill)",
+        "kind": "stockfish"
+      },
+      "started_at": "2026-09-26T15:38:49+03:00",
+      "status": "loss",
+      "result": "0-1",
+      "pgn": "single/stockfish.pgn",
+      "api_retries": [],
+      "opponent_runtime": {
+        "nodes_per_move": 200000,
+        "skill_level": 20,
+        "engine": {
+          "name": "Stockfish 19",
+          "author": "the Stockfish developers (see AUTHORS file)"
+        },
+        "settings": {
+          "Threads": 1,
+          "Hash": 64,
+          "Skill Level": 20,
+          "UCI_LimitStrength": false
+        },
+        "executable_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0"
+      },
+      "updated_at": "2026-09-26T15:39:03+03:00",
+      "termination": "checkmate",
+      "finished_at": "2026-09-26T15:39:03+03:00",
+      "plies": 32,
+      "jev_turns": 16,
+      "jev_cost_usd": 0.001139166,
+      "average_jev_wall_seconds": 0.6677868812257657
+    },
+    {
+      "system": "team",
+      "opponent": "Maia 1100",
+      "level": {
+        "id": "maia_1100",
+        "name": "Maia 1100",
+        "kind": "maia",
+        "training_rating": 1100
+      },
+      "started_at": "2026-09-26T15:38:06+03:00",
+      "status": "loss",
+      "result": "0-1",
+      "pgn": "team/maia_1100.pgn",
+      "api_retries": [],
+      "opponent_runtime": {
+        "weights": "models\\maia\\maia-1100.pb.gz",
+        "weights_sha256": "e1cf1cd0c96b8a4fa6a275f4b9fd54ed1ffebf9fe44641b9fceded310e9619c4",
+        "nodes_per_move": 1,
+        "backend": "blas",
+        "engine": {
+          "name": "Lc0 v0.32.1",
+          "author": "The LCZero Authors."
+        },
+        "settings": {
+          "Threads": 1,
+          "MinibatchSize": 1,
+          "NNCacheSize": 200000
+        },
+        "executable_sha256": "0d843a96a03493bb8cdcca6462712ebb2371e1547fd334f593c7c10af5507909"
+      },
+      "updated_at": "2026-09-26T15:38:19+03:00",
+      "termination": "checkmate",
+      "finished_at": "2026-09-26T15:38:20+03:00",
+      "plies": 24,
+      "jev_turns": 12,
+      "jev_cost_usd": 0.003167304,
+      "average_jev_wall_seconds": 0.9905244500259869
+    },
+    {
+      "system": "team",
+      "opponent": "Maia 1500",
+      "level": {
+        "id": "maia_1500",
+        "name": "Maia 1500",
+        "kind": "maia",
+        "training_rating": 1500
+      },
+      "started_at": "2026-09-26T15:38:20+03:00",
+      "status": "loss",
+      "result": "0-1",
+      "pgn": "team/maia_1500.pgn",
+      "api_retries": [],
+      "opponent_runtime": {
+        "weights": "models\\maia\\maia-1500.pb.gz",
+        "weights_sha256": "35ab6f20421d59e1df3b17c5a5016947af4c6761368ef84044a9a9c7619a9a00",
+        "nodes_per_move": 1,
+        "backend": "blas",
+        "engine": {
+          "name": "Lc0 v0.32.1",
+          "author": "The LCZero Authors."
+        },
+        "settings": {
+          "Threads": 1,
+          "MinibatchSize": 1,
+          "NNCacheSize": 200000
+        },
+        "executable_sha256": "0d843a96a03493bb8cdcca6462712ebb2371e1547fd334f593c7c10af5507909"
+      },
+      "updated_at": "2026-09-26T15:38:37+03:00",
+      "termination": "checkmate",
+      "finished_at": "2026-09-26T15:38:37+03:00",
+      "plies": 36,
+      "jev_turns": 18,
+      "jev_cost_usd": 0.0044358719999999996,
+      "average_jev_wall_seconds": 0.9537913666443072
+    },
+    {
+      "system": "team",
+      "opponent": "Maia 1900",
+      "level": {
+        "id": "maia_1900",
+        "name": "Maia 1900",
+        "kind": "maia",
+        "training_rating": 1900
+      },
+      "started_at": "2026-09-26T15:38:37+03:00",
+      "status": "loss",
+      "result": "0-1",
+      "pgn": "team/maia_1900.pgn",
+      "api_retries": [],
+      "opponent_runtime": {
+        "weights": "models\\maia\\maia-1900.pb.gz",
+        "weights_sha256": "e2f565f42d7cd9f122557e6dc4eb84e5bbaedceda1d404dc485d3611c7c97a12",
+        "nodes_per_move": 1,
+        "backend": "blas",
+        "engine": {
+          "name": "Lc0 v0.32.1",
+          "author": "The LCZero Authors."
+        },
+        "settings": {
+          "Threads": 1,
+          "MinibatchSize": 1,
+          "NNCacheSize": 200000
+        },
+        "executable_sha256": "0d843a96a03493bb8cdcca6462712ebb2371e1547fd334f593c7c10af5507909"
+      },
+      "updated_at": "2026-09-26T15:38:46+03:00",
+      "termination": "checkmate",
+      "finished_at": "2026-09-26T15:38:46+03:00",
+      "plies": 18,
+      "jev_turns": 9,
+      "jev_cost_usd": 0.002370648,
+      "average_jev_wall_seconds": 0.9385235444383903
+    },
+    {
+      "system": "team",
+      "opponent": "Stockfish (maximum skill)",
+      "level": {
+        "id": "stockfish",
+        "name": "Stockfish (maximum skill)",
+        "kind": "stockfish"
+      },
+      "started_at": "2026-09-26T15:38:49+03:00",
+      "status": "loss",
+      "result": "0-1",
+      "pgn": "team/stockfish.pgn",
+      "api_retries": [],
+      "opponent_runtime": {
+        "nodes_per_move": 200000,
+        "skill_level": 20,
+        "engine": {
+          "name": "Stockfish 19",
+          "author": "the Stockfish developers (see AUTHORS file)"
+        },
+        "settings": {
+          "Threads": 1,
+          "Hash": 64,
+          "Skill Level": 20,
+          "UCI_LimitStrength": false
+        },
+        "executable_sha256": "45bc8e4969147db9c2eb533810637994619bff0eacc81ccfd9854394901bcbd0"
+      },
+      "updated_at": "2026-09-26T15:39:05+03:00",
+      "termination": "checkmate",
+      "finished_at": "2026-09-26T15:39:05+03:00",
+      "plies": 24,
+      "jev_turns": 12,
+      "jev_cost_usd": 0.003368274,
+      "average_jev_wall_seconds": 1.0750014499838774
+    }
+  ]
+}

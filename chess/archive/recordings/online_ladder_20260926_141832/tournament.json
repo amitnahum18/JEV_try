@@ -1,0 +1,279 @@
+{
+  "started_at": "2026-09-26T14:18:32+03:00",
+  "jev_color": "white",
+  "promotion_rule": "Advance only after a JEV win; stop on draw, loss, API error, or move cap.",
+  "ranking_source": "ChessBench LLM leaderboard; relative benchmark ratings only.",
+  "reasoning_effort": "low (speed setting; not ChessBench-equivalent)",
+  "max_plies_per_game": 160,
+  "games": [
+    {
+      "round": 1,
+      "opponent": "Qwen3.7 Plus",
+      "model_id": "qwen/qwen3.7-plus",
+      "chessbench_rating": 1168,
+      "reasoning_effort": "low",
+      "pgn": "game_01_qwen3_7-plus.pgn",
+      "decisions": "game_01_qwen3_7-plus.json",
+      "status": "error",
+      "moves": [
+        {
+          "ply": 1,
+          "player": "JEV",
+          "fen_before": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+          "uci": "e2e4",
+          "san": "e4",
+          "confidence": 0.5,
+          "council_role_moves": {
+            "risk": "e2e4",
+            "tactics": "e2e4",
+            "strategy": "e2e4"
+          },
+          "council_agreement": 1.0,
+          "latency_seconds": 0.93,
+          "input_tokens": 4641,
+          "cost_usd": 0.000194922
+        },
+        {
+          "ply": 2,
+          "player": "Qwen3.7 Plus",
+          "fen_before": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+          "uci": "c7c5",
+          "san": "c5",
+          "latency_seconds": 6.359,
+          "input_tokens": 362,
+          "output_tokens": 338,
+          "cost_usd": 0.00054848,
+          "provider": "Alibaba"
+        },
+        {
+          "ply": 3,
+          "player": "JEV",
+          "fen_before": "rnbqkbnr/pp1ppppp/8/2p5/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+          "uci": "g1f3",
+          "san": "Nf3",
+          "confidence": 0.29666666666666663,
+          "council_role_moves": {
+            "tactics": "g1f3",
+            "risk": "g1f3",
+            "strategy": "g1f3"
+          },
+          "council_agreement": 1.0,
+          "latency_seconds": 0.714,
+          "input_tokens": 6120,
+          "cost_usd": 0.00025704
+        },
+        {
+          "ply": 4,
+          "player": "Qwen3.7 Plus",
+          "fen_before": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+          "uci": "b8c6",
+          "san": "Nc6",
+          "latency_seconds": 4.043,
+          "input_tokens": 401,
+          "output_tokens": 160,
+          "cost_usd": 0.00033312,
+          "provider": "Alibaba"
+        },
+        {
+          "ply": 5,
+          "player": "JEV",
+          "fen_before": "r1bqkbnr/pp1ppppp/2n5/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+          "uci": "f3g5",
+          "san": "Ng5",
+          "confidence": 0.16,
+          "council_role_moves": {
+            "tactics": "f3g5",
+            "risk": "f3g5",
+            "strategy": "e4e5"
+          },
+          "council_agreement": 0.6666666666666666,
+          "latency_seconds": 0.749,
+          "input_tokens": 5829,
+          "cost_usd": 0.000244818
+        },
+        {
+          "ply": 6,
+          "player": "Qwen3.7 Plus",
+          "fen_before": "r1bqkbnr/pp1ppppp/2n5/2p3N1/4P3/8/PPPP1PPP/RNBQKB1R b KQkq - 3 3",
+          "uci": "g8f6",
+          "san": "Nf6",
+          "latency_seconds": 11.495,
+          "input_tokens": 447,
+          "output_tokens": 670,
+          "cost_usd": 0.00100064,
+          "provider": "Alibaba"
+        },
+        {
+          "ply": 7,
+          "player": "JEV",
+          "fen_before": "r1bqkb1r/pp1ppppp/2n2n2/2p3N1/4P3/8/PPPP1PPP/RNBQKB1R w KQkq - 4 4",
+          "uci": "g5f7",
+          "san": "Nxf7",
+          "confidence": 0.3233333333333333,
+          "council_role_moves": {
+            "risk": "g5f7",
+            "tactics": "g5f7",
+            "strategy": "g5f7"
+          },
+          "council_agreement": 1.0,
+          "latency_seconds": 0.622,
+          "input_tokens": 6588,
+          "cost_usd": 0.000276696
+        },
+        {
+          "ply": 8,
+          "player": "Qwen3.7 Plus",
+          "fen_before": "r1bqkb1r/pp1ppNpp/2n2n2/2p5/4P3/8/PPPP1PPP/RNBQKB1R b KQkq - 0 4",
+          "uci": "e8f7",
+          "san": "Kxf7",
+          "latency_seconds": 12.114,
+          "input_tokens": 505,
+          "output_tokens": 804,
+          "cost_usd": 0.00119072,
+          "provider": "Alibaba"
+        },
+        {
+          "ply": 9,
+          "player": "JEV",
+          "fen_before": "r1bq1b1r/pp1ppkpp/2n2n2/2p5/4P3/8/PPPP1PPP/RNBQKB1R w KQ - 0 5",
+          "uci": "d1h5",
+          "san": "Qh5+",
+          "confidence": 0.215,
+          "council_role_moves": {
+            "strategy": "f1c4",
+            "risk": "d1h5",
+            "tactics": "d1h5"
+          },
+          "council_agreement": 0.6666666666666666,
+          "latency_seconds": 0.652,
+          "input_tokens": 5853,
+          "cost_usd": 0.000245826
+        },
+        {
+          "ply": 10,
+          "player": "Qwen3.7 Plus",
+          "fen_before": "r1bq1b1r/pp1ppkpp/2n2n2/2p4Q/4P3/8/PPPP1PPP/RNB1KB1R b KQ - 1 5",
+          "uci": "f6h5",
+          "san": "Nxh5",
+          "latency_seconds": 26.646,
+          "input_tokens": 208,
+          "output_tokens": 1716,
+          "cost_usd": 0.00226304,
+          "provider": "Alibaba"
+        },
+        {
+          "ply": 11,
+          "player": "JEV",
+          "fen_before": "r1bq1b1r/pp1ppkpp/2n5/2p4n/4P3/8/PPPP1PPP/RNB1KB1R w KQ - 0 6",
+          "uci": "f1c4",
+          "san": "Bc4+",
+          "confidence": 0.275,
+          "council_role_moves": {
+            "strategy": "f1c4",
+            "tactics": "f1c4",
+            "risk": "e4e5"
+          },
+          "council_agreement": 0.6666666666666666,
+          "latency_seconds": 2.14,
+          "input_tokens": 5397,
+          "cost_usd": 0.000226674
+        },
+        {
+          "ply": 12,
+          "player": "Qwen3.7 Plus",
+          "fen_before": "r1bq1b1r/pp1ppkpp/2n5/2p4n/2B1P3/8/PPPP1PPP/RNB1K2R b KQ - 1 6",
+          "uci": "d7d5",
+          "san": "d5",
+          "latency_seconds": 47.469,
+          "input_tokens": 229,
+          "output_tokens": 3099,
+          "cost_usd": 0.00404,
+          "provider": "Alibaba"
+        },
+        {
+          "ply": 13,
+          "player": "JEV",
+          "fen_before": "r1bq1b1r/pp2pkpp/2n5/2pp3n/2B1P3/8/PPPP1PPP/RNB1K2R w KQ - 0 7",
+          "uci": "c4d5",
+          "san": "Bxd5+",
+          "confidence": 0.4766666666666666,
+          "council_role_moves": {
+            "risk": "c4d5",
+            "strategy": "c4d5",
+            "tactics": "c4d5"
+          },
+          "council_agreement": 1.0,
+          "latency_seconds": 0.804,
+          "input_tokens": 6144,
+          "cost_usd": 0.000258048
+        },
+        {
+          "ply": 14,
+          "player": "Qwen3.7 Plus",
+          "fen_before": "r1bq1b1r/pp2pkpp/2n5/2pB3n/4P3/8/PPPP1PPP/RNB1K2R b KQ - 0 7",
+          "uci": "d8d5",
+          "san": "Qxd5",
+          "latency_seconds": 50.206,
+          "input_tokens": 245,
+          "output_tokens": 3654,
+          "cost_usd": 0.00475552,
+          "provider": "Alibaba"
+        },
+        {
+          "ply": 15,
+          "player": "JEV",
+          "fen_before": "r1b2b1r/pp2pkpp/2n5/2pq3n/4P3/8/PPPP1PPP/RNB1K2R w KQ - 0 8",
+          "uci": "e4d5",
+          "san": "exd5",
+          "confidence": 0.42,
+          "council_role_moves": {
+            "tactics": "e4d5",
+            "risk": "e4d5",
+            "strategy": "e4d5"
+          },
+          "council_agreement": 1.0,
+          "latency_seconds": 0.69,
+          "input_tokens": 5253,
+          "cost_usd": 0.000220626
+        },
+        {
+          "ply": 16,
+          "player": "Qwen3.7 Plus",
+          "fen_before": "r1b2b1r/pp2pkpp/2n5/2pP3n/8/8/PPPP1PPP/RNB1K2R b KQ - 0 8",
+          "uci": "e7e6",
+          "san": "e6",
+          "latency_seconds": 38.674,
+          "input_tokens": 537,
+          "output_tokens": 2697,
+          "cost_usd": 0.003624,
+          "provider": "Alibaba"
+        },
+        {
+          "ply": 17,
+          "player": "JEV",
+          "fen_before": "r1b2b1r/pp3kpp/2n1p3/2pP3n/8/8/PPPP1PPP/RNB1K2R w KQ - 0 9",
+          "uci": "d5e6",
+          "san": "dxe6+",
+          "confidence": 0.4633333333333334,
+          "council_role_moves": {
+            "strategy": "d5e6",
+            "risk": "d5e6",
+            "tactics": "d5e6"
+          },
+          "council_agreement": 1.0,
+          "latency_seconds": 1.007,
+          "input_tokens": 5412,
+          "cost_usd": 0.000227304
+        }
+      ],
+      "result": "*",
+      "termination": "api_or_engine_error",
+      "error": "qwen/qwen3.7-plus did not return a valid legal UCI move; response={\"finish_reason\": \"length\", \"refusal\": null, \"content\": null, \"provider\": \"Alibaba\"}"
+    }
+  ],
+  "completed": false,
+  "last_completed_at": "2026-09-26T14:22:50+03:00",
+  "stopped_after": "Qwen3.7 Plus",
+  "stop_reason": "error",
+  "finished_at": "2026-09-26T14:22:50+03:00"
+}

@@ -1,0 +1,314 @@
+{
+  "Q01": {
+    "correct_choice": "D",
+    "correct_text": "15",
+    "solution_he": "18×7=126; (126−36)/6=15.",
+    "sources": []
+  },
+  "Q02": {
+    "correct_choice": "A",
+    "correct_text": "48",
+    "solution_he": "80×3/4−12=48.",
+    "sources": []
+  },
+  "Q03": {
+    "correct_choice": "C",
+    "correct_text": "6",
+    "solution_he": "3x=18 ולכן x=6.",
+    "sources": []
+  },
+  "Q04": {
+    "correct_choice": "D",
+    "correct_text": "28 m",
+    "solution_he": "s=v0*t+a*t²/2=12+16=28 מטר.",
+    "sources": []
+  },
+  "Q05": {
+    "correct_choice": "B",
+    "correct_text": "6 A",
+    "solution_he": "הזרמים הם 2 ו־4 אמפר; יחד 6.",
+    "sources": []
+  },
+  "Q06": {
+    "correct_choice": "B",
+    "correct_text": "France",
+    "solution_he": "פריז היא בירת צרפת.",
+    "sources": [
+      "https://www.france.fr/fr/destination/paris/"
+    ]
+  },
+  "Q07": {
+    "correct_choice": "A",
+    "correct_text": "Tokyo",
+    "solution_he": "טוקיו היא בירת יפן.",
+    "sources": [
+      "https://www.japan.go.jp/japan/index.html"
+    ]
+  },
+  "Q08": {
+    "correct_choice": "C",
+    "correct_text": "Box K is heavy",
+    "solution_he": "K שייכת לאדומות, שכל חבריה כבדים. הכיוון ההפוך לא נתון.",
+    "sources": []
+  },
+  "Q09": {
+    "correct_choice": "B",
+    "correct_text": "1/3",
+    "solution_he": "5 ו־6 הם שני מקרים מתוך שישה.",
+    "sources": []
+  },
+  "Q10": {
+    "correct_choice": "A",
+    "correct_text": "2 hours",
+    "solution_he": "קצב משותף 1/6+1/3=1/2 מכל לשעה, ולכן שעתיים.",
+    "sources": []
+  },
+  "Q11": {
+    "correct_choice": "D",
+    "correct_text": "-1/2",
+    "solution_he": "נגזור לפי a את B(a,3−a) ב־a=1. B(1,2)=1/2 והפרש דיגמא ψ(1)−ψ(2)=−1, ולכן ‎−1/2.",
+    "sources": []
+  },
+  "Q12": {
+    "correct_choice": "B",
+    "correct_text": "121393",
+    "solution_he": "Dn=3D(n−1)−D(n−2), עם D0=1,D1=3. זוהי F(2n+2), ולכן D12=F26=121393.",
+    "sources": []
+  },
+  "Q13": {
+    "correct_choice": "B",
+    "correct_text": "155",
+    "solution_he": "1001=7×11×13. לפי משפט השאריות הסיני השורשים בתחום הם 1,155,274,428,573,727,846,1000. הקטן הבא הוא 155.",
+    "sources": []
+  },
+  "Q14": {
+    "correct_choice": "A",
+    "correct_text": "1806",
+    "solution_he": "הכלה והפרדה: 3^7−3×2^7+3=1806.",
+    "sources": []
+  },
+  "Q15": {
+    "correct_choice": "D",
+    "correct_text": "245760",
+    "solution_he": "הפולינום האופייני (r−2)². התנאים נותנים an=n×2^(n−1), ולכן a15=245760.",
+    "sources": []
+  },
+  "Q16": {
+    "correct_choice": "C",
+    "correct_text": "8",
+    "solution_he": "מצמידים k ו־17−k. כל זוג נותן 1/(1−z)+1/(1−1/z)=1. שמונה זוגות נותנים 8.",
+    "sources": []
+  },
+  "Q17": {
+    "correct_choice": "B",
+    "correct_text": "108",
+    "solution_he": "xy+yz+zx=−3. דיסקרימיננטת t³−3t−xyz היא 108−27(xyz)². המקסימום 108 מושג ב־(√3,0,−√3).",
+    "sources": []
+  },
+  "Q18": {
+    "correct_choice": "D",
+    "correct_text": "pi^2/3 - 3",
+    "solution_he": "מפרקים ל־1/n²+1/(n+1)²−2/[n(n+1)]. הסכום 2ζ(2)−3=π²/3−3.",
+    "sources": []
+  },
+  "Q19": {
+    "correct_choice": "A",
+    "correct_text": "32000",
+    "solution_he": "ממשפט המטריצה־עץ, עבור K(m,n) המספר m^(n−1)n^(m−1). לכן 4⁴×5³=32000.",
+    "sources": []
+  },
+  "Q20": {
+    "correct_choice": "C",
+    "correct_text": "24",
+    "solution_he": "מ־p'/p=Σ1/(t−rj), הסכום המבוקש הוא (p'/p)²−p''/p ב־t=1. p=−1,p'=2,p''=20, לכן 24.",
+    "sources": []
+  },
+  "Q21": {
+    "correct_choice": "D",
+    "correct_text": "pi^4/90",
+    "solution_he": "מפתחים 1/(1−xy)=Σ(xy)^n. כל איבר תורם 1/(n+1)^4; הסכום ζ(4)=π⁴/90.",
+    "sources": []
+  },
+  "Q22": {
+    "correct_choice": "A",
+    "correct_text": "429",
+    "solution_he": "הצעד הראשון מזרח והאחרון צפון. הסרתם והזזה נותנות מסלול קטלן מסדר 7: C7=binomial(14,7)/8=429.",
+    "sources": []
+  },
+  "Q23": {
+    "correct_choice": "B",
+    "correct_text": "42",
+    "solution_he": "חפיפות תחילית–סופית באורכים 1,3,5 נותנות תוחלת 2¹+2³+2⁵=42. מאומת גם במשוואות מצבי תחילית.",
+    "sources": []
+  },
+  "Q24": {
+    "correct_choice": "B",
+    "correct_text": "pi/2 - 1",
+    "solution_he": "שטח רבע העיגול מעל הישר π/4−1/2. שטח התחום המותנה 1/2. היחס π/2−1.",
+    "sources": []
+  },
+  "Q25": {
+    "correct_choice": "A",
+    "correct_text": "60/143",
+    "solution_he": "ההתפלגות המותנית Beta(8,3). מומנט שלישי: 8×9×10/(11×12×13)=60/143; אין להציב p=7/9.",
+    "sources": []
+  },
+  "Q26": {
+    "correct_choice": "A",
+    "correct_text": "53/288",
+    "solution_he": "binomial(8,2)×D6/8!, עם D6=265, נותן 53/288.",
+    "sources": []
+  },
+  "Q27": {
+    "correct_choice": "D",
+    "correct_text": "7",
+    "solution_he": "e0=1+e1; e1=1+(e0+e2)/2; e2=1+e1/3. e1=6 ולכן e0=7.",
+    "sources": []
+  },
+  "Q28": {
+    "correct_choice": "C",
+    "correct_text": "1539/2059",
+    "solution_he": "פתרון h(i)=0.6h(i+1)+0.4h(i−1), h0=0,h7=1, הוא [1−(2/3)^i]/[1−(2/3)^7]. ב־i=3: 1539/2059.",
+    "sources": []
+  },
+  "Q29": {
+    "correct_choice": "A",
+    "correct_text": "5/3",
+    "solution_he": "E[r²]=1/2,E[r⁴]=1/3,E[cosθ]=0,E[cos²θ]=1/2. פיתוח D⁴ נותן 2/3+1/2+1/2=5/3.",
+    "sources": []
+  },
+  "Q30": {
+    "correct_choice": "C",
+    "correct_text": "5/42",
+    "solution_he": "מספר קבוצות ללא סמיכות במעגל: 10/6×binomial(6,4)=25. מחלקים ב־binomial(10,4)=210 לקבלת 5/42.",
+    "sources": []
+  },
+  "Q31": {
+    "correct_choice": "C",
+    "correct_text": "(7+3*sqrt(5))/2",
+    "solution_he": "ל־λ=ω²m/k המצב האנטי־סימטרי נותן 2. הסימטריים נותנים λ²−3λ+1=0. יחס השורשים הוא (7+3√5)/2.",
+    "sources": []
+  },
+  "Q32": {
+    "correct_choice": "C",
+    "correct_text": "(37/12)*m*c^2",
+    "solution_he": "γיחסי=γAγB(1−vAvB/c²)=(5/4)(5/3)(37/25)=37/12. האנרגיה γmc².",
+    "sources": [
+      "https://openstax.org/books/university-physics-volume-3/pages/5-3-time-dilation"
+    ]
+  },
+  "Q33": {
+    "correct_choice": "B",
+    "correct_text": "1000 J",
+    "solution_he": "אנטרופיה נשמרת: Tf=√(400×100)=200 K. איבוד אנרגיה כולל 10(400+100−2×200)=1000 J.",
+    "sources": [
+      "https://www.ocw.mit.edu/ans7870/16/16.unified/thermoF03/chapter_7.htm"
+    ]
+  },
+  "Q34": {
+    "correct_choice": "C",
+    "correct_text": "1/15",
+    "solution_he": "מטען הצומת CV−2CV=−CV. קיבול סופי 3C+2C=5C; Uf=CV²/10. במקור Ui=3CV²/2. היחס 1/15.",
+    "sources": [
+      "https://openstax.org/books/university-physics-volume-2/pages/8-4-capacitor-with-a-dielectric"
+    ]
+  },
+  "Q35": {
+    "correct_choice": "A",
+    "correct_text": "2*sqrt(2)/3",
+    "solution_he": "המצב לא משתנה ברגע הקפיצה. חפיפת גאוסיאני היסוד בריבוע 2√(ωω')/(ω+ω'). עם ω'=2ω מתקבל 2√2/3.",
+    "sources": [
+      "https://openstax.org/books/university-physics-volume-3/pages/7-5-the-quantum-harmonic-oscillator"
+    ]
+  },
+  "Q36": {
+    "correct_choice": "A",
+    "correct_text": "(4+sqrt(2))/8",
+    "solution_he": "סיבובי בלוך בזוויות π/3 סביב x ו־π/4 סביב y נותנים z=cos(π/3)cos(π/4)=√2/4. ההסתברות (1+z)/2=(4+√2)/8.",
+    "sources": []
+  },
+  "Q37": {
+    "correct_choice": "A",
+    "correct_text": "sqrt(6)",
+    "solution_he": "במסלול ω²=4ar²/m. הנגזרת השנייה של הפוטנציאל האפקטיבי 24ar², ולכן Ωr²=6ω².",
+    "sources": []
+  },
+  "Q38": {
+    "correct_choice": "B",
+    "correct_text": "r/7",
+    "solution_he": "vis-viva נותנת 1/a=2/r−v²/(GM)=7/(4r), ולכן a=4r/7. הנקודה הנוכחית היא אפואפסיס r; פריאפסיס 2a−r=r/7.",
+    "sources": []
+  },
+  "Q39": {
+    "correct_choice": "B",
+    "correct_text": "(6+2*sqrt(5))/25",
+    "solution_he": "אמפליטודה כוללת בגודל sin(5δ/2)/sin(δ/2)=1/sin(π/10)=1+√5. ריבועה 6+2√5, מול 25 בפאזות שוות.",
+    "sources": []
+  },
+  "Q40": {
+    "correct_choice": "C",
+    "correct_text": "8/53",
+    "solution_he": "במקור X=ωL−1/(ωC)=R. בכפולה X'=2ωL−ωL/4=7R/2. היחס 2/(1+49/4)=8/53.",
+    "sources": []
+  },
+  "Q41": {
+    "correct_choice": "B",
+    "correct_text": "(v_t^2/(2*g))*ln(4/3)",
+    "solution_he": "v dv/dx=g(1−v²/vt²), ולכן v²/vt²=1−exp(−2gx/vt²). מציבים 1/4: x=(vt²/2g)ln(4/3).",
+    "sources": []
+  },
+  "Q42": {
+    "correct_choice": "D",
+    "correct_text": "sqrt(3*g/(2*R))",
+    "solution_he": "Veff=mgR(1−cosθ)−mω²R²sin²θ/2. בשיווי משקל cosθ=1/2, והתדירות בריבוע ω²sin²θ=3g/(2R).",
+    "sources": []
+  },
+  "Q43": {
+    "correct_choice": "D",
+    "correct_text": "Knights A,B,D,F; knaves C,E",
+    "solution_he": "סריקת 64 השמות המחייבת סוג דובר שווה לאמיתות טענתו נותנת פתרון יחיד: A,B,D,F אמת; C,E שקר.",
+    "sources": []
+  },
+  "Q44": {
+    "correct_choice": "D",
+    "correct_text": "53 minutes",
+    "solution_he": "שולחים 17,24 בעזרת שני המהירים בעלות 31; את 8,12 בעלות 19; לבסוף 1,3 ב־3. סך 53. מינימליות מאומתת בחיפוש מסלול קצר בכל המצבים.",
+    "sources": []
+  },
+  "Q45": {
+    "correct_choice": "C",
+    "correct_text": "No; four weighings cannot guarantee both identifications",
+    "solution_he": "בשקילה ראשונה m מול m: בענף לא מאוזן 2m אפשרויות מחייבות m≤13. בענף מאוזן 2(40−2m)≤27 מחייב m≥14. סתירה. כפות עם מספרי מטבעות שונים לא מבטיחות מידע כשהבדל המשקל יכול להיות קטן כרצוננו.",
+    "sources": []
+  },
+  "Q46": {
+    "correct_choice": "D",
+    "correct_text": "198",
+    "solution_he": "בלי אסיר אחד, 98 האחרים מדליקים לכל היותר 196 פעמים, ועוד אחת אם הנורה התחילה דלוקה: 197. סף 198 מבטיח שכולם ביקרו; 197 לא. המונה ביקר בהכרח.",
+    "sources": []
+  },
+  "Q47": {
+    "correct_choice": "B",
+    "correct_text": "7/8",
+    "solution_he": "קוד האמינג באורך 7 נותן 16 מרכזים מפסידים ו־112 שכנים מנצחים מתוך 128. כל מצב ניצחון יוצר שכן מפסיד על ידי היפוך כובע מנחש נכון; מצב מפסיד מכסה לכל היותר 7 כאלה. לכן החסם וההשגה הם 7/8.",
+    "sources": []
+  },
+  "Q48": {
+    "correct_choice": "D",
+    "correct_text": "9",
+    "solution_he": "ב־t הטלות עם 3 ביצים ניתן לכסות t+binomial(t,2)+binomial(t,3) קומות. ב־8: 92; ב־9: 129. לכן 9.",
+    "sources": []
+  },
+  "Q49": {
+    "correct_choice": "C",
+    "correct_text": "74493",
+    "solution_he": "תכנות דינמי על אורך, אפסים רצופים בסוף (0,1,2), ושארית מספר האחדות מודולו 3. סכום מצבי שארית 0 אחרי 20 צעדים הוא 74493. מאומת גם בסריקת 2^20 מחרוזות.",
+    "sources": []
+  },
+  "Q50": {
+    "correct_choice": "A",
+    "correct_text": "723970",
+    "solution_he": "פתרון יחיד: 526485+197485=723970. D5,O2,N6,A4,L8,G1,E9,R7,B3,T0. מאומת בחיפוש נשיאות עמודה.",
+    "sources": []
+  }
+}

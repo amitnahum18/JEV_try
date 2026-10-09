@@ -1,0 +1,260 @@
+{
+  "episodes": [
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v3",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 7,
+      "config": {
+        "seed": 44,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 120.0,
+        "layout": "vertical_challenge",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true,
+        "pitch_up_deg": 6.0,
+        "pitch_down_deg": 6.0,
+        "extended_pitch_actions": true,
+        "strong_pitch_up_deg": 20.0,
+        "strong_pitch_down_deg": 16.0,
+        "dense_pitch_actions": false
+      },
+      "course_hash": "6323e6bffa7cfcafca2a975deb3493cfa1991ccf4565c66fc4081be97eff8d05",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "25 simultaneous pitch-and-bank combinations.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_verification_20260927\\guidance_only\\single_focused_seed44\\episode.json",
+      "status": "gate_missed",
+      "score": 50,
+      "gates_passed": 1,
+      "gates_total": 8,
+      "simulated_seconds": 16.916666666666668,
+      "minimum_crossing_clearance_margin_m": -3.720976687583054,
+      "final_position_m": [
+        315.0655101735924,
+        -26.274507168249013,
+        38.379098907971326
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.85,
+          "crossing_xyz_m": [
+            95.0,
+            17.86921463169075,
+            23.081261643232157
+          ],
+          "clearance_margin_m": 2.6943367698467995
+        },
+        {
+          "gate": 2,
+          "time_seconds": 16.916666666666668,
+          "crossing_xyz_m": [
+            315.0,
+            -26.25991927050202,
+            38.373803862159626
+          ],
+          "clearance_margin_m": -3.720976687583054
+        }
+      ],
+      "decision_count": 35,
+      "api_calls": 35,
+      "api_attempts": 35,
+      "known_cost_usd": 0.009114504,
+      "cost_complete": true,
+      "wall_seconds": 40.956806499976665,
+      "mean_decision_latency_seconds": 0.9866425314319454,
+      "mean_request_bytes_per_decision": 22792.02857142857,
+      "finished_at": "2026-09-27T11:29:53.730151+03:00",
+      "experiment": "guidance_only"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v2",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 6,
+      "config": {
+        "seed": 44,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 120.0,
+        "layout": "vertical_challenge",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true,
+        "pitch_up_deg": 6.0,
+        "pitch_down_deg": 6.0,
+        "extended_pitch_actions": true,
+        "strong_pitch_up_deg": 20.0,
+        "strong_pitch_down_deg": 16.0,
+        "dense_pitch_actions": true
+      },
+      "course_hash": "6323e6bffa7cfcafca2a975deb3493cfa1991ccf4565c66fc4081be97eff8d05",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "45 simultaneous pitch-and-bank combinations.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_verification_20260927\\angles_only\\single_focused_seed44\\episode.json",
+      "status": "gate_missed",
+      "score": 150,
+      "gates_passed": 2,
+      "gates_total": 8,
+      "simulated_seconds": 28.016666666666666,
+      "minimum_crossing_clearance_margin_m": -2.2276942324238007,
+      "final_position_m": [
+        525.1314274099433,
+        32.82922206067046,
+        24.294352941573848
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.808333333333334,
+          "crossing_xyz_m": [
+            95.0,
+            17.5446622730939,
+            22.552827722591122
+          ],
+          "clearance_margin_m": 2.1659028492057644
+        },
+        {
+          "gate": 2,
+          "time_seconds": 17.35,
+          "crossing_xyz_m": [
+            315.0,
+            -29.15742445557008,
+            42.94065362940019
+          ],
+          "clearance_margin_m": 0.8458730796575082
+        },
+        {
+          "gate": 3,
+          "time_seconds": 28.016666666666666,
+          "crossing_xyz_m": [
+            525.0,
+            32.78395007382806,
+            24.323348557709078
+          ],
+          "clearance_margin_m": -2.2276942324238007
+        }
+      ],
+      "decision_count": 58,
+      "api_calls": 58,
+      "api_attempts": 58,
+      "known_cost_usd": 0.017909934,
+      "cost_complete": true,
+      "wall_seconds": 58.151489600073546,
+      "mean_decision_latency_seconds": 0.8334576758628326,
+      "mean_request_bytes_per_decision": 26711.741379310344,
+      "finished_at": "2026-09-27T11:30:10.930189+03:00",
+      "experiment": "angles_only"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v3",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 7,
+      "config": {
+        "seed": 44,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 120.0,
+        "layout": "vertical_challenge",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true,
+        "pitch_up_deg": 6.0,
+        "pitch_down_deg": 6.0,
+        "extended_pitch_actions": true,
+        "strong_pitch_up_deg": 20.0,
+        "strong_pitch_down_deg": 16.0,
+        "dense_pitch_actions": true
+      },
+      "course_hash": "6323e6bffa7cfcafca2a975deb3493cfa1991ccf4565c66fc4081be97eff8d05",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "45 simultaneous pitch-and-bank combinations.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_verification_20260927\\combined\\single_focused_seed44\\episode.json",
+      "status": "gate_missed",
+      "score": 350,
+      "gates_passed": 4,
+      "gates_total": 8,
+      "simulated_seconds": 56.34166666666667,
+      "minimum_crossing_clearance_margin_m": -3.5716076082519876,
+      "final_position_m": [
+        1045.010119300356,
+        29.272349202203063,
+        29.616080638978342
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.85,
+          "crossing_xyz_m": [
+            95.0,
+            17.86921463169075,
+            23.081261643232157
+          ],
+          "clearance_margin_m": 2.6943367698467995
+        },
+        {
+          "gate": 2,
+          "time_seconds": 17.558333333333334,
+          "crossing_xyz_m": [
+            315.0,
+            -26.612575750194715,
+            47.59625259286257
+          ],
+          "clearance_margin_m": 2.113270067225791
+        },
+        {
+          "gate": 3,
+          "time_seconds": 27.708333333333332,
+          "crossing_xyz_m": [
+            525.0,
+            41.15910762943316,
+            16.97623928227839
+          ],
+          "clearance_margin_m": 1.1625622482576787
+        },
+        {
+          "gate": 4,
+          "time_seconds": 44.416666666666664,
+          "crossing_xyz_m": [
+            805.0,
+            -38.958612286201145,
+            56.404031356814414
+          ],
+          "clearance_margin_m": 2.0506485954533886
+        },
+        {
+          "gate": 5,
+          "time_seconds": 56.34166666666667,
+          "crossing_xyz_m": [
+            1045.0,
+            29.269020179648344,
+            29.617531005134186
+          ],
+          "clearance_margin_m": -3.5716076082519876
+        }
+      ],
+      "decision_count": 115,
+      "api_calls": 115,
+      "api_attempts": 115,
+      "known_cost_usd": 0.043203846,
+      "cost_complete": true,
+      "wall_seconds": 109.46877190005034,
+      "mean_decision_latency_seconds": 0.7581301643432159,
+      "mean_request_bytes_per_decision": 34549.45217391304,
+      "finished_at": "2026-09-27T11:31:02.245549+03:00",
+      "experiment": "combined"
+    }
+  ]
+}

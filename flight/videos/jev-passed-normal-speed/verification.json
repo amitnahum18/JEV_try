@@ -1,0 +1,46 @@
+{
+  "programs": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "width": 1440,
+      "height": 860,
+      "r_frame_rate": "30/1",
+      "duration": "31.666992",
+      "nb_frames": "950"
+    }
+  ],
+  "format": {
+    "duration": "31.667000",
+    "size": "12976204"
+  },
+  "source_export": {
+    "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5\\single_focused_seed44\\episode.json",
+    "source_sha256": "ff4c7cc18edd4ce818b6eebde8031cdfd93f258ecabf1d3855fe0ea2fe78d74b",
+    "source_model": "typesafe/jev-1.13",
+    "source_prompt_version": 5,
+    "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\source_footage\\jev_seed44_5of5_1x.mp4",
+    "width": 1440,
+    "height": 860,
+    "fps": 30,
+    "frames": 950,
+    "video_duration_seconds": 31.666666666666668,
+    "simulation_duration_seconds": 29.616666666666667,
+    "final_hold_seconds": 2.0,
+    "speed": 1,
+    "physics_steps_replayed": 3554,
+    "status": "completed",
+    "gates_passed": 5,
+    "final_position_matches_original": true,
+    "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+    "export_wall_seconds": 328.5421697997954
+  },
+  "checks": {
+    "h264": true,
+    "fps_30": true,
+    "frames_950": true,
+    "dimensions_match": true,
+    "duration_matches_1x_export": true,
+    "hyperframes_check_passed": true
+  }
+}

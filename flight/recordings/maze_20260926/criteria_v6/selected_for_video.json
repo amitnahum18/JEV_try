@@ -1,0 +1,89 @@
+{
+  "selected": {
+    "schema_version": 5,
+    "feature_schema": "flight_opening_context_v2",
+    "policy": "single_focused",
+    "model": "typesafe/jev-1.13",
+    "architecture": "single",
+    "telemetry": "focused",
+    "prompt_version": 6,
+    "config": {
+      "seed": 44,
+      "level": 1,
+      "gates": 8,
+      "decision_seconds": 0.5,
+      "max_seconds": 85.0,
+      "layout": "maze",
+      "control_profile": "banked_v2",
+      "refresh_on_gate_pass": true
+    },
+    "course_hash": "81f210989132994fcd9b91f2aa4ece26f7955ab0639c42ac2fb02592dfab6b32",
+    "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+    "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+    "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926\\criteria_v6\\single_focused_seed44\\episode.json",
+    "status": "api_error",
+    "score": 400,
+    "gates_passed": 4,
+    "gates_total": 8,
+    "simulated_seconds": 30.175,
+    "minimum_crossing_clearance_margin_m": 1.0672853722213596,
+    "final_position_m": [
+      567.9929327138974,
+      -32.857468519845064,
+      28.423133857055344
+    ],
+    "gate_events": [
+      {
+        "gate": 1,
+        "time_seconds": 4.766666666666667,
+        "crossing_xyz_m": [
+          95.0,
+          16.822555429292418,
+          21.978255159775692
+        ],
+        "clearance_margin_m": 2.5404254903440187
+      },
+      {
+        "gate": 2,
+        "time_seconds": 12.866666666666667,
+        "crossing_xyz_m": [
+          250.0,
+          -15.82206317416192,
+          26.16206592196404
+        ],
+        "clearance_margin_m": 1.0672853722213596
+      },
+      {
+        "gate": 3,
+        "time_seconds": 19.733333333333334,
+        "crossing_xyz_m": [
+          380.0,
+          26.3665105460358,
+          23.65663994038741
+        ],
+        "clearance_margin_m": 1.4390143848978667
+      },
+      {
+        "gate": 4,
+        "time_seconds": 28.675,
+        "crossing_xyz_m": [
+          540.0,
+          -23.492262677624254,
+          30.34493377417115
+        ],
+        "clearance_margin_m": 1.6316663933145072
+      }
+    ],
+    "error": "OpenRouter returned HTTP 402: {\"error\":{\"message\":\"Insufficient credits. Add more using https://openrouter.ai/settings/credits\",\"code\":402,\"metadata\":{\"limit_source\":\"openrouter_credits\",\"remedy_hint\":\"Add credits at https://openrouter.ai/settings/credits, or lower max_tokens / prompt size to fit your remaining balance.\"}}}",
+    "decision_count": 62,
+    "api_calls": 62,
+    "api_attempts": 63,
+    "known_cost_usd": 0.010613358,
+    "cost_complete": false,
+    "wall_seconds": 61.79253039998002,
+    "mean_decision_latency_seconds": 0.5612874193560152,
+    "mean_request_bytes_per_decision": 13091.725806451614,
+    "finished_at": "2026-09-26T22:40:35.211556+03:00"
+  },
+  "selection": "Completed flight first, then greatest gates passed; all attempts preserved in results.json."
+}

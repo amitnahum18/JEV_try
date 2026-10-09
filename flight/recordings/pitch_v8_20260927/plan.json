@@ -1,0 +1,325 @@
+{
+  "created_at": "2026-09-27T11:32:31.730850+03:00",
+  "jobs": [
+    [
+      {
+        "seed": 44,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 120.0,
+        "layout": "vertical_challenge",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true,
+        "pitch_up_deg": 6.0,
+        "pitch_down_deg": 6.0,
+        "extended_pitch_actions": true,
+        "strong_pitch_up_deg": 20.0,
+        "strong_pitch_down_deg": 16.0,
+        "dense_pitch_actions": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_v8_20260927",
+      8
+    ],
+    [
+      {
+        "seed": 45,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 120.0,
+        "layout": "vertical_challenge",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true,
+        "pitch_up_deg": 6.0,
+        "pitch_down_deg": 6.0,
+        "extended_pitch_actions": true,
+        "strong_pitch_up_deg": 20.0,
+        "strong_pitch_down_deg": 16.0,
+        "dense_pitch_actions": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_v8_20260927",
+      8
+    ],
+    [
+      {
+        "seed": 46,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 120.0,
+        "layout": "vertical_challenge",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true,
+        "pitch_up_deg": 6.0,
+        "pitch_down_deg": 6.0,
+        "extended_pitch_actions": true,
+        "strong_pitch_up_deg": 20.0,
+        "strong_pitch_down_deg": 16.0,
+        "dense_pitch_actions": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_v8_20260927",
+      8
+    ]
+  ],
+  "actions": 45,
+  "architecture": "single",
+  "prompt_version": 8,
+  "layout": "vertical_challenge",
+  "walls": false,
+  "course_examples": {
+    "44": [
+      {
+        "number": 1,
+        "center_m": [
+          95.0,
+          17.61298091963644,
+          25.886924873385357
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 2,
+        "center_m": [
+          315.0,
+          -31.249305682968924,
+          47.59478054974268
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 3,
+        "center_m": [
+          525.0,
+          35.57166987769084,
+          16.595654325285278
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 4,
+        "center_m": [
+          805.0,
+          -34.259260881654534,
+          58.21326738085664
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 5,
+        "center_m": [
+          1045.0,
+          34.18645467450225,
+          20.5459233968822
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 6,
+        "center_m": [
+          1285.0,
+          7.858241249387798,
+          54.52757017437408
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 7,
+        "center_m": [
+          1535.0,
+          -32.317202091594304,
+          16.258686090331437
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 8,
+        "center_m": [
+          1755.0,
+          30.231139377285352,
+          42.35687916006651
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      }
+    ],
+    "45": [
+      {
+        "number": 1,
+        "center_m": [
+          95.0,
+          18.045585832272323,
+          26.31638028776231
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 2,
+        "center_m": [
+          315.0,
+          -31.50129157278463,
+          48.01227462624087
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 3,
+        "center_m": [
+          525.0,
+          35.44694347583646,
+          17.355335965352054
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 4,
+        "center_m": [
+          805.0,
+          -33.84839199305461,
+          57.890293656275134
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 5,
+        "center_m": [
+          1045.0,
+          34.27404230368768,
+          20.152961395824306
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 6,
+        "center_m": [
+          1285.0,
+          8.54413176917308,
+          54.26899618621532
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 7,
+        "center_m": [
+          1535.0,
+          -32.953570546977524,
+          16.556879106230756
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 8,
+        "center_m": [
+          1755.0,
+          30.95000673140862,
+          42.3733271597184
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      }
+    ],
+    "46": [
+      {
+        "number": 1,
+        "center_m": [
+          95.0,
+          17.32356286913879,
+          25.727083707102366
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 2,
+        "center_m": [
+          315.0,
+          -31.805039228406187,
+          48.520834089947236
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 3,
+        "center_m": [
+          525.0,
+          34.33591485910204,
+          17.155075720073555
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 4,
+        "center_m": [
+          805.0,
+          -33.55908520564118,
+          58.01373221452385
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 5,
+        "center_m": [
+          1045.0,
+          34.397612349860005,
+          20.45658977312745
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 6,
+        "center_m": [
+          1285.0,
+          7.998634626929511,
+          54.353886139443624
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 7,
+        "center_m": [
+          1535.0,
+          -33.71172433727407,
+          16.276431018567738
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 8,
+        "center_m": [
+          1755.0,
+          31.436644372032077,
+          41.47976392222169
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      }
+    ]
+  },
+  "note": "One JEV with explicit joint pitch/bank choices. Prompt v6 describes signed pitch/bank gaps. Hard_turns has 15 choices; vertical_challenge adds strong pitch choices for 25 combinations. Both use open frames. Historical maze retains walls for reproducible earlier recordings. Preserve every attempt."
+}

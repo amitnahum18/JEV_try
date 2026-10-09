@@ -1,0 +1,23 @@
+{
+  "algorithm": "Stable-Baselines3 DQN",
+  "environment": "highway-v0",
+  "model_checkpoint": "checkpoints/grid/dqn_grid_five_lane_10000_steps.zip",
+  "policy_input": "5x15 occupancy matrix (0 empty, 1 traffic, 2 ego)",
+  "grid_observation": true,
+  "lane_only_actions": true,
+  "fixed_target_speed_m_s": 44.0,
+  "training_traffic_vehicles": 50,
+  "matrix_rows": "physical left-to-right, top-to-bottom",
+  "matrix_columns": "140m behind to 140m ahead in 20m cells; ego centered",
+  "seed": 42,
+  "training_steps": 10000,
+  "n_envs": 4,
+  "lanes_count": 5,
+  "vehicles_count": 50,
+  "vehicles_density": 1.0,
+  "observation": "5x15 occupancy grid, flattened; codes 0/1/2",
+  "action": "DiscreteMetaAction: lane left/idle/lane right; fixed 44 m/s target",
+  "reward_speed_range_m_s": [20, 44],
+  "collision_reward": -10.0,
+  "training_simulation_frequency_stages": [15, 9]
+}

@@ -1,0 +1,294 @@
+{
+  "requests": {
+    "vertical": {
+      "model": "typesafe/jev-1.13",
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 5.5,
+        "gates_passed": 0,
+        "gates_total": 5,
+        "previous_action": "level__roll_right",
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 13.408,
+          "roll_left_right_bank_deg": 40,
+          "nominal_pitch_nose_up_deg": 2,
+          "turn_bank_deg": 25,
+          "strong_roll_bank_deg": 40,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin.",
+        "environment": {
+          "wind_world_xyz_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gravity_m_s2": 9.81,
+          "physics_hz": 240,
+          "control_hz": 120,
+          "gate_geometry": "Static rectangular openings in world x planes; positive center error means move LEFT or UP."
+        },
+        "aircraft": {
+          "position_world_xyz_m": [
+            85.386,
+            59.83,
+            22.69
+          ],
+          "velocity_world_xyz_m_s": [
+            9.892,
+            16.86,
+            0.146
+          ],
+          "roll_pitch_yaw_deg": [
+            12.144,
+            -0.609,
+            54.935
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 1,
+            "center_m": [
+              95.0,
+              -14.183364680743843,
+              22.717195839822764
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              9.614,
+              -74.013,
+              0.027
+            ],
+            "distance_m": 74.635
+          },
+          {
+            "number": 2,
+            "center_m": [
+              205.0,
+              14.592104087178091,
+              25.62287848072337
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              119.614,
+              -45.238,
+              2.933
+            ],
+            "distance_m": 127.916
+          },
+          {
+            "number": 3,
+            "center_m": [
+              315.0,
+              -12.573132945089732,
+              24.029726079682277
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              229.614,
+              -72.403,
+              1.34
+            ],
+            "distance_m": 240.763
+          }
+        ],
+        "recent_maneuvers": [
+          {
+            "action": "up__roll_right",
+            "time_seconds": 3.5
+          },
+          {
+            "action": "level__roll_left",
+            "time_seconds": 4.0
+          },
+          {
+            "action": "level__roll_left",
+            "time_seconds": 4.5
+          },
+          {
+            "action": "level__roll_right",
+            "time_seconds": 5.0
+          }
+        ],
+        "simultaneous_axes": {
+          "vertical": {
+            "up": "Target nose-up pitch 6 degrees to climb.",
+            "down": "Target nose-down pitch 6 degrees to descend.",
+            "level": "Target nominal nose-up trim of 2 degrees; not an altitude hold."
+          },
+          "horizontal": {
+            "straight": "Target wings level, zero coordinated yaw rate; not a heading hold.",
+            "left": "Target left bank 25 degrees, coordinated turn.",
+            "right": "Target right bank 25 degrees, coordinated turn.",
+            "roll_left": "Target left bank 40 degrees, stronger coordinated turn.",
+            "roll_right": "Target right bank 40 degrees, stronger coordinated turn."
+          }
+        }
+      },
+      "questions": {
+        "action": {
+          "type": "choice",
+          "instructions": "Pilot a fixed-wing aircraft through the next numbered rectangular gate, then the remaining gates in order. Avoid the frame and ground. Maximize gates passed. Use the provided physical state and gate geometry, account for momentum and attitude response, start turns early and stop or reverse before overshooting. World +x follows the course, +y is LEFT, +z is UP. Euler pitch positive means nose DOWN and Euler roll negative means bank LEFT. Decisions last the stated duration. Pitch and bank commands execute simultaneously through the same attitude stabilizer. Neither nominal pitch nor wings-level locks altitude or heading. Banking may affect lift and vertical motion. Use all available relevant measurements; any constant-velocity crossing forecast is only an estimate, not a prediction of your next maneuver. The stabilizer has no gate knowledge. You control pitch only. Choose up, down or level. Another JEV simultaneously chooses bank using this same state. Its new choice is unknown to you.",
+          "criteria": {
+            "up": "Target nose-up pitch 6 degrees to climb.",
+            "down": "Target nose-down pitch 6 degrees to descend.",
+            "level": "Target nominal nose-up trim of 2 degrees; not an altitude hold."
+          }
+        }
+      }
+    },
+    "horizontal": {
+      "model": "typesafe/jev-1.13",
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 5.5,
+        "gates_passed": 0,
+        "gates_total": 5,
+        "previous_action": "level__roll_right",
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 13.408,
+          "roll_left_right_bank_deg": 40,
+          "nominal_pitch_nose_up_deg": 2,
+          "turn_bank_deg": 25,
+          "strong_roll_bank_deg": 40,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin.",
+        "environment": {
+          "wind_world_xyz_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gravity_m_s2": 9.81,
+          "physics_hz": 240,
+          "control_hz": 120,
+          "gate_geometry": "Static rectangular openings in world x planes; positive center error means move LEFT or UP."
+        },
+        "aircraft": {
+          "position_world_xyz_m": [
+            85.386,
+            59.83,
+            22.69
+          ],
+          "velocity_world_xyz_m_s": [
+            9.892,
+            16.86,
+            0.146
+          ],
+          "roll_pitch_yaw_deg": [
+            12.144,
+            -0.609,
+            54.935
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 1,
+            "center_m": [
+              95.0,
+              -14.183364680743843,
+              22.717195839822764
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              9.614,
+              -74.013,
+              0.027
+            ],
+            "distance_m": 74.635
+          },
+          {
+            "number": 2,
+            "center_m": [
+              205.0,
+              14.592104087178091,
+              25.62287848072337
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              119.614,
+              -45.238,
+              2.933
+            ],
+            "distance_m": 127.916
+          },
+          {
+            "number": 3,
+            "center_m": [
+              315.0,
+              -12.573132945089732,
+              24.029726079682277
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              229.614,
+              -72.403,
+              1.34
+            ],
+            "distance_m": 240.763
+          }
+        ],
+        "recent_maneuvers": [
+          {
+            "action": "up__roll_right",
+            "time_seconds": 3.5
+          },
+          {
+            "action": "level__roll_left",
+            "time_seconds": 4.0
+          },
+          {
+            "action": "level__roll_left",
+            "time_seconds": 4.5
+          },
+          {
+            "action": "level__roll_right",
+            "time_seconds": 5.0
+          }
+        ],
+        "simultaneous_axes": {
+          "vertical": {
+            "up": "Target nose-up pitch 6 degrees to climb.",
+            "down": "Target nose-down pitch 6 degrees to descend.",
+            "level": "Target nominal nose-up trim of 2 degrees; not an altitude hold."
+          },
+          "horizontal": {
+            "straight": "Target wings level, zero coordinated yaw rate; not a heading hold.",
+            "left": "Target left bank 25 degrees, coordinated turn.",
+            "right": "Target right bank 25 degrees, coordinated turn.",
+            "roll_left": "Target left bank 40 degrees, stronger coordinated turn.",
+            "roll_right": "Target right bank 40 degrees, stronger coordinated turn."
+          }
+        }
+      },
+      "questions": {
+        "action": {
+          "type": "choice",
+          "instructions": "Pilot a fixed-wing aircraft through the next numbered rectangular gate, then the remaining gates in order. Avoid the frame and ground. Maximize gates passed. Use the provided physical state and gate geometry, account for momentum and attitude response, start turns early and stop or reverse before overshooting. World +x follows the course, +y is LEFT, +z is UP. Euler pitch positive means nose DOWN and Euler roll negative means bank LEFT. Decisions last the stated duration. Pitch and bank commands execute simultaneously through the same attitude stabilizer. Neither nominal pitch nor wings-level locks altitude or heading. Banking may affect lift and vertical motion. Use all available relevant measurements; any constant-velocity crossing forecast is only an estimate, not a prediction of your next maneuver. The stabilizer has no gate knowledge. You control bank only. Choose straight, left, right, roll_left or roll_right. Another JEV simultaneously chooses pitch using this same state. Its new choice is unknown to you.",
+          "criteria": {
+            "straight": "Target wings level, zero coordinated yaw rate; not a heading hold.",
+            "left": "Target left bank 25 degrees, coordinated turn.",
+            "right": "Target right bank 25 degrees, coordinated turn.",
+            "roll_left": "Target left bank 40 degrees, stronger coordinated turn.",
+            "roll_right": "Target right bank 40 degrees, stronger coordinated turn."
+          }
+        }
+      }
+    }
+  }
+}

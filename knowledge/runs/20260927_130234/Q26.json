@@ -1,0 +1,60 @@
+{
+  "id": "Q26",
+  "status": "answered",
+  "choice": "A",
+  "answer_text": "53/288",
+  "confidence": 0.55,
+  "probabilities": {
+    "unsure": 0.02,
+    "A": 0.64,
+    "C": 0.05,
+    "D": 0.01,
+    "B": 0.28
+  },
+  "cost_usd": 2.2848e-05,
+  "latency_seconds": 0.5713454000651836,
+  "input_tokens": 544,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:37.574322+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "Choose a permutation of 8 labeled elements uniformly from all 8! permutations. What is the probability of exactly 2 fixed points?",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "53/288",
+              "B": "53/144",
+              "C": "265/20160",
+              "D": "1/2",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "A",
+        "confidence": 0.55,
+        "probabilities": {
+          "unsure": 0.02,
+          "A": 0.64,
+          "C": 0.05,
+          "D": 0.01,
+          "B": 0.28
+        },
+        "latency_seconds": 0.5713454000651836,
+        "input_tokens": 544,
+        "cost_usd": 2.2848e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}

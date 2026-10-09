@@ -1,0 +1,26 @@
+{
+  "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926\\criteria_v6\\single_focused_seed44\\episode.json",
+  "source_sha256": "783abaca96fc2bfdc65ca7bb361b5226cffb8b05b0aac6a141ef834531a688a6",
+  "source_model": "typesafe/jev-1.13",
+  "source_prompt_version": 6,
+  "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\maze_source\\jev_maze_partial_1x_parts\\part_01\\part.mp4",
+  "width": 1440,
+  "height": 860,
+  "fps": 30,
+  "frames": 242,
+  "video_duration_seconds": 8.066666666666666,
+  "source_frame_count": 967,
+  "frame_range": [
+    241,
+    483
+  ],
+  "simulation_duration_seconds": 30.175,
+  "final_hold_seconds": 2.0,
+  "speed": 1,
+  "physics_steps_replayed": 3621,
+  "status": "api_error",
+  "gates_passed": 4,
+  "final_position_matches_original": true,
+  "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+  "export_wall_seconds": 337.5389666000847
+}

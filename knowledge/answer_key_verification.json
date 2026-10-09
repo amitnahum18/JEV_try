@@ -1,0 +1,265 @@
+{
+  "all_passed": true,
+  "questions_checked": 50,
+  "checks": {
+    "Q01": {
+      "passed": true,
+      "computed": "15.0",
+      "method": "Arithmetic"
+    },
+    "Q02": {
+      "passed": true,
+      "computed": "48",
+      "method": "Exact fractions"
+    },
+    "Q03": {
+      "passed": true,
+      "computed": "6",
+      "method": "Symbolic equation"
+    },
+    "Q04": {
+      "passed": true,
+      "computed": "28.0",
+      "method": "Constant-acceleration displacement"
+    },
+    "Q05": {
+      "passed": true,
+      "computed": "6",
+      "method": "Separate branch currents"
+    },
+    "Q06": {
+      "passed": true,
+      "method": "Primary-source fact checked in browsing",
+      "source": "https://www.france.fr/fr/destination/paris/"
+    },
+    "Q07": {
+      "passed": true,
+      "method": "Primary-source fact checked in browsing",
+      "source": "https://www.japan.go.jp/japan/index.html"
+    },
+    "Q08": {
+      "passed": true,
+      "method": "Universal implication applied to explicit member"
+    },
+    "Q09": {
+      "passed": true,
+      "computed": "1/3",
+      "method": "Enumerate die outcomes"
+    },
+    "Q10": {
+      "passed": true,
+      "computed": "2",
+      "method": "Combined rates"
+    },
+    "Q11": {
+      "passed": true,
+      "computed": "-0.4999999999999991",
+      "method": "Independent improper numerical integration"
+    },
+    "Q12": {
+      "passed": true,
+      "computed": "121393",
+      "method": "Direct symbolic determinant, not recurrence"
+    },
+    "Q13": {
+      "passed": true,
+      "computed": "155",
+      "method": "Exhaustive modular scan"
+    },
+    "Q14": {
+      "passed": true,
+      "computed": "1806",
+      "method": "Enumerate all assignments"
+    },
+    "Q15": {
+      "passed": true,
+      "computed": "245760",
+      "method": "Direct recurrence"
+    },
+    "Q16": {
+      "passed": true,
+      "computed": "(8+2.220446049250313e-15j)",
+      "method": "Complex numerical summation"
+    },
+    "Q17": {
+      "passed": true,
+      "computed": "108 - 27*q**2",
+      "method": "Symbolic global upper bound; equality witness xyz=0"
+    },
+    "Q18": {
+      "passed": true,
+      "computed": "0.28986813369645287",
+      "method": "Telescoping plus zeta identity"
+    },
+    "Q19": {
+      "passed": true,
+      "computed": "32000",
+      "method": "Matrix-tree minor determinant"
+    },
+    "Q20": {
+      "passed": true,
+      "computed": "(23.999999999999993+0j)",
+      "method": "Numerical roots independent of logarithmic derivative"
+    },
+    "Q21": {
+      "passed": true,
+      "computed": "1.0823232337115833",
+      "method": "Independent double numerical integration"
+    },
+    "Q22": {
+      "passed": true,
+      "computed": "429",
+      "method": "Enumerate 12870 paths"
+    },
+    "Q23": {
+      "passed": true,
+      "computed": "42",
+      "method": "Exact prefix-state Markov equations"
+    },
+    "Q24": {
+      "passed": true,
+      "computed": "0.570796326794897",
+      "method": "Conditional-area numerical integration"
+    },
+    "Q25": {
+      "passed": true,
+      "computed": "beta(11, 3)/beta(8, 3)",
+      "method": "Beta posterior third moment"
+    },
+    "Q26": {
+      "passed": true,
+      "computed": "53/288",
+      "method": "Enumerate 6! derangements"
+    },
+    "Q27": {
+      "passed": true,
+      "computed": "7",
+      "method": "Exact absorbing transition matrix"
+    },
+    "Q28": {
+      "passed": true,
+      "computed": "1539/2059",
+      "method": "Solve finite harmonic system"
+    },
+    "Q29": {
+      "passed": true,
+      "computed": "5/3",
+      "method": "Exact integration over two radii and relative angle"
+    },
+    "Q30": {
+      "passed": true,
+      "computed": "5/42",
+      "method": "Enumerate conditional circular positions"
+    },
+    "Q31": {
+      "passed": true,
+      "computed": "(sqrt(5)/2 + 3/2)/(3/2 - sqrt(5)/2)",
+      "method": "Generalized mass/stiffness eigenvalues"
+    },
+    "Q32": {
+      "passed": true,
+      "computed": "37/12",
+      "method": "Velocity addition then Lorentz factor"
+    },
+    "Q33": {
+      "passed": true,
+      "computed": "1000",
+      "method": "Entropy-conserving common temperature and energy"
+    },
+    "Q34": {
+      "passed": true,
+      "computed": "1/15",
+      "method": "Isolated total charge and final capacitance"
+    },
+    "Q35": {
+      "passed": true,
+      "computed": "2*sqrt(2)/3",
+      "method": "Independent Gaussian overlap integral"
+    },
+    "Q36": {
+      "passed": true,
+      "computed": "0.676776695296637",
+      "method": "Explicit sequential unitary matrices"
+    },
+    "Q37": {
+      "passed": true,
+      "computed": "sqrt(6)",
+      "method": "Second derivative of effective potential"
+    },
+    "Q38": {
+      "passed": true,
+      "computed": "1/7",
+      "method": "Energy, angular momentum and eccentricity"
+    },
+    "Q39": {
+      "passed": true,
+      "computed": "0.4188854381999832",
+      "method": "Numerical coherent phasor sum"
+    },
+    "Q40": {
+      "passed": true,
+      "computed": "8/53",
+      "method": "Complex impedance at both frequencies"
+    },
+    "Q41": {
+      "passed": true,
+      "computed": "0.1438410362267306",
+      "method": "Independent drag ODE integration, vt=g=1"
+    },
+    "Q42": {
+      "passed": true,
+      "computed": "3/2",
+      "method": "Effective-potential curvature, g=R=1"
+    },
+    "Q43": {
+      "passed": true,
+      "method": "All 64 truth assignments",
+      "solutions": [
+        [
+          true,
+          true,
+          false,
+          true,
+          false,
+          true
+        ]
+      ]
+    },
+    "Q44": {
+      "passed": true,
+      "computed": "53",
+      "method": "Dijkstra across all bridge states"
+    },
+    "Q45": {
+      "passed": true,
+      "method": "Exhaustive first-weighing branch-capacity constraints plus worst-case small weight defect argument"
+    },
+    "Q46": {
+      "passed": true,
+      "computed": "198",
+      "method": "Maximum possible counter count with one prisoner absent, plus one"
+    },
+    "Q47": {
+      "passed": true,
+      "computed": "7/8",
+      "method": "Exhaustive Hamming strategy; global upper bound in proof"
+    },
+    "Q48": {
+      "passed": true,
+      "computed": "9",
+      "method": "Adaptive-coverage recurrence closed form"
+    },
+    "Q49": {
+      "passed": true,
+      "computed": "74493",
+      "method": "Enumerate all 1048576 binary strings"
+    },
+    "Q50": {
+      "passed": true,
+      "method": "All digit permutations pruned by carry constraints",
+      "solutions": [
+        723970
+      ]
+    }
+  }
+}

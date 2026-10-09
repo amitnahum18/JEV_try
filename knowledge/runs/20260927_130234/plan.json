@@ -1,0 +1,19 @@
+{
+  "model": "typesafe/jev-1.13",
+  "endpoint": "https://openrouter.ai/api/alpha/decisions",
+  "questions_sha256": "73b34edb6d21c1014bf977a464303443bdc05749de6fc6eb30e944fbc97b0310",
+  "answer_key_sha256": "332bdad129fc32c8ddc7bd652576b58b371370694678233805bb070fdb0b5d77",
+  "workers": 4,
+  "format": "Four candidate answers plus unsure. Opaque labels A-D, balanced correct positions.",
+  "stages": [
+    "First ten simple/medium questions; wait for completion.",
+    "Then forty very hard questions."
+  ],
+  "model_input_fields": [
+    "question",
+    "notation"
+  ],
+  "ground_truth_sent_to_model": false,
+  "feedback_sent_to_model": false,
+  "retry_policy": "At most one retry only after an API error, never after a wrong answer."
+}

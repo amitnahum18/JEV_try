@@ -1,0 +1,60 @@
+{
+  "id": "Q15",
+  "status": "answered",
+  "choice": "D",
+  "answer_text": "245760",
+  "confidence": 0.33,
+  "probabilities": {
+    "A": 0.3,
+    "unsure": 0.04,
+    "B": 0.15,
+    "C": 0.05,
+    "D": 0.46
+  },
+  "cost_usd": 2.3226e-05,
+  "latency_seconds": 0.5916975999716669,
+  "input_tokens": 553,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:36.423806+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "Let a0=0, a1=1 and an=4*a(n-1)-4*a(n-2) for n>=2. What is a15?",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "491520",
+              "B": "229376",
+              "C": "262144",
+              "D": "245760",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "D",
+        "confidence": 0.33,
+        "probabilities": {
+          "A": 0.3,
+          "unsure": 0.04,
+          "B": 0.15,
+          "C": 0.05,
+          "D": 0.46
+        },
+        "latency_seconds": 0.5916975999716669,
+        "input_tokens": 553,
+        "cost_usd": 2.3226e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,2168 @@
+{
+  "seed": 101,
+  "traffic_vehicles": 12,
+  "agent": "JEV",
+  "observation": "5x31 occupancy grid: 0 empty, 1 other car, 2 ego",
+  "grid_shape": [
+    5,
+    31
+  ],
+  "lookahead_m": 300,
+  "lookbehind_m": 300,
+  "fixed_target_speed_m_s": 44.0,
+  "minimum_target_speed_m_s": 23.9,
+  "speed_limited_steps": 55,
+  "steps": 57,
+  "mean_speed_m_s": 29.32,
+  "lane_changes": 6,
+  "safety_rejections": 0,
+  "urgent_overtakes": 4,
+  "collision": true,
+  "jev_usage": {
+    "provider": "OpenRouter",
+    "model": "typesafe/jev-1.13",
+    "api_calls_started": 21,
+    "successful_responses": 21,
+    "failed_calls": 0,
+    "stale_responses_discarded": 4,
+    "decisions_consumed_by_simulator": 17,
+    "response_choices": {
+      "move_down": 5,
+      "move_up": 3,
+      "stay": 13
+    },
+    "mean_latency_seconds": 0.723,
+    "p95_latency_seconds": 0.792,
+    "input_tokens_total": 68053,
+    "responses_with_token_usage": 21,
+    "reported_cost_usd_total": 0.002858,
+    "responses_with_reported_cost": 21,
+    "mean_confidence": 0.9229
+  },
+  "trajectory": [
+    {
+      "step": 1,
+      "lane_before": 2,
+      "speed_before_m_s": 25.0,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 44.0,
+      "speed_limited": false,
+      "current_lane_front_gap_m": 111.7,
+      "current_lane_front_ttc_s": 37.7,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 3,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 16.8,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 110.5,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 3,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 38.0,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 110.5,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 33.46,
+      "collision": false
+    },
+    {
+      "step": 2,
+      "lane_before": 2,
+      "speed_before_m_s": 33.46,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 44.0,
+      "speed_limited": false,
+      "current_lane_front_gap_m": 109.3,
+      "current_lane_front_ttc_s": 9.1,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 1.7,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 104.5,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 23.1,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 104.5,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 38.15,
+      "collision": false
+    },
+    {
+      "step": 3,
+      "lane_before": 2,
+      "speed_before_m_s": 38.15,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 29.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 104.6,
+      "current_lane_front_ttc_s": 6.1,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 97.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 11.7,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 97.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 34.1,
+      "collision": false
+    },
+    {
+      "step": 4,
+      "lane_before": 2,
+      "speed_before_m_s": 34.1,
+      "requested_action": "move_down",
+      "applied_action": "MOVE DOWN",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 30.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 99.4,
+      "current_lane_front_ttc_s": 7.4,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 94.0,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 13.1,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 94.0,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 32.3,
+      "collision": false
+    },
+    {
+      "step": 5,
+      "lane_before": 2,
+      "speed_before_m_s": 32.3,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 31.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 94.0,
+      "current_lane_front_ttc_s": 7.9,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        }
+      },
+      "lane_after": 1,
+      "speed_after_m_s": 31.74,
+      "collision": false
+    },
+    {
+      "step": 6,
+      "lane_before": 1,
+      "speed_before_m_s": 31.74,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "URGENT MOVE UP",
+      "safety_rejected": false,
+      "urgent_overtake": true,
+      "target_speed_m_s": 32.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 23.3,
+      "current_lane_front_ttc_s": 2.6,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 73.4,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 19.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": false,
+          "immediate_safe": true,
+          "route_viable": false,
+          "future_open_lane_count": 0,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 23.6,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 19.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 1,
+      "speed_after_m_s": 31.88,
+      "collision": false
+    },
+    {
+      "step": 7,
+      "lane_before": 1,
+      "speed_before_m_s": 31.88,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 33.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 20.0,
+      "current_lane_front_ttc_s": 2.2,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 32.4,
+      "collision": false
+    },
+    {
+      "step": 8,
+      "lane_before": 2,
+      "speed_before_m_s": 32.4,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 34.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 83.6,
+      "current_lane_front_ttc_s": 7.1,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 3,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 51.1,
+          "rear_predicted_gap_m": 4.5,
+          "origin_front_predicted_gap_m": 78.9,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 2.1,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 78.9,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 33.13,
+      "collision": false
+    },
+    {
+      "step": 9,
+      "lane_before": 2,
+      "speed_before_m_s": 33.13,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 28.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 79.7,
+      "current_lane_front_ttc_s": 6.4,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 3,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 45.9,
+          "rear_predicted_gap_m": 8.4,
+          "origin_front_predicted_gap_m": 74.8,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 74.8,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 31.18,
+      "collision": false
+    },
+    {
+      "step": 10,
+      "lane_before": 2,
+      "speed_before_m_s": 31.18,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 29.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 75.9,
+      "current_lane_front_ttc_s": 7.3,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 3,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 44.8,
+          "rear_predicted_gap_m": 12.0,
+          "origin_front_predicted_gap_m": 71.8,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 71.8,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 30.53,
+      "collision": false
+    },
+    {
+      "step": 11,
+      "lane_before": 2,
+      "speed_before_m_s": 30.53,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 30.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 72.6,
+      "current_lane_front_ttc_s": 7.5,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 3,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 42.3,
+          "rear_predicted_gap_m": 15.2,
+          "origin_front_predicted_gap_m": 68.8,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 68.8,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 30.62,
+      "collision": false
+    },
+    {
+      "step": 12,
+      "lane_before": 2,
+      "speed_before_m_s": 30.62,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 31.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 69.4,
+      "current_lane_front_ttc_s": 7.2,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 38.8,
+          "rear_predicted_gap_m": 18.3,
+          "origin_front_predicted_gap_m": 65.5,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 65.5,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 31.12,
+      "collision": false
+    },
+    {
+      "step": 13,
+      "lane_before": 2,
+      "speed_before_m_s": 31.12,
+      "requested_action": "move_up",
+      "applied_action": "MOVE UP",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 32.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 66.1,
+      "current_lane_front_ttc_s": 6.6,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 34.6,
+          "rear_predicted_gap_m": 21.5,
+          "origin_front_predicted_gap_m": 62.1,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 62.1,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 31.84,
+      "collision": false
+    },
+    {
+      "step": 14,
+      "lane_before": 2,
+      "speed_before_m_s": 31.84,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 33.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 61.8,
+      "current_lane_front_ttc_s": 5.8,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        }
+      },
+      "lane_after": 3,
+      "speed_after_m_s": 32.68,
+      "collision": false
+    },
+    {
+      "step": 15,
+      "lane_before": 3,
+      "speed_before_m_s": 32.68,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 34.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 42.9,
+      "current_lane_front_ttc_s": 3.6,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": true,
+          "route_viable": false,
+          "future_open_lane_count": 0,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 12.6,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 38.0,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 41.3,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 38.0,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 3,
+      "speed_after_m_s": 33.59,
+      "collision": false
+    },
+    {
+      "step": 16,
+      "lane_before": 3,
+      "speed_before_m_s": 33.59,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "URGENT MOVE DOWN",
+      "safety_rejected": false,
+      "urgent_overtake": true,
+      "target_speed_m_s": 35.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 38.8,
+      "current_lane_front_ttc_s": 3.0,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": false,
+          "future_open_lane_count": 0,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 7.3,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 33.6,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 36.4,
+          "rear_predicted_gap_m": null,
+          "origin_front_predicted_gap_m": 33.6,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 3,
+      "speed_after_m_s": 34.55,
+      "collision": false
+    },
+    {
+      "step": 17,
+      "lane_before": 3,
+      "speed_before_m_s": 34.55,
+      "requested_action": "move_down",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 36.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 34.0,
+      "current_lane_front_ttc_s": 2.4,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 35.52,
+      "collision": false
+    },
+    {
+      "step": 18,
+      "lane_before": 2,
+      "speed_before_m_s": 35.52,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 37.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 46.4,
+      "current_lane_front_ttc_s": 3.3,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": false,
+          "future_open_lane_count": 0,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 7.0,
+          "rear_predicted_gap_m": 40.9,
+          "origin_front_predicted_gap_m": 40.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 50.0,
+          "rear_predicted_gap_m": 15.5,
+          "origin_front_predicted_gap_m": 40.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 36.51,
+      "collision": false
+    },
+    {
+      "step": 19,
+      "lane_before": 2,
+      "speed_before_m_s": 36.51,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "URGENT MOVE DOWN",
+      "safety_rejected": false,
+      "urgent_overtake": true,
+      "target_speed_m_s": 38.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 41.6,
+      "current_lane_front_ttc_s": 2.7,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": false,
+          "future_open_lane_count": 0,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.6,
+          "rear_predicted_gap_m": 45.6,
+          "origin_front_predicted_gap_m": 35.5,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 43.8,
+          "rear_predicted_gap_m": 20.4,
+          "origin_front_predicted_gap_m": 35.5,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 2,
+      "speed_after_m_s": 37.5,
+      "collision": false
+    },
+    {
+      "step": 20,
+      "lane_before": 2,
+      "speed_before_m_s": 37.5,
+      "requested_action": "move_down",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 39.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 35.9,
+      "current_lane_front_ttc_s": 2.2,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        }
+      },
+      "lane_after": 1,
+      "speed_after_m_s": 38.49,
+      "collision": false
+    },
+    {
+      "step": 21,
+      "lane_before": 1,
+      "speed_before_m_s": 38.49,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 40.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 55.4,
+      "current_lane_front_ttc_s": 3.3,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": false,
+          "future_open_lane_count": 0,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 4.9,
+          "rear_predicted_gap_m": 30.9,
+          "origin_front_predicted_gap_m": 48.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 47.1,
+          "rear_predicted_gap_m": 21.4,
+          "origin_front_predicted_gap_m": 48.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 1,
+      "speed_after_m_s": 39.49,
+      "collision": false
+    },
+    {
+      "step": 22,
+      "lane_before": 1,
+      "speed_before_m_s": 39.49,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "URGENT MOVE DOWN",
+      "safety_rejected": false,
+      "urgent_overtake": true,
+      "target_speed_m_s": 41.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 49.8,
+      "current_lane_front_ttc_s": 2.8,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": false,
+          "future_open_lane_count": 0,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": 36.5,
+          "origin_front_predicted_gap_m": 42.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        },
+        "move_down": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 39.8,
+          "rear_predicted_gap_m": 27.8,
+          "origin_front_predicted_gap_m": 42.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 1,
+      "speed_after_m_s": 40.14,
+      "collision": false
+    },
+    {
+      "step": 23,
+      "lane_before": 1,
+      "speed_before_m_s": 40.14,
+      "requested_action": "move_down",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 42.7,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 43.3,
+      "current_lane_front_ttc_s": 2.4,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 40.1,
+      "collision": false
+    },
+    {
+      "step": 24,
+      "lane_before": 0,
+      "speed_before_m_s": 40.1,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 29.3,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 54.5,
+      "current_lane_front_ttc_s": 2.9,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": false,
+          "future_open_lane_count": 0,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 9.9,
+          "rear_predicted_gap_m": 48.6,
+          "origin_front_predicted_gap_m": 47.0,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 35.28,
+      "collision": false
+    },
+    {
+      "step": 25,
+      "lane_before": 0,
+      "speed_before_m_s": 35.28,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 28.5,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 49.1,
+      "current_lane_front_ttc_s": 3.6,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": false,
+          "future_open_lane_count": 0,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 12.0,
+          "rear_predicted_gap_m": 53.8,
+          "origin_front_predicted_gap_m": 43.6,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 32.26,
+      "collision": false
+    },
+    {
+      "step": 26,
+      "lane_before": 0,
+      "speed_before_m_s": 32.26,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 29.5,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 45.0,
+      "current_lane_front_ttc_s": 4.2,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": true,
+          "immediate_safe": true,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 12.5,
+          "rear_predicted_gap_m": 57.7,
+          "origin_front_predicted_gap_m": 40.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 31.03,
+      "collision": false
+    },
+    {
+      "step": 27,
+      "lane_before": 0,
+      "speed_before_m_s": 31.03,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 27.5,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 41.6,
+      "current_lane_front_ttc_s": 4.4,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 11.1,
+          "rear_predicted_gap_m": 60.9,
+          "origin_front_predicted_gap_m": 37.8,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 29.45,
+      "collision": false
+    },
+    {
+      "step": 28,
+      "lane_before": 0,
+      "speed_before_m_s": 29.45,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 27.1,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 38.6,
+      "current_lane_front_ttc_s": 4.9,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 10.6,
+          "rear_predicted_gap_m": 63.7,
+          "origin_front_predicted_gap_m": 35.5,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 28.39,
+      "collision": false
+    },
+    {
+      "step": 29,
+      "lane_before": 0,
+      "speed_before_m_s": 28.39,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 26.8,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 36.2,
+      "current_lane_front_ttc_s": 5.3,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 9.8,
+          "rear_predicted_gap_m": 66.0,
+          "origin_front_predicted_gap_m": 33.5,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 27.66,
+      "collision": false
+    },
+    {
+      "step": 30,
+      "lane_before": 0,
+      "speed_before_m_s": 27.66,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 26.5,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 34.0,
+      "current_lane_front_ttc_s": 5.6,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 8.8,
+          "rear_predicted_gap_m": 68.0,
+          "origin_front_predicted_gap_m": 31.6,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 27.15,
+      "collision": false
+    },
+    {
+      "step": 31,
+      "lane_before": 0,
+      "speed_before_m_s": 27.15,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 26.2,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 32.1,
+      "current_lane_front_ttc_s": 5.8,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 7.7,
+          "rear_predicted_gap_m": 69.8,
+          "origin_front_predicted_gap_m": 29.9,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 26.75,
+      "collision": false
+    },
+    {
+      "step": 32,
+      "lane_before": 0,
+      "speed_before_m_s": 26.75,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 26.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 30.3,
+      "current_lane_front_ttc_s": 6.0,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 6.6,
+          "rear_predicted_gap_m": 71.4,
+          "origin_front_predicted_gap_m": 28.3,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 26.4,
+      "collision": false
+    },
+    {
+      "step": 33,
+      "lane_before": 0,
+      "speed_before_m_s": 26.4,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 25.8,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 28.7,
+      "current_lane_front_ttc_s": 6.1,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 5.5,
+          "rear_predicted_gap_m": 72.9,
+          "origin_front_predicted_gap_m": 26.8,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 26.14,
+      "collision": false
+    },
+    {
+      "step": 34,
+      "lane_before": 0,
+      "speed_before_m_s": 26.14,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 25.6,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 27.1,
+      "current_lane_front_ttc_s": 6.1,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 4.4,
+          "rear_predicted_gap_m": 74.4,
+          "origin_front_predicted_gap_m": 25.4,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 25.9,
+      "collision": false
+    },
+    {
+      "step": 35,
+      "lane_before": 0,
+      "speed_before_m_s": 25.9,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 25.4,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 25.7,
+      "current_lane_front_ttc_s": 6.1,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 3.3,
+          "rear_predicted_gap_m": 75.7,
+          "origin_front_predicted_gap_m": 24.0,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 25.67,
+      "collision": false
+    },
+    {
+      "step": 36,
+      "lane_before": 0,
+      "speed_before_m_s": 25.67,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 25.2,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 24.3,
+      "current_lane_front_ttc_s": 6.2,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 2.3,
+          "rear_predicted_gap_m": 77.0,
+          "origin_front_predicted_gap_m": 22.8,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 25.48,
+      "collision": false
+    },
+    {
+      "step": 37,
+      "lane_before": 0,
+      "speed_before_m_s": 25.48,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 25.1,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 23.1,
+      "current_lane_front_ttc_s": 6.2,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 1.3,
+          "rear_predicted_gap_m": 78.2,
+          "origin_front_predicted_gap_m": 21.6,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 25.3,
+      "collision": false
+    },
+    {
+      "step": 38,
+      "lane_before": 0,
+      "speed_before_m_s": 25.3,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.9,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 21.8,
+      "current_lane_front_ttc_s": 6.2,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.4,
+          "rear_predicted_gap_m": 79.3,
+          "origin_front_predicted_gap_m": 20.4,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 25.13,
+      "collision": false
+    },
+    {
+      "step": 39,
+      "lane_before": 0,
+      "speed_before_m_s": 25.13,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.8,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 20.7,
+      "current_lane_front_ttc_s": 6.2,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": 80.4,
+          "origin_front_predicted_gap_m": 19.4,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 24.97,
+      "collision": false
+    },
+    {
+      "step": 40,
+      "lane_before": 0,
+      "speed_before_m_s": 24.97,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.6,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 19.6,
+      "current_lane_front_ttc_s": 6.2,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": 81.4,
+          "origin_front_predicted_gap_m": 18.3,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 24.8,
+      "collision": false
+    },
+    {
+      "step": 41,
+      "lane_before": 0,
+      "speed_before_m_s": 24.8,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.5,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 18.6,
+      "current_lane_front_ttc_s": 6.3,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": 82.4,
+          "origin_front_predicted_gap_m": 17.4,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 24.64,
+      "collision": false
+    },
+    {
+      "step": 42,
+      "lane_before": 0,
+      "speed_before_m_s": 24.64,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.4,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 17.6,
+      "current_lane_front_ttc_s": 6.3,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": 83.3,
+          "origin_front_predicted_gap_m": 16.5,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 24.52,
+      "collision": false
+    },
+    {
+      "step": 43,
+      "lane_before": 0,
+      "speed_before_m_s": 24.52,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.2,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 16.7,
+      "current_lane_front_ttc_s": 6.3,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": 0.0,
+          "rear_predicted_gap_m": 84.2,
+          "origin_front_predicted_gap_m": 15.6,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 24.38,
+      "collision": false
+    },
+    {
+      "step": 44,
+      "lane_before": 0,
+      "speed_before_m_s": 24.38,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.1,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 15.8,
+      "current_lane_front_ttc_s": 6.3,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": 0.5,
+          "origin_front_predicted_gap_m": 14.8,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 24.27,
+      "collision": false
+    },
+    {
+      "step": 45,
+      "lane_before": 0,
+      "speed_before_m_s": 24.27,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 15.0,
+      "current_lane_front_ttc_s": 6.3,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": 1.3,
+          "origin_front_predicted_gap_m": 14.1,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 24.15,
+      "collision": false
+    },
+    {
+      "step": 46,
+      "lane_before": 0,
+      "speed_before_m_s": 24.15,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 23.9,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 14.3,
+      "current_lane_front_ttc_s": 6.3,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": 2.2,
+          "origin_front_predicted_gap_m": 13.3,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 24.04,
+      "collision": false
+    },
+    {
+      "step": 47,
+      "lane_before": 0,
+      "speed_before_m_s": 24.04,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 23.9,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 13.5,
+      "current_lane_front_ttc_s": 6.4,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": 2.9,
+          "origin_front_predicted_gap_m": 12.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 23.99,
+      "collision": false
+    },
+    {
+      "step": 48,
+      "lane_before": 0,
+      "speed_before_m_s": 23.99,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 23.9,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 12.8,
+      "current_lane_front_ttc_s": 6.2,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": 3.7,
+          "origin_front_predicted_gap_m": 12.0,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 23.95,
+      "collision": false
+    },
+    {
+      "step": 49,
+      "lane_before": 0,
+      "speed_before_m_s": 23.95,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 12.1,
+      "current_lane_front_ttc_s": 6.0,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": 4.4,
+          "origin_front_predicted_gap_m": 11.3,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 23.95,
+      "collision": false
+    },
+    {
+      "step": 50,
+      "lane_before": 0,
+      "speed_before_m_s": 23.95,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 11.5,
+      "current_lane_front_ttc_s": 5.7,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 1,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": 5.2,
+          "origin_front_predicted_gap_m": 10.7,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 23.95,
+      "collision": false
+    },
+    {
+      "step": 51,
+      "lane_before": 0,
+      "speed_before_m_s": 23.95,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 10.8,
+      "current_lane_front_ttc_s": 5.4,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": 5.9,
+          "origin_front_predicted_gap_m": 10.0,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 23.95,
+      "collision": false
+    },
+    {
+      "step": 52,
+      "lane_before": 0,
+      "speed_before_m_s": 23.95,
+      "requested_action": "stay",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 24.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": 10.1,
+      "current_lane_front_ttc_s": 5.1,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        },
+        "move_up": {
+          "safe": false,
+          "immediate_safe": false,
+          "route_viable": true,
+          "future_open_lane_count": 2,
+          "route_horizon_s": 3.0,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": 6.6,
+          "origin_front_predicted_gap_m": 9.4,
+          "horizon_s": 1.5,
+          "sweep_horizon_s": 0.4
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 23.95,
+      "collision": false
+    },
+    {
+      "step": 53,
+      "lane_before": 0,
+      "speed_before_m_s": 23.95,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 25.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": null,
+      "current_lane_front_ttc_s": null,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 24.4,
+      "collision": false
+    },
+    {
+      "step": 54,
+      "lane_before": 0,
+      "speed_before_m_s": 24.4,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 26.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": null,
+      "current_lane_front_ttc_s": null,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 25.09,
+      "collision": false
+    },
+    {
+      "step": 55,
+      "lane_before": 0,
+      "speed_before_m_s": 25.09,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 27.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": null,
+      "current_lane_front_ttc_s": null,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 25.92,
+      "collision": false
+    },
+    {
+      "step": 56,
+      "lane_before": 0,
+      "speed_before_m_s": 25.92,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 28.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": null,
+      "current_lane_front_ttc_s": null,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 26.82,
+      "collision": false
+    },
+    {
+      "step": 57,
+      "lane_before": 0,
+      "speed_before_m_s": 26.82,
+      "requested_action": "no_new_jev_decision",
+      "applied_action": "STAY",
+      "safety_rejected": false,
+      "urgent_overtake": false,
+      "target_speed_m_s": 29.0,
+      "speed_limited": true,
+      "current_lane_front_gap_m": null,
+      "current_lane_front_ttc_s": null,
+      "lane_safety": {
+        "stay": {
+          "safe": true,
+          "front_predicted_gap_m": null,
+          "rear_predicted_gap_m": null,
+          "horizon_s": 1.5
+        }
+      },
+      "lane_after": 0,
+      "speed_after_m_s": 20.53,
+      "collision": true
+    }
+  ]
+}

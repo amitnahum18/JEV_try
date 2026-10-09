@@ -1,0 +1,382 @@
+{
+  "requests": {
+    "joint": {
+      "model": "typesafe/jev-1.13",
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 21.3,
+        "gates_passed": 3,
+        "gates_total": 5,
+        "previous_action": "down__roll_left",
+        "aircraft": {
+          "position_world_xyz_m": [
+            381.93,
+            59.717,
+            25.939
+          ],
+          "velocity_world_xyz_m_s": [
+            18.393,
+            9.897,
+            -1.627
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.91,
+            -1.276,
+            -0.174
+          ],
+          "speed_m_s": 20.95,
+          "roll_pitch_yaw_deg": [
+            -19.16,
+            5.157,
+            31.75
+          ],
+          "bank_left_deg": 19.16,
+          "nose_up_pitch_deg": -5.157,
+          "body_roll_pitch_yaw_rates_deg_s": [
+            -89.33,
+            2.075,
+            5.323
+          ],
+          "heading_left_deg": 31.75,
+          "velocity_track_left_deg": 28.285,
+          "flight_path_climb_angle_deg": -4.453,
+          "climb_rate_m_s": -1.627,
+          "horizontal_speed_m_s": 20.887,
+          "acceleration_world_xyz_m_s2": [
+            -0.983,
+            3.336,
+            0.646
+          ],
+          "acceleration_body_forward_left_up_m_s2": [
+            0.858,
+            2.93,
+            1.787
+          ],
+          "specific_force_load_g": 1.123,
+          "body_reference_angle_of_attack_deg": 0.478,
+          "body_sideslip_left_deg": -3.491,
+          "actuators": {
+            "command_normalized": {
+              "left_aileron": -0.1034,
+              "right_aileron": 0.1034,
+              "elevator": -0.1053,
+              "rudder": -0.4519,
+              "main_wing": 0.0,
+              "throttle": 0.3669
+            },
+            "measured_surface_deflection_deg": {
+              "left_aileron": -4.204,
+              "right_aileron": 4.204,
+              "elevator": -2.117,
+              "rudder": -8.761,
+              "main_wing": 0.0
+            },
+            "measured_throttle_normalized": 0.3869,
+            "attitude_targets": {
+              "bank_left_deg": 40.0,
+              "nose_up_pitch_deg": -6.0,
+              "yaw_rate_left_deg_s": 22.52
+            }
+          }
+        },
+        "next_gates": [
+          {
+            "number": 4,
+            "center_m": [
+              425.0,
+              -14.486114153102248,
+              18.433354658899926
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              43.07,
+              -74.203,
+              -7.505
+            ],
+            "relative_body_forward_left_up_m": [
+              -1.738,
+              -78.488,
+              -35.414
+            ],
+            "distance_m": 86.125,
+            "bearing_left_deg": -91.27,
+            "elevation_up_deg": -24.28,
+            "estimated_seconds_to_gate_plane": 2.342,
+            "distance_to_gate_plane_m": 43.07,
+            "current_center_error_left_m": -74.203,
+            "current_center_error_up_m": -7.505,
+            "normalized_lateral_center_error": -10.993,
+            "normalized_vertical_center_error": -1.365,
+            "heading_error_left_deg": -91.618,
+            "center_bearing_world_left_deg": -59.868,
+            "center_elevation_world_up_deg": -4.999,
+            "velocity_track_error_left_deg": -88.153,
+            "flight_path_error_up_deg": -0.546,
+            "closing_speed_to_center_m_s": 0.812,
+            "straight_velocity_crossing_forecast": {
+              "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+              "position_world_xyz_m": [
+                425.0,
+                82.894,
+                22.13
+              ],
+              "center_error_left_m": -97.38,
+              "center_error_up_m": -3.696,
+              "lateral_clearance_margin_m": -90.63,
+              "vertical_clearance_margin_m": 1.804
+            }
+          },
+          {
+            "number": 5,
+            "center_m": [
+              535.0,
+              14.349602514691727,
+              20.069172457711552
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              153.07,
+              -45.368,
+              -5.87
+            ],
+            "relative_body_forward_left_up_m": [
+              106.387,
+              -113.745,
+              -35.594
+            ],
+            "distance_m": 159.759,
+            "bearing_left_deg": -46.91,
+            "elevation_up_deg": -12.87,
+            "estimated_seconds_to_gate_plane": 8.322,
+            "distance_to_gate_plane_m": 153.07,
+            "current_center_error_left_m": -45.368,
+            "current_center_error_up_m": -5.87,
+            "normalized_lateral_center_error": -6.721,
+            "normalized_vertical_center_error": -1.067,
+            "heading_error_left_deg": -48.259,
+            "center_bearing_world_left_deg": -16.509,
+            "center_elevation_world_up_deg": -2.106,
+            "velocity_track_error_left_deg": -44.794,
+            "flight_path_error_up_deg": 2.348,
+            "closing_speed_to_center_m_s": 14.872,
+            "straight_velocity_crossing_forecast": {
+              "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+              "position_world_xyz_m": [
+                535.0,
+                142.086,
+                12.401
+              ],
+              "center_error_left_m": -127.736,
+              "center_error_up_m": 7.668,
+              "lateral_clearance_margin_m": -120.986,
+              "vertical_clearance_margin_m": -2.168
+            }
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12.511,
+          "roll_left_right_bank_deg": 40,
+          "nominal_pitch_nose_up_deg": 2,
+          "turn_bank_deg": 25,
+          "strong_roll_bank_deg": 40,
+          "ideal_turn_radius_at_25_deg_m": 95.94,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin.",
+        "environment": {
+          "wind_world_xyz_m_s": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gravity_m_s2": 9.81,
+          "physics_hz": 240,
+          "control_hz": 120,
+          "gate_geometry": "Static rectangular openings in world x planes; positive center error means move LEFT or UP."
+        },
+        "navigation": {
+          "schema": "flight_navigation_v3",
+          "sign_convention": "Positive LEFT/UP. Angles in degrees, angular rates in degrees/second. Position error and motion-direction error are different quantities. Null means unavailable.",
+          "measurements": {
+            "altitude_world_m": 25.939,
+            "height_above_flat_ground_m": 25.939,
+            "ground_reference": "Flat simulator ground at world z=0; height is body-center clearance, not terrain sensing.",
+            "bank_left_deg": 19.16,
+            "nose_up_pitch_deg": -5.157,
+            "heading_left_deg": 31.75,
+            "velocity_track_left_deg": 28.285,
+            "flight_path_climb_angle_deg": -4.453,
+            "climb_rate_up_m_s": -1.627,
+            "bank_left_rate_deg_s": 88.938,
+            "nose_up_pitch_rate_deg_s": -3.707,
+            "heading_turn_rate_left_deg_s": 4.365,
+            "track_turn_rate_left_deg_s": 9.336,
+            "flight_path_angle_rate_up_deg_s": 1.913,
+            "vertical_acceleration_up_m_s2": 0.646,
+            "horizontal_acceleration_m_s2": 0.715,
+            "acceleration_sample_available": true,
+            "observed_horizontal_turn_radius_m": 128.178,
+            "rate_method": "Euler attitude rates from body angular velocity; track/climb rates from world velocity and last 1/120s finite-difference acceleration. No averaging; transient rates can be noisy."
+          },
+          "leveling_estimate": {
+            "available": true,
+            "assumptions": "Future zero-bank command. First-order bank decay, with measured track turn rate assumed to decay with the same time constant. No roll inertia, yaw lag, sideslip or pitch/lift coupling. These are approximate estimates, not a PyFlyt rollout or an instruction.",
+            "validity": "Fit from correlated existing zero-bank-command samples in banked_v2. Not validated on independent flights; p10/p90 describe fitted sample variation, not prediction confidence.",
+            "bank_tolerance_deg": 3,
+            "response_fit": {
+              "tau_seconds": 0.24301104597055131,
+              "tau_seconds_p10": 0.21291799184402369,
+              "tau_seconds_p90": 0.4693884583029017,
+              "sample_count": 66,
+              "episode_count": 7,
+              "source_control_profile": "banked_v2"
+            },
+            "estimated_seconds_to_bank_within_3_deg": 0.451,
+            "estimated_additional_track_turn_left_deg": 2.269,
+            "estimated_final_track_if_wings_leveled_now_deg": 30.554,
+            "additional_track_turn_p10_p90_tau_deg": [
+              1.988,
+              4.382
+            ],
+            "current_bank_and_track_turn_have_same_sign": true
+          },
+          "immediate_gate": {
+            "number": 4,
+            "distance_to_plane_forward_m": 43.07,
+            "horizontal_distance_to_center_m": 85.797,
+            "gate_center_altitude_world_m": 18.433354658899926,
+            "height_error_up_m": -7.505,
+            "lateral_position_error_left_m": -74.203,
+            "usable_altitude_bounds_world_m": [
+              12.933,
+              23.933
+            ],
+            "usable_lateral_bounds_world_m": [
+              -21.236,
+              -7.736
+            ],
+            "height_inside_opening_band_now": false,
+            "lateral_position_inside_opening_band_now": false,
+            "heading_error_left_deg": -91.618,
+            "track_alignment_error_left_deg": -88.153,
+            "climb_alignment_error_up_deg": -0.546,
+            "gate_center_bearing_rate_left_deg_s": -13.941,
+            "track_alignment_error_rate_left_deg_s": -23.277,
+            "climb_alignment_error_rate_up_deg_s": -0.874,
+            "height_error_rate_up_m_s": 1.627,
+            "lateral_position_error_rate_left_m_s": -9.897,
+            "time_to_plane_constant_forward_speed_s": 2.342,
+            "constant_velocity_crossing_error_left_m": -97.38,
+            "constant_velocity_crossing_error_up_m": -3.696,
+            "constant_velocity_crossing_clearance_left_m": -90.63,
+            "constant_velocity_crossing_clearance_up_m": 1.804,
+            "constant_forward_speed_center_velocity_left_up_m_s": [
+              -31.684,
+              -3.205
+            ],
+            "geometric_estimate_assumption": "Velocity requirements assume constant current world-x speed until the gate plane. Angular windows assume fixed world-y/world-z travel direction. Opening-band checks do not mean the gate has been passed.",
+            "track_error_after_one_interval_constant_rates_deg": -99.792,
+            "constant_rates_estimate_assumption": "Current motion-direction rate and gate-bearing rate held fixed for one decision interval, without predicting the selected maneuver.",
+            "track_error_after_leveling_constant_gate_bearing_deg": -90.422,
+            "leveling_alignment_assumption": "Combines exponential turn-decay estimate with fixed current gate bearing. Gate bearing actually changes while traveling; this is not a predicted gate crossing.",
+            "constant_direction_track_window_left_deg": [
+              -61.985,
+              -57.441
+            ],
+            "current_track_inside_angular_window": false,
+            "constant_direction_climb_window_up_deg": [
+              -14.89,
+              -2.347
+            ],
+            "current_climb_angle_inside_angular_window": true
+          },
+          "next_gate_transition": {
+            "from_gate": 4,
+            "to_gate": 5,
+            "center_to_center_forward_left_up_m": [
+              110.0,
+              28.836,
+              1.636
+            ],
+            "height_change_up_m": 1.636,
+            "lateral_change_left_m": 28.836,
+            "center_to_center_bearing_left_deg": 14.689,
+            "center_to_center_elevation_up_deg": 0.824,
+            "note": "Static geometry for looking ahead; not a flight path or a required action. Pass the immediate gate first."
+          },
+          "target_update": {
+            "active_gate_number": 4,
+            "last_passed_gate": 3,
+            "last_pass_time_seconds": 17.3,
+            "active_gate_since_seconds": 17.3,
+            "seconds_since_target_became_active": 4.0,
+            "decision_refresh_on_gate_pass": true,
+            "previous_decision_gate_number": 4,
+            "changed_since_previous_decision": false
+          }
+        },
+        "recent_maneuvers": [
+          {
+            "action": "down__roll_right",
+            "time_seconds": 19.3
+          },
+          {
+            "action": "down__roll_left",
+            "time_seconds": 19.8
+          },
+          {
+            "action": "down__roll_right",
+            "time_seconds": 20.3
+          },
+          {
+            "action": "down__roll_left",
+            "time_seconds": 20.8
+          }
+        ],
+        "simultaneous_axes": {
+          "vertical": {
+            "up": "Target nose-up pitch 6 degrees to climb.",
+            "down": "Target nose-down pitch 6 degrees to descend.",
+            "level": "Target nominal nose-up trim of 2 degrees; not an altitude hold."
+          },
+          "horizontal": {
+            "straight": "Target wings level, zero coordinated yaw rate; not a heading hold.",
+            "left": "Target left bank 25 degrees, coordinated turn.",
+            "right": "Target right bank 25 degrees, coordinated turn.",
+            "roll_left": "Target left bank 40 degrees, stronger coordinated turn.",
+            "roll_right": "Target right bank 40 degrees, stronger coordinated turn."
+          }
+        }
+      },
+      "questions": {
+        "action": {
+          "type": "choice",
+          "instructions": "Pilot a fixed-wing aircraft through the next numbered rectangular gate, then the remaining gates in order. Avoid the frame and ground. Maximize gates passed. Use the provided physical state and gate geometry, account for momentum and attitude response, start turns early and stop or reverse before overshooting. World +x follows the course, +y is LEFT, +z is UP. Euler pitch positive means nose DOWN and Euler roll negative means bank LEFT. Decisions last the stated duration. Pitch and bank commands execute simultaneously through the same attitude stabilizer. Neither nominal pitch nor wings-level locks altitude or heading. Banking may affect lift and vertical motion. Use all available relevant measurements; any constant-velocity crossing forecast is only an estimate, not a prediction of your next maneuver. The stabilizer has no gate knowledge. Base the choice on these specific state fields: `aircraft.position_world_xyz_m`, `aircraft.velocity_world_xyz_m_s`, `aircraft.roll_pitch_yaw_deg`, `next_gates[0].center_m`, `next_gates[0].relative_world_xyz_m`, `next_gates[0].half_width_m`, `next_gates[0].half_height_m`, and `controls`. The first item of `next_gates` is the immediate priority. Positive second component of `next_gates[0].relative_world_xyz_m` places that gate to your left, negative to your right. Positive third component places it above, negative below. Choose the maneuver from `simultaneous_axes` that best aligns current motion with this opening, accounting for velocity and attitude rather than position alone. When `navigation` is present, prioritize `navigation.immediate_gate.track_alignment_error_left_deg`, `navigation.immediate_gate.climb_alignment_error_up_deg`, their rates and the crossing clearances. A gate left of your POSITION can already be right of your MOTION DIRECTION. A positive bank turns left even if velocity is already aligned; continued bank can overshoot. Read `navigation.measurements.track_turn_rate_left_deg_s`, `navigation.measurements.bank_left_rate_deg_s`, `navigation.immediate_gate.height_error_up_m`, and the track/climb angular windows. Consider `navigation.leveling_estimate` when timing a bank release; it is an approximate empirical estimate, not a guaranteed result. The next gate transition describes upcoming geometry. All estimates are optional evidence, not control commands; make your own choice using measurements and inertia. When `navigation.target_update.changed_since_previous_decision` is true, the target has changed: reassess the current attitude and velocity for the new gate. The previous decision was for `navigation.target_update.previous_decision_gate_number`. Choose one joint pitch-and-bank maneuver from the 15 choices.",
+          "criteria": {
+            "up__straight": "Target nose-up pitch 6 degrees to climb. Simultaneously: Target wings level, zero coordinated yaw rate; not a heading hold.",
+            "up__left": "Target nose-up pitch 6 degrees to climb. Simultaneously: Target left bank 25 degrees, coordinated turn.",
+            "up__right": "Target nose-up pitch 6 degrees to climb. Simultaneously: Target right bank 25 degrees, coordinated turn.",
+            "up__roll_left": "Target nose-up pitch 6 degrees to climb. Simultaneously: Target left bank 40 degrees, stronger coordinated turn.",
+            "up__roll_right": "Target nose-up pitch 6 degrees to climb. Simultaneously: Target right bank 40 degrees, stronger coordinated turn.",
+            "down__straight": "Target nose-down pitch 6 degrees to descend. Simultaneously: Target wings level, zero coordinated yaw rate; not a heading hold.",
+            "down__left": "Target nose-down pitch 6 degrees to descend. Simultaneously: Target left bank 25 degrees, coordinated turn.",
+            "down__right": "Target nose-down pitch 6 degrees to descend. Simultaneously: Target right bank 25 degrees, coordinated turn.",
+            "down__roll_left": "Target nose-down pitch 6 degrees to descend. Simultaneously: Target left bank 40 degrees, stronger coordinated turn.",
+            "down__roll_right": "Target nose-down pitch 6 degrees to descend. Simultaneously: Target right bank 40 degrees, stronger coordinated turn.",
+            "level__straight": "Target nominal nose-up trim of 2 degrees; not an altitude hold. Simultaneously: Target wings level, zero coordinated yaw rate; not a heading hold.",
+            "level__left": "Target nominal nose-up trim of 2 degrees; not an altitude hold. Simultaneously: Target left bank 25 degrees, coordinated turn.",
+            "level__right": "Target nominal nose-up trim of 2 degrees; not an altitude hold. Simultaneously: Target right bank 25 degrees, coordinated turn.",
+            "level__roll_left": "Target nominal nose-up trim of 2 degrees; not an altitude hold. Simultaneously: Target left bank 40 degrees, stronger coordinated turn.",
+            "level__roll_right": "Target nominal nose-up trim of 2 degrees; not an altitude hold. Simultaneously: Target right bank 40 degrees, stronger coordinated turn."
+          }
+        }
+      }
+    }
+  }
+}

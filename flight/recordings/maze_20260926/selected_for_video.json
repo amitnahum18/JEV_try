@@ -1,0 +1,68 @@
+{
+  "selected": {
+    "schema_version": 5,
+    "feature_schema": "flight_opening_context_v2",
+    "policy": "single_focused",
+    "model": "typesafe/jev-1.13",
+    "architecture": "single",
+    "telemetry": "focused",
+    "prompt_version": 5,
+    "config": {
+      "seed": 45,
+      "level": 1,
+      "gates": 8,
+      "decision_seconds": 0.5,
+      "max_seconds": 85.0,
+      "layout": "maze",
+      "control_profile": "banked_v2",
+      "refresh_on_gate_pass": true
+    },
+    "course_hash": "4081269bc815be8bd46e04ef365710ea68f7a1d547615f2d950c22b7fa81e060",
+    "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+    "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+    "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926\\single_focused_seed45\\episode.json",
+    "status": "gate_missed",
+    "score": 50,
+    "gates_passed": 1,
+    "gates_total": 8,
+    "simulated_seconds": 12.666666666666666,
+    "minimum_crossing_clearance_margin_m": -0.23050714514556603,
+    "final_position_m": [
+      250.00594123940482,
+      -22.099251309351892,
+      25.28189350134204
+    ],
+    "gate_events": [
+      {
+        "gate": 1,
+        "time_seconds": 4.716666666666667,
+        "crossing_xyz_m": [
+          95.0,
+          8.636639805276143,
+          22.13996649914192
+        ],
+        "clearance_margin_m": 2.3410539730038185
+      },
+      {
+        "gate": 2,
+        "time_seconds": 12.666666666666666,
+        "crossing_xyz_m": [
+          250.0,
+          -22.097750886057327,
+          25.2817674810953
+        ],
+        "clearance_margin_m": -0.23050714514556603
+      }
+    ],
+    "decision_count": 26,
+    "api_calls": 26,
+    "api_attempts": 26,
+    "known_cost_usd": 0.003453534,
+    "cost_complete": true,
+    "wall_seconds": 20.49871760001406,
+    "mean_decision_latency_seconds": 0.501066476930506,
+    "mean_request_bytes_per_decision": 9077.615384615385,
+    "finished_at": "2026-09-26T22:34:59.915814+03:00"
+  },
+  "selection": "Completed flight first, then greatest gates passed; all attempts preserved in results.json."
+}

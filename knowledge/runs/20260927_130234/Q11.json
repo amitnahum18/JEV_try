@@ -1,0 +1,60 @@
+{
+  "id": "Q11",
+  "status": "answered",
+  "choice": "D",
+  "answer_text": "-1/2",
+  "confidence": 0.57,
+  "probabilities": {
+    "A": 0.17,
+    "B": 0.08,
+    "unsure": 0.05,
+    "C": 0.04,
+    "D": 0.66
+  },
+  "cost_usd": 2.2092e-05,
+  "latency_seconds": 0.4544239998795092,
+  "input_tokens": 526,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:35.958414+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "Evaluate the convergent improper integral from x=0 to infinity of ln(x)/(1+x)^3 dx.",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "-1",
+              "B": "0",
+              "C": "1/2",
+              "D": "-1/2",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "D",
+        "confidence": 0.57,
+        "probabilities": {
+          "A": 0.17,
+          "B": 0.08,
+          "unsure": 0.05,
+          "C": 0.04,
+          "D": 0.66
+        },
+        "latency_seconds": 0.4544239998795092,
+        "input_tokens": 526,
+        "cost_usd": 2.2092e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}

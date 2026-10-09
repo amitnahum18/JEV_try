@@ -1,0 +1,43 @@
+[Event "JEV Chess Ladder"]
+[Site "Local simulation"]
+[Date "2026.09.26"]
+[Round "1"]
+[White "JEV"]
+[Black "Beginner - Random"]
+[Result "1-0"]
+[Annotator "JEV Chess Lab"]
+
+1. Nf3 { JEV confidence: 0.43 } 1... Na6 2. Nc3 { JEV confidence: 0.35 } 2...
+Nh6 3. e4 { JEV confidence: 0.15 } 3... g6 4. Ng5 { JEV confidence: 0.14 } 4...
+Nc5 5. Nxh7 { JEV confidence: 0.38 } 5... Ne6 6. Nxf8 { JEV confidence: 0.44 }
+6... Rb8 7. Nxd7 { JEV confidence: 0.15 } 7... b5 8. Nxb8
+{ JEV confidence: 0.23 } 8... Kf8 9. Nd7+ { JEV confidence: 0.46 } 9... Bxd7
+10. Nd5 { JEV confidence: 0.40 } 10... Kg8 11. Nxe7+ { JEV confidence: 0.65 }
+11... Qxe7 12. Bxb5 { JEV confidence: 0.36 } 12... Kh7 13. Bxd7
+{ JEV confidence: 0.65 } 13... Rf8 14. Bxe6 { JEV confidence: 0.37 } 14... Rb8
+15. Bxf7 { JEV confidence: 0.43 } 15... Kh8 16. Bxg6 { JEV confidence: 0.40 }
+16... Qf8 17. O-O { JEV confidence: 0.43 } 17... c6 18. Be8
+{ JEV confidence: 0.44 } 18... Kh7 19. Bxc6 { JEV confidence: 0.45 } 19... a6
+20. Be8 { JEV confidence: 0.39 } 20... Qf3 21. Qxf3 { JEV confidence: 0.51 }
+21... a5 22. Qf7+ { JEV confidence: 0.42 } 22... Nxf7 23. Bxf7
+{ JEV confidence: 0.73 } 23... Rb7 24. Bg8+ { JEV confidence: 0.65 } 24... Kh6
+25. d4+ { JEV confidence: 0.15 } 25... Kh5 26. Bf7+ { JEV confidence: 0.51 }
+26... Kg4 27. Be6+ { JEV confidence: 0.30 } 27... Kh5 28. Bf7+
+{ JEV confidence: 0.32 } 28... Kh4 29. Bg5+ { JEV confidence: 0.24 } 29... Kg4
+30. Be6+ { JEV confidence: 0.27 } 30... Kxg5 31. Bg8 { JEV confidence: 0.16 }
+31... Rb6 32. f4+ { JEV confidence: 0.14 } 32... Kg6 33. Bh7+
+{ JEV confidence: 0.32 } 33... Kg7 34. Bf5 { JEV confidence: 0.09 } 34... Rf6
+35. Bc8 { JEV confidence: 0.19 } 35... Kh7 36. Bf5+ { JEV confidence: 0.43 }
+36... Kh8 37. Bc8 { JEV confidence: 0.24 } 37... Rg6 38. d5
+{ JEV confidence: 0.10 } 38... Rg8 39. d6 { JEV confidence: 0.16 } 39... Rxc8
+40. d7 { JEV confidence: 0.28 } 40... Rc5 41. d8=Q+ { JEV confidence: 0.74 }
+41... Kg7 42. Qxa5 { JEV confidence: 0.33 } 42... Kg8 43. Qxc5
+{ JEV confidence: 0.49 } 43... Kf7 44. Qf8+ { JEV confidence: 0.59 } 44... Ke6
+45. Qf7+ { JEV confidence: 0.13 } 45... Kxf7 46. Kf2 { JEV confidence: 0.17 }
+46... Kf6 47. e5+ { JEV confidence: 0.51 } 47... Kg7 48. e6
+{ JEV confidence: 0.23 } 48... Kh6 49. e7 { JEV confidence: 0.15 } 49... Kg6
+50. e8=Q+ { JEV confidence: 0.75 } 50... Kf5 51. Qf8+ { JEV confidence: 0.19 }
+51... Kg4 52. Qg8+ { JEV confidence: 0.21 } 52... Kf5 53. Qf8+
+{ JEV confidence: 0.15 } 53... Kg6 54. Qg8+ { JEV confidence: 0.25 } 54... Kh6
+55. Qh8+ { JEV confidence: 0.41 } 55... Kg6 56. Qg8+ { JEV confidence: 0.40 }
+56... Kh5 57. Qg5# { JEV confidence: 0.97 } 1-0

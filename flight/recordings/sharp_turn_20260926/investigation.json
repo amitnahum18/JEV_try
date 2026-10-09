@@ -1,0 +1,1545 @@
+{
+  "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\navigation_evaluation_20260926\\expanded_refresh\\single_full_seed44\\episode.json",
+  "original_parameter_trace": [
+    {
+      "time_seconds": 15.783333333333333,
+      "target": 3,
+      "available_gates": [
+        3,
+        4,
+        5
+      ],
+      "action": "down__straight",
+      "bank_left_deg": 4.55,
+      "track_left_deg": 44.224,
+      "track_error_left_deg": 0.702,
+      "track_rate_left_deg_s": 2.633,
+      "center_bearing_world_left_deg": 44.926,
+      "body_bearing_left_deg": 2.81,
+      "track_window_left_deg": [
+        34.357,
+        52.668
+      ],
+      "target_update": {
+        "active_gate_number": 3,
+        "last_passed_gate": 2,
+        "last_pass_time_seconds": 10.783333,
+        "active_gate_since_seconds": 10.783333,
+        "seconds_since_target_became_active": 5.0,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 3,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          315.0,
+          14.553,
+          28.603
+        ],
+        "center_error_left_m": 0.519,
+        "center_error_up_m": -5.77,
+        "lateral_clearance_margin_m": 6.231,
+        "vertical_clearance_margin_m": -0.27
+      }
+    },
+    {
+      "time_seconds": 16.283333333333335,
+      "target": 3,
+      "available_gates": [
+        3,
+        4,
+        5
+      ],
+      "action": "level__straight",
+      "bank_left_deg": 0.47,
+      "track_left_deg": 44.572,
+      "track_error_left_deg": 0.576,
+      "track_rate_left_deg_s": 0.164,
+      "center_bearing_world_left_deg": 45.149,
+      "body_bearing_left_deg": 0.99,
+      "track_window_left_deg": [
+        28.257,
+        55.826
+      ],
+      "target_update": {
+        "active_gate_number": 3,
+        "last_passed_gate": 2,
+        "last_pass_time_seconds": 10.783333,
+        "active_gate_since_seconds": 10.783333,
+        "seconds_since_target_became_active": 5.5,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 3,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          315.0,
+          14.783,
+          26.934
+        ],
+        "center_error_left_m": 0.289,
+        "center_error_up_m": -4.1,
+        "lateral_clearance_margin_m": 6.461,
+        "vertical_clearance_margin_m": 1.4
+      }
+    },
+    {
+      "time_seconds": 16.783333333333335,
+      "target": 3,
+      "available_gates": [
+        3,
+        4,
+        5
+      ],
+      "action": "level__straight",
+      "bank_left_deg": -0.075,
+      "track_left_deg": 44.595,
+      "track_error_left_deg": 1.086,
+      "track_rate_left_deg_s": -0.053,
+      "center_bearing_world_left_deg": 45.681,
+      "body_bearing_left_deg": 1.11,
+      "track_window_left_deg": [
+        5.602,
+        62.85
+      ],
+      "target_update": {
+        "active_gate_number": 3,
+        "last_passed_gate": 2,
+        "last_pass_time_seconds": 10.783333,
+        "active_gate_since_seconds": 10.783333,
+        "seconds_since_target_became_active": 6.0,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 3,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          315.0,
+          14.794,
+          27.789
+        ],
+        "center_error_left_m": 0.278,
+        "center_error_up_m": -4.955,
+        "lateral_clearance_margin_m": 6.472,
+        "vertical_clearance_margin_m": 0.545
+      }
+    },
+    {
+      "time_seconds": 17.283333333333335,
+      "target": 3,
+      "available_gates": [
+        3,
+        4,
+        5
+      ],
+      "action": "down__straight",
+      "bank_left_deg": -0.155,
+      "track_left_deg": 44.557,
+      "track_error_left_deg": 26.317,
+      "track_rate_left_deg_s": -0.085,
+      "center_bearing_world_left_deg": 70.874,
+      "body_bearing_left_deg": 46.36,
+      "track_window_left_deg": [
+        -88.65,
+        88.811
+      ],
+      "target_update": {
+        "active_gate_number": 3,
+        "last_passed_gate": 2,
+        "last_pass_time_seconds": 10.783333,
+        "active_gate_since_seconds": 10.783333,
+        "seconds_since_target_became_active": 6.5,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 3,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          315.0,
+          14.79,
+          27.95
+        ],
+        "center_error_left_m": 0.282,
+        "center_error_up_m": -5.117,
+        "lateral_clearance_margin_m": 6.468,
+        "vertical_clearance_margin_m": 0.383
+      }
+    },
+    {
+      "time_seconds": 17.3,
+      "target": 4,
+      "available_gates": [
+        4,
+        5
+      ],
+      "action": "down__roll_right",
+      "bank_left_deg": -0.156,
+      "track_left_deg": 44.556,
+      "track_error_left_deg": -59.514,
+      "track_rate_left_deg_s": -0.066,
+      "center_bearing_world_left_deg": -14.958,
+      "body_bearing_left_deg": -59.73,
+      "track_window_left_deg": [
+        -18.189,
+        -11.626
+      ],
+      "target_update": {
+        "active_gate_number": 4,
+        "last_passed_gate": 3,
+        "last_pass_time_seconds": 17.3,
+        "active_gate_since_seconds": 17.3,
+        "seconds_since_target_became_active": 0.0,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 3,
+        "changed_since_previous_decision": true
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          425.0,
+          123.098,
+          33.232
+        ],
+        "center_error_left_m": -137.584,
+        "center_error_up_m": -14.799,
+        "lateral_clearance_margin_m": -130.834,
+        "vertical_clearance_margin_m": -9.299
+      }
+    },
+    {
+      "time_seconds": 17.8,
+      "target": 4,
+      "available_gates": [
+        4,
+        5
+      ],
+      "action": "up__left",
+      "bank_left_deg": -32.054,
+      "track_left_deg": 41.957,
+      "track_error_left_deg": -61.427,
+      "track_rate_left_deg_s": -12.093,
+      "center_bearing_world_left_deg": -19.469,
+      "body_bearing_left_deg": -56.27,
+      "track_window_left_deg": [
+        -22.746,
+        -16.055
+      ],
+      "target_update": {
+        "active_gate_number": 4,
+        "last_passed_gate": 3,
+        "last_pass_time_seconds": 17.3,
+        "active_gate_since_seconds": 17.3,
+        "seconds_since_target_became_active": 0.5,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 4,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          425.0,
+          114.139,
+          21.71
+        ],
+        "center_error_left_m": -128.625,
+        "center_error_up_m": -3.277,
+        "lateral_clearance_margin_m": -121.875,
+        "vertical_clearance_margin_m": 2.223
+      }
+    },
+    {
+      "time_seconds": 18.3,
+      "target": 4,
+      "available_gates": [
+        4,
+        5
+      ],
+      "action": "down__roll_right",
+      "bank_left_deg": 8.733,
+      "track_left_deg": 36.319,
+      "track_error_left_deg": -60.47,
+      "track_rate_left_deg_s": 5.49,
+      "center_bearing_world_left_deg": -24.151,
+      "body_bearing_left_deg": -62.62,
+      "track_window_left_deg": [
+        -27.458,
+        -20.664
+      ],
+      "target_update": {
+        "active_gate_number": 4,
+        "last_passed_gate": 3,
+        "last_pass_time_seconds": 17.3,
+        "active_gate_since_seconds": 17.3,
+        "seconds_since_target_became_active": 1.0,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 4,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          425.0,
+          97.641,
+          32.746
+        ],
+        "center_error_left_m": -112.127,
+        "center_error_up_m": -14.313,
+        "lateral_clearance_margin_m": -105.377,
+        "vertical_clearance_margin_m": -8.813
+      }
+    },
+    {
+      "time_seconds": 18.8,
+      "target": 4,
+      "available_gates": [
+        4,
+        5
+      ],
+      "action": "up__left",
+      "bank_left_deg": -26.006,
+      "track_left_deg": 36.0,
+      "track_error_left_deg": -65.211,
+      "track_rate_left_deg_s": -9.812,
+      "center_bearing_world_left_deg": -29.211,
+      "body_bearing_left_deg": -60.76,
+      "track_window_left_deg": [
+        -32.496,
+        -25.702
+      ],
+      "target_update": {
+        "active_gate_number": 4,
+        "last_passed_gate": 3,
+        "last_pass_time_seconds": 17.3,
+        "active_gate_since_seconds": 17.3,
+        "seconds_since_target_became_active": 1.5,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 4,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          425.0,
+          97.001,
+          24.82
+        ],
+        "center_error_left_m": -111.488,
+        "center_error_up_m": -6.386,
+        "lateral_clearance_margin_m": -104.738,
+        "vertical_clearance_margin_m": -0.886
+      }
+    },
+    {
+      "time_seconds": 19.3,
+      "target": 4,
+      "available_gates": [
+        4,
+        5
+      ],
+      "action": "down__roll_right",
+      "bank_left_deg": 10.092,
+      "track_left_deg": 31.445,
+      "track_error_left_deg": -65.999,
+      "track_rate_left_deg_s": 6.141,
+      "center_bearing_world_left_deg": -34.555,
+      "body_bearing_left_deg": -67.91,
+      "track_window_left_deg": [
+        -37.774,
+        -31.066
+      ],
+      "target_update": {
+        "active_gate_number": 4,
+        "last_passed_gate": 3,
+        "last_pass_time_seconds": 17.3,
+        "active_gate_since_seconds": 17.3,
+        "seconds_since_target_became_active": 2.0,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 4,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          425.0,
+          87.253,
+          32.733
+        ],
+        "center_error_left_m": -101.739,
+        "center_error_up_m": -14.3,
+        "lateral_clearance_margin_m": -94.989,
+        "vertical_clearance_margin_m": -8.8
+      }
+    },
+    {
+      "time_seconds": 19.8,
+      "target": 4,
+      "available_gates": [
+        4,
+        5
+      ],
+      "action": "down__roll_left",
+      "bank_left_deg": -25.653,
+      "track_left_deg": 31.249,
+      "track_error_left_deg": -71.548,
+      "track_rate_left_deg_s": -9.577,
+      "center_bearing_world_left_deg": -40.298,
+      "body_bearing_left_deg": -67.39,
+      "track_window_left_deg": [
+        -43.372,
+        -36.917
+      ],
+      "target_update": {
+        "active_gate_number": 4,
+        "last_passed_gate": 3,
+        "last_pass_time_seconds": 17.3,
+        "active_gate_since_seconds": 17.3,
+        "seconds_since_target_became_active": 2.5,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 4,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          425.0,
+          87.033,
+          25.943
+        ],
+        "center_error_left_m": -101.519,
+        "center_error_up_m": -7.51,
+        "lateral_clearance_margin_m": -94.769,
+        "vertical_clearance_margin_m": -2.01
+      }
+    },
+    {
+      "time_seconds": 20.3,
+      "target": 4,
+      "available_gates": [
+        4,
+        5
+      ],
+      "action": "down__roll_right",
+      "bank_left_deg": 16.477,
+      "track_left_deg": 28.648,
+      "track_error_left_deg": -75.066,
+      "track_rate_left_deg_s": 7.532,
+      "center_bearing_world_left_deg": -46.419,
+      "body_bearing_left_deg": -77.92,
+      "track_window_left_deg": [
+        -49.272,
+        -43.232
+      ],
+      "target_update": {
+        "active_gate_number": 4,
+        "last_passed_gate": 3,
+        "last_pass_time_seconds": 17.3,
+        "active_gate_since_seconds": 17.3,
+        "seconds_since_target_became_active": 3.0,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 4,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          425.0,
+          82.923,
+          22.918
+        ],
+        "center_error_left_m": -97.409,
+        "center_error_up_m": -4.484,
+        "lateral_clearance_margin_m": -90.659,
+        "vertical_clearance_margin_m": 1.016
+      }
+    },
+    {
+      "time_seconds": 20.8,
+      "target": 4,
+      "available_gates": [
+        4,
+        5
+      ],
+      "action": "down__roll_left",
+      "bank_left_deg": -19.894,
+      "track_left_deg": 30.475,
+      "track_error_left_deg": -83.481,
+      "track_rate_left_deg_s": -9.517,
+      "center_bearing_world_left_deg": -53.006,
+      "body_bearing_left_deg": -79.38,
+      "track_window_left_deg": [
+        -55.531,
+        -50.147
+      ],
+      "target_update": {
+        "active_gate_number": 4,
+        "last_passed_gate": 3,
+        "last_pass_time_seconds": 17.3,
+        "active_gate_since_seconds": 17.3,
+        "seconds_since_target_became_active": 3.5,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 4,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          425.0,
+          85.48,
+          22.23
+        ],
+        "center_error_left_m": -99.966,
+        "center_error_up_m": -3.796,
+        "lateral_clearance_margin_m": -93.216,
+        "vertical_clearance_margin_m": 1.704
+      }
+    },
+    {
+      "time_seconds": 21.3,
+      "target": 4,
+      "available_gates": [
+        4,
+        5
+      ],
+      "action": "down__roll_right",
+      "bank_left_deg": 19.16,
+      "track_left_deg": 28.285,
+      "track_error_left_deg": -88.153,
+      "track_rate_left_deg_s": 9.336,
+      "center_bearing_world_left_deg": -59.868,
+      "body_bearing_left_deg": -91.27,
+      "track_window_left_deg": [
+        -61.985,
+        -57.441
+      ],
+      "target_update": {
+        "active_gate_number": 4,
+        "last_passed_gate": 3,
+        "last_pass_time_seconds": 17.3,
+        "active_gate_since_seconds": 17.3,
+        "seconds_since_target_became_active": 4.0,
+        "decision_refresh_on_gate_pass": true,
+        "previous_decision_gate_number": 4,
+        "changed_since_previous_decision": false
+      },
+      "crossing_forecast": {
+        "assumption": "Straight constant WORLD velocity; no turn or acceleration. This is a geometric estimate, not a planned route.",
+        "position_world_xyz_m": [
+          425.0,
+          82.894,
+          22.13
+        ],
+        "center_error_left_m": -97.38,
+        "center_error_up_m": -3.696,
+        "lateral_clearance_margin_m": -90.63,
+        "vertical_clearance_margin_m": 1.804
+      }
+    }
+  ],
+  "flights": [
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_navigation_v3",
+      "policy": "single_full",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "full",
+      "prompt_version": 3,
+      "config": {
+        "seed": 42,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "2deadf4e38a4ef10d6d230b39748c77a9752863baf224b3c47288aad94d5441c",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\matched_v4\\v3\\single_full_seed42\\episode.json",
+      "status": "gate_missed",
+      "score": -50,
+      "gates_passed": 0,
+      "gates_total": 5,
+      "simulated_seconds": 4.858333333333333,
+      "minimum_crossing_clearance_margin_m": -15.782133613185074,
+      "final_position_m": [
+        95.10585837739436,
+        8.344760468845301,
+        23.640613072721184
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.858333333333333,
+          "crossing_xyz_m": [
+            95.0,
+            8.348768932441232,
+            23.639282944760865
+          ],
+          "clearance_margin_m": -15.782133613185074
+        }
+      ],
+      "decision_count": 10,
+      "api_calls": 10,
+      "api_attempts": 10,
+      "known_cost_usd": 0.002423946,
+      "cost_complete": true,
+      "wall_seconds": 11.500390200177208,
+      "mean_decision_latency_seconds": 0.6049016099656,
+      "mean_request_bytes_per_decision": 16247.3,
+      "finished_at": "2026-09-26T17:44:30.593887+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_navigation_v3",
+      "policy": "single_full",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "full",
+      "prompt_version": 3,
+      "config": {
+        "seed": 43,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "0fcfa21b531c4ff4594ebd059beae0562b27a8573269e55adc804876d7206c5d",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\matched_v4\\v3\\single_full_seed43\\episode.json",
+      "status": "collision",
+      "score": -100,
+      "gates_passed": 0,
+      "gates_total": 5,
+      "simulated_seconds": 4.85,
+      "minimum_crossing_clearance_margin_m": null,
+      "final_position_m": [
+        94.3494042982095,
+        20.812310671426918,
+        22.015494599408843
+      ],
+      "gate_events": [],
+      "decision_count": 10,
+      "api_calls": 10,
+      "api_attempts": 10,
+      "known_cost_usd": 0.002417856,
+      "cost_complete": true,
+      "wall_seconds": 12.119834099896252,
+      "mean_decision_latency_seconds": 0.6620010199723765,
+      "mean_request_bytes_per_decision": 16236,
+      "finished_at": "2026-09-26T17:44:31.209105+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v1",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 4,
+      "config": {
+        "seed": 42,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "2deadf4e38a4ef10d6d230b39748c77a9752863baf224b3c47288aad94d5441c",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\matched_v4\\v4\\single_focused_seed42\\episode.json",
+      "status": "collision",
+      "score": 0,
+      "gates_passed": 1,
+      "gates_total": 5,
+      "simulated_seconds": 10.391666666666667,
+      "minimum_crossing_clearance_margin_m": 3.4637087533181052,
+      "final_position_m": [
+        204.36690907759547,
+        6.427556944707943,
+        22.48064869272404
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.775,
+          "crossing_xyz_m": [
+            95.0,
+            -17.469655927425737,
+            21.951020794169033
+          ],
+          "clearance_margin_m": 3.4637087533181052
+        }
+      ],
+      "decision_count": 22,
+      "api_calls": 22,
+      "api_attempts": 22,
+      "known_cost_usd": 0.00267309,
+      "cost_complete": true,
+      "wall_seconds": 19.080275899963453,
+      "mean_decision_latency_seconds": 0.5772106499749828,
+      "mean_request_bytes_per_decision": 8058.136363636364,
+      "finished_at": "2026-09-26T17:44:38.170301+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v1",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 4,
+      "config": {
+        "seed": 43,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "0fcfa21b531c4ff4594ebd059beae0562b27a8573269e55adc804876d7206c5d",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\matched_v4\\v4\\single_focused_seed43\\episode.json",
+      "status": "completed",
+      "score": 500,
+      "gates_passed": 5,
+      "gates_total": 5,
+      "simulated_seconds": 27.716666666666665,
+      "minimum_crossing_clearance_margin_m": 0.6718159998533295,
+      "final_position_m": [
+        535.0101212561336,
+        15.215456234645854,
+        24.32168291741203
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.716666666666667,
+          "crossing_xyz_m": [
+            95.0,
+            8.63685813011588,
+            22.138628807555097
+          ],
+          "clearance_margin_m": 2.755532159198891
+        },
+        {
+          "gate": 2,
+          "time_seconds": 10.258333333333333,
+          "crossing_xyz_m": [
+            205.0,
+            -9.69826983859358,
+            23.265889508984408
+          ],
+          "clearance_margin_m": 2.1570796288602203
+        },
+        {
+          "gate": 3,
+          "time_seconds": 16.0,
+          "crossing_xyz_m": [
+            315.0,
+            17.353358182157145,
+            23.70940038804978
+          ],
+          "clearance_margin_m": 2.5707575084537293
+        },
+        {
+          "gate": 4,
+          "time_seconds": 21.766666666666666,
+          "crossing_xyz_m": [
+            425.0,
+            -14.009479493283068,
+            22.74604884371806
+          ],
+          "clearance_margin_m": 0.6718159998533295
+        },
+        {
+          "gate": 5,
+          "time_seconds": 27.716666666666665,
+          "crossing_xyz_m": [
+            535.0,
+            15.209739420237337,
+            24.32116348919192
+          ],
+          "clearance_margin_m": 1.248765798825108
+        }
+      ],
+      "decision_count": 58,
+      "api_calls": 58,
+      "api_attempts": 58,
+      "known_cost_usd": 0.006966162,
+      "cost_complete": true,
+      "wall_seconds": 38.415161200100556,
+      "mean_decision_latency_seconds": 0.5582116051850006,
+      "mean_request_bytes_per_decision": 7983.793103448276,
+      "finished_at": "2026-09-26T17:45:09.084494+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_navigation_v3",
+      "policy": "single_full",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "full",
+      "prompt_version": 3,
+      "config": {
+        "seed": 44,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "b2a4c6a5ba3434855c9ab7de420549d9b261c4c14a8035e75160230ca529d098",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\matched_v4\\v3\\single_full_seed44\\episode.json",
+      "status": "gate_missed",
+      "score": 250,
+      "gates_passed": 3,
+      "gates_total": 5,
+      "simulated_seconds": 23.108333333333334,
+      "minimum_crossing_clearance_margin_m": -62.832934518081544,
+      "final_position_m": [
+        425.05962232043527,
+        55.088717125211446,
+        21.270561541927325
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.766666666666667,
+          "crossing_xyz_m": [
+            95.0,
+            16.822555429292418,
+            21.978255159775692
+          ],
+          "clearance_margin_m": 3.201783795025902
+        },
+        {
+          "gate": 2,
+          "time_seconds": 10.783333333333333,
+          "crossing_xyz_m": [
+            205.0,
+            -15.216343919455557,
+            25.822640424663717
+          ],
+          "clearance_margin_m": 4.126104236111177
+        },
+        {
+          "gate": 3,
+          "time_seconds": 17.375,
+          "crossing_xyz_m": [
+            315.0,
+            15.077662083139174,
+            26.43964736680334
+          ],
+          "clearance_margin_m": 1.8938898510403668
+        },
+        {
+          "gate": 4,
+          "time_seconds": 23.108333333333334,
+          "crossing_xyz_m": [
+            425.0,
+            55.096820364979294,
+            21.272423924999128
+          ],
+          "clearance_margin_m": -62.832934518081544
+        }
+      ],
+      "decision_count": 49,
+      "api_calls": 49,
+      "api_attempts": 49,
+      "known_cost_usd": 0.011861346,
+      "cost_complete": true,
+      "wall_seconds": 39.15833350014873,
+      "mean_decision_latency_seconds": 0.6761702265191291,
+      "mean_request_bytes_per_decision": 16098.081632653062,
+      "finished_at": "2026-09-26T17:45:10.446472+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v1",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 4,
+      "config": {
+        "seed": 44,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "b2a4c6a5ba3434855c9ab7de420549d9b261c4c14a8035e75160230ca529d098",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\matched_v4\\v4\\single_focused_seed44\\episode.json",
+      "status": "gate_missed",
+      "score": 350,
+      "gates_passed": 4,
+      "gates_total": 5,
+      "simulated_seconds": 27.633333333333333,
+      "minimum_crossing_clearance_margin_m": -0.1207280708536782,
+      "final_position_m": [
+        535.0643731201018,
+        21.256491355071617,
+        24.68238741494548
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.716666666666667,
+          "crossing_xyz_m": [
+            95.0,
+            8.633205023362697,
+            22.15128516702279
+          ],
+          "clearance_margin_m": 2.108865799044377
+        },
+        {
+          "gate": 2,
+          "time_seconds": 10.258333333333333,
+          "crossing_xyz_m": [
+            205.0,
+            -9.6786005657188,
+            23.276329768183707
+          ],
+          "clearance_margin_m": 3.0171717336645045
+        },
+        {
+          "gate": 3,
+          "time_seconds": 15.916666666666666,
+          "crossing_xyz_m": [
+            315.0,
+            12.129377596597532,
+            24.62344260342747
+          ],
+          "clearance_margin_m": 3.710094614416235
+        },
+        {
+          "gate": 4,
+          "time_seconds": 21.616666666666667,
+          "crossing_xyz_m": [
+            425.0,
+            -13.781420195897159,
+            23.257147309799375
+          ],
+          "clearance_margin_m": 0.6762073491005509
+        },
+        {
+          "gate": 5,
+          "time_seconds": 27.633333333333333,
+          "crossing_xyz_m": [
+            535.0,
+            21.220330585545405,
+            24.679539425728414
+          ],
+          "clearance_margin_m": -0.1207280708536782
+        }
+      ],
+      "decision_count": 59,
+      "api_calls": 59,
+      "api_attempts": 59,
+      "known_cost_usd": 0.007084938,
+      "cost_complete": true,
+      "wall_seconds": 42.71996089979075,
+      "mean_decision_latency_seconds": 0.6157219440644701,
+      "mean_request_bytes_per_decision": 7980.135593220339,
+      "finished_at": "2026-09-26T17:45:21.008400+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_navigation_v3",
+      "policy": "single_full",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "full",
+      "prompt_version": 3,
+      "config": {
+        "seed": 45,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "1c440675aa51194230c5b926163ddf9d82f3a9c9b854a61bde830f44f9434575",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\matched_v4\\v3\\single_full_seed45\\episode.json",
+      "status": "out_of_bounds",
+      "score": 300,
+      "gates_passed": 3,
+      "gates_total": 5,
+      "simulated_seconds": 20.533333333333335,
+      "minimum_crossing_clearance_margin_m": 0.672226830882785,
+      "final_position_m": [
+        361.9750010806432,
+        60.023411437733984,
+        25.446146751257412
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.85,
+          "crossing_xyz_m": [
+            95.0,
+            17.876178263185384,
+            23.068439007199803
+          ],
+          "clearance_margin_m": 2.9592951723252234
+        },
+        {
+          "gate": 2,
+          "time_seconds": 10.875,
+          "crossing_xyz_m": [
+            205.0,
+            -13.317051217971406,
+            26.891821114652902
+          ],
+          "clearance_margin_m": 5.0631603806966154
+        },
+        {
+          "gate": 3,
+          "time_seconds": 17.441666666666666,
+          "crossing_xyz_m": [
+            315.0,
+            19.546937647877083,
+            28.927446453738877
+          ],
+          "clearance_margin_m": 0.672226830882785
+        }
+      ],
+      "decision_count": 44,
+      "api_calls": 44,
+      "api_attempts": 44,
+      "known_cost_usd": 0.01067388,
+      "cost_complete": true,
+      "wall_seconds": 36.75804249988869,
+      "mean_decision_latency_seconds": 0.7205433590887961,
+      "mean_request_bytes_per_decision": 16163.295454545454,
+      "finished_at": "2026-09-26T17:45:46.030100+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v1",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 4,
+      "config": {
+        "seed": 45,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "1c440675aa51194230c5b926163ddf9d82f3a9c9b854a61bde830f44f9434575",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\matched_v4\\v4\\single_focused_seed45\\episode.json",
+      "status": "completed",
+      "score": 500,
+      "gates_passed": 5,
+      "gates_total": 5,
+      "simulated_seconds": 27.591666666666665,
+      "minimum_crossing_clearance_margin_m": 0.22085978925745664,
+      "final_position_m": [
+        535.0372278139423,
+        19.125423680225985,
+        24.695251754345012
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.716666666666667,
+          "crossing_xyz_m": [
+            95.0,
+            8.636639805276143,
+            22.13996649914192
+          ],
+          "clearance_margin_m": 1.3011663697655358
+        },
+        {
+          "gate": 2,
+          "time_seconds": 10.258333333333333,
+          "crossing_xyz_m": [
+            205.0,
+            -9.70517547545741,
+            23.26109326206511
+          ],
+          "clearance_margin_m": 2.306111766715592
+        },
+        {
+          "gate": 3,
+          "time_seconds": 15.916666666666666,
+          "crossing_xyz_m": [
+            315.0,
+            12.092102845614278,
+            24.621198025713458
+          ],
+          "clearance_margin_m": 4.0040838284209155
+        },
+        {
+          "gate": 4,
+          "time_seconds": 21.608333333333334,
+          "crossing_xyz_m": [
+            425.0,
+            -13.849169950121414,
+            22.841797245240173
+          ],
+          "clearance_margin_m": 0.5532678726905687
+        },
+        {
+          "gate": 5,
+          "time_seconds": 27.591666666666665,
+          "crossing_xyz_m": [
+            535.0,
+            19.103013756798223,
+            24.693376000024273
+          ],
+          "clearance_margin_m": 0.22085978925745664
+        }
+      ],
+      "decision_count": 58,
+      "api_calls": 58,
+      "api_attempts": 58,
+      "known_cost_usd": 0.006967632,
+      "cost_complete": true,
+      "wall_seconds": 41.30673940014094,
+      "mean_decision_latency_seconds": 0.6085180879313627,
+      "mean_request_bytes_per_decision": 7985.5,
+      "finished_at": "2026-09-26T17:45:51.948141+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v2",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 5,
+      "config": {
+        "seed": 44,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "b2a4c6a5ba3434855c9ab7de420549d9b261c4c14a8035e75160230ca529d098",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5\\single_focused_seed44\\episode.json",
+      "status": "completed",
+      "score": 500,
+      "gates_passed": 5,
+      "gates_total": 5,
+      "simulated_seconds": 29.616666666666667,
+      "minimum_crossing_clearance_margin_m": 0.5667683455884358,
+      "final_position_m": [
+        535.0029466736514,
+        15.133326622537933,
+        24.624174438181065
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.766666666666667,
+          "crossing_xyz_m": [
+            95.0,
+            16.822555429292418,
+            21.978255159775692
+          ],
+          "clearance_margin_m": 3.201783795025902
+        },
+        {
+          "gate": 2,
+          "time_seconds": 10.558333333333334,
+          "crossing_xyz_m": [
+            205.0,
+            -16.738160652831073,
+            22.500514436207997
+          ],
+          "clearance_margin_m": 2.241356401688794
+        },
+        {
+          "gate": 3,
+          "time_seconds": 16.666666666666668,
+          "crossing_xyz_m": [
+            315.0,
+            17.28513142597692,
+            23.204258167253418
+          ],
+          "clearance_margin_m": 4.536749594693394
+        },
+        {
+          "gate": 4,
+          "time_seconds": 23.008333333333333,
+          "crossing_xyz_m": [
+            425.0,
+            -15.49181241985968,
+            23.36658631331149
+          ],
+          "clearance_margin_m": 0.5667683455884358
+        },
+        {
+          "gate": 5,
+          "time_seconds": 29.616666666666667,
+          "crossing_xyz_m": [
+            535.0,
+            15.130507194082714,
+            24.6239596335515
+          ],
+          "clearance_margin_m": 0.9452128241600519
+        }
+      ],
+      "decision_count": 62,
+      "api_calls": 62,
+      "api_attempts": 62,
+      "known_cost_usd": 0.008139852,
+      "cost_complete": true,
+      "wall_seconds": 43.64632679987699,
+      "mean_decision_latency_seconds": 0.5161439774317607,
+      "mean_request_bytes_per_decision": 8987.838709677419,
+      "finished_at": "2026-09-26T17:48:27.316284+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v2",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 5,
+      "config": {
+        "seed": 43,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "0fcfa21b531c4ff4594ebd059beae0562b27a8573269e55adc804876d7206c5d",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5\\single_focused_seed43\\episode.json",
+      "status": "completed",
+      "score": 500,
+      "gates_passed": 5,
+      "gates_total": 5,
+      "simulated_seconds": 29.808333333333334,
+      "minimum_crossing_clearance_margin_m": 0.8779988094483748,
+      "final_position_m": [
+        535.067744944444,
+        12.246557842712958,
+        22.662126935385846
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.775,
+          "crossing_xyz_m": [
+            95.0,
+            16.831146517546113,
+            21.965489930882956
+          ],
+          "clearance_margin_m": 2.550179453370877
+        },
+        {
+          "gate": 2,
+          "time_seconds": 10.608333333333333,
+          "crossing_xyz_m": [
+            205.0,
+            -17.56318081276309,
+            23.075964272279467
+          ],
+          "clearance_margin_m": 1.9671543921552797
+        },
+        {
+          "gate": 3,
+          "time_seconds": 16.741666666666667,
+          "crossing_xyz_m": [
+            315.0,
+            16.6452842603855,
+            23.385637988395008
+          ],
+          "clearance_margin_m": 3.2788314302253756
+        },
+        {
+          "gate": 4,
+          "time_seconds": 23.133333333333333,
+          "crossing_xyz_m": [
+            425.0,
+            -20.47363144381617,
+            22.539866034123015
+          ],
+          "clearance_margin_m": 0.8779988094483748
+        },
+        {
+          "gate": 5,
+          "time_seconds": 29.808333333333334,
+          "crossing_xyz_m": [
+            535.0,
+            12.171927539888793,
+            22.65660201748497
+          ],
+          "clearance_margin_m": 2.913327270532058
+        }
+      ],
+      "decision_count": 62,
+      "api_calls": 62,
+      "api_attempts": 62,
+      "known_cost_usd": 0.008136912,
+      "cost_complete": true,
+      "wall_seconds": 43.69375930004753,
+      "mean_decision_latency_seconds": 0.5173677064538482,
+      "mean_request_bytes_per_decision": 8986.451612903225,
+      "finished_at": "2026-09-26T17:48:27.337306+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v2",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 5,
+      "config": {
+        "seed": 42,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "2deadf4e38a4ef10d6d230b39748c77a9752863baf224b3c47288aad94d5441c",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5\\single_focused_seed42\\episode.json",
+      "status": "completed",
+      "score": 500,
+      "gates_passed": 5,
+      "gates_total": 5,
+      "simulated_seconds": 30.358333333333334,
+      "minimum_crossing_clearance_margin_m": 0.2755512640568156,
+      "final_position_m": [
+        535.0817589178989,
+        -18.154866151517613,
+        22.503353137400737
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.775,
+          "crossing_xyz_m": [
+            95.0,
+            -17.469655927425737,
+            21.951020794169033
+          ],
+          "clearance_margin_m": 3.4637087533181052
+        },
+        {
+          "gate": 2,
+          "time_seconds": 10.675,
+          "crossing_xyz_m": [
+            205.0,
+            20.758849341721056,
+            22.279905393149427
+          ],
+          "clearance_margin_m": 0.5832547454570349
+        },
+        {
+          "gate": 3,
+          "time_seconds": 16.933333333333334,
+          "crossing_xyz_m": [
+            315.0,
+            -15.051920858691176,
+            22.87114416398758
+          ],
+          "clearance_margin_m": 4.271212086398556
+        },
+        {
+          "gate": 4,
+          "time_seconds": 23.491666666666667,
+          "crossing_xyz_m": [
+            425.0,
+            16.780380915578125,
+            22.558585025433132
+          ],
+          "clearance_margin_m": 0.2755512640568156
+        },
+        {
+          "gate": 5,
+          "time_seconds": 30.358333333333334,
+          "crossing_xyz_m": [
+            535.0,
+            -18.0482129193947,
+            22.495837186102026
+          ],
+          "clearance_margin_m": 1.9050589919376897
+        }
+      ],
+      "decision_count": 63,
+      "api_calls": 63,
+      "api_attempts": 63,
+      "known_cost_usd": 0.008286222,
+      "cost_complete": true,
+      "wall_seconds": 46.33503079996444,
+      "mean_decision_latency_seconds": 0.5466200475994911,
+      "mean_request_bytes_per_decision": 8993.873015873016,
+      "finished_at": "2026-09-26T17:48:29.979330+03:00"
+    },
+    {
+      "schema_version": 5,
+      "feature_schema": "flight_opening_context_v2",
+      "policy": "single_focused",
+      "model": "typesafe/jev-1.13",
+      "architecture": "single",
+      "telemetry": "focused",
+      "prompt_version": 5,
+      "config": {
+        "seed": 45,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "course_hash": "1c440675aa51194230c5b926163ddf9d82f3a9c9b854a61bde830f44f9434575",
+      "timing": "Physics pauses during API calls; decision quality, not real-time delay tolerance.",
+      "navigation": "Same 15 simultaneous pitch-and-bank combinations in all four groups.",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5\\single_focused_seed45\\episode.json",
+      "status": "completed",
+      "score": 500,
+      "gates_passed": 5,
+      "gates_total": 5,
+      "simulated_seconds": 29.558333333333334,
+      "minimum_crossing_clearance_margin_m": 0.7162279680790071,
+      "final_position_m": [
+        535.0689833189108,
+        13.759853805807891,
+        24.15770074207427
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.775,
+          "crossing_xyz_m": [
+            95.0,
+            16.829179943925617,
+            21.966792101816505
+          ],
+          "clearance_margin_m": 4.006293491584991
+        },
+        {
+          "gate": 2,
+          "time_seconds": 10.591666666666667,
+          "crossing_xyz_m": [
+            205.0,
+            -16.804278228112718,
+            23.089026403440506
+          ],
+          "clearance_margin_m": 2.1340449080909885
+        },
+        {
+          "gate": 3,
+          "time_seconds": 16.725,
+          "crossing_xyz_m": [
+            315.0,
+            17.541864400253136,
+            23.77010191441498
+          ],
+          "clearance_margin_m": 4.0461546169402265
+        },
+        {
+          "gate": 4,
+          "time_seconds": 23.025,
+          "crossing_xyz_m": [
+            425.0,
+            -15.088318860584543,
+            22.678837149851734
+          ],
+          "clearance_margin_m": 0.7162279680790071
+        },
+        {
+          "gate": 5,
+          "time_seconds": 29.558333333333334,
+          "crossing_xyz_m": [
+            535.0,
+            13.695185156772435,
+            24.152642420060058
+          ],
+          "clearance_margin_m": 0.7615933692216714
+        }
+      ],
+      "decision_count": 62,
+      "api_calls": 62,
+      "api_attempts": 62,
+      "known_cost_usd": 0.008126916,
+      "cost_complete": true,
+      "wall_seconds": 40.383337300037965,
+      "mean_decision_latency_seconds": 0.5415886967938633,
+      "mean_request_bytes_per_decision": 8982.451612903225,
+      "finished_at": "2026-09-26T17:49:07.886190+03:00"
+    }
+  ],
+  "audits": {
+    "episodes_checked": 12,
+    "physics_steps_checked": 31923,
+    "gate_transitions_checked": 41,
+    "exact_request_payloads_checked": 559,
+    "all_passed": true
+  },
+  "regression_tests_passed": 13,
+  "note": "Three version bundles; adaptive v5 refinement after v4 results. Four reused seeds at level 1; no held-out or significance claim. Camera not part of API input.",
+  "live_driver_validation": {
+    "recording": "flight\\recordings\\sharp_turn_20260926\\live_driver_v5\\single_level1_seed44_175412_054150.json",
+    "status": "completed",
+    "gates_passed": 5,
+    "simulated_seconds": 29.925,
+    "audit": {
+      "recording": "flight\\recordings\\sharp_turn_20260926\\live_driver_v5\\single_level1_seed44_175412_054150.json",
+      "physics_steps_checked": 3591,
+      "gate_transitions_checked": 5,
+      "exact_request_payloads_checked": 62,
+      "status": "passed"
+    }
+  }
+}

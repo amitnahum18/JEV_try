@@ -1,0 +1,11 @@
+[Event "JEV Four Non-LLM Opponents"]
+[Site "Local"]
+[Date "2026.09.26"]
+[Round "?"]
+[White "JEV team"]
+[Black "Stockfish (maximum skill)"]
+[Result "0-1"]
+[Termination "checkmate"]
+
+1. e4 c5 2. Nf3 Nc6 3. Nc3 e5 4. Nxe5 Nxe5 5. Nd5 Nf6 6. Nc7+ Qxc7 7. d4 cxd4
+8. Qxd4 Bc5 9. Qxe5+ Qxe5 10. Bb5 Nxe4 11. Bc6 Nxf2+ 12. Kd2 Qe3# 0-1

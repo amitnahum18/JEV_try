@@ -1,0 +1,158 @@
+{
+  "programs": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "width": 1440,
+      "height": 860,
+      "r_frame_rate": "30/1",
+      "duration": "32.233984",
+      "nb_frames": "967"
+    }
+  ],
+  "format": {
+    "duration": "32.234000",
+    "size": "10227215"
+  },
+  "source_export": {
+    "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926\\criteria_v6\\single_focused_seed44\\episode.json",
+    "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\maze_source\\jev_maze_partial_1x.mp4",
+    "frames": 967,
+    "fps": 30,
+    "width": 1440,
+    "height": 860,
+    "video_duration_seconds": 32.233333333333334,
+    "simulation_duration_seconds": 30.175,
+    "final_hold_seconds": 2.0,
+    "speed": 1,
+    "gates_passed": 4,
+    "gates_total": 8,
+    "status": "api_error",
+    "physics_steps_replayed_per_chunk": 3621,
+    "final_position_matches_original": true,
+    "chunks": [
+      {
+        "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926\\criteria_v6\\single_focused_seed44\\episode.json",
+        "source_sha256": "783abaca96fc2bfdc65ca7bb361b5226cffb8b05b0aac6a141ef834531a688a6",
+        "source_model": "typesafe/jev-1.13",
+        "source_prompt_version": 6,
+        "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\maze_source\\jev_maze_partial_1x_parts\\part_00\\part.mp4",
+        "width": 1440,
+        "height": 860,
+        "fps": 30,
+        "frames": 241,
+        "video_duration_seconds": 8.033333333333333,
+        "source_frame_count": 967,
+        "frame_range": [
+          0,
+          241
+        ],
+        "simulation_duration_seconds": 30.175,
+        "final_hold_seconds": 2.0,
+        "speed": 1,
+        "physics_steps_replayed": 3621,
+        "status": "api_error",
+        "gates_passed": 4,
+        "final_position_matches_original": true,
+        "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+        "export_wall_seconds": 330.80992400017567
+      },
+      {
+        "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926\\criteria_v6\\single_focused_seed44\\episode.json",
+        "source_sha256": "783abaca96fc2bfdc65ca7bb361b5226cffb8b05b0aac6a141ef834531a688a6",
+        "source_model": "typesafe/jev-1.13",
+        "source_prompt_version": 6,
+        "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\maze_source\\jev_maze_partial_1x_parts\\part_01\\part.mp4",
+        "width": 1440,
+        "height": 860,
+        "fps": 30,
+        "frames": 242,
+        "video_duration_seconds": 8.066666666666666,
+        "source_frame_count": 967,
+        "frame_range": [
+          241,
+          483
+        ],
+        "simulation_duration_seconds": 30.175,
+        "final_hold_seconds": 2.0,
+        "speed": 1,
+        "physics_steps_replayed": 3621,
+        "status": "api_error",
+        "gates_passed": 4,
+        "final_position_matches_original": true,
+        "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+        "export_wall_seconds": 337.5389666000847
+      },
+      {
+        "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926\\criteria_v6\\single_focused_seed44\\episode.json",
+        "source_sha256": "783abaca96fc2bfdc65ca7bb361b5226cffb8b05b0aac6a141ef834531a688a6",
+        "source_model": "typesafe/jev-1.13",
+        "source_prompt_version": 6,
+        "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\maze_source\\jev_maze_partial_1x_parts\\part_02\\part.mp4",
+        "width": 1440,
+        "height": 860,
+        "fps": 30,
+        "frames": 242,
+        "video_duration_seconds": 8.066666666666666,
+        "source_frame_count": 967,
+        "frame_range": [
+          483,
+          725
+        ],
+        "simulation_duration_seconds": 30.175,
+        "final_hold_seconds": 2.0,
+        "speed": 1,
+        "physics_steps_replayed": 3621,
+        "status": "api_error",
+        "gates_passed": 4,
+        "final_position_matches_original": true,
+        "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+        "export_wall_seconds": 337.2999859000556
+      },
+      {
+        "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\maze_20260926\\criteria_v6\\single_focused_seed44\\episode.json",
+        "source_sha256": "783abaca96fc2bfdc65ca7bb361b5226cffb8b05b0aac6a141ef834531a688a6",
+        "source_model": "typesafe/jev-1.13",
+        "source_prompt_version": 6,
+        "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\maze_source\\jev_maze_partial_1x_parts\\part_03\\part.mp4",
+        "width": 1440,
+        "height": 860,
+        "fps": 30,
+        "frames": 242,
+        "video_duration_seconds": 8.066666666666666,
+        "source_frame_count": 967,
+        "frame_range": [
+          725,
+          967
+        ],
+        "simulation_duration_seconds": 30.175,
+        "final_hold_seconds": 2.0,
+        "speed": 1,
+        "physics_steps_replayed": 3621,
+        "status": "api_error",
+        "gates_passed": 4,
+        "final_position_matches_original": true,
+        "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+        "export_wall_seconds": 292.6794317001477
+      }
+    ],
+    "export_wall_seconds": 340.28516110009514,
+    "note": "Parallel video rendering only. Each chunk reconstructs the recorded physics from time zero. Every output frame appears once in sequence at 1x. No model calls or invented flight paths."
+  },
+  "checks": {
+    "h264": true,
+    "fps_30": true,
+    "frames_match": true,
+    "dimensions_match": true,
+    "duration_matches_1x_export": true,
+    "physics_replay_matches": true,
+    "partial_result_preserved": true,
+    "hyperframes_check_passed": true
+  },
+  "inspected_timestamps_seconds": [
+    0.0,
+    10.0,
+    20.0,
+    31.5
+  ]
+}

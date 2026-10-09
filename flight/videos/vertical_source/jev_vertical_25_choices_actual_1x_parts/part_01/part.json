@@ -1,0 +1,26 @@
+{
+  "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\vertical_25_choices_preview_20260926\\single_level1_seed44_232048_671155.json",
+  "source_sha256": "3ae1c33820acc93334bf3c33f8d752f9e3a76548ff6974f87a46a9e5a4fe8d0f",
+  "source_model": "typesafe/jev-1.13",
+  "source_prompt_version": 6,
+  "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\vertical_source\\jev_vertical_25_choices_actual_1x_parts\\part_01\\part.mp4",
+  "width": 1440,
+  "height": 860,
+  "fps": 30,
+  "frames": 225,
+  "video_duration_seconds": 7.5,
+  "source_frame_count": 898,
+  "frame_range": [
+    224,
+    449
+  ],
+  "simulation_duration_seconds": 27.875,
+  "final_hold_seconds": 2.0,
+  "speed": 1,
+  "physics_steps_replayed": 3345,
+  "status": "gate_missed",
+  "gates_passed": 2,
+  "final_position_matches_original": true,
+  "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+  "export_wall_seconds": 113.80142750008963
+}

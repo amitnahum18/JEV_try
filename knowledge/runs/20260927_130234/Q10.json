@@ -1,0 +1,60 @@
+{
+  "id": "Q10",
+  "status": "answered",
+  "choice": "A",
+  "answer_text": "2 hours",
+  "confidence": 0.99,
+  "probabilities": {
+    "D": 0.0,
+    "A": 1.0,
+    "unsure": 0.0,
+    "C": 0.0,
+    "B": 0.0
+  },
+  "cost_usd": 2.2638e-05,
+  "latency_seconds": 0.5209369000513107,
+  "input_tokens": 539,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:35.312285+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "Pipe A fills an empty tank in 6 hours and pipe B in 3 hours at constant rates. With both open and no leakage, how long to fill the empty tank?",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "2 hours",
+              "B": "4.5 hours",
+              "C": "3 hours",
+              "D": "9 hours",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "A",
+        "confidence": 0.99,
+        "probabilities": {
+          "D": 0.0,
+          "A": 1.0,
+          "unsure": 0.0,
+          "C": 0.0,
+          "B": 0.0
+        },
+        "latency_seconds": 0.5209369000513107,
+        "input_tokens": 539,
+        "cost_usd": 2.2638e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}

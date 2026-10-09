@@ -1,0 +1,61 @@
+{
+  "episodes": [
+    {
+      "schema_version": 2,
+      "policy": "jev",
+      "model": "typesafe/jev-1.13",
+      "physics_library": "PyFlyt 0.29.0",
+      "started_at": "2026-09-26T16:35:58.384936+03:00",
+      "timing": "Physics pauses for JEV decisions; each action lasts a fixed simulated interval.",
+      "navigation": "Six discrete choices; basic attitude/rate and speed stabilization only.",
+      "replay_source": null,
+      "config": {
+        "seed": 43,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2"
+      },
+      "status": "gate_missed",
+      "score": 50,
+      "gates_passed": 1,
+      "gates_total": 5,
+      "simulated_seconds": 10.6,
+      "minimum_crossing_clearance_margin_m": -57.98952440818388,
+      "final_position_m": [
+        205.11895019021205,
+        51.803201726278424,
+        23.03716476184633
+      ],
+      "gate_events": [
+        {
+          "gate": 1,
+          "time_seconds": 4.716666666666667,
+          "crossing_xyz_m": [
+            95.0,
+            7.888027479327115,
+            21.020340912765743
+          ],
+          "clearance_margin_m": 2.006701508410125
+        },
+        {
+          "gate": 2,
+          "time_seconds": 10.6,
+          "crossing_xyz_m": [
+            205.0,
+            51.757162155716976,
+            23.034438162404484
+          ],
+          "clearance_margin_m": -57.98952440818388
+        }
+      ],
+      "jev_cost_usd": 0.0033747000000000004,
+      "finished_at": "2026-09-26T16:37:46.206143+03:00",
+      "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\live_rich_v2\\jev_level1_seed43_163558_343532.json",
+      "decision_count": 22
+    }
+  ],
+  "note": "Same seeds and course settings for JEV and random; same six controls and stabilizer. Preliminary sample, not a general intelligence score."
+}

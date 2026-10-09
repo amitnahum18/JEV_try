@@ -1,0 +1,408 @@
+{
+  "model": "first-order bank decay fitted from existing banked_v2 recordings during zero-bank commands",
+  "tau_seconds": 0.24301104597055131,
+  "sample_count": 66,
+  "episode_count": 7,
+  "limitations": "Empirical approximation; excludes initial 0.05s, small angles, nondecaying intervals and extreme estimates. Samples correlated and not held-out validation. Cannot predict roll inertia, sideslip or pitch coupling exactly.",
+  "samples": [
+    {
+      "tau_seconds": 0.5310412006974876,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed42_163219_393324.json",
+      "action": "down",
+      "start_time": 3.55
+    },
+    {
+      "tau_seconds": 0.302803925847845,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed42_163219_393324.json",
+      "action": "down",
+      "start_time": 3.6
+    },
+    {
+      "tau_seconds": 0.23587777391837295,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed42_163219_393324.json",
+      "action": "down",
+      "start_time": 3.65
+    },
+    {
+      "tau_seconds": 0.21949408141823737,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed42_163219_393324.json",
+      "action": "down",
+      "start_time": 3.7
+    },
+    {
+      "tau_seconds": 0.22508856899537275,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed42_163219_393324.json",
+      "action": "down",
+      "start_time": 3.75
+    },
+    {
+      "tau_seconds": 0.23861308319913951,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed42_163219_393324.json",
+      "action": "down",
+      "start_time": 3.8
+    },
+    {
+      "tau_seconds": 0.24949841966695419,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed42_163219_393324.json",
+      "action": "down",
+      "start_time": 3.85
+    },
+    {
+      "tau_seconds": 0.25352440978868784,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed42_163219_393324.json",
+      "action": "down",
+      "start_time": 3.9
+    },
+    {
+      "tau_seconds": 0.26999869721658915,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed42_163219_393324.json",
+      "action": "down",
+      "start_time": 6.6
+    },
+    {
+      "tau_seconds": 0.18937101708568718,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed42_163219_393324.json",
+      "action": "down",
+      "start_time": 6.65
+    },
+    {
+      "tau_seconds": 0.18357573343577693,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed42_163219_393324.json",
+      "action": "down",
+      "start_time": 6.7
+    },
+    {
+      "tau_seconds": 0.31231864976422036,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed43_163239_837386.json",
+      "action": "up",
+      "start_time": 2.1
+    },
+    {
+      "tau_seconds": 0.20302055608306271,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed43_163239_837386.json",
+      "action": "up",
+      "start_time": 2.15
+    },
+    {
+      "tau_seconds": 0.1886870397786113,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed43_163239_837386.json",
+      "action": "up",
+      "start_time": 2.2
+    },
+    {
+      "tau_seconds": 0.8565513557718779,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed43_163239_837386.json",
+      "action": "down",
+      "start_time": 4.6
+    },
+    {
+      "tau_seconds": 0.2914556806438246,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed43_163239_837386.json",
+      "action": "down",
+      "start_time": 4.65
+    },
+    {
+      "tau_seconds": 0.21291799184402369,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed43_163239_837386.json",
+      "action": "down",
+      "start_time": 4.7
+    },
+    {
+      "tau_seconds": 0.19792248651673836,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed43_163239_837386.json",
+      "action": "down",
+      "start_time": 4.75
+    },
+    {
+      "tau_seconds": 0.20743836839908994,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed43_163239_837386.json",
+      "action": "down",
+      "start_time": 4.8
+    },
+    {
+      "tau_seconds": 0.22582633256696635,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed43_163239_837386.json",
+      "action": "down",
+      "start_time": 4.85
+    },
+    {
+      "tau_seconds": 0.23844721559529908,
+      "recording": "flight\\recordings\\rich_slalom_v2\\random_level1_seed43_163239_837386.json",
+      "action": "down",
+      "start_time": 4.9
+    },
+    {
+      "tau_seconds": 0.8861617649477667,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.55
+    },
+    {
+      "tau_seconds": 0.45376207924338774,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.6
+    },
+    {
+      "tau_seconds": 0.29863410224538195,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.65
+    },
+    {
+      "tau_seconds": 0.23789467229240538,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.7
+    },
+    {
+      "tau_seconds": 0.21993038580423374,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.75
+    },
+    {
+      "tau_seconds": 0.2226962619067266,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.8
+    },
+    {
+      "tau_seconds": 0.23376472770076337,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.85
+    },
+    {
+      "tau_seconds": 0.2435662321729861,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.9
+    },
+    {
+      "tau_seconds": 0.2474769481413718,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.95
+    },
+    {
+      "tau_seconds": 0.9080607533941912,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.05
+    },
+    {
+      "tau_seconds": 0.4638533379919615,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.1
+    },
+    {
+      "tau_seconds": 0.3046948201203196,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.15
+    },
+    {
+      "tau_seconds": 0.2414524607952124,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.2
+    },
+    {
+      "tau_seconds": 0.22194235585909625,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.25
+    },
+    {
+      "tau_seconds": 0.223764622389789,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.3
+    },
+    {
+      "tau_seconds": 0.23466339416576168,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.35
+    },
+    {
+      "tau_seconds": 0.2451464186983017,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.4
+    },
+    {
+      "tau_seconds": 0.2503630877727764,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.45
+    },
+    {
+      "tau_seconds": 0.9141366433330403,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed45\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.05
+    },
+    {
+      "tau_seconds": 0.46683214029875436,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed45\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.1
+    },
+    {
+      "tau_seconds": 0.30648925295866436,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed45\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.15
+    },
+    {
+      "tau_seconds": 0.24240159624161042,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed45\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.2
+    },
+    {
+      "tau_seconds": 0.22238834301537655,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed45\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.25
+    },
+    {
+      "tau_seconds": 0.2237469283675215,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed45\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.3
+    },
+    {
+      "tau_seconds": 0.23422999032642539,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed45\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.35
+    },
+    {
+      "tau_seconds": 0.24480937173486894,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed45\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.4
+    },
+    {
+      "tau_seconds": 0.250245033440089,
+      "recording": "flight\\recordings\\axes_ablation_20260926\\parallel_basic_seed45\\episode.json",
+      "action": "up__straight",
+      "start_time": 3.45
+    },
+    {
+      "tau_seconds": 0.9174746918751859,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 2.55
+    },
+    {
+      "tau_seconds": 0.469278535835373,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 2.6
+    },
+    {
+      "tau_seconds": 0.3081159664010614,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 2.65
+    },
+    {
+      "tau_seconds": 0.24322904190977102,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 2.7
+    },
+    {
+      "tau_seconds": 0.22256869150489944,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 2.75
+    },
+    {
+      "tau_seconds": 0.22352230926998984,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 2.8
+    },
+    {
+      "tau_seconds": 0.23395517463178547,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 2.85
+    },
+    {
+      "tau_seconds": 0.24461273289362917,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 2.9
+    },
+    {
+      "tau_seconds": 0.2501851301575966,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_basic_seed44\\episode.json",
+      "action": "up__straight",
+      "start_time": 2.95
+    },
+    {
+      "tau_seconds": 0.9177092826755576,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\single_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.55
+    },
+    {
+      "tau_seconds": 0.4693884583029017,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\single_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.6
+    },
+    {
+      "tau_seconds": 0.30785340139482903,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\single_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.65
+    },
+    {
+      "tau_seconds": 0.2426931970393161,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\single_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.7
+    },
+    {
+      "tau_seconds": 0.22179811037651284,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\single_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.75
+    },
+    {
+      "tau_seconds": 0.2224993726453495,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\single_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.8
+    },
+    {
+      "tau_seconds": 0.23260816368839138,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\single_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.85
+    },
+    {
+      "tau_seconds": 0.24279305003133161,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\single_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.9
+    },
+    {
+      "tau_seconds": 0.24781058205888248,
+      "recording": "flight\\recordings\\axes_explicit_fields_20260926\\single_basic_seed43\\episode.json",
+      "action": "level__straight",
+      "start_time": 2.95
+    }
+  ],
+  "tau_seconds_p10": 0.21291799184402369,
+  "tau_seconds_p90": 0.4693884583029017,
+  "source_control_profile": "banked_v2"
+}

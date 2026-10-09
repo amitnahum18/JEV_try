@@ -1,0 +1,60 @@
+{
+  "id": "Q44",
+  "status": "answered",
+  "choice": "D",
+  "answer_text": "53 minutes",
+  "confidence": 0.16,
+  "probabilities": {
+    "unsure": 0.04,
+    "D": 0.32,
+    "B": 0.24,
+    "C": 0.18,
+    "A": 0.22
+  },
+  "cost_usd": 2.4318e-05,
+  "latency_seconds": 0.5145027998369187,
+  "input_tokens": 579,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:40.249274+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "Six people cross a bridge with one torch at night. Times are 1,3,8,12,17,24 minutes. At most two cross together; every crossing requires the torch. A pair takes the slower time. Someone carries the torch back when needed, at the same individual times. What is the minimum total time to get everyone across?",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "51 minutes",
+              "B": "59 minutes",
+              "C": "55 minutes",
+              "D": "53 minutes",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "D",
+        "confidence": 0.16,
+        "probabilities": {
+          "unsure": 0.04,
+          "D": 0.32,
+          "B": 0.24,
+          "C": 0.18,
+          "A": 0.22
+        },
+        "latency_seconds": 0.5145027998369187,
+        "input_tokens": 579,
+        "cost_usd": 2.4318e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}

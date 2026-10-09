@@ -1,0 +1,21 @@
+{
+  "flight_seed": 44,
+  "actual_altitude_min_max_m": [
+    17.195794507638418,
+    58.207931542110366
+  ],
+  "minimum_scored_clearance_m": 1.9522255659626566,
+  "decisions": 188,
+  "completion_seconds": 92.01666666666667,
+  "physics_and_payload_audit": "physics_payload_audit.json",
+  "latest_v8_completed": 3,
+  "latest_v8_attempts": 3,
+  "local_tests_passed": 15,
+  "composition_check": {
+    "cli_version": "0.8.79",
+    "errors": 0,
+    "warnings": 0,
+    "layout_samples": 9,
+    "runtime_passed": true
+  }
+}

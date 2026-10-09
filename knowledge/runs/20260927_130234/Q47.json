@@ -1,0 +1,60 @@
+{
+  "id": "Q47",
+  "status": "answered",
+  "choice": "B",
+  "answer_text": "7/8",
+  "confidence": 0.49,
+  "probabilities": {
+    "unsure": 0.01,
+    "A": 0.01,
+    "D": 0.36,
+    "B": 0.59,
+    "C": 0.03
+  },
+  "cost_usd": 2.4108e-05,
+  "latency_seconds": 0.5045000999234617,
+  "input_tokens": 574,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:40.666135+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "Seven players independently receive fair red/blue hats. Each sees the six other hats, not their own. They agree on a deterministic strategy beforehand, then simultaneously say red, blue, or pass with no later communication. The team wins iff at least one guesses a color and every color guess is correct. What is the maximum win probability?",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "1/2",
+              "B": "7/8",
+              "C": "3/4",
+              "D": "15/16",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "B",
+        "confidence": 0.49,
+        "probabilities": {
+          "unsure": 0.01,
+          "A": 0.01,
+          "D": 0.36,
+          "B": 0.59,
+          "C": 0.03
+        },
+        "latency_seconds": 0.5045000999234617,
+        "input_tokens": 574,
+        "cost_usd": 2.4108e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}

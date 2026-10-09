@@ -1,0 +1,11 @@
+[Event "JEV Online Model Ladder"]
+[Site "OpenRouter"]
+[Date "2026.09.26"]
+[Round "1"]
+[White "JEV"]
+[Black "Qwen3.7 Plus"]
+[Result "*"]
+[Annotator "JEV Chess Lab"]
+
+1. e4 c5 2. Nf3 Nc6 3. Ng5 Nf6 4. Nxf7 Kxf7 5. Qh5+ Nxh5 6. Bc4+ d5 7. Bxd5+
+Qxd5 8. exd5 e6 9. dxe6+ *

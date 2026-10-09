@@ -1,0 +1,307 @@
+{
+  "created_at": "2026-09-26T22:58:45.850076+03:00",
+  "jobs": [
+    [
+      {
+        "seed": 44,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 85.0,
+        "layout": "hard_turns",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\open_hard_turns_20260926\\v6",
+      6
+    ],
+    [
+      {
+        "seed": 45,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 85.0,
+        "layout": "hard_turns",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\open_hard_turns_20260926\\v6",
+      6
+    ],
+    [
+      {
+        "seed": 46,
+        "level": 1,
+        "gates": 8,
+        "decision_seconds": 0.5,
+        "max_seconds": 85.0,
+        "layout": "hard_turns",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\open_hard_turns_20260926\\v6",
+      6
+    ]
+  ],
+  "actions": 15,
+  "architecture": "single",
+  "prompt_version": 6,
+  "layout": "hard_turns",
+  "walls": false,
+  "course_examples": {
+    "44": [
+      {
+        "number": 1,
+        "center_m": [
+          95.0,
+          17.61298091963644,
+          23.886924873385357
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 2,
+        "center_m": [
+          250.0,
+          -31.249305682968924,
+          29.59478054974268
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 3,
+        "center_m": [
+          405.0,
+          35.57166987769084,
+          19.595654325285278
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 4,
+        "center_m": [
+          575.0,
+          -34.259260881654534,
+          33.21326738085664
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 5,
+        "center_m": [
+          745.0,
+          34.18645467450225,
+          19.5459233968822
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 6,
+        "center_m": [
+          885.0,
+          7.858241249387798,
+          29.527570174374073
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 7,
+        "center_m": [
+          1050.0,
+          -32.317202091594304,
+          35.25868609033144
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 8,
+        "center_m": [
+          1225.0,
+          30.231139377285352,
+          22.356879160066516
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      }
+    ],
+    "45": [
+      {
+        "number": 1,
+        "center_m": [
+          95.0,
+          18.045585832272323,
+          24.31638028776231
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 2,
+        "center_m": [
+          250.0,
+          -31.50129157278463,
+          30.012274626240867
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 3,
+        "center_m": [
+          405.0,
+          35.44694347583646,
+          20.355335965352054
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 4,
+        "center_m": [
+          575.0,
+          -33.84839199305461,
+          32.890293656275134
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 5,
+        "center_m": [
+          745.0,
+          34.27404230368768,
+          19.152961395824306
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 6,
+        "center_m": [
+          885.0,
+          8.54413176917308,
+          29.268996186215322
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 7,
+        "center_m": [
+          1050.0,
+          -32.953570546977524,
+          35.55687910623076
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 8,
+        "center_m": [
+          1225.0,
+          30.95000673140862,
+          22.3733271597184
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      }
+    ],
+    "46": [
+      {
+        "number": 1,
+        "center_m": [
+          95.0,
+          17.32356286913879,
+          23.727083707102366
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 2,
+        "center_m": [
+          250.0,
+          -31.805039228406187,
+          30.520834089947236
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 3,
+        "center_m": [
+          405.0,
+          34.33591485910204,
+          20.155075720073555
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 4,
+        "center_m": [
+          575.0,
+          -33.55908520564118,
+          33.01373221452385
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 5,
+        "center_m": [
+          745.0,
+          34.397612349860005,
+          19.45658977312745
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 6,
+        "center_m": [
+          885.0,
+          7.998634626929511,
+          29.35388613944362
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 7,
+        "center_m": [
+          1050.0,
+          -33.71172433727407,
+          35.276431018567735
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      },
+      {
+        "number": 8,
+        "center_m": [
+          1225.0,
+          31.436644372032077,
+          21.479763922221697
+        ],
+        "half_width_m": 8.0,
+        "half_height_m": 6.0
+      }
+    ]
+  },
+  "note": "One JEV with the same choice output and 15 controls as the previous course. Prompt v6 adds explicit candidate descriptions for signed pitch/bank gaps; v5 retains the earlier prompt. Default hard_turns uses only open frames, sharper lateral reversals and altitude changes. Historical maze layout retains walls for reproducible earlier recordings. Preserve every attempt."
+}

@@ -1,0 +1,227 @@
+{
+  "policy": "replay",
+  "model": null,
+  "physics_library": "PyFlyt 0.29.0",
+  "started_at": "2026-09-26T16:16:56.437833+03:00",
+  "timing": "Physics pauses for JEV decisions; each action lasts a fixed simulated interval.",
+  "navigation": "Six discrete choices; basic attitude/rate and speed stabilization only.",
+  "decisions": [
+    {
+      "number": 1,
+      "time_seconds": 0,
+      "state": {
+        "task": "Fly through the next static gate opening in order, avoid the solid frame and ground.",
+        "time_seconds": 0,
+        "gates_passed": 0,
+        "gates_total": 5,
+        "previous_action": null,
+        "aircraft": {
+          "position_world_xyz_m": [
+            0.0,
+            0.0,
+            22.0
+          ],
+          "velocity_world_xyz_m_s": [
+            20.0,
+            0.0,
+            0.0
+          ],
+          "velocity_body_forward_left_up_m_s": [
+            20.0,
+            0.0,
+            0.0
+          ],
+          "speed_m_s": 20.0,
+          "roll_pitch_yaw_deg": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "body_roll_pitch_yaw_rates_deg_s": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "next_gates": [
+          {
+            "number": 1,
+            "center_m": [
+              70.0,
+              1.64373629133578,
+              21.816635319256157
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              70.0,
+              1.644,
+              -0.183
+            ],
+            "relative_body_forward_left_up_m": [
+              70.0,
+              1.644,
+              -0.183
+            ],
+            "distance_m": 70.02,
+            "bearing_left_deg": 1.35,
+            "elevation_up_deg": -0.15,
+            "estimated_seconds_to_gate_plane": 3.5
+          },
+          {
+            "number": 2,
+            "center_m": [
+              145.0,
+              3.795323810804075,
+              22.40873940643425
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              145.0,
+              3.795,
+              0.409
+            ],
+            "relative_body_forward_left_up_m": [
+              145.0,
+              3.795,
+              0.409
+            ],
+            "distance_m": 145.05,
+            "bearing_left_deg": 1.5,
+            "elevation_up_deg": 0.16,
+            "estimated_seconds_to_gate_plane": 7.25
+          },
+          {
+            "number": 3,
+            "center_m": [
+              220.0,
+              1.3603878981299724,
+              23.83560646134452
+            ],
+            "half_width_m": 8.0,
+            "half_height_m": 6.0,
+            "relative_world_xyz_m": [
+              220.0,
+              1.36,
+              1.836
+            ],
+            "relative_body_forward_left_up_m": [
+              220.0,
+              1.36,
+              1.836
+            ],
+            "distance_m": 220.012,
+            "bearing_left_deg": 0.35,
+            "elevation_up_deg": 0.48,
+            "estimated_seconds_to_gate_plane": 11.0
+          }
+        ],
+        "controls": {
+          "action_duration_seconds": 0.5,
+          "target_speed_m_s": 20.0,
+          "up_down_pitch_deg": 6,
+          "left_right_yaw_rate_deg_s": 12,
+          "roll_left_right_bank_deg": 18,
+          "nominal_pitch_nose_up_deg": 2,
+          "frame_convention": "World +x forward along course, +y left, +z up. Positive Euler pitch means nose DOWN; negative Euler roll means bank LEFT.",
+          "stabilizer": "Basic attitude/rate and speed controller; does not know gate locations or choose navigation actions."
+        },
+        "pass_rule": "Cross each gate's x plane inside its opening with a 1.25m lateral and 0.5m vertical center margin."
+      },
+      "action": "roll_left",
+      "confidence": 0.16
+    }
+  ],
+  "trajectory": [
+    {
+      "time_seconds": 0.05,
+      "position_m": [
+        0.9996903242923599,
+        -2.3706712894699226e-05,
+        21.99746342362156
+      ],
+      "rpy_rad": [
+        -0.008248602176208758,
+        0.0011044939751699825,
+        0.0004489048095357899
+      ]
+    }
+  ],
+  "course_gates": [
+    {
+      "number": 1,
+      "center_m": [
+        70.0,
+        1.64373629133578,
+        21.816635319256157
+      ],
+      "half_width_m": 8.0,
+      "half_height_m": 6.0
+    },
+    {
+      "number": 2,
+      "center_m": [
+        145.0,
+        3.795323810804075,
+        22.40873940643425
+      ],
+      "half_width_m": 8.0,
+      "half_height_m": 6.0
+    },
+    {
+      "number": 3,
+      "center_m": [
+        220.0,
+        1.3603878981299724,
+        23.83560646134452
+      ],
+      "half_width_m": 8.0,
+      "half_height_m": 6.0
+    },
+    {
+      "number": 4,
+      "center_m": [
+        295.0,
+        2.92722611007209,
+        24.69379937717538
+      ],
+      "half_width_m": 8.0,
+      "half_height_m": 6.0
+    },
+    {
+      "number": 5,
+      "center_m": [
+        370.0,
+        0.6959079061253655,
+        24.544957190862082
+      ],
+      "half_width_m": 8.0,
+      "half_height_m": 6.0
+    }
+  ],
+  "replay_source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\first_comparison\\jev_level1_seed42_161216_303912.json",
+  "config": {
+    "seed": 42,
+    "level": 1,
+    "gates": 5,
+    "decision_seconds": 0.5,
+    "max_seconds": 35.0
+  },
+  "status": "user_stopped",
+  "score": 0,
+  "gates_passed": 0,
+  "gates_total": 5,
+  "simulated_seconds": 0.05,
+  "minimum_crossing_clearance_margin_m": null,
+  "final_position_m": [
+    0.9996903242923599,
+    -2.3706712894699226e-05,
+    21.99746342362156
+  ],
+  "gate_events": [],
+  "jev_cost_usd": 0.0,
+  "finished_at": "2026-09-26T16:16:59.306796+03:00",
+  "recording": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\live_view\\replay_level1_seed42_161656_403017.json",
+  "decision_count": 1
+}

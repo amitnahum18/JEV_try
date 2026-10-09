@@ -1,0 +1,75 @@
+{
+  "seeds": [
+    42,
+    43,
+    44,
+    45
+  ],
+  "jobs": [
+    [
+      {
+        "seed": 42,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5",
+      5
+    ],
+    [
+      {
+        "seed": 43,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5",
+      5
+    ],
+    [
+      {
+        "seed": 44,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5",
+      5
+    ],
+    [
+      {
+        "seed": 45,
+        "level": 1,
+        "gates": 5,
+        "decision_seconds": 0.5,
+        "max_seconds": 35.0,
+        "layout": "slalom",
+        "control_profile": "banked_v2",
+        "refresh_on_gate_pass": true
+      },
+      "single",
+      "focused",
+      "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5",
+      5
+    ]
+  ],
+  "note": "Same physics, course, actions, margins, boundaries and interval. Telemetry plus prompt changed together."
+}

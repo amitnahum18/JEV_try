@@ -1,0 +1,113 @@
+{
+  "all_attempts": [
+    {
+      "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\vertical_25_choices_preview_20260926\\single_level1_seed44_232048_671155.json",
+      "seed": 44,
+      "prompt": 6,
+      "choices": 25,
+      "status": "gate_missed",
+      "gates": 2,
+      "seconds": 27.875,
+      "cost_usd": null,
+      "course_hash": "6323e6bffa7cfcafca2a975deb3493cfa1991ccf4565c66fc4081be97eff8d05"
+    },
+    {
+      "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_verification_20260927\\angles_only\\single_focused_seed44\\episode.json",
+      "seed": 44,
+      "prompt": 6,
+      "choices": 45,
+      "status": "gate_missed",
+      "gates": 2,
+      "seconds": 28.016666666666666,
+      "cost_usd": 0.017909934,
+      "course_hash": "6323e6bffa7cfcafca2a975deb3493cfa1991ccf4565c66fc4081be97eff8d05"
+    },
+    {
+      "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_verification_20260927\\combined\\single_focused_seed44\\episode.json",
+      "seed": 44,
+      "prompt": 7,
+      "choices": 45,
+      "status": "gate_missed",
+      "gates": 4,
+      "seconds": 56.34166666666667,
+      "cost_usd": 0.043203846,
+      "course_hash": "6323e6bffa7cfcafca2a975deb3493cfa1991ccf4565c66fc4081be97eff8d05"
+    },
+    {
+      "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_verification_20260927\\guidance_only\\single_focused_seed44\\episode.json",
+      "seed": 44,
+      "prompt": 7,
+      "choices": 25,
+      "status": "gate_missed",
+      "gates": 1,
+      "seconds": 16.916666666666668,
+      "cost_usd": 0.009114504,
+      "course_hash": "6323e6bffa7cfcafca2a975deb3493cfa1991ccf4565c66fc4081be97eff8d05"
+    },
+    {
+      "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_confirmation_20260927\\single_focused_seed45\\episode.json",
+      "seed": 45,
+      "prompt": 7,
+      "choices": 45,
+      "status": "gate_missed",
+      "gates": 6,
+      "seconds": 80.81666666666666,
+      "cost_usd": 0.061922448,
+      "course_hash": "a3fe9c0792e3b3cf1977ba65c487e9ca4d288e1dc895f3fdb8f75e73f9d9ae5f"
+    },
+    {
+      "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_confirmation_20260927\\single_focused_seed46\\episode.json",
+      "seed": 46,
+      "prompt": 7,
+      "choices": 45,
+      "status": "gate_missed",
+      "gates": 4,
+      "seconds": 55.95,
+      "cost_usd": 0.043194648,
+      "course_hash": "d29d8b721a294c264b53b05144864ac1e83de45eea347b5081b3e8e0bad38ad0"
+    },
+    {
+      "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_v8_20260927\\single_focused_seed44\\episode.json",
+      "seed": 44,
+      "prompt": 8,
+      "choices": 45,
+      "status": "completed",
+      "gates": 8,
+      "seconds": 92.01666666666667,
+      "cost_usd": 0.067743354,
+      "course_hash": "6323e6bffa7cfcafca2a975deb3493cfa1991ccf4565c66fc4081be97eff8d05"
+    },
+    {
+      "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_v8_20260927\\single_focused_seed45\\episode.json",
+      "seed": 45,
+      "prompt": 8,
+      "choices": 45,
+      "status": "completed",
+      "gates": 8,
+      "seconds": 92.05,
+      "cost_usd": 0.067368126,
+      "course_hash": "a3fe9c0792e3b3cf1977ba65c487e9ca4d288e1dc895f3fdb8f75e73f9d9ae5f"
+    },
+    {
+      "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_v8_20260927\\single_focused_seed46\\episode.json",
+      "seed": 46,
+      "prompt": 8,
+      "choices": 45,
+      "status": "completed",
+      "gates": 8,
+      "seconds": 92.33333333333333,
+      "cost_usd": 0.067384548,
+      "course_hash": "d29d8b721a294c264b53b05144864ac1e83de45eea347b5081b3e8e0bad38ad0"
+    }
+  ],
+  "latest_completed": 3,
+  "latest_attempts": 3,
+  "selected_source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_v8_20260927\\single_focused_seed44\\episode.json",
+  "selection": "Latest v8 trials: completed first, then gates passed, then original failed seed44. All trials preserved.",
+  "limitations": "Three reused seeds, exploratory sample. Does not establish reliability or isolate causal effects. API waits pause physics. Pitch estimate is measured geometry, no action rollout/selection/override.",
+  "local_tests": {
+    "command": "python -m unittest discover -s flight -p test_navigation.py",
+    "passed": 15,
+    "failures": 0
+  }
+}

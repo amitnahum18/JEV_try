@@ -1,0 +1,117 @@
+{
+  "source_recording": "flight\\recordings\\axes_explicit_fields_20260926\\parallel_full_seed42\\episode.json",
+  "source_simulated_seconds": 8.0,
+  "note": "New derived features calculated from historical telemetry; this was not the payload sent in the original flight, and is not a new model flight.",
+  "feature_schema": "flight_navigation_v3",
+  "navigation": {
+    "schema": "flight_navigation_v3",
+    "sign_convention": "Positive LEFT/UP. Angles in degrees, angular rates in degrees/second. Position error and motion-direction error are different quantities. Null means unavailable.",
+    "measurements": {
+      "altitude_world_m": 22.061,
+      "height_above_flat_ground_m": 22.061,
+      "ground_reference": "Flat simulator ground at world z=0; height is body-center clearance, not terrain sensing.",
+      "bank_left_deg": 40.061,
+      "nose_up_pitch_deg": 1.015,
+      "heading_left_deg": 36.966,
+      "velocity_track_left_deg": 36.401,
+      "flight_path_climb_angle_deg": 0.524,
+      "climb_rate_up_m_s": 0.183,
+      "bank_left_rate_deg_s": 0.046,
+      "nose_up_pitch_rate_deg_s": 0.273,
+      "heading_turn_rate_left_deg_s": 23.822,
+      "track_turn_rate_left_deg_s": 23.794,
+      "flight_path_angle_rate_up_deg_s": 0.214,
+      "vertical_acceleration_up_m_s2": 0.073,
+      "horizontal_acceleration_m_s2": -0.167,
+      "acceleration_sample_available": true,
+      "observed_horizontal_turn_radius_m": 48.101,
+      "rate_method": "Euler attitude rates from body angular velocity; track/climb rates from world velocity and last 1/120s finite-difference acceleration. No averaging; transient rates can be noisy."
+    },
+    "leveling_estimate": {
+      "available": true,
+      "assumptions": "Future zero-bank command. First-order bank decay, with measured track turn rate assumed to decay with the same time constant. No roll inertia, yaw lag, sideslip or pitch/lift coupling. These are approximate estimates, not a PyFlyt rollout or an instruction.",
+      "validity": "Fit from correlated existing zero-bank-command samples in banked_v2. Not validated on independent flights; p10/p90 describe fitted sample variation, not prediction confidence.",
+      "bank_tolerance_deg": 3,
+      "response_fit": {
+        "tau_seconds": 0.24301104597055131,
+        "tau_seconds_p10": 0.21291799184402369,
+        "tau_seconds_p90": 0.4693884583029017,
+        "sample_count": 66,
+        "episode_count": 7,
+        "source_control_profile": "banked_v2"
+      },
+      "estimated_seconds_to_bank_within_3_deg": 0.63,
+      "estimated_additional_track_turn_left_deg": 5.782,
+      "estimated_final_track_if_wings_leveled_now_deg": 42.183,
+      "additional_track_turn_p10_p90_tau_deg": [
+        5.066,
+        11.169
+      ],
+      "current_bank_and_track_turn_have_same_sign": true
+    },
+    "immediate_gate": {
+      "number": 2,
+      "distance_to_plane_forward_m": 48.353,
+      "horizontal_distance_to_center_m": 54.208,
+      "gate_center_altitude_world_m": 25.62287848072337,
+      "height_error_up_m": 3.562,
+      "lateral_position_error_left_m": 24.505,
+      "usable_altitude_bounds_world_m": [
+        20.123,
+        31.123
+      ],
+      "usable_lateral_bounds_world_m": [
+        7.842,
+        21.342
+      ],
+      "height_inside_opening_band_now": true,
+      "lateral_position_inside_opening_band_now": false,
+      "heading_error_left_deg": -10.09,
+      "track_alignment_error_left_deg": -9.525,
+      "climb_alignment_error_up_deg": 3.235,
+      "gate_center_bearing_rate_left_deg_s": -3.494,
+      "track_alignment_error_rate_left_deg_s": -27.288,
+      "climb_alignment_error_rate_up_deg_s": 0.956,
+      "height_error_rate_up_m_s": -0.183,
+      "lateral_position_error_rate_left_m_s": -11.854,
+      "time_to_plane_constant_forward_speed_s": 3.007,
+      "constant_velocity_crossing_error_left_m": -11.145,
+      "constant_velocity_crossing_error_up_m": 3.012,
+      "constant_velocity_crossing_clearance_left_m": -4.395,
+      "constant_velocity_crossing_clearance_up_m": 2.488,
+      "constant_forward_speed_center_velocity_left_up_m_s": [
+        8.149,
+        1.185
+      ],
+      "geometric_estimate_assumption": "Velocity requirements assume constant current world-x speed until the gate plane. Angular windows assume fixed world-y/world-z travel direction. Opening-band checks do not mean the gate has been passed.",
+      "track_error_after_one_interval_constant_rates_deg": -23.169,
+      "constant_rates_estimate_assumption": "Current motion-direction rate and gate-bearing rate held fixed for one decision interval, without predicting the selected maneuver.",
+      "track_error_after_leveling_constant_gate_bearing_deg": -15.307,
+      "leveling_alignment_assumption": "Combines exponential turn-decay estimate with fixed current gate bearing. Gate bearing actually changes while traveling; this is not a predicted gate crossing.",
+      "constant_direction_track_window_left_deg": [
+        20.163,
+        32.878
+      ],
+      "current_track_inside_angular_window": false,
+      "constant_direction_climb_window_up_deg": [
+        -1.848,
+        8.578
+      ],
+      "current_climb_angle_inside_angular_window": true
+    },
+    "next_gate_transition": {
+      "from_gate": 2,
+      "to_gate": 3,
+      "center_to_center_forward_left_up_m": [
+        110.0,
+        -27.165,
+        -1.593
+      ],
+      "height_change_up_m": -1.593,
+      "lateral_change_left_m": -27.165,
+      "center_to_center_bearing_left_deg": -13.872,
+      "center_to_center_elevation_up_deg": -0.806,
+      "note": "Static geometry for looking ahead; not a flight path or a required action. Pass the immediate gate first."
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "Q31",
+  "status": "answered",
+  "choice": "A",
+  "answer_text": "3+2*sqrt(2)",
+  "confidence": 0.49,
+  "probabilities": {
+    "unsure": 0.01,
+    "B": 0.04,
+    "C": 0.14,
+    "A": 0.59,
+    "D": 0.22
+  },
+  "cost_usd": 2.4612e-05,
+  "latency_seconds": 1.0345074001234025,
+  "input_tokens": 586,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:38.573578+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "Three masses m,2m,m lie on a frictionless line between fixed walls. Four identical springs of stiffness k connect left wall--m--2m--m--right wall. For small longitudinal oscillations about equilibrium, what is omega_max^2/omega_min^2 for the three normal modes?",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "3+2*sqrt(2)",
+              "B": "4",
+              "C": "(7+3*sqrt(5))/2",
+              "D": "(3+sqrt(5))/2",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "A",
+        "confidence": 0.49,
+        "probabilities": {
+          "unsure": 0.01,
+          "B": 0.04,
+          "C": 0.14,
+          "A": 0.59,
+          "D": 0.22
+        },
+        "latency_seconds": 1.0345074001234025,
+        "input_tokens": 586,
+        "cost_usd": 2.4612e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}

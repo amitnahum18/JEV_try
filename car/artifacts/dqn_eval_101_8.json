@@ -1,0 +1,91 @@
+{
+  "summary": {
+    "episodes": 8,
+    "mean_speed_m_s": 23.73,
+    "collision_rate": 0.75,
+    "completion_rate": 0.25,
+    "total_lane_changes": 20
+  },
+  "episodes": [
+    {
+      "seed": 101,
+      "mean_speed_m_s": 21.31,
+      "mean_speed_km_h": 76.7,
+      "reward": 173.74,
+      "lane_changes": 2,
+      "collision": false,
+      "completed": true,
+      "steps": 180
+    },
+    {
+      "seed": 102,
+      "mean_speed_m_s": 22.53,
+      "mean_speed_km_h": 81.1,
+      "reward": 145.93,
+      "lane_changes": 2,
+      "collision": true,
+      "completed": false,
+      "steps": 152
+    },
+    {
+      "seed": 103,
+      "mean_speed_m_s": 30.79,
+      "mean_speed_km_h": 110.8,
+      "reward": 11.76,
+      "lane_changes": 2,
+      "collision": true,
+      "completed": false,
+      "steps": 13
+    },
+    {
+      "seed": 104,
+      "mean_speed_m_s": 20.82,
+      "mean_speed_km_h": 75.0,
+      "reward": 173.48,
+      "lane_changes": 2,
+      "collision": false,
+      "completed": true,
+      "steps": 180
+    },
+    {
+      "seed": 105,
+      "mean_speed_m_s": 26.53,
+      "mean_speed_km_h": 95.5,
+      "reward": 3.89,
+      "lane_changes": 2,
+      "collision": true,
+      "completed": false,
+      "steps": 5
+    },
+    {
+      "seed": 106,
+      "mean_speed_m_s": 24.38,
+      "mean_speed_km_h": 87.8,
+      "reward": 35.85,
+      "lane_changes": 2,
+      "collision": true,
+      "completed": false,
+      "steps": 38
+    },
+    {
+      "seed": 107,
+      "mean_speed_m_s": 22.48,
+      "mean_speed_km_h": 80.9,
+      "reward": 46.55,
+      "lane_changes": 6,
+      "collision": true,
+      "completed": false,
+      "steps": 49
+    },
+    {
+      "seed": 108,
+      "mean_speed_m_s": 21.04,
+      "mean_speed_km_h": 75.7,
+      "reward": 48.42,
+      "lane_changes": 2,
+      "collision": true,
+      "completed": false,
+      "steps": 51
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "started_at": "2026-09-26T14:15:10+03:00",
+  "jev_color": "white",
+  "promotion_rule": "Advance only after a JEV win; stop on draw, loss, API error, or move cap.",
+  "ranking_source": "ChessBench LLM leaderboard; relative benchmark ratings only.",
+  "reasoning_effort": "low (speed setting; not ChessBench-equivalent)",
+  "max_plies_per_game": 2,
+  "games": [
+    {
+      "round": 1,
+      "opponent": "Qwen3.7 Plus",
+      "model_id": "qwen/qwen3.7-plus",
+      "chessbench_rating": 1168,
+      "reasoning_effort": "low",
+      "pgn": "game_01_qwen3_7-plus.pgn",
+      "decisions": "game_01_qwen3_7-plus.json",
+      "status": "error",
+      "moves": [],
+      "result": "*",
+      "termination": "api_or_engine_error",
+      "error": "All JEV council members failed: Could not reach Jev: <urlopen error [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions>"
+    }
+  ],
+  "completed": true,
+  "last_completed_at": "2026-09-26T14:15:10+03:00",
+  "stopped_after": "Qwen3.7 Plus",
+  "stop_reason": "error",
+  "finished_at": "2026-09-26T14:15:10+03:00"
+}

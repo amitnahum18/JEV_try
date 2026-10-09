@@ -1,0 +1,37 @@
+{
+  "episodes_checked": 4,
+  "all_passed": true,
+  "physics_steps_checked": 14321,
+  "gate_transitions_checked": 20,
+  "exact_request_payloads_checked": 249,
+  "episodes": [
+    {
+      "recording": "flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5\\single_focused_seed42\\episode.json",
+      "physics_steps_checked": 3643,
+      "gate_transitions_checked": 5,
+      "exact_request_payloads_checked": 63,
+      "status": "passed"
+    },
+    {
+      "recording": "flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5\\single_focused_seed43\\episode.json",
+      "physics_steps_checked": 3577,
+      "gate_transitions_checked": 5,
+      "exact_request_payloads_checked": 62,
+      "status": "passed"
+    },
+    {
+      "recording": "flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5\\single_focused_seed44\\episode.json",
+      "physics_steps_checked": 3554,
+      "gate_transitions_checked": 5,
+      "exact_request_payloads_checked": 62,
+      "status": "passed"
+    },
+    {
+      "recording": "flight\\recordings\\sharp_turn_20260926\\buffered_v5\\v5\\single_focused_seed45\\episode.json",
+      "physics_steps_checked": 3547,
+      "gate_transitions_checked": 5,
+      "exact_request_payloads_checked": 62,
+      "status": "passed"
+    }
+  ]
+}

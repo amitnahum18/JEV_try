@@ -1,0 +1,33 @@
+{
+  "all_passed": true,
+  "episodes": [
+    {
+      "recording": "flight\\recordings\\vertical_25_choices_preview_20260926\\single_level1_seed44_232048_671155.json",
+      "physics_steps_checked": 3345,
+      "gate_transitions_checked": 2,
+      "exact_request_payloads_checked": 57,
+      "status": "passed"
+    },
+    {
+      "recording": "flight\\recordings\\pitch_verification_20260927\\angles_only\\single_focused_seed44\\episode.json",
+      "physics_steps_checked": 3362,
+      "gate_transitions_checked": 2,
+      "exact_request_payloads_checked": 58,
+      "status": "passed"
+    },
+    {
+      "recording": "flight\\recordings\\pitch_verification_20260927\\combined\\single_focused_seed44\\episode.json",
+      "physics_steps_checked": 6761,
+      "gate_transitions_checked": 4,
+      "exact_request_payloads_checked": 115,
+      "status": "passed"
+    },
+    {
+      "recording": "flight\\recordings\\pitch_verification_20260927\\guidance_only\\single_focused_seed44\\episode.json",
+      "physics_steps_checked": 2030,
+      "gate_transitions_checked": 1,
+      "exact_request_payloads_checked": 35,
+      "status": "passed"
+    }
+  ]
+}

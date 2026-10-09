@@ -1,0 +1,31 @@
+[
+  {
+    "ply": 1,
+    "player": "JEV",
+    "fen_before": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+    "uci": "e2e4",
+    "san": "e4",
+    "confidence": 0.52,
+    "council_role_moves": {
+      "risk": "e2e4",
+      "tactics": "e2e4",
+      "strategy": "e2e4"
+    },
+    "council_agreement": 1.0,
+    "latency_seconds": 0.83,
+    "input_tokens": 4641,
+    "cost_usd": 0.000194922
+  },
+  {
+    "ply": 2,
+    "player": "Qwen3.7 Plus",
+    "fen_before": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+    "uci": "c7c5",
+    "san": "c5",
+    "latency_seconds": 4.822,
+    "input_tokens": 362,
+    "output_tokens": 243,
+    "cost_usd": 0.00042688,
+    "provider": "Alibaba"
+  }
+]

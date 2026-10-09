@@ -1,0 +1,26 @@
+{
+  "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\pitch_v8_20260927\\single_focused_seed44\\episode.json",
+  "source_sha256": "955e516d015b2a26408f7bc3c807fc0d374ac5d02a4cad8760cf064191ae80a3",
+  "source_model": "typesafe/jev-1.13",
+  "source_prompt_version": 8,
+  "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\vertical_verified_source\\jev_vertical_seed44_actual_1x_parts\\part_00\\part.mp4",
+  "width": 1440,
+  "height": 860,
+  "fps": 30,
+  "frames": 705,
+  "video_duration_seconds": 23.5,
+  "source_frame_count": 2822,
+  "frame_range": [
+    0,
+    705
+  ],
+  "simulation_duration_seconds": 92.01666666666667,
+  "final_hold_seconds": 2.0,
+  "speed": 1,
+  "physics_steps_replayed": 11042,
+  "status": "completed",
+  "gates_passed": 8,
+  "final_position_matches_original": true,
+  "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+  "export_wall_seconds": 304.4840082998853
+}

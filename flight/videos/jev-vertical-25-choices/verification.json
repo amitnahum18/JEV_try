@@ -1,0 +1,164 @@
+{
+  "programs": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "width": 1440,
+      "height": 860,
+      "r_frame_rate": "30/1",
+      "duration": "29.933984",
+      "nb_frames": "898"
+    }
+  ],
+  "format": {
+    "duration": "29.934000",
+    "size": "12693359"
+  },
+  "source_export": {
+    "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\vertical_25_choices_preview_20260926\\single_level1_seed44_232048_671155.json",
+    "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\vertical_source\\jev_vertical_25_choices_actual_1x.mp4",
+    "frames": 898,
+    "fps": 30,
+    "width": 1440,
+    "height": 860,
+    "video_duration_seconds": 29.933333333333334,
+    "simulation_duration_seconds": 27.875,
+    "final_hold_seconds": 2.0,
+    "speed": 1,
+    "gates_passed": 2,
+    "gates_total": 8,
+    "status": "gate_missed",
+    "physics_steps_replayed_per_chunk": 3345,
+    "final_position_matches_original": true,
+    "chunks": [
+      {
+        "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\vertical_25_choices_preview_20260926\\single_level1_seed44_232048_671155.json",
+        "source_sha256": "3ae1c33820acc93334bf3c33f8d752f9e3a76548ff6974f87a46a9e5a4fe8d0f",
+        "source_model": "typesafe/jev-1.13",
+        "source_prompt_version": 6,
+        "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\vertical_source\\jev_vertical_25_choices_actual_1x_parts\\part_00\\part.mp4",
+        "width": 1440,
+        "height": 860,
+        "fps": 30,
+        "frames": 224,
+        "video_duration_seconds": 7.466666666666667,
+        "source_frame_count": 898,
+        "frame_range": [
+          0,
+          224
+        ],
+        "simulation_duration_seconds": 27.875,
+        "final_hold_seconds": 2.0,
+        "speed": 1,
+        "physics_steps_replayed": 3345,
+        "status": "gate_missed",
+        "gates_passed": 2,
+        "final_position_matches_original": true,
+        "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+        "export_wall_seconds": 113.95244060014375
+      },
+      {
+        "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\vertical_25_choices_preview_20260926\\single_level1_seed44_232048_671155.json",
+        "source_sha256": "3ae1c33820acc93334bf3c33f8d752f9e3a76548ff6974f87a46a9e5a4fe8d0f",
+        "source_model": "typesafe/jev-1.13",
+        "source_prompt_version": 6,
+        "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\vertical_source\\jev_vertical_25_choices_actual_1x_parts\\part_01\\part.mp4",
+        "width": 1440,
+        "height": 860,
+        "fps": 30,
+        "frames": 225,
+        "video_duration_seconds": 7.5,
+        "source_frame_count": 898,
+        "frame_range": [
+          224,
+          449
+        ],
+        "simulation_duration_seconds": 27.875,
+        "final_hold_seconds": 2.0,
+        "speed": 1,
+        "physics_steps_replayed": 3345,
+        "status": "gate_missed",
+        "gates_passed": 2,
+        "final_position_matches_original": true,
+        "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+        "export_wall_seconds": 113.80142750008963
+      },
+      {
+        "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\vertical_25_choices_preview_20260926\\single_level1_seed44_232048_671155.json",
+        "source_sha256": "3ae1c33820acc93334bf3c33f8d752f9e3a76548ff6974f87a46a9e5a4fe8d0f",
+        "source_model": "typesafe/jev-1.13",
+        "source_prompt_version": 6,
+        "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\vertical_source\\jev_vertical_25_choices_actual_1x_parts\\part_02\\part.mp4",
+        "width": 1440,
+        "height": 860,
+        "fps": 30,
+        "frames": 224,
+        "video_duration_seconds": 7.466666666666667,
+        "source_frame_count": 898,
+        "frame_range": [
+          449,
+          673
+        ],
+        "simulation_duration_seconds": 27.875,
+        "final_hold_seconds": 2.0,
+        "speed": 1,
+        "physics_steps_replayed": 3345,
+        "status": "gate_missed",
+        "gates_passed": 2,
+        "final_position_matches_original": true,
+        "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+        "export_wall_seconds": 113.17835960001685
+      },
+      {
+        "source": "C:\\Agents_projects\\JEV_Try\\flight\\recordings\\vertical_25_choices_preview_20260926\\single_level1_seed44_232048_671155.json",
+        "source_sha256": "3ae1c33820acc93334bf3c33f8d752f9e3a76548ff6974f87a46a9e5a4fe8d0f",
+        "source_model": "typesafe/jev-1.13",
+        "source_prompt_version": 6,
+        "output": "C:\\Agents_projects\\JEV_Try\\flight\\videos\\vertical_source\\jev_vertical_25_choices_actual_1x_parts\\part_03\\part.mp4",
+        "width": 1440,
+        "height": 860,
+        "fps": 30,
+        "frames": 225,
+        "video_duration_seconds": 7.5,
+        "source_frame_count": 898,
+        "frame_range": [
+          673,
+          898
+        ],
+        "simulation_duration_seconds": 27.875,
+        "final_hold_seconds": 2.0,
+        "speed": 1,
+        "physics_steps_replayed": 3345,
+        "status": "gate_missed",
+        "gates_passed": 2,
+        "final_position_matches_original": true,
+        "note": "Actual recorded decisions and full PyFlyt physics. Model waits removed; one video second per simulated second, within one-frame sampling resolution. No API calls.",
+        "export_wall_seconds": 84.74468659982085
+      }
+    ],
+    "export_wall_seconds": 118.36485760007054,
+    "note": "Parallel video rendering only. Each chunk reconstructs the recorded physics from time zero. Every output frame appears once in sequence at 1x. No model calls or invented flight paths."
+  },
+  "checks": {
+    "h264": true,
+    "fps_30": true,
+    "frames_match": true,
+    "dimensions_match": true,
+    "duration_matches_1x": true,
+    "physics_replay_matches": true,
+    "actual_failed_result_retained": true,
+    "hyperframes_check_passed": true
+  },
+  "inspected_timestamps_seconds": [
+    0.0,
+    12.316666666666666,
+    27.266666666666666,
+    29.433333333333334
+  ],
+  "largest_measured_climb_descent_m_s": [
+    3.855,
+    -5.09
+  ],
+  "hyperframes_version": "0.8.79",
+  "upgraded_from": "0.8.78"
+}

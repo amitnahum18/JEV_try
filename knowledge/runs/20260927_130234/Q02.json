@@ -1,0 +1,60 @@
+{
+  "id": "Q02",
+  "status": "answered",
+  "choice": "D",
+  "answer_text": "52",
+  "confidence": 0.73,
+  "probabilities": {
+    "D": 0.78,
+    "A": 0.15,
+    "unsure": 0.0,
+    "C": 0.01,
+    "B": 0.06
+  },
+  "cost_usd": 2.184e-05,
+  "latency_seconds": 0.7857041000388563,
+  "input_tokens": 520,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:34.038733+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "Take three quarters of 80, then subtract 12. What is the result?",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "48",
+              "B": "60",
+              "C": "68",
+              "D": "52",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "D",
+        "confidence": 0.73,
+        "probabilities": {
+          "D": 0.78,
+          "A": 0.15,
+          "unsure": 0.0,
+          "C": 0.01,
+          "B": 0.06
+        },
+        "latency_seconds": 0.7857041000388563,
+        "input_tokens": 520,
+        "cost_usd": 2.184e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}

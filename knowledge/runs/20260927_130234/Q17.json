@@ -1,0 +1,60 @@
+{
+  "id": "Q17",
+  "status": "answered",
+  "choice": "C",
+  "answer_text": "216",
+  "confidence": 0.31,
+  "probabilities": {
+    "D": 0.04,
+    "C": 0.45,
+    "A": 0.2,
+    "unsure": 0.02,
+    "B": 0.29
+  },
+  "cost_usd": 2.31e-05,
+  "latency_seconds": 0.54766929987818,
+  "input_tokens": 550,
+  "attempts": [
+    {
+      "attempt": 1,
+      "started_at": "2026-09-27T13:02:36.454244+03:00",
+      "request": {
+        "model": "typesafe/jev-1.13",
+        "state": {
+          "question": "Real numbers x,y,z satisfy x+y+z=0 and x^2+y^2+z^2=6. What is the maximum of (x-y)^2*(y-z)^2*(z-x)^2?",
+          "notation": "pi is the circle constant; i is the imaginary unit; ln is natural logarithm; sqrt is the nonnegative square root; c is light speed; hbar is reduced Planck constant. * denotes multiplication and ^ a power."
+        },
+        "questions": {
+          "action": {
+            "type": "choice",
+            "instructions": "Solve the question in the supplied state and select its correct answer from the four candidate answers A,B,C,D. Read all assumptions and notation carefully. Use your own knowledge and reasoning; no external tools, calculator, search, code execution, worked solution, or feedback are supplied. The option order is arbitrary. If you cannot determine the answer, select unsure. Return the typed choice. The candidate descriptions are literal proposed answers, not additional premises.",
+            "criteria": {
+              "A": "54",
+              "B": "108",
+              "C": "216",
+              "D": "27",
+              "unsure": "I do not know / cannot determine the answer."
+            }
+          }
+        }
+      },
+      "response": {
+        "choice": "C",
+        "confidence": 0.31,
+        "probabilities": {
+          "D": 0.04,
+          "C": 0.45,
+          "A": 0.2,
+          "unsure": 0.02,
+          "B": 0.29
+        },
+        "latency_seconds": 0.54766929987818,
+        "input_tokens": 550,
+        "cost_usd": 2.31e-05,
+        "role_moves": {},
+        "role_agreement": null,
+        "tactical_review": null
+      }
+    }
+  ]
+}
